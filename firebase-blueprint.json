@@ -1,0 +1,148 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile with game statistics and preferences",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "The unique identifier of the user"
+        },
+        "displayName": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "User display name"
+        },
+        "photoURL": {
+          "type": "string",
+          "maxLength": 512,
+          "description": "User avatar URL"
+        },
+        "gamesPlayed": {
+          "type": "number",
+          "description": "Total number of hide and seek games played"
+        },
+        "seekerWins": {
+          "type": "number",
+          "description": "Total games won as seeker"
+        },
+        "hiderWins": {
+          "type": "number",
+          "description": "Total games won as hider"
+        },
+        "propsDestroyed": {
+          "type": "number",
+          "description": "Total destructible props destroyed"
+        },
+        "favoriteProp": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Most used prop disguise"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        }
+      },
+      "required": ["userId", "displayName", "gamesPlayed", "seekerWins", "hiderWins"]
+    },
+    "LeaderboardEntry": {
+      "title": "LeaderboardEntry",
+      "description": "Public leaderboard record for top players",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "User identifier"
+        },
+        "displayName": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Player callsign"
+        },
+        "score": {
+          "type": "number",
+          "description": "Cumulative matchmaking score"
+        },
+        "wins": {
+          "type": "number",
+          "description": "Total games won"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp of record"
+        }
+      },
+      "required": ["userId", "displayName", "score", "wins"]
+    },
+    "MatchHistory": {
+      "title": "MatchHistory",
+      "description": "Archived records of completed multiplayer hide and seek matches",
+      "type": "object",
+      "properties": {
+        "matchId": {
+          "type": "string",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_-]+$",
+          "description": "Unique match identifier"
+        },
+        "winnerTeam": {
+          "type": "string",
+          "enum": ["hiders", "seekers"],
+          "description": "The team that won the match"
+        },
+        "durationSeconds": {
+          "type": "number",
+          "description": "Length of match in seconds"
+        },
+        "mapName": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Name of the 3D map played"
+        },
+        "playersCount": {
+          "type": "number",
+          "description": "Number of players in the match"
+        },
+        "createdBy": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Host user ID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Match creation time"
+        }
+      },
+      "required": ["matchId", "winnerTeam", "durationSeconds", "mapName", "playersCount"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserProfile"
+      },
+      "description": "Stores user profiles and player statistics"
+    },
+    "/leaderboard/{userId}": {
+      "schema": {
+        "$ref": "#/entities/LeaderboardEntry"
+      },
+      "description": "Public leaderboard entries for global high scores"
+    },
+    "/matches/{matchId}": {
+      "schema": {
+        "$ref": "#/entities/MatchHistory"
+      },
+      "description": "Past match reports and stats"
+    }
+  }
+}

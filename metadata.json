@@ -1,0 +1,10 @@
+{
+  "name": "PropHunt: Destructible 3D Hide & Seek",
+  "description": "Multiplayer 3D realistic Hide and Seek with destructible environments, prop morphing, spatial voice chat, physics destruction, and AI tactical game master.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
