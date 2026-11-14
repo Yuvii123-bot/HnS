@@ -10,11 +10,11 @@
     "n_features": 10,
     "tie_embeddings": true
   },
-  "params": 6797056,
+  "params": 5773056,
   "vocab_size": 4000,
   "extra": {
     "step": 250,
     "val_loss": 2.787115663290024
   },
-  "params_note": "counted from the exported state_dict (46 tensors, including the tied token embedding); an earlier training-time counter omitted that matrix"
+  "params_note": "unique parameters (45 tensors; the tied token-embedding matrix is counted once). The exported bundle stores 46 tensors / 6,797,056 float32 values because the tied lm_head duplicate is kept alongside token_emb for a simpler NumPy forward pass."
 }

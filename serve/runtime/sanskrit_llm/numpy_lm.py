@@ -62,7 +62,13 @@ class NumpyLM:
 
     # ------------------------------------------------------------------
     def num_params(self) -> int:
-        return int(sum(v.size for v in self.w.values()))
+        """Unique parameters.
+
+        The bundle stores `lm_head.weight` separately from `token_emb.weight`
+        (they are tied, so the values are identical); counting both would
+        double-count the embedding matrix.
+        """
+        return int(sum(v.size for k, v in self.w.items() if k != "lm_head.weight"))
 
     @staticmethod
     def _rope(x: np.ndarray, cos: np.ndarray, sin: np.ndarray, offset: int) -> np.ndarray:

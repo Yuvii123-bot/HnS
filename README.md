@@ -74,7 +74,7 @@ from scratch.
 | corpus | 6.0M Devanagari characters · 122,642 verses/lines · 974 source e-texts |
 | sources | GRETIL (Veda, epic, purāṇa, poetry, śāstra, later) + Digital Corpus of Sanskrit |
 | tokenizer | 4,000 tokens · 1,801 merges · 2.07 chars/token |
-| model | 6,797,056 parameters · 6 layers · d=256 · 8 heads · ctx 256 |
+| model | 5,773,056 parameters · 6 layers · d=256 · 8 heads · ctx 256 |
 | pretraining | 1,900 steps × 16 × 256 ≈ 7.8M tokens, 2 CPU cores, ~42 min |
 | chat adaptation | 300 steps on 60,079 `<user>/<assistant>` pairs, ~6 min |
 | quality | val loss **3.077** · perplexity **21.7** (per akṣara-token; ≈1.49 bits/character) |

@@ -54,7 +54,8 @@ def main() -> None:
 
     meta = {
         "config": config,
-        "params": int(sum(v.size for v in arrays.values())),
+        "params": int(sum(v.size for k, v in arrays.items() if k != "lm_head.weight")),
+        "stored_float_count": int(sum(v.size for v in arrays.values())),
         "train_summary": json.loads(args.summary.read_text()) if args.summary.exists() else {},
         "corpus": json.loads(args.corpus.read_text()) if args.corpus.exists() else {},
     }
