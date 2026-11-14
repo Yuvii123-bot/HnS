@@ -25,6 +25,8 @@ def main() -> None:
     ap.add_argument("--layers", type=int, default=6)
     ap.add_argument("--heads", type=int, default=8)
     ap.add_argument("--d-ff", type=int, default=688)
+    ap.add_argument("--dropout", type=float, default=0.0,
+                    help="residual/attention/embedding dropout; default 0.0 keeps prior runs identical")
     ap.add_argument("--lr", type=float, default=1.5e-3)
     ap.add_argument("--warmup", type=int, default=100)
     ap.add_argument("--threads", type=int, default=2)
@@ -42,7 +44,7 @@ def main() -> None:
 
     cfg = ModelConfig(vocab_size=tok.vocab_size, d_model=args.d_model,
                       n_layers=args.layers, n_heads=args.heads, d_ff=args.d_ff,
-                      max_seq_len=512)
+                      max_seq_len=512, dropout=args.dropout)
     model = SanskritLM(cfg)
     print(f"model: {model.num_params():,} parameters  vocab={cfg.vocab_size}")
 

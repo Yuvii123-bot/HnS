@@ -1,0 +1,33 @@
+{
+  "label": "x1final",
+  "checkpoint": "artifacts/x1_final/best.pt",
+  "verse_val_loss": 3.5469,
+  "verse_perplexity": 34.7,
+  "mean_continuation_chars": 8.0,
+  "samples": [
+    {
+      "prompt": "धर्मक्षेत्रे कुरुक्षेत्रे",
+      "continuation": "शुद्धिसंज्ञितम् ।"
+    },
+    {
+      "prompt": "अथ राजा",
+      "continuation": "नं सुरान् आसं जहात्मजाः"
+    },
+    {
+      "prompt": "यदा सूर्यः उदेति",
+      "continuation": "।"
+    },
+    {
+      "prompt": "ततः कृत्स्नम्",
+      "continuation": "।"
+    },
+    {
+      "prompt": "सत्यमेव जयते",
+      "continuation": "।"
+    },
+    {
+      "prompt": "कर्मण्येवाधिकारः",
+      "continuation": "भवति।"
+    }
+  ]
+}

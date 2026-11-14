@@ -103,9 +103,14 @@ class Attention(nn.Module):
         if use_cache:
             new_kv = (k, v)
 
+        # Regularisation happens on the residual branch in Block (GPT-2 style).
+        # Passing dropout_p>0 here makes PyTorch take the math path that
+        # materialises the full (B, H, T, T) attention matrix, which OOMs a
+        # 3 GB CPU box at batch 16 / ctx 256. Inference is unaffected either
+        # way, since Block's nn.Dropout is a no-op in eval mode.
         y = F.scaled_dot_product_attention(
             q, k, v,
-            dropout_p=self.dropout if self.training else 0.0,
+            dropout_p=0.0,
             is_causal=(past_kv is None),
         )
         y = y.transpose(1, 2).contiguous().view(B, T, C)
