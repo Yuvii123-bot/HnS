@@ -1,0 +1,7 @@
+# core
+torch>=2.0          # CPU build is fine (pip install torch)
+numpy>=1.24
+
+# api / ui
+fastapi>=0.110
+uvicorn[standard]>=0.27

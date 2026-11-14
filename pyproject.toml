@@ -1,0 +1,9 @@
+[project]
+name = "sanskrit-llm"
+version = "0.1.0"
+description = "An akṣara-native Sanskrit language model and chat interface"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.0", "numpy>=1.24", "fastapi>=0.110", "uvicorn[standard]>=0.27"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

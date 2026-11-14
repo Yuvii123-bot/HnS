@@ -1,7 +1,30 @@
-node_modules/
-dist/
-build/
-.env
-.env.local
-.DS_Store
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# model / data artifacts that are large or regenerable
+data/raw/
+data/bin/
+data/bin_chat/
+data/bin_clean/
+data/chat/
+data/*.txt
+data/clean/*.txt
+data/chat/
+artifacts/latest.pt
+artifacts/best.pt
+artifacts/model_pretrain.pt
+artifacts/pretrain_step1000.pt
+artifacts/*.pt.tmp
+artifacts/chatft/
+*.bin
 *.log
+
+# editor / os
+.DS_Store
+.idea/
+.vscode/

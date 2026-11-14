@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>संस्कृतम् · अक्षराधारितः भाषामयः</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ───────────────────────── पार्श्वफलकम् ───────────────────────── -->
+  <aside class="sidebar">
+    <header class="brand">
+      <div class="brand-mark">ॐ</div>
+      <div>
+        <h1>संस्कृतम्</h1>
+        <p>अक्षराधारितः भाषामयः</p>
+      </div>
+    </header>
+
+    <section class="card status-card">
+      <div class="status-row">
+        <span id="status-dot" class="dot"></span>
+        <span id="status-text">संयोजनम्…</span>
+      </div>
+      <dl class="facts">
+        <div><dt>प्राचलाः</dt><dd id="fact-params">—</dd></div>
+        <div><dt>शब्दकोशः</dt><dd id="fact-vocab">—</dd></div>
+        <div><dt>पाठखण्डाः</dt><dd id="fact-tokens">—</dd></div>
+        <div><dt>सत्यापनहानिः</dt><dd id="fact-loss">—</dd></div>
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2>उत्पादनम्</h2>
+
+      <label class="field">
+        <span>रीतिः</span>
+        <select id="mode">
+          <option value="chat">संवादः</option>
+          <option value="continuation">प्रवाहः</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>उष्णता <b id="temperature-val">०.८५</b></span>
+        <input type="range" id="temperature" min="0.1" max="1.6" step="0.05" value="0.85" />
+      </label>
+
+      <label class="field">
+        <span>शीर्षसंख्या <b id="topk-val">४०</b></span>
+        <input type="range" id="topk" min="0" max="200" step="5" value="40" />
+      </label>
+
+      <label class="field">
+        <span>खण्डसीमा <b id="maxtok-val">९०</b></span>
+        <input type="range" id="maxtok" min="20" max="200" step="10" value="90" />
+      </label>
+
+      <label class="switch">
+        <input type="checkbox" id="show-tokens" checked />
+        <span>अक्षरविभाजनदर्शनम्</span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>अक्षरविभाजनम्</h2>
+      <p class="hint">लिख्यमानं पदम् अक्षरेषु विभज्यते।</p>
+      <div id="live-tokens" class="live-tokens"><span class="placeholder">अत्र लिखतु…</span></div>
+      <div class="tok-stats"><span id="live-stats">—</span></div>
+      <div class="legend">
+        <span class="lg conjunct">संयुक्ताक्षरम्</span>
+        <span class="lg syllable">अक्षरम्</span>
+        <span class="lg vowel">स्वरः</span>
+        <span class="lg punct">दण्डः</span>
+        <span class="lg juncture">सन्धिः</span>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>अक्षरभेदः · स्थानसङ्केतः · द्वारसङ्केतः</span>
+      <span id="foot-build">०.१</span>
+    </footer>
+  </aside>
+
+  <!-- ───────────────────────── संवादः ───────────────────────── -->
+  <main class="chat">
+    <div class="chat-head">
+      <div>
+        <h2>संवादः</h2>
+        <p>देवनागर्यां लिखतु — प्रत्युत्तरं केवलं संस्कृतेन भविष्यति।</p>
+      </div>
+      <button id="clear" class="ghost">शोधय</button>
+    </div>
+
+    <div id="transcript" class="transcript">
+      <article class="msg assistant intro">
+        <div class="avatar">सू</div>
+        <div class="bubble">
+          <p class="deva">नमस्ते। अहम् अक्षराधारितः संस्कृतभाषामयः अस्मि — मम वर्णाः अक्षराणि एव, मम मतिः देवनागरी एव। देवनागर्यां प्रश्नं लिखतु, अहं संस्कृतेनैव उत्तरं दास्यामि।</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="composer-wrap">
+      <div class="suggestions" id="suggestions">
+        <button data-text="धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः">धर्मक्षेत्रे कुरुक्षेत्रे…</button>
+        <button data-text="रामः कः आसीत्">रामः कः आसीत्?</button>
+        <button data-text="ज्ञानं किम्">ज्ञानं किम्?</button>
+        <button data-text="ॐ नमः शिवाय">ॐ नमः शिवाय</button>
+        <button data-text="कविः कः">कविः कः?</button>
+      </div>
+
+      <form id="composer" class="composer">
+        <textarea id="input" rows="1" placeholder="संस्कृतं लिखतु…" autocomplete="off" lang="sa"></textarea>
+        <button type="submit" id="send" class="send" aria-label="प्रेषय">
+          <span>प्रेषय</span>
+        </button>
+      </form>
+      <div class="composer-foot">
+        <span id="char-count">० अक्षरम्</span>
+        <span>प्रेषणाय ↵ · नवपङ्क्त्यै ⇧↵</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

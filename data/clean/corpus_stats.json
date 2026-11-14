@@ -1,0 +1,18 @@
+{
+  "train_lines": 122642,
+  "val_lines": 1238,
+  "devanagari_chars": 6000048,
+  "unique_lines": 123880,
+  "sources": {
+    "gretil/3_purana": 43612,
+    "gretil/2_epic": 40357,
+    "gretil/5_poetry": 23578,
+    "gretil/6_sastra": 8019,
+    "gretil/4_rellit": 4846,
+    "dcs": 1666,
+    "gretil/7_later": 1054,
+    "gretil/1_veda": 748
+  },
+  "skipped_files": 4,
+  "files_seen": 974
+}
