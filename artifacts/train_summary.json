@@ -19,5 +19,45 @@
     "data": "60,079 <user>/<assistant> pairs"
   },
   "total_tokens_seen": 9011200,
-  "total_steps": 2200
+  "total_steps": 2200,
+  "instruction_tuning": {
+    "steps": 700,
+    "best_step": 300,
+    "batch_size": 16,
+    "block_size": 256,
+    "lr": 0.0006,
+    "tokens_seen": 2867200,
+    "best_val_loss": 0.5725990235805511,
+    "dataset": {
+      "pairs": 2010,
+      "base_facts": 750,
+      "categories": {
+        "glossary": 714,
+        "dialogue": 420,
+        "grammar": 368,
+        "dharma": 240,
+        "conversation": 219,
+        "world": 204,
+        "reasoning": 98,
+        "greeting": 52,
+        "numbers": 44
+      },
+      "paired_pairs_after_balancing": 3370,
+      "verse_replay_lines": 1685,
+      "verse_share_of_training_tokens": 0.2494
+    },
+    "held_out_eval": {
+      "prompts": 38,
+      "keyword_hit_before": 0.0,
+      "keyword_hit_after": 0.789,
+      "format_compliance_after": 1.0,
+      "verses_leaked_after": 0.0,
+      "prompt_overlap_before": 0.0,
+      "prompt_overlap_after": 0.53,
+      "verse_val_loss_before": 3.8366,
+      "verse_val_loss_after": 5.0389,
+      "note": "keyword hit = an expected content word (or its inflected form) appears in the answer; it is a coverage check, not a semantic judgement"
+    },
+    "data": "data/instruct (see scripts/build_instruct_data.py)"
+  }
 }

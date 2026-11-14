@@ -44,7 +44,7 @@ def main() -> None:
     ap.add_argument("--instruct", type=Path, default=Path("data/instruct"))
     ap.add_argument("--verse", type=Path, default=Path("data/clean/train.txt"))
     ap.add_argument("--out", type=Path, default=Path("data/instruct_mix"))
-    ap.add_argument("--replay-per", type=int, default=3,
+    ap.add_argument("--replay-per", type=int, default=2,
                     help="one corpus line is replayed for every N instruction pairs")
     ap.add_argument("--seed", type=int, default=21)
     args = ap.parse_args()

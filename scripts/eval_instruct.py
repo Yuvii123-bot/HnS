@@ -50,6 +50,36 @@ def load_checkpoint(path: Path, tok: AksharaTokenizer) -> SanskritLM:
     return model
 
 
+def _common_prefix(a: str, b: str) -> int:
+    n = 0
+    for x, y in zip(a, b):
+        if x != y:
+            break
+        n += 1
+    return n
+
+
+def keyword_in(answer: str, expected: list[str]) -> bool:
+    """Match a keyword against an inflected form of it.
+
+    "षष्ठी" must count as present in "षष्ठ्याम् विभक्तौ।": the model answers in a
+    case, the keyword is in the nominative, and the two share the stem "षष्ठ"
+    before diverging at the ending. So compare the common prefix and require it
+    to cover the keyword bar its last one or two characters (a citation form's
+    ending), with a floor of four Devanagari characters to avoid noise.
+    """
+    for word in re.split(r"[\s।॥?!,]+", answer):
+        if not word:
+            continue
+        for key in expected:
+            if key == word:
+                return True
+            need = min(len(key), max(4, len(key) - 2))
+            if len(word) >= need and _common_prefix(key, word) >= need:
+                return True
+    return False
+
+
 def words(text: str) -> list[str]:
     return [w for w in re.split(r"[\s।॥?!,]+", text) if w and w not in STOP]
 
@@ -123,7 +153,7 @@ def evaluate(model, feat, tok, prompts, *, seed_base: int = 1000,
             "category": item["category"],
             "prompt": item["prompt"],
             "answer": answer,
-            "keyword_hit": any(k in answer for k in expected) if expected else False,
+            "keyword_hit": keyword_in(answer, expected) if expected else False,
             "overlap": round(overlap, 3),
             "empty": not answer.strip(),
             "latin": bool(LATIN.search(answer)),
@@ -131,6 +161,7 @@ def evaluate(model, feat, tok, prompts, *, seed_base: int = 1000,
             "verse_marker": "॥" in answer,
             "arabic_digit": bool(re.search(r"[0-9]", answer)),
             "ends_punct": answer.endswith(("।", "?", "!")),
+            "echoes_prompt": bool(answer) and answer.strip() == item["prompt"].strip(),
             "chars": len(answer),
         })
 

@@ -189,6 +189,60 @@ written for this project.
 
 ---
 
+## Instruction tuning
+
+The verse corpus teaches the model how Sanskrit *sounds*; it does not teach it
+to answer. The first dialogue data paired consecutive verse lines, so the model
+learned the `<user> … <assistant>` template and then produced unrelated verse
+inside it. That is the failure this phase fixes.
+
+```bash
+python3 scripts/build_instruct_data.py     # curated pairs -> data/instruct/
+python3 scripts/mix_instruct_data.py       # rebalance + verse replay -> data/instruct_mix/
+python3 scripts/prepare_data.py --data data/instruct_mix --out data/bin_instruct_mix
+python3 scripts/train_model.py --bin-dir data/bin_instruct_mix --resume artifacts/model.pt \
+        --steps 700 --batch 16 --ctx 256 --lr 6e-4 --warmup 60 --reset-steps \
+        --eval-every 50 --ckpt-every 100 --out artifacts/instruct
+python3 scripts/eval_instruct.py --checkpoint artifacts/instruct/best.pt --label after
+python3 scripts/report_instruct.py         # -> reports/instruction_tuning.md
+```
+
+**The dataset** is 2,010 pairs derived from 751 hand-written Sanskrit facts —
+greetings and politeness, everyday conversation, grammar (vibhakti, liṅga,
+vacana, sandhi), Sanskrit-to-Sanskrit glosses (पर्याय / अर्थ), causal reasoning,
+numbers, and Sanātana Dharma vocabulary — plus 420 short multi-turn dialogues.
+"Translation" is implemented as Sanskrit→Sanskrit glossing, because the chat
+path stays Devanagari-only. Each fact is rendered in up to three natural
+phrasings (plain, polite, reported question) so the model learns that the same
+question asked differently takes the same answer.
+
+Quality control is in the builder: no Latin characters, no Arabic digits, no
+non-Devanagari answers, no verse markers, no duplicates, and no evaluation
+prompt may appear as a training turn.
+### Measured result (38 held-out prompts, greedy decoding)
+
+| metric | before | after |
+|---|---|---|
+| instruction val loss | 3.9643 (ppl 52.68) | 0.4077 (ppl 1.5) |
+| expected word present | 0.0% | **78.9%** |
+| prompt-answer overlap | 0.0% | 53.0% |
+| answer ends with punctuation | 2.6% | **100.0%** |
+| verse fragments leaking into answers | 5.3% | **0.0%** |
+| distinct answers | 65.8% | 100.0% |
+| verse/continuation val loss | 3.8366 | 5.0389 (worse — replay limits, not removes, forgetting) |
+
+Keyword coverage is a *coverage* check: an expected content word, or an
+inflected form of it, appears in the answer. It does not certify that the
+answer is semantically right, and the model is small enough that some answers
+are off-topic. Both failure modes are visible in `reports/instruction_tuning.md`
+alongside the raw answers.
+
+`reports/instruction_tuning.md` holds the full comparison across every
+checkpoint tried; nothing in this repository asserts an improvement that the
+harness did not measure.
+
+---
+
 ## Deploying to Vercel
 
 PyTorch cannot ship to a Vercel function (the wheel is several times the 250 MB

@@ -12,6 +12,8 @@ against a live preview.
 from __future__ import annotations
 
 import json
+
+s_dumps = json.dumps
 import os
 import sys
 import urllib.request
@@ -36,8 +38,9 @@ class UrllibClient:
         with urllib.request.urlopen(BASE + path, timeout=20) as r:
             return r.status, json.loads(r.read() or b"{}")
 
-    def post(self, path, payload):
-        data = json.dumps(payload).encode()
+    def post(self, path, payload=None, json=None, **_):
+        payload = payload if payload is not None else json
+        data = s_dumps(payload).encode()
         req = urllib.request.Request(BASE + path, data=data,
                                      headers={"Content-Type": "application/json"})
         with urllib.request.urlopen(req, timeout=60) as r:
@@ -70,7 +73,7 @@ def test_info(client, native):
 
 
 def test_tokenize(client, native):
-    resp = client.post("/api/tokenize", {"text": "धर्मक्षेत्रे कुरुक्षेत्रे"})
+    resp = client.post("/api/tokenize", json={"text": "धर्मक्षेत्रे कुरुक्षेत्रे"})
     body = _resp_json(resp) if native else resp[1]
     assert body["devanagari"] == "धर्मक्षेत्रे कुरुक्षेत्रे"
     assert body["n_tokens"] > 0
@@ -79,14 +82,14 @@ def test_tokenize(client, native):
 
 def test_latin_is_refused(client, native):
     """The model is Sanskrit-only: romanised input must be rejected, not translated."""
-    resp = client.post("/api/tokenize", {"text": "saṃskṛtam"})
+    resp = client.post("/api/tokenize", json={"text": "saṃskṛtam"})
     body = _resp_json(resp) if native else resp[1]
     assert "error" in body, "latin input should be refused"
     assert body["n_tokens"] == 0
 
 
 def test_devanagari_akshara_split(client, native):
-    resp = client.post("/api/tokenize", {"text": "संस्कृतम्"})
+    resp = client.post("/api/tokenize", json={"text": "संस्कृतम्"})
     body = _resp_json(resp) if native else resp[1]
     assert body["aksharas"] == ["सं", "स्कृ", "त", "म्"]
     assert body["n_aksharas"] == 4
@@ -94,7 +97,7 @@ def test_devanagari_akshara_split(client, native):
 
 def test_chat_stream_shape(client, native):
     payload = {"message": "धर्मः किम् ?", "max_new_tokens": 6, "mode": "continuation"}
-    resp = client.post("/api/chat", payload)
+    resp = client.post("/api/chat", json=payload)
     events = _resp_json(resp) if native else resp[1]
     if isinstance(events, dict):
         events = [events]

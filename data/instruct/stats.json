@@ -1,6 +1,6 @@
 {
-  "base_facts": 743,
-  "pairs": 2003,
+  "base_facts": 750,
+  "pairs": 2010,
   "dropped_eval_overlap": 349,
   "per_category": {
     "glossary": 714,
@@ -10,12 +10,12 @@
     "conversation": 219,
     "world": 204,
     "reasoning": 98,
-    "greeting": 45,
+    "greeting": 52,
     "numbers": 44
   },
-  "train_pairs": 1881,
-  "val_pairs": 122,
-  "train_fact_keys": 1195,
+  "train_pairs": 1898,
+  "val_pairs": 112,
+  "train_fact_keys": 1202,
   "val_fact_keys": 76,
   "eval_prompts": 38,
   "mean_answer_chars": 34.7

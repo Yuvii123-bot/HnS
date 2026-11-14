@@ -14,13 +14,14 @@ import argparse
 import json
 from pathlib import Path
 
-ORDER = ["before", "after_best", "after_final", "mixed_best", "mixed_final"]
+ORDER = ["before", "after_final", "mixed_best", "v3_final", "v4_best", "v4_final"]
 LABELS = {
-    "before": "before (verse-trained)",
-    "after_best": "instructions only, best step",
-    "after_final": "instructions only, final step",
-    "mixed_best": "balanced + verse replay, best step",
-    "mixed_final": "balanced + verse replay, final step",
+    "before": "before",
+    "after_final": "A: instructions only",
+    "mixed_best": "B: balanced + 18% replay",
+    "v3_final": "C: fixed answers + 18% replay (shipped)",
+    "v4_best": "D: 25% replay, best step",
+    "v4_final": "D: 25% replay, final step",
 }
 COLS = [
     ("instruct val loss", lambda r: r["instruct_val"].get("loss")),
@@ -39,6 +40,8 @@ def main() -> None:
     ap.add_argument("--reports", type=Path, default=Path("reports"))
     ap.add_argument("--out", type=Path, default=Path("reports/instruction_tuning.md"))
     ap.add_argument("--samples", type=int, default=10)
+    ap.add_argument("--latest", type=str, default="v3_final",
+                    help="which report to use for the side-by-side answers")
     args = ap.parse_args()
 
     found = {}
@@ -77,7 +80,7 @@ def main() -> None:
     lines.append("")
 
     # side by side answers
-    latest = [n for n in ORDER if n in found][-1]
+    latest = args.latest if args.latest in found else [n for n in ORDER if n in found][-1]
     lines.append(f"## Answers on held-out prompts — before vs {LABELS.get(latest, latest)}")
     lines.append("")
     before = found.get("before")

@@ -14,17 +14,19 @@
     "token_acc": 0.2094,
     "windows": 6
   },
+  "temperature": 0.0,
   "summary": {
     "n_prompts": 38,
-    "keyword_hit_rate": 0.474,
-    "mean_prompt_overlap": 0.402,
+    "keyword_hit_rate": 0.395,
+    "mean_prompt_overlap": 0.393,
     "empty_rate": 0.0,
     "latin_rate": 0.0,
     "devanagari_rate": 1.0,
     "verse_marker_rate": 0.0,
+    "arabic_digit_rate": 0.026,
     "ends_punct_rate": 1.0,
     "unique_answer_rate": 0.974,
-    "mean_answer_chars": 27.1,
+    "mean_answer_chars": 27.5,
     "per_category": {
       "greeting": {
         "n": 4,
@@ -34,7 +36,7 @@
       },
       "conversation": {
         "n": 4,
-        "keyword_hit": 0.75,
+        "keyword_hit": 0.5,
         "overlap": 0.25,
         "empty": 0.0
       },
@@ -52,7 +54,7 @@
       },
       "glossary": {
         "n": 4,
-        "keyword_hit": 0.75,
+        "keyword_hit": 0.5,
         "overlap": 0.75,
         "empty": 0.0
       },
@@ -65,12 +67,12 @@
       "numbers": {
         "n": 2,
         "keyword_hit": 0.0,
-        "overlap": 0.521,
+        "overlap": 0.334,
         "empty": 0.0
       },
       "world": {
         "n": 4,
-        "keyword_hit": 0.75,
+        "keyword_hit": 0.5,
         "overlap": 0.708,
         "empty": 0.0
       }
@@ -87,7 +89,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 47
     },
     {
@@ -100,7 +104,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 18
     },
     {
@@ -113,7 +119,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 9
     },
     {
@@ -126,7 +134,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 12
     },
     {
@@ -139,20 +149,24 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 21
     },
     {
       "category": "conversation",
       "prompt": "भवान् कुत्र वसति?",
       "answer": "अहं नगरे निवसामि।",
-      "keyword_hit": true,
+      "keyword_hit": false,
       "overlap": 0.0,
       "empty": false,
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 17
     },
     {
@@ -165,7 +179,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 26
     },
     {
@@ -178,7 +194,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 20
     },
     {
@@ -191,7 +209,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 28
     },
     {
@@ -204,7 +224,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 30
     },
     {
@@ -217,7 +239,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 34
     },
     {
@@ -230,7 +254,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 33
     },
     {
@@ -243,7 +269,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 25
     },
     {
@@ -256,7 +284,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 32
     },
     {
@@ -269,7 +299,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 35
     },
     {
@@ -282,7 +314,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 42
     },
     {
@@ -295,7 +329,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 32
     },
     {
@@ -308,7 +344,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 34
     },
     {
@@ -321,7 +359,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 34
     },
     {
@@ -334,7 +374,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 34
     },
     {
@@ -347,7 +389,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 27
     },
     {
@@ -360,7 +404,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 21
     },
     {
@@ -373,7 +419,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 37
     },
     {
@@ -386,20 +434,24 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 30
     },
     {
       "category": "glossary",
       "prompt": "जलम् इत्यस्य पर्यायः कः?",
       "answer": "जलम् इत्यस्य पर्यायः उदकम्।",
-      "keyword_hit": true,
+      "keyword_hit": false,
       "overlap": 1.0,
       "empty": false,
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 27
     },
     {
@@ -412,7 +464,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 28
     },
     {
@@ -425,7 +479,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 28
     },
     {
@@ -438,7 +494,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 20
     },
     {
@@ -451,7 +509,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 24
     },
     {
@@ -464,7 +524,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 24
     },
     {
@@ -477,7 +539,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 41
     },
     {
@@ -490,25 +554,29 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 17
     },
     {
       "category": "numbers",
-      "prompt": "एकं फलं द्वे फले च मिलित्वा कति फलानि भवन्ति?",
-      "answer": "मिलित्वा 7 फलानि भवन्ति।",
+      "prompt": "एकं द्वे च मिलित्वा कति भवन्ति?",
+      "answer": "न, सूर्यः पश्चिमायां दिशि अस्तं गच्छति।",
       "keyword_hit": false,
-      "overlap": 0.375,
+      "overlap": 0.0,
       "empty": false,
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
-      "chars": 24
+      "echoes_prompt": false,
+      "chars": 39
     },
     {
       "category": "numbers",
-      "prompt": "सङ्ख्या ५ संस्कृतेन किम्?",
+      "prompt": "सङ्ख्या ५ संस्कृतेन का?",
       "answer": "सङ्ख्या 8 संस्कृतेन अष्ट इति।",
       "keyword_hit": false,
       "overlap": 0.667,
@@ -516,7 +584,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": true,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 29
     },
     {
@@ -529,20 +599,24 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 36
     },
     {
       "category": "world",
       "prompt": "कमलं कुत्र भवति?",
       "answer": "कमलं जले भवति।",
-      "keyword_hit": true,
+      "keyword_hit": false,
       "overlap": 0.667,
       "empty": false,
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 14
     },
     {
@@ -555,7 +629,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 17
     },
     {
@@ -568,7 +644,9 @@
       "latin": false,
       "devanagari": true,
       "verse_marker": false,
+      "arabic_digit": false,
       "ends_punct": true,
+      "echoes_prompt": false,
       "chars": 24
     }
   ]
