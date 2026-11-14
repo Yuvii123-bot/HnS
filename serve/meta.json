@@ -20,8 +20,9 @@
       "best_val_loss": 3.077,
       "val_perplexity": 21.7,
       "minutes": 41.7,
-      "params": 5773056,
-      "corpus": "data/clean/train.txt (122,642 lines, 6.0M Devanagari chars)"
+      "params": 6797056,
+      "corpus": "data/clean/train.txt (122,642 lines, 6.0M Devanagari chars)",
+      "params_note": "counted from the exported state_dict (46 tensors, including the tied token embedding); an earlier training-time counter omitted that matrix"
     },
     "chat_adaptation": {
       "steps": 300,
