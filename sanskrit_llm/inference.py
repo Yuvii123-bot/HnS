@@ -44,6 +44,7 @@ class GenParams:
     max_new_tokens: int = 90
     max_lines: int = 2
     stop_at_verse_end: bool = True
+    max_chars: int = 0   # chat: cut runaway answers that drift into verse
 
 
 @dataclass
@@ -255,6 +256,11 @@ class SanskritEngine:
                 }
                 if params.stop_at_verse_end and len(out_ids) >= 8:
                     if piece.strip() == "॥" or text_so_far.count("।") >= 3:
+                        break
+                # A chat answer that has stopped making its point drifts into the
+                # verse corpus. Cut it at a word boundary instead of rambling.
+                if params.max_chars and len(text_so_far) >= params.max_chars:
+                    if piece and piece[-1] in " ।?!":
                         break
 
         yield {

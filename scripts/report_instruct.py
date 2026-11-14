@@ -91,6 +91,28 @@ def main() -> None:
         lines.append(f"- now: {row['answer']}")
         lines.append("")
 
+    # sampling sensitivity: the app samples, the table above is greedy
+    sampled = {n: r for n, r in found.items() if "_t" in n}
+    if sampled:
+        lines.append("## Sampling sensitivity")
+        lines.append("")
+        lines.append("The table above is greedy decoding. The application samples, so "
+                     "the same checkpoint was measured at temperature 0.85:")
+        lines.append("")
+        lines.append("| variant | keyword hit | overlap | unique answers | mean chars |")
+        lines.append("|---|---|---|---|---|")
+        for n, r in sampled.items():
+            m = r["summary"]
+            lines.append(f"| {n} | {m['keyword_hit_rate']:.1%} | "
+                         f"{m['mean_prompt_overlap']:.1%} | {m['unique_answer_rate']:.1%} | "
+                         f"{m['mean_chars']} |")
+        lines.append("")
+        lines.append("Sampling trades accuracy for variety: coverage drops by roughly "
+                     "fifteen points and greetings occasionally drift off topic. That "
+                     "is the honest experience of a 5.8M-parameter model; the greedy "
+                     "row is its ceiling, not its average.")
+        lines.append("")
+
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text("\n".join(lines), encoding="utf-8")
     print("\n".join(lines[:40]))

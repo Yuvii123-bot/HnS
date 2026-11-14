@@ -105,6 +105,7 @@ def chat(req: ChatRequest) -> StreamingResponse:
         repetition_penalty=max(1.0, min(2.0, req.repetition_penalty)),
         max_new_tokens=max(4, min(240, req.max_new_tokens)),
         stop_at_verse_end=req.stop_at_verse_end,
+        max_chars=90 if (req.mode or "chat") == "chat" else 0,
     )
 
     dev = normalize_devanagari(req.message)
