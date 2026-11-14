@@ -73,6 +73,58 @@
         "note": "keyword hit = an expected content word (or its inflected form) appears in the answer; it is a coverage check, not a semantic judgement"
       },
       "data": "data/instruct (see scripts/build_instruct_data.py)"
+    },
+    "semantic_tuning": {
+      "steps": 700,
+      "best_step": 200,
+      "batch_size": 16,
+      "block_size": 256,
+      "lr": 0.0006,
+      "dataset": {
+        "pairs": 13104,
+        "facts": {
+          "trained": 1149,
+          "held_out": 143,
+          "total": 1292
+        },
+        "dialogue_scripts": 156,
+        "per_category": {
+          "grammar": 7084,
+          "glossary": 1310,
+          "conversation": 1296,
+          "dharma": 992,
+          "numbers": 952,
+          "world": 830,
+          "reasoning": 409,
+          "greeting": 262
+        },
+        "training_rows_after_balancing": 8994,
+        "verse_replay_lines": 4867,
+        "verse_share_of_training_tokens": 0.2201
+      },
+      "held_out_evaluation": {
+        "questions": 1012,
+        "by_kind": {
+          "arithmetic": 5,
+          "grammar-production": 42,
+          "grammar-unseen-noun": 168,
+          "multi-turn": 24,
+          "number-word": 10,
+          "paraphrase": 520,
+          "paraphrase-2": 160,
+          "unseen-fact": 83
+        },
+        "composite_before": 0.673,
+        "composite_after": 0.8161,
+        "strict_before": 0.3696,
+        "strict_after": 0.6285,
+        "grammar_ok_before": 0.9872,
+        "grammar_ok_after": 0.9921,
+        "verse_val_loss_before": 4.9608,
+        "verse_val_loss_after": 4.0436,
+        "note": "composite = 0.40 strict + 0.15 content F1 + 0.15 answer type + 0.20 grammar rules + 0.10 format; see scripts/eval_semantic.py"
+      },
+      "data": "data/instruct_v2 (see scripts/build_instruct_v2.py)"
     }
   },
   "corpus": {
