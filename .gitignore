@@ -39,3 +39,10 @@ artifacts/instruct_v2/
 artifacts/instruct_v3/
 artifacts/instruct_v4/
 artifacts/model_chat_v1.pt
+
+# phase-1 corpora are regenerable from data/raw + scripts/build_corpus.py
+data/clean_full/
+data/phase1/
+data/bin_full/
+data/bin_phase1/
+data/bin_phase1b/

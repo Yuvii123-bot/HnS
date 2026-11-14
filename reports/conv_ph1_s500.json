@@ -1,0 +1,1616 @@
+{
+ "label": "ph1_s500",
+ "checkpoint": "artifacts/ph1/best.pt",
+ "summary": {
+  "n": 100,
+  "strict_ok": 0.0,
+  "content_f1": 0.0445,
+  "grammar_ok": 0.77,
+  "boundary_ok": 0.94,
+  "format_ok": 0.8
+ },
+ "by_topic": {
+  "abstain": {
+   "n": 3,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "comprehension": {
+   "n": 10,
+   "strict_ok": 0.0,
+   "boundary_ok": 0.7
+  },
+  "correction": {
+   "n": 6,
+   "strict_ok": 0.0,
+   "boundary_ok": 0.8333
+  },
+  "dhaturupa": {
+   "n": 13,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "greeting": {
+   "n": 6,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "lakara": {
+   "n": 5,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "linga": {
+   "n": 3,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "multiturn": {
+   "n": 3,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "purusha": {
+   "n": 3,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "question": {
+   "n": 5,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "relevance": {
+   "n": 4,
+   "strict_ok": 0.0,
+   "boundary_ok": 0.75
+  },
+  "samasa": {
+   "n": 6,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "sandhi": {
+   "n": 10,
+   "strict_ok": 0.0,
+   "boundary_ok": 0.9
+  },
+  "shabdarupa": {
+   "n": 5,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "vachana": {
+   "n": 3,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "vibhakti": {
+   "n": 7,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  },
+  "vocab": {
+   "n": 8,
+   "strict_ok": 0.0,
+   "boundary_ok": 1.0
+  }
+ },
+ "rows": [
+  {
+   "id": "p01",
+   "topic": "vibhakti",
+   "prompt": "रामः गच्छति — अत्र रामः कस्यां विभक्तौ?",
+   "reference": "प्रथमायां विभक्तौ।",
+   "answer": "तत् पदं सम्बोधने विभक्तौ बहुवचने च।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.3333,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p02",
+   "topic": "vibhakti",
+   "prompt": "रामं पश्यति — अत्र रामम् कस्यां विभक्तौ?",
+   "reference": "द्वितीयायां विभक्तौ।",
+   "answer": "तत् पदं सम्बोधने विभक्तौ बहुवचने च।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.3333,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p03",
+   "topic": "vibhakti",
+   "prompt": "रामेण सह गच्छति — का विभक्तिः?",
+   "reference": "तृतीयायां विभक्तौ।",
+   "answer": "काशी नृत्यति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p04",
+   "topic": "vibhakti",
+   "prompt": "रामाय फलं ददाति — का विभक्तिः?",
+   "reference": "चतुर्थ्यां विभक्तौ।",
+   "answer": "कायः धर्मायाः परीतया वसन्ति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p05",
+   "topic": "vibhakti",
+   "prompt": "रामात् आगच्छति — का विभक्तिः?",
+   "reference": "पञ्चम्यां विभक्तौ।",
+   "answer": "काशी नृत्यति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p06",
+   "topic": "vibhakti",
+   "prompt": "रामस्य गृहम् — का विभक्तिः?",
+   "reference": "षष्ठ्यां विभक्तौ।",
+   "answer": "ग्रामः नयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p07",
+   "topic": "vibhakti",
+   "prompt": "रामे वसति — का विभक्तिः?",
+   "reference": "सप्तम्यां विभक्तौ।",
+   "answer": "ग्रामः पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p08",
+   "topic": "vachana",
+   "prompt": "बालकः पठति — किं वचनम्?",
+   "reference": "एकवचनम्।",
+   "answer": "कविः जलं ददाति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p09",
+   "topic": "vachana",
+   "prompt": "बालकौ पठतः — किं वचनम्?",
+   "reference": "द्विवचनम्।",
+   "answer": "तत् पदं पाठः जयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p10",
+   "topic": "vachana",
+   "prompt": "बालकाः पठन्ति — किं वचनम्?",
+   "reference": "बहुवचनम्।",
+   "answer": "बाला नृत्यति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p11",
+   "topic": "purusha",
+   "prompt": "अहं गच्छामि — कः पुरुषः?",
+   "reference": "उत्तमपुरुषः।",
+   "answer": "यः पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p12",
+   "topic": "purusha",
+   "prompt": "त्वं गच्छसि — कः पुरुषः?",
+   "reference": "मध्यमपुरुषः।",
+   "answer": "यः पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p13",
+   "topic": "purusha",
+   "prompt": "सः गच्छति — कः पुरुषः?",
+   "reference": "प्रथमपुरुषः।",
+   "answer": "यः सन्तोषः अङ्कं ददाति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p14",
+   "topic": "linga",
+   "prompt": "गजः किंलिङ्गम्?",
+   "reference": "पुल्लिङ्गम्।",
+   "answer": "गङ्गाः पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p15",
+   "topic": "linga",
+   "prompt": "लता किंलिङ्गम्?",
+   "reference": "स्त्रीलिङ्गम्।",
+   "answer": "जलम् अकरोत्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p16",
+   "topic": "linga",
+   "prompt": "फलं किंलिङ्गम्?",
+   "reference": "नपुंसकलिङ्गम्।",
+   "answer": "भवान् श्रावक उत्तमम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p17",
+   "topic": "dhaturupa",
+   "prompt": "पठ् धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "पठति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p18",
+   "topic": "dhaturupa",
+   "prompt": "पठ् धातोः लटि प्रथमपुरुषबहुवचनं किम्?",
+   "reference": "पठन्ति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p19",
+   "topic": "dhaturupa",
+   "prompt": "गम् धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "गच्छति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p20",
+   "topic": "dhaturupa",
+   "prompt": "गम् धातोः लिटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "जगाम।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p21",
+   "topic": "dhaturupa",
+   "prompt": "कृ धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "करोति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p22",
+   "topic": "dhaturupa",
+   "prompt": "अस् धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "अस्ति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p23",
+   "topic": "dhaturupa",
+   "prompt": "भू धातोः लङि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "अभवत्।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p24",
+   "topic": "dhaturupa",
+   "prompt": "दा धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "ददाति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p25",
+   "topic": "dhaturupa",
+   "prompt": "पा धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "पिबति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p26",
+   "topic": "dhaturupa",
+   "prompt": "श्रु धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "शृणोति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p27",
+   "topic": "dhaturupa",
+   "prompt": "लिख् धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "लिखति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p28",
+   "topic": "shabdarupa",
+   "prompt": "राम शब्दस्य तृतीयैकवचनं किम्?",
+   "reference": "रामेण।",
+   "answer": "रामः",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p29",
+   "topic": "shabdarupa",
+   "prompt": "राम शब्दस्य षष्ठीबहुवचनं किम्?",
+   "reference": "रामाणाम्।",
+   "answer": "अशुद्धं शोधय —",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p30",
+   "topic": "shabdarupa",
+   "prompt": "गुरु शब्दस्य प्रथमाबहुवचनं किम्?",
+   "reference": "गुरवः।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p31",
+   "topic": "shabdarupa",
+   "prompt": "फल शब्दस्य द्वितीयैकवचनं किम्?",
+   "reference": "फलम्।",
+   "answer": "पठति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p32",
+   "topic": "shabdarupa",
+   "prompt": "लता शब्दस्य तृतीयैकवचनं किम्?",
+   "reference": "लतया।",
+   "answer": "जलं मरुतम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p33",
+   "topic": "lakara",
+   "prompt": "लट् लकारः कस्य कालस्य?",
+   "reference": "वर्तमानकालस्य।",
+   "answer": "कविः त्यजति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p34",
+   "topic": "lakara",
+   "prompt": "लङ् लकारः कस्य कालस्य?",
+   "reference": "भूतकालस्य।",
+   "answer": "कविः त्यजति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p35",
+   "topic": "lakara",
+   "prompt": "लृट् लकारः कस्य कालस्य?",
+   "reference": "भविष्यत्कालस्य।",
+   "answer": "कविः त्यजति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p36",
+   "topic": "lakara",
+   "prompt": "लोट् लकारः किम् अर्थं द्योतयति?",
+   "reference": "आज्ञार्थम्।",
+   "answer": "बालकः गणयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p37",
+   "topic": "lakara",
+   "prompt": "लिङ् लकारः किम् अर्थं द्योतयति?",
+   "reference": "विध्यर्थम्।",
+   "answer": "बालकः गणयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p38",
+   "topic": "sandhi",
+   "prompt": "सूर्य + उदय = ?",
+   "reference": "सूर्योदयः।",
+   "answer": "अशुद्धं शिक्षितम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p39",
+   "topic": "sandhi",
+   "prompt": "देव + आलय = ?",
+   "reference": "देवालयः।",
+   "answer": "माताभ्याम् अजनयत्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p40",
+   "topic": "sandhi",
+   "prompt": "हिम + अलय = ?",
+   "reference": "हिमालयः।",
+   "answer": "अशुद्धं शीलं च।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p41",
+   "topic": "sandhi",
+   "prompt": "नर + इन्द्र = ?",
+   "reference": "नरेन्द्रः।",
+   "answer": "विष्णुः जयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p42",
+   "topic": "sandhi",
+   "prompt": "महा + ईश = ?",
+   "reference": "महेशः।",
+   "answer": "अशुद्धं शिक्षितम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p43",
+   "topic": "sandhi",
+   "prompt": "पर + उपकार = ?",
+   "reference": "परोपकारः।",
+   "answer": "अशुद्धं शोधय — शिष्यः वसन्ति।",
+   "stop": "<assistant>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": false,
+   "format_ok": true
+  },
+  {
+   "id": "p44",
+   "topic": "sandhi",
+   "prompt": "सत् + जन = ?",
+   "reference": "सज्जनः।",
+   "answer": "जलं मरुपक्षेपम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p45",
+   "topic": "sandhi",
+   "prompt": "रामः + गच्छति = ?",
+   "reference": "रामो गच्छति।",
+   "answer": "ग्रामः पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p46",
+   "topic": "sandhi",
+   "prompt": "तत् + लिखति = ?",
+   "reference": "तल्लिखति।",
+   "answer": "तत् पदं असहते।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p47",
+   "topic": "sandhi",
+   "prompt": "जगत् + नाथ = ?",
+   "reference": "जगन्नाथः।",
+   "answer": "मम धातोः रक्षति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p48",
+   "topic": "samasa",
+   "prompt": "राजपुत्रः कः समासः?",
+   "reference": "षष्ठीतत्पुरुषः।",
+   "answer": "मुनिः त्यजति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p49",
+   "topic": "samasa",
+   "prompt": "नीलकमलम् कः समासः?",
+   "reference": "कर्मधारयः।",
+   "answer": "शिष्यः जयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p50",
+   "topic": "samasa",
+   "prompt": "चतुर्भुजः कः समासः?",
+   "reference": "बहुव्रीहिः।",
+   "answer": "पुत्रः विष्णोः अवस्था।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p51",
+   "topic": "samasa",
+   "prompt": "रामलक्ष्मणौ कः समासः?",
+   "reference": "द्वन्द्वः।",
+   "answer": "रामः पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p52",
+   "topic": "samasa",
+   "prompt": "यथाशक्ति कः समासः?",
+   "reference": "अव्ययीभावः।",
+   "answer": "आम्, सत्यम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p53",
+   "topic": "correction",
+   "prompt": "अशुद्धं शोधय — बालकः गच्छन्ति।",
+   "reference": "बालकाः गच्छन्ति।",
+   "answer": "बालकः गणयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.5,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p54",
+   "topic": "correction",
+   "prompt": "अशुद्धं शोधय — सः गच्छन्ति।",
+   "reference": "सः गच्छति।",
+   "answer": "कृष्णः जयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p55",
+   "topic": "correction",
+   "prompt": "अशुद्धं शोधय — अहं गच्छति।",
+   "reference": "अहं गच्छामि।",
+   "answer": "अद्य भवान् आगच्छति? अद्य अस्मि।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p56",
+   "topic": "correction",
+   "prompt": "अशुद्धं शोधय — त्वं गच्छामि।",
+   "reference": "त्वं गच्छसि।",
+   "answer": "अद्य शिष्यः अस्मि।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p57",
+   "topic": "correction",
+   "prompt": "अशुद्धं शोधय — बालिकाः पठति।",
+   "reference": "बालिकाः पठन्ति।",
+   "answer": "गुरुः रक्षन्ति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p58",
+   "topic": "correction",
+   "prompt": "अशुद्धं शोधय — फलं खादति अहम्।",
+   "reference": "अहं फलं खादामि।",
+   "answer": "मतम् मित्रं पृच्छति ?",
+   "stop": "<assistant>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": false,
+   "format_ok": true
+  },
+  {
+   "id": "p59",
+   "topic": "comprehension",
+   "prompt": "रामः प्रातः उत्थाय पठति। रामः कदा पठति?",
+   "reference": "प्रातः पठति।",
+   "answer": "रामः जयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p60",
+   "topic": "comprehension",
+   "prompt": "सीता फलं खादति। सीता किं खादति?",
+   "reference": "फलं खादति।",
+   "answer": "माता पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p61",
+   "topic": "comprehension",
+   "prompt": "बालः जलं पीत्वा गृहं गच्छति। बालः कुत्र गच्छति?",
+   "reference": "गृहं गच्छति।",
+   "answer": "ग्रामः पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p62",
+   "topic": "comprehension",
+   "prompt": "गुरुः शिष्याय पुस्तकं ददाति। गुरुः कस्मै ददाति?",
+   "reference": "शिष्याय ददाति।",
+   "answer": "गुरुः रक्षति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p63",
+   "topic": "comprehension",
+   "prompt": "माता अन्नं पचति। का पचति?",
+   "reference": "माता पचति।",
+   "answer": "अशुद्धं शोधय — शिष्यः त्यजन्ति।",
+   "stop": "<assistant>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": false,
+   "format_ok": true
+  },
+  {
+   "id": "p64",
+   "topic": "comprehension",
+   "prompt": "अश्वः क्षेत्रे धावति। कः धावति?",
+   "reference": "अश्वः धावति।",
+   "answer": "अशुद्धं शोधय — शिष्यः त्यजन्ति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p65",
+   "topic": "comprehension",
+   "prompt": "सः नगरं गच्छति। सः कुत्र गच्छति?",
+   "reference": "नगरं गच्छति।",
+   "answer": "ग्रामः पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p66",
+   "topic": "comprehension",
+   "prompt": "यदि वर्षा भवति तर्हि भूः आर्द्रा भवति। वर्षायां का आर्द्रा भवति?",
+   "reference": "भूः आर्द्रा भवति।",
+   "answer": "माता पचति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p67",
+   "topic": "vocab",
+   "prompt": "हस्ती इति पदस्य अर्थः कः?",
+   "reference": "हस्ती गजः।",
+   "answer": "कविः इति पदस्य अपरः।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p68",
+   "topic": "vocab",
+   "prompt": "सिंहः इति पदस्य पर्यायः कः?",
+   "reference": "सिंहः केसरी।",
+   "answer": "सागरः इति पदस्य पर्यायः सागरः।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p69",
+   "topic": "vocab",
+   "prompt": "मृगः इति पदस्य पर्यायः कः?",
+   "reference": "मृगः हरिणः।",
+   "answer": "जलम् इति पदस्य पर्यायः उदकम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p70",
+   "topic": "vocab",
+   "prompt": "काकः इति पदस्य पर्यायः कः?",
+   "reference": "काकः वायसः।",
+   "answer": "ग्रामः इति पदं बालायाः विभक्तौ द्विवचने च।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "vibhakti",
+     "detail": "claims a case but names no case"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p71",
+   "topic": "vocab",
+   "prompt": "सर्पः इति पदस्य पर्यायः कः?",
+   "reference": "सर्पः अहिः।",
+   "answer": "तत् पदं प्रथमायाम् विभक्तौ बहुवचने च।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p72",
+   "topic": "vocab",
+   "prompt": "पुष्पम् इति पदस्य अपरं नाम किम्?",
+   "reference": "पुष्पं कुसुमम्।",
+   "answer": "अशुद्धं शोधय —",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p73",
+   "topic": "vocab",
+   "prompt": "मेघः इति पदस्य पर्यायः कः?",
+   "reference": "मेघः जलधरः।",
+   "answer": "मणिः।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p74",
+   "topic": "vocab",
+   "prompt": "रात्रिः इति पदस्य विपरीतं किम्?",
+   "reference": "दिनम्।",
+   "answer": "अशुद्धं शोधय —",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p75",
+   "topic": "greeting",
+   "prompt": "नमस्ते! भवान् कथम् अस्ति?",
+   "reference": "अहं कुशली अस्मि। धन्यवादः।",
+   "answer": "नमस्ते।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "echo",
+     "detail": "answer repeats the question"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p76",
+   "topic": "greeting",
+   "prompt": "किं भवान् संस्कृतं वदति?",
+   "reference": "आम्, अहं संस्कृतं वदामि।",
+   "answer": "आम्, अहं पुनः वदामि।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.75,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p77",
+   "topic": "greeting",
+   "prompt": "अहं संस्कृतं पठामि। भवान् अपि पठति किम्?",
+   "reference": "आम्, अहं अपि पठामि।",
+   "answer": "अहं रामः अस्मि।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.4,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p78",
+   "topic": "greeting",
+   "prompt": "मम साहाय्यं करोतु।",
+   "reference": "आम्, करोमि।",
+   "answer": "आम्, शुभं भवतु।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.4,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p79",
+   "topic": "greeting",
+   "prompt": "अद्य भवतः आनन्दः किम्?",
+   "reference": "आम्, मम आनन्दः।",
+   "answer": "मम नाम अर्जुनः अस्ति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p80",
+   "topic": "greeting",
+   "prompt": "शुभरात्रिः!",
+   "reference": "शुभरात्रिः।",
+   "answer": "जनकः जनयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p81",
+   "topic": "question",
+   "prompt": "किं गजः पक्षी?",
+   "reference": "न, गजः पशुः।",
+   "answer": "आयुष्मञ् च अशुद्धं च।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p82",
+   "topic": "question",
+   "prompt": "किं सूर्यः रात्रौ उदेति?",
+   "reference": "न, सूर्यः प्रातः उदेति।",
+   "answer": "आम्, सूर्यः अस्मि।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.4,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p83",
+   "topic": "question",
+   "prompt": "कति नेत्रे मनुष्यस्य?",
+   "reference": "द्वे नेत्रे।",
+   "answer": "लेखकः गणयति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "numeral",
+     "detail": "a कति question was answered without a numeral"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p84",
+   "topic": "question",
+   "prompt": "गौः किं खादति?",
+   "reference": "गौः तृणं खादति।",
+   "answer": "गौः दुग्धं ददाति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.3333,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p85",
+   "topic": "question",
+   "prompt": "कुत्र मीनाः वसन्ति?",
+   "reference": "मीनाः जले वसन्ति।",
+   "answer": "यतः अग्नौ आयुष्मञ् छारद्वतीपुत्र अकरोत्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p86",
+   "topic": "multiturn",
+   "prompt": "नमस्ते <assistant> नमस्ते। किं करोमि? <user> किं भवान् पठति?",
+   "reference": "आम्, अहं पठामि।",
+   "answer": "आम्, अहं अर्जुनम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.6667,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p87",
+   "topic": "multiturn",
+   "prompt": "अहं रामः <assistant> नमस्ते राम <user> किं भवान् जानाति?",
+   "reference": "अहं संस्कृतं जानामि।",
+   "answer": "आम्, अहं अर्जुनम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.3333,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p88",
+   "topic": "multiturn",
+   "prompt": "मम नाम सीता <assistant> नमस्ते सीते <user> अहं किं पठानि?",
+   "reference": "भवान् संस्कृतं पठतु।",
+   "answer": "अद्य अहं वापि अस्मि।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p89",
+   "topic": "abstain",
+   "prompt": "अद्य कः दिनाङ्कः?",
+   "reference": "एतत् न जानामि।",
+   "answer": "अद्य सोमवासरः अस्ति।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p90",
+   "topic": "abstain",
+   "prompt": "श्वः वर्षा भविष्यति किम्?",
+   "reference": "एतत् न जानामि।",
+   "answer": "माया अशुद्धं शाश्वतम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p91",
+   "topic": "abstain",
+   "prompt": "कः श्वः आगमिष्यति?",
+   "reference": "एतत् न जानामि।",
+   "answer": "आम्, अहं अस्मि।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p92",
+   "topic": "relevance",
+   "prompt": "अहं क्षुधितः अस्मि। किं करोमि?",
+   "reference": "भोजनं करोतु।",
+   "answer": "अहं अशुद्धं शिक्षितम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p93",
+   "topic": "relevance",
+   "prompt": "मम शरीरं रुजति। किं करोमि?",
+   "reference": "वैद्यं गच्छतु।",
+   "answer": "अहं जलं पिबन् उवाच।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p94",
+   "topic": "relevance",
+   "prompt": "अहं श्रान्तः अस्मि। किं करोमि?",
+   "reference": "विश्रामं करोतु।",
+   "answer": "अद्य अहं उत्तमः।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p95",
+   "topic": "relevance",
+   "prompt": "मार्गः कुत्र अस्ति? अहं नगरं गन्तुम् इच्छामि।",
+   "reference": "सः मार्गः पुरतः अस्ति।",
+   "answer": "आम्, शुभं पृच्छति — किं भवान् सन् आगच्छति?",
+   "stop": "<assistant>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": false,
+   "format_ok": true
+  },
+  {
+   "id": "p96",
+   "topic": "comprehension",
+   "prompt": "अहं न जानामि किं कर्तव्यम्।",
+   "reference": "चिन्तां मा करोतु, शनैः विचारयतु।",
+   "answer": "आम्, पृच्छामि — भवान् कृपया वदेत् — किं सत्यम्, अशुद्धं शोधय —",
+   "stop": "budget",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": false,
+   "format_ok": false
+  },
+  {
+   "id": "p97",
+   "topic": "samasa",
+   "prompt": "देवदत्तः कः समासः?",
+   "reference": "षष्ठीतत्पुरुषः।",
+   "answer": "अशुद्धं शोधय धनम्।",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": true,
+   "grammar_issues": [],
+   "boundary_ok": true,
+   "format_ok": true
+  },
+  {
+   "id": "p98",
+   "topic": "dhaturupa",
+   "prompt": "इष् धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "इच्छति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p99",
+   "topic": "dhaturupa",
+   "prompt": "वद् धातोः लटि प्रथमपुरुषैकवचनं किम्?",
+   "reference": "वदति।",
+   "answer": "अशुद्धं",
+   "stop": "<eos>",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": true,
+   "format_ok": false
+  },
+  {
+   "id": "p100",
+   "topic": "comprehension",
+   "prompt": "पुत्रः मात्रे जलं ददाति। पुत्रः कस्मै जलं ददाति?",
+   "reference": "मात्रे जलं ददाति।",
+   "answer": "मम परिणामयन् महान् आयुष्मञ् छारद्वतीपुत्र बोधिसत्त्वो महासत्त्वः प्रज्ञापारमितायां",
+   "stop": "budget",
+   "strict_ok": false,
+   "content_f1": 0.0,
+   "grammar_ok": false,
+   "grammar_issues": [
+    {
+     "rule": "termination",
+     "detail": "does not end with punctuation"
+    }
+   ],
+   "boundary_ok": false,
+   "format_ok": false
+  }
+ ]
+}

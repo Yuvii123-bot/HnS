@@ -1,0 +1,100 @@
+{"id": "p01", "topic": "vibhakti", "prompt": "रामः गच्छति — अत्र रामः कस्यां विभक्तौ?", "reference": "प्रथमायां विभक्तौ।"}
+{"id": "p02", "topic": "vibhakti", "prompt": "रामं पश्यति — अत्र रामम् कस्यां विभक्तौ?", "reference": "द्वितीयायां विभक्तौ।"}
+{"id": "p03", "topic": "vibhakti", "prompt": "रामेण सह गच्छति — का विभक्तिः?", "reference": "तृतीयायां विभक्तौ।"}
+{"id": "p04", "topic": "vibhakti", "prompt": "रामाय फलं ददाति — का विभक्तिः?", "reference": "चतुर्थ्यां विभक्तौ।"}
+{"id": "p05", "topic": "vibhakti", "prompt": "रामात् आगच्छति — का विभक्तिः?", "reference": "पञ्चम्यां विभक्तौ।"}
+{"id": "p06", "topic": "vibhakti", "prompt": "रामस्य गृहम् — का विभक्तिः?", "reference": "षष्ठ्यां विभक्तौ।"}
+{"id": "p07", "topic": "vibhakti", "prompt": "रामे वसति — का विभक्तिः?", "reference": "सप्तम्यां विभक्तौ।"}
+{"id": "p08", "topic": "vachana", "prompt": "बालकः पठति — किं वचनम्?", "reference": "एकवचनम्।"}
+{"id": "p09", "topic": "vachana", "prompt": "बालकौ पठतः — किं वचनम्?", "reference": "द्विवचनम्।"}
+{"id": "p10", "topic": "vachana", "prompt": "बालकाः पठन्ति — किं वचनम्?", "reference": "बहुवचनम्।"}
+{"id": "p11", "topic": "purusha", "prompt": "अहं गच्छामि — कः पुरुषः?", "reference": "उत्तमपुरुषः।"}
+{"id": "p12", "topic": "purusha", "prompt": "त्वं गच्छसि — कः पुरुषः?", "reference": "मध्यमपुरुषः।"}
+{"id": "p13", "topic": "purusha", "prompt": "सः गच्छति — कः पुरुषः?", "reference": "प्रथमपुरुषः।"}
+{"id": "p14", "topic": "linga", "prompt": "गजः किंलिङ्गम्?", "reference": "पुल्लिङ्गम्।"}
+{"id": "p15", "topic": "linga", "prompt": "लता किंलिङ्गम्?", "reference": "स्त्रीलिङ्गम्।"}
+{"id": "p16", "topic": "linga", "prompt": "फलं किंलिङ्गम्?", "reference": "नपुंसकलिङ्गम्।"}
+{"id": "p17", "topic": "dhaturupa", "prompt": "पठ् धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "पठति।"}
+{"id": "p18", "topic": "dhaturupa", "prompt": "पठ् धातोः लटि प्रथमपुरुषबहुवचनं किम्?", "reference": "पठन्ति।"}
+{"id": "p19", "topic": "dhaturupa", "prompt": "गम् धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "गच्छति।"}
+{"id": "p20", "topic": "dhaturupa", "prompt": "गम् धातोः लिटि प्रथमपुरुषैकवचनं किम्?", "reference": "जगाम।"}
+{"id": "p21", "topic": "dhaturupa", "prompt": "कृ धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "करोति।"}
+{"id": "p22", "topic": "dhaturupa", "prompt": "अस् धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "अस्ति।"}
+{"id": "p23", "topic": "dhaturupa", "prompt": "भू धातोः लङि प्रथमपुरुषैकवचनं किम्?", "reference": "अभवत्।"}
+{"id": "p24", "topic": "dhaturupa", "prompt": "दा धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "ददाति।"}
+{"id": "p25", "topic": "dhaturupa", "prompt": "पा धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "पिबति।"}
+{"id": "p26", "topic": "dhaturupa", "prompt": "श्रु धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "शृणोति।"}
+{"id": "p27", "topic": "dhaturupa", "prompt": "लिख् धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "लिखति।"}
+{"id": "p28", "topic": "shabdarupa", "prompt": "राम शब्दस्य तृतीयैकवचनं किम्?", "reference": "रामेण।"}
+{"id": "p29", "topic": "shabdarupa", "prompt": "राम शब्दस्य षष्ठीबहुवचनं किम्?", "reference": "रामाणाम्।"}
+{"id": "p30", "topic": "shabdarupa", "prompt": "गुरु शब्दस्य प्रथमाबहुवचनं किम्?", "reference": "गुरवः।"}
+{"id": "p31", "topic": "shabdarupa", "prompt": "फल शब्दस्य द्वितीयैकवचनं किम्?", "reference": "फलम्।"}
+{"id": "p32", "topic": "shabdarupa", "prompt": "लता शब्दस्य तृतीयैकवचनं किम्?", "reference": "लतया।"}
+{"id": "p33", "topic": "lakara", "prompt": "लट् लकारः कस्य कालस्य?", "reference": "वर्तमानकालस्य।"}
+{"id": "p34", "topic": "lakara", "prompt": "लङ् लकारः कस्य कालस्य?", "reference": "भूतकालस्य।"}
+{"id": "p35", "topic": "lakara", "prompt": "लृट् लकारः कस्य कालस्य?", "reference": "भविष्यत्कालस्य।"}
+{"id": "p36", "topic": "lakara", "prompt": "लोट् लकारः किम् अर्थं द्योतयति?", "reference": "आज्ञार्थम्।"}
+{"id": "p37", "topic": "lakara", "prompt": "लिङ् लकारः किम् अर्थं द्योतयति?", "reference": "विध्यर्थम्।"}
+{"id": "p38", "topic": "sandhi", "prompt": "सूर्य + उदय = ?", "reference": "सूर्योदयः।"}
+{"id": "p39", "topic": "sandhi", "prompt": "देव + आलय = ?", "reference": "देवालयः।"}
+{"id": "p40", "topic": "sandhi", "prompt": "हिम + अलय = ?", "reference": "हिमालयः।"}
+{"id": "p41", "topic": "sandhi", "prompt": "नर + इन्द्र = ?", "reference": "नरेन्द्रः।"}
+{"id": "p42", "topic": "sandhi", "prompt": "महा + ईश = ?", "reference": "महेशः।"}
+{"id": "p43", "topic": "sandhi", "prompt": "पर + उपकार = ?", "reference": "परोपकारः।"}
+{"id": "p44", "topic": "sandhi", "prompt": "सत् + जन = ?", "reference": "सज्जनः।"}
+{"id": "p45", "topic": "sandhi", "prompt": "रामः + गच्छति = ?", "reference": "रामो गच्छति।"}
+{"id": "p46", "topic": "sandhi", "prompt": "तत् + लिखति = ?", "reference": "तल्लिखति।"}
+{"id": "p47", "topic": "sandhi", "prompt": "जगत् + नाथ = ?", "reference": "जगन्नाथः।"}
+{"id": "p48", "topic": "samasa", "prompt": "राजपुत्रः कः समासः?", "reference": "षष्ठीतत्पुरुषः।"}
+{"id": "p49", "topic": "samasa", "prompt": "नीलकमलम् कः समासः?", "reference": "कर्मधारयः।"}
+{"id": "p50", "topic": "samasa", "prompt": "चतुर्भुजः कः समासः?", "reference": "बहुव्रीहिः।"}
+{"id": "p51", "topic": "samasa", "prompt": "रामलक्ष्मणौ कः समासः?", "reference": "द्वन्द्वः।"}
+{"id": "p52", "topic": "samasa", "prompt": "यथाशक्ति कः समासः?", "reference": "अव्ययीभावः।"}
+{"id": "p53", "topic": "correction", "prompt": "अशुद्धं शोधय — बालकः गच्छन्ति।", "reference": "बालकाः गच्छन्ति।"}
+{"id": "p54", "topic": "correction", "prompt": "अशुद्धं शोधय — सः गच्छन्ति।", "reference": "सः गच्छति।"}
+{"id": "p55", "topic": "correction", "prompt": "अशुद्धं शोधय — अहं गच्छति।", "reference": "अहं गच्छामि।"}
+{"id": "p56", "topic": "correction", "prompt": "अशुद्धं शोधय — त्वं गच्छामि।", "reference": "त्वं गच्छसि।"}
+{"id": "p57", "topic": "correction", "prompt": "अशुद्धं शोधय — बालिकाः पठति।", "reference": "बालिकाः पठन्ति।"}
+{"id": "p58", "topic": "correction", "prompt": "अशुद्धं शोधय — फलं खादति अहम्।", "reference": "अहं फलं खादामि।"}
+{"id": "p59", "topic": "comprehension", "prompt": "रामः प्रातः उत्थाय पठति। रामः कदा पठति?", "reference": "प्रातः पठति।"}
+{"id": "p60", "topic": "comprehension", "prompt": "सीता फलं खादति। सीता किं खादति?", "reference": "फलं खादति।"}
+{"id": "p61", "topic": "comprehension", "prompt": "बालः जलं पीत्वा गृहं गच्छति। बालः कुत्र गच्छति?", "reference": "गृहं गच्छति।"}
+{"id": "p62", "topic": "comprehension", "prompt": "गुरुः शिष्याय पुस्तकं ददाति। गुरुः कस्मै ददाति?", "reference": "शिष्याय ददाति।"}
+{"id": "p63", "topic": "comprehension", "prompt": "माता अन्नं पचति। का पचति?", "reference": "माता पचति।"}
+{"id": "p64", "topic": "comprehension", "prompt": "अश्वः क्षेत्रे धावति। कः धावति?", "reference": "अश्वः धावति।"}
+{"id": "p65", "topic": "comprehension", "prompt": "सः नगरं गच्छति। सः कुत्र गच्छति?", "reference": "नगरं गच्छति।"}
+{"id": "p66", "topic": "comprehension", "prompt": "यदि वर्षा भवति तर्हि भूः आर्द्रा भवति। वर्षायां का आर्द्रा भवति?", "reference": "भूः आर्द्रा भवति।"}
+{"id": "p67", "topic": "vocab", "prompt": "हस्ती इति पदस्य अर्थः कः?", "reference": "हस्ती गजः।"}
+{"id": "p68", "topic": "vocab", "prompt": "सिंहः इति पदस्य पर्यायः कः?", "reference": "सिंहः केसरी।"}
+{"id": "p69", "topic": "vocab", "prompt": "मृगः इति पदस्य पर्यायः कः?", "reference": "मृगः हरिणः।"}
+{"id": "p70", "topic": "vocab", "prompt": "काकः इति पदस्य पर्यायः कः?", "reference": "काकः वायसः।"}
+{"id": "p71", "topic": "vocab", "prompt": "सर्पः इति पदस्य पर्यायः कः?", "reference": "सर्पः अहिः।"}
+{"id": "p72", "topic": "vocab", "prompt": "पुष्पम् इति पदस्य अपरं नाम किम्?", "reference": "पुष्पं कुसुमम्।"}
+{"id": "p73", "topic": "vocab", "prompt": "मेघः इति पदस्य पर्यायः कः?", "reference": "मेघः जलधरः।"}
+{"id": "p74", "topic": "vocab", "prompt": "रात्रिः इति पदस्य विपरीतं किम्?", "reference": "दिनम्।"}
+{"id": "p75", "topic": "greeting", "prompt": "नमस्ते! भवान् कथम् अस्ति?", "reference": "अहं कुशली अस्मि। धन्यवादः।"}
+{"id": "p76", "topic": "greeting", "prompt": "किं भवान् संस्कृतं वदति?", "reference": "आम्, अहं संस्कृतं वदामि।"}
+{"id": "p77", "topic": "greeting", "prompt": "अहं संस्कृतं पठामि। भवान् अपि पठति किम्?", "reference": "आम्, अहं अपि पठामि।"}
+{"id": "p78", "topic": "greeting", "prompt": "मम साहाय्यं करोतु।", "reference": "आम्, करोमि।"}
+{"id": "p79", "topic": "greeting", "prompt": "अद्य भवतः आनन्दः किम्?", "reference": "आम्, मम आनन्दः।"}
+{"id": "p80", "topic": "greeting", "prompt": "शुभरात्रिः!", "reference": "शुभरात्रिः।"}
+{"id": "p81", "topic": "question", "prompt": "किं गजः पक्षी?", "reference": "न, गजः पशुः।"}
+{"id": "p82", "topic": "question", "prompt": "किं सूर्यः रात्रौ उदेति?", "reference": "न, सूर्यः प्रातः उदेति।"}
+{"id": "p83", "topic": "question", "prompt": "कति नेत्रे मनुष्यस्य?", "reference": "द्वे नेत्रे।"}
+{"id": "p84", "topic": "question", "prompt": "गौः किं खादति?", "reference": "गौः तृणं खादति।"}
+{"id": "p85", "topic": "question", "prompt": "कुत्र मीनाः वसन्ति?", "reference": "मीनाः जले वसन्ति।"}
+{"id": "p86", "topic": "multiturn", "prompt": "नमस्ते <assistant> नमस्ते। किं करोमि? <user> किं भवान् पठति?", "reference": "आम्, अहं पठामि।"}
+{"id": "p87", "topic": "multiturn", "prompt": "अहं रामः <assistant> नमस्ते राम <user> किं भवान् जानाति?", "reference": "अहं संस्कृतं जानामि।"}
+{"id": "p88", "topic": "multiturn", "prompt": "मम नाम सीता <assistant> नमस्ते सीते <user> अहं किं पठानि?", "reference": "भवान् संस्कृतं पठतु।"}
+{"id": "p89", "topic": "abstain", "prompt": "अद्य कः दिनाङ्कः?", "reference": "एतत् न जानामि।"}
+{"id": "p90", "topic": "abstain", "prompt": "श्वः वर्षा भविष्यति किम्?", "reference": "एतत् न जानामि।"}
+{"id": "p91", "topic": "abstain", "prompt": "कः श्वः आगमिष्यति?", "reference": "एतत् न जानामि।"}
+{"id": "p92", "topic": "relevance", "prompt": "अहं क्षुधितः अस्मि। किं करोमि?", "reference": "भोजनं करोतु।"}
+{"id": "p93", "topic": "relevance", "prompt": "मम शरीरं रुजति। किं करोमि?", "reference": "वैद्यं गच्छतु।"}
+{"id": "p94", "topic": "relevance", "prompt": "अहं श्रान्तः अस्मि। किं करोमि?", "reference": "विश्रामं करोतु।"}
+{"id": "p95", "topic": "relevance", "prompt": "मार्गः कुत्र अस्ति? अहं नगरं गन्तुम् इच्छामि।", "reference": "सः मार्गः पुरतः अस्ति।"}
+{"id": "p96", "topic": "comprehension", "prompt": "अहं न जानामि किं कर्तव्यम्।", "reference": "चिन्तां मा करोतु, शनैः विचारयतु।"}
+{"id": "p97", "topic": "samasa", "prompt": "देवदत्तः कः समासः?", "reference": "षष्ठीतत्पुरुषः।"}
+{"id": "p98", "topic": "dhaturupa", "prompt": "इष् धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "इच्छति।"}
+{"id": "p99", "topic": "dhaturupa", "prompt": "वद् धातोः लटि प्रथमपुरुषैकवचनं किम्?", "reference": "वदति।"}
+{"id": "p100", "topic": "comprehension", "prompt": "पुत्रः मात्रे जलं ददाति। पुत्रः कस्मै जलं ददाति?", "reference": "मात्रे जलं ददाति।"}
