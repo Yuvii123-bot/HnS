@@ -1,9 +1,8 @@
-[project]
-name = "sanskrit-llm"
-version = "0.1.0"
-description = "An akṣara-native Sanskrit language model and chat interface"
-requires-python = ">=3.10"
-dependencies = ["torch>=2.0", "numpy>=1.24", "fastapi>=0.110", "uvicorn[standard]>=0.27"]
+# Deliberately NO [project].dependencies here.
+# Vercel's Python builder installs dependencies declared in pyproject.toml, and
+# torch (a local training dependency) would blow the 500 MB function limit.
+# Runtime dependencies for deployment live in requirements.txt (numpy only);
+# local training dependencies live in requirements-dev.txt.
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
