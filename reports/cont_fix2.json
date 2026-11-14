@@ -1,0 +1,33 @@
+{
+  "label": "fix2",
+  "checkpoint": "artifacts/fix2/best.pt",
+  "verse_val_loss": 3.6587,
+  "verse_perplexity": 38.81,
+  "mean_continuation_chars": 20.8,
+  "samples": [
+    {
+      "prompt": "धर्मक्षेत्रे कुरुक्षेत्रे",
+      "continuation": "फलम् ।"
+    },
+    {
+      "prompt": "अथ राजा",
+      "continuation": "इत्यस्य पर्यायः नृपः ।"
+    },
+    {
+      "prompt": "यदा सूर्यः उदेति",
+      "continuation": "तर्हि किम् भवति? <assistant> यदि सूर्यः उदेति तर्हि दिनं भवति।"
+    },
+    {
+      "prompt": "ततः कृत्स्नम्",
+      "continuation": "? <assistant> न, इन्द्रः विभक्तौ।"
+    },
+    {
+      "prompt": "सत्यमेव जयते",
+      "continuation": "।"
+    },
+    {
+      "prompt": "कर्मण्येवाधिकारः",
+      "continuation": "।"
+    }
+  ]
+}

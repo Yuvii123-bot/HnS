@@ -1,0 +1,11 @@
+{
+  "source_rows": 13861,
+  "dropped_malformed_confirmation": 355,
+  "added_advice": 47,
+  "added_meta_fallback": 30,
+  "added_indirect": 10,
+  "added_framed_copies": 40,
+  "added_total": 127,
+  "train_rows": 13633,
+  "eval_leakage": []
+}

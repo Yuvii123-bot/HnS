@@ -1,0 +1,11 @@
+{
+  "source_rows": 13861,
+  "dropped_malformed_confirmation": 355,
+  "hand_pairs": 87,
+  "synth_pairs": 400,
+  "hand_rows_after_repeat": 696,
+  "synth_rows_after_repeat": 2400,
+  "train_rows": 16602,
+  "added_share_of_chars": 0.1808,
+  "eval_leakage": []
+}
