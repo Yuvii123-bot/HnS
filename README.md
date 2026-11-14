@@ -245,6 +245,10 @@ harness did not measure.
 
 ## Deploying to Vercel
 
+`.vercelignore` keeps the function bundle small — Vercel rejected deploys at
+676 MB while checkpoints were committed. Only `api/` and `serve/` ship; the
+corpus, reports and training checkpoints stay in the repository history.
+
 PyTorch cannot ship to a Vercel function (the wheel is several times the 250 MB
 bundle limit), so the deployment does not use it. Instead:
 
