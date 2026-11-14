@@ -1,0 +1,54 @@
+{
+  "config": {
+    "vocab_size": 4000,
+    "d_model": 256,
+    "n_layers": 6,
+    "n_heads": 8,
+    "d_ff": 688,
+    "max_seq_len": 512,
+    "dropout": 0.0,
+    "n_features": 10,
+    "tie_embeddings": true
+  },
+  "params": 6797056,
+  "train_summary": {
+    "pretrain": {
+      "steps": 1900,
+      "batch_size": 16,
+      "block_size": 256,
+      "tokens_seen": 7782400,
+      "best_val_loss": 3.077,
+      "val_perplexity": 21.7,
+      "minutes": 41.7,
+      "params": 5773056,
+      "corpus": "data/clean/train.txt (122,642 lines, 6.0M Devanagari chars)"
+    },
+    "chat_adaptation": {
+      "steps": 300,
+      "tokens_seen": 1228800,
+      "best_val_loss": 2.7871,
+      "minutes": 5.73,
+      "data": "60,079 <user>/<assistant> pairs"
+    },
+    "total_tokens_seen": 9011200,
+    "total_steps": 2200
+  },
+  "corpus": {
+    "train_lines": 122642,
+    "val_lines": 1238,
+    "devanagari_chars": 6000048,
+    "unique_lines": 123880,
+    "sources": {
+      "gretil/3_purana": 43612,
+      "gretil/2_epic": 40357,
+      "gretil/5_poetry": 23578,
+      "gretil/6_sastra": 8019,
+      "gretil/4_rellit": 4846,
+      "dcs": 1666,
+      "gretil/7_later": 1054,
+      "gretil/1_veda": 748
+    },
+    "skipped_files": 4,
+    "files_seen": 974
+  }
+}

@@ -36,7 +36,7 @@ from sanskrit_llm.inference import GenParams, SanskritEngine
 from sanskrit_llm.transliterate import normalize_devanagari
 
 ROOT = Path(__file__).resolve().parents[1]
-WEB = ROOT / "web"
+WEB = ROOT / "public"
 ARTIFACTS = Path(os.environ.get("ARTIFACTS_DIR", ROOT / "artifacts"))
 
 app = FastAPI(title="Saṃskṛta-LLM", version="0.1.0")
@@ -131,8 +131,8 @@ def chat(req: ChatRequest) -> StreamingResponse:
 # Static UI
 # --------------------------------------------------------------------------
 
-if WEB.exists():
-    app.mount("/static", StaticFiles(directory=str(WEB)), name="static")
+if (WEB / "static").exists():
+    app.mount("/static", StaticFiles(directory=str(WEB / "static")), name="static")
 
 
 @app.get("/")
@@ -145,7 +145,7 @@ def index():
 
 @app.get("/favicon.ico")
 def favicon():
-    icon = WEB / "favicon.svg"
+    icon = WEB / "static" / "favicon.svg"
     if icon.exists():
         return FileResponse(icon, media_type="image/svg+xml")
     return JSONResponse({}, status_code=404)

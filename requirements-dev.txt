@@ -1,0 +1,5 @@
+# Local training + the local FastAPI dev server
+-r requirements.txt
+torch>=2.0
+fastapi>=0.110
+uvicorn[standard]>=0.27

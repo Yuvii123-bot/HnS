@@ -33,7 +33,9 @@ e-texts, and the UI renders everything back as Sanskrit.
 | `sanskrit_llm/model.py` | 5.8M-parameter decoder-only transformer: RoPE, RMSNorm, SwiGLU, tied embeddings, KV-cache streaming |
 | `sanskrit_llm/trainer.py` | CPU-friendly training loop (AdamW, cosine schedule, eval, checkpoints) |
 | `api/main.py` | FastAPI backend: streaming chat, tokenizer inspector, transliteration |
-| `web/` | chat interface, entirely in Devanagari, with a live akṣara-token visualiser (no build step) |
+| `public/` | chat interface, entirely in Devanagari, with a live akṣara-token visualiser (no build step) |
+| `serve/` | deployment bundle: NumPy weights + tokenizer + staged torch-free runtime |
+| `api/index.py` | Vercel serverless entrypoint (NumPy inference, no PyTorch) |
 | `scripts/` | corpus build → tokenizer → data prep → training → sampling |
 
 ### Why the tokenizer is the interesting part
@@ -84,7 +86,8 @@ Everything above is reproducible from this repo on a laptop CPU.
 ## Quickstart
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-dev.txt    # torch, fastapi (local training + dev server)
+# requirements.txt holds only numpy — the deployed function's runtime
 
 # 1. corpus  (clones GRETIL + DCS, transliterates to Devanagari)
 git clone --depth 1 https://github.com/tokushige-koyasan/gretil-corpus data/raw/gretil
@@ -128,7 +131,7 @@ python scripts/sample.py "धर्मक्षेत्रे कुरुक�
 | `GET /api/health` | liveness + readiness |
 | `POST /api/chat` | streaming generation → newline-delimited JSON events |
 | `POST /api/tokenize` | akṣara/token breakdown with features |
-| `POST /api/reload` | pick up a new checkpoint without restarting |
+| `POST /api/reload` | pick up a new checkpoint without restarting (local dev) |
 
 ```bash
 curl -s localhost:8000/api/tokenize \
@@ -183,3 +186,24 @@ mirror, and the **Digital Corpus of Sanskrit** (Oliver Hellwig) via
 `cltk/sanskrit_text_dcs`. Both are scholarly resources with their own terms —
 check them before redistributing the derived corpus. Code in this repo is
 written for this project.
+
+---
+
+## Deploying to Vercel
+
+PyTorch cannot ship to a Vercel function (the wheel is several times the 250 MB
+bundle limit), so the deployment does not use it. Instead:
+
+```bash
+python scripts/export_numpy.py   # artifacts/model.pt -> serve/model.npz (+ tokenizer, meta)
+vercel deploy --prod             # or deploy from the Vercel dashboard
+```
+
+`serve/` contains the weights, vocabulary and a staged copy of the torch-free
+runtime; `api/index.py` implements the same endpoints with NumPy (`RMSNorm`,
+RoPE, SwiGLU, causal attention and a KV cache reimplemented in ~150 lines).
+`tests/test_serverless.py` runs the real handler with **torch and fastapi
+blocked from importing**, and checks that logits match the PyTorch model to
+1.5e-5 — so the deployed model is the trained model, not an approximation.
+
+Live: see the deployment URL in the Vercel dashboard for this project.

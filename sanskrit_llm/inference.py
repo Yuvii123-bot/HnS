@@ -242,6 +242,9 @@ class SanskritEngine:
                 # other structural specials are not text
                 if piece.startswith("<") and piece.endswith(">"):
                     break
+                # Sanskrit only: never emit Latin characters
+                if any(("a" <= ch.lower() <= "z") for ch in piece):
+                    break
 
                 text_so_far += piece
                 yield {

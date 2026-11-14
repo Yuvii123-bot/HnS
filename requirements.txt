@@ -1,7 +1,3 @@
-# core
-torch>=2.0          # CPU build is fine (pip install torch)
+# Runtime dependency of the deployed serverless function (api/index.py).
+# Deliberately tiny: inference on Vercel runs on NumPy, not PyTorch.
 numpy>=1.24
-
-# api / ui
-fastapi>=0.110
-uvicorn[standard]>=0.27
