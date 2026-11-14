@@ -28,6 +28,7 @@ import sys
 import time
 from http.server import BaseHTTPRequestHandler
 from pathlib import Path
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 # On Vercel the torch-free runtime ships inside serve/runtime; locally we fall
@@ -214,6 +215,27 @@ def do_info() -> dict:
 # HTTP handler
 # ----------------------------------------------------------------------
 
+def do_selftest() -> dict:
+    """Run one short fixed generation so a live deployment can be verified.
+
+    Deterministic (temperature 0) and tiny, so it is cheap enough to leave in
+    production as a monitoring probe.
+    """
+    rt = runtime()
+    if rt is None:
+        return {"ok": False, "error": _LOAD_ERROR}
+    started = time.time()
+    events = do_chat({"message": "धर्मः कः", "max_new_tokens": 12, "temperature": 0.0})
+    done = events[-1]
+    return {
+        "ok": done.get("event") == "done",
+        "output": done.get("text", ""),
+        "tokens": done.get("n_tokens"),
+        "params": rt.info().get("model", {}).get("params"),
+        "seconds": round(time.time() - started, 3),
+    }
+
+
 class handler(BaseHTTPRequestHandler):
     protocol_version = "HTTP/1.1"
 
@@ -245,23 +267,43 @@ class handler(BaseHTTPRequestHandler):
             return {}
 
     # ------------------------------------------------------------------
+    def _resolve_path(self) -> str:
+        """Logical route for this request.
+
+        vercel.json rewrites /api/<route> to /api/index?route=<route>, so on
+        Vercel the original path arrives as a query parameter; locally the
+        request path is already correct.
+        """
+        raw = self.path or "/"
+        path, _, query = raw.partition("?")
+        path = path.rstrip("/") or "/"
+        for pair in query.split("&"):
+            key, _, value = pair.partition("=")
+            if key == "route":
+                route = unquote(value).strip("/")
+                return f"/api/{route}" if route else "/api"
+        return path
+
+    # ------------------------------------------------------------------
     def do_OPTIONS(self) -> None:  # noqa: N802
         self._send(204, b"", "text/plain")
 
     def do_GET(self) -> None:  # noqa: N802
-        path = self.path.split("?")[0].rstrip("/")
+        path = self._resolve_path()
         if path in ("/api/health", "/api"):
             self._json({"ok": True, "model_ready": runtime() is not None,
                         "runtime": "numpy"})
         elif path == "/api/info":
             self._json(do_info())
+        elif path == "/api/selftest":
+            self._json(do_selftest())
         elif path in ("", "/"):
             self._json({"service": "संस्कृतम्", "see": "/"}, 200)
         else:
-            self._json({"error": "not found"}, 404)
+            self._json({"error": "not found", "path": path}, 404)
 
     def do_POST(self) -> None:  # noqa: N802
-        path = self.path.split("?")[0].rstrip("/")
+        path = self._resolve_path()
         payload = self._body()
         if path == "/api/chat":
             self._ndjson(do_chat(payload))
@@ -270,7 +312,7 @@ class handler(BaseHTTPRequestHandler):
         elif path == "/api/reload":
             self._json({"reloaded": True, "model_ready": runtime() is not None})
         else:
-            self._json({"error": "not found"}, 404)
+            self._json({"error": "not found", "path": path}, 404)
 
     def log_message(self, fmt: str, *args) -> None:  # quieter logs
         sys.stderr.write("%s - %s\n" % (self.address_string(), fmt % args))

@@ -115,11 +115,26 @@ def main() -> int:
         # output must be Devanagari, never Latin
         assert not any("a" <= ch.lower() <= "z" for ch in text), text
 
+    def selftest():
+        status, body = get("/api/index?route=selftest")
+        assert body["ok"] is True, body
+        assert body["output"].strip(), body
+        assert not any("a" <= ch.lower() <= "z" for ch in body["output"]), body
+
+    def vercel_rewrite():
+        # vercel.json forwards /api/<route> to /api/index?route=<route>
+        status, body = get("/api/index?route=health")
+        assert status == 200 and body["ok"] is True, body
+        status, body = post("/api/index?route=tokenize", {"text": "कविः कः"})
+        assert body["n_aksharas"] >= 2, body
+
     check("health", health)
     check("info", info)
     check("tokenize (akṣara split)", tokenize)
     check("latin input refused", latin_refused)
     check("chat answers in Sanskrit", chat_streams_sanskrit)
+    check("vercel rewrite resolves routes", vercel_rewrite)
+    check("selftest generation runs", selftest)
 
     server.shutdown()
     print("\nall serverless checks passed" if not failures else f"\n{failures} failed")
