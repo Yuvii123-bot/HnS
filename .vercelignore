@@ -1,0 +1,22 @@
+# Keep the Lambda bundle small: Vercel priced the whole checkout before this
+# file existed and rejected the deploy at 676 MB (limit 500 MB). The function
+# only needs api/ and serve/, so the training corpus and checkpoints stay home.
+
+artifacts/
+data/
+reports/
+tests/
+scripts/
+docs/
+benchmarks/
+
+*.pt
+*.pth
+*.npz.bak
+*.bin
+
+.git/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

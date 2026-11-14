@@ -28,3 +28,14 @@ artifacts/chatft/
 .DS_Store
 .idea/
 .vscode/
+
+# training checkpoints are reproducible from scripts + data; keep them out of git
+artifacts/*/latest.pt
+artifacts/*/model.pt
+artifacts/*/best.pt
+artifacts/instruct/
+artifacts/instruct_mix/
+artifacts/instruct_v2/
+artifacts/instruct_v3/
+artifacts/instruct_v4/
+artifacts/model_chat_v1.pt
