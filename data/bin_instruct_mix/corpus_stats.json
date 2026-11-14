@@ -1,0 +1,12 @@
+{
+  "train": {
+    "tokens": 145441,
+    "lines": 4501,
+    "bytes": 290882
+  },
+  "val": {
+    "tokens": 4045,
+    "lines": 122,
+    "bytes": 8090
+  }
+}

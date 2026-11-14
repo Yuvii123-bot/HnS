@@ -1,0 +1,34 @@
+{
+  "instruction_pairs_authored": 1881,
+  "instruction_pairs_after_balancing": 3376,
+  "category_weights": {
+    "greeting": 6,
+    "numbers": 6,
+    "grammar": 2,
+    "reasoning": 3,
+    "conversation": 2,
+    "dharma": 2,
+    "world": 2,
+    "glossary": 1,
+    "dialogue": 1
+  },
+  "authored_counts": {
+    "glossary": 652,
+    "grammar": 352,
+    "dharma": 222,
+    "world": 185,
+    "conversation": 175,
+    "dialogue": 130,
+    "reasoning": 88,
+    "numbers": 42,
+    "greeting": 35
+  },
+  "verse_lines_replayed": 1125,
+  "tokens": {
+    "instruction": 115285,
+    "verse_replay": 25655,
+    "total": 140940
+  },
+  "verse_share_of_training_tokens": 0.182,
+  "mean_pair_tokens": 34.1
+}

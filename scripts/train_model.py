@@ -31,6 +31,8 @@ def main() -> None:
     ap.add_argument("--resume", type=Path, default=None)
     ap.add_argument("--reset-steps", action="store_true",
                     help="restart the step counter (for a fine-tuning phase)")
+    ap.add_argument("--eval-every", type=int, default=250)
+    ap.add_argument("--ckpt-every", type=int, default=500)
     ap.add_argument("--seed", type=int, default=1337)
     args = ap.parse_args()
 
@@ -51,7 +53,8 @@ def main() -> None:
     summary = train(model, train_ds, val_ds, tok, steps=args.steps,
                     batch_size=args.batch, lr=args.lr, warmup=args.warmup,
                     out_dir=args.out, resume=args.resume,
-                    reset_steps=args.reset_steps, threads=args.threads)
+                    reset_steps=args.reset_steps, threads=args.threads,
+                    eval_every=args.eval_every, ckpt_every=args.ckpt_every)
     print(summary)
 
 if __name__ == "__main__":

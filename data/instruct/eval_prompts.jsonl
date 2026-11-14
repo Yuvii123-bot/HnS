@@ -1,0 +1,38 @@
+{"category": "greeting", "prompt": "नमस्ते। भवान् कथम् अस्ति?", "expected": ["उत्तम", "कुशल", "धन्यवाद"]}
+{"category": "greeting", "prompt": "सुप्रभातम्। अद्य भवतः दिवसः कथम् अस्ति?", "expected": ["उत्तम", "दिवस"]}
+{"category": "greeting", "prompt": "धन्यवादः।", "expected": ["स्वागत", "शुभ", "नमस्ते"]}
+{"category": "greeting", "prompt": "क्षम्यताम्।", "expected": ["न दोष", "चिन्ता", "क्षमा"]}
+{"category": "conversation", "prompt": "भवतः नाम किम्?", "expected": ["नाम", "अस्मि", "अस्ति"]}
+{"category": "conversation", "prompt": "भवान् कुत्र वसति?", "expected": ["वसामि", "अस्ति", "गृहम्"]}
+{"category": "conversation", "prompt": "भवान् किं कार्यं करोति?", "expected": ["अस्मि", "करोमि", "कार्य"]}
+{"category": "conversation", "prompt": "अद्य कः वासरः?", "expected": ["वासर", "अद्य"]}
+{"category": "dharma", "prompt": "धर्मः कः?", "expected": ["सत्य", "धर्म", "रक्ष"]}
+{"category": "dharma", "prompt": "कर्म किम्?", "expected": ["कर्म", "फल", "कार्य"]}
+{"category": "dharma", "prompt": "मोक्षः कः?", "expected": ["मुक्ति", "मोक्ष", "जन्म"]}
+{"category": "dharma", "prompt": "गुरुः कः?", "expected": ["ज्ञान", "गुरु", "शिष्य"]}
+{"category": "dharma", "prompt": "आत्मा कः?", "expected": ["आत्म", "चेतन", "देह"]}
+{"category": "dharma", "prompt": "भगवद्गीता का?", "expected": ["गीता", "कृष्ण", "अर्जुन"]}
+{"category": "dharma", "prompt": "वेदाः के?", "expected": ["वेद", "ऋग्", "साम"]}
+{"category": "dharma", "prompt": "ॐ किम्?", "expected": ["ॐ", "प्रणव", "ब्रह्म"]}
+{"category": "grammar", "prompt": "रामेण इति पदं कस्यां विभक्तौ?", "expected": ["तृतीया"]}
+{"category": "grammar", "prompt": "रामाय इति पदं कस्यां विभक्तौ?", "expected": ["चतुर्थी"]}
+{"category": "grammar", "prompt": "रामस्य इति पदं कस्यां विभक्तौ?", "expected": ["षष्ठी"]}
+{"category": "grammar", "prompt": "सीतायाम् इति पदं कस्यां विभक्तौ?", "expected": ["सप्तमी"]}
+{"category": "grammar", "prompt": "फलम् इति पदं किम् लिङ्गम्?", "expected": ["नपुंसक"]}
+{"category": "grammar", "prompt": "रामः इति पदं किम् वचनम्?", "expected": ["एकवचन"]}
+{"category": "grammar", "prompt": "देव आलयः इति संधिः कः?", "expected": ["देवालय"]}
+{"category": "grammar", "prompt": "सत् जनः इति संधिः कः?", "expected": ["सज्जन"]}
+{"category": "glossary", "prompt": "जलम् इत्यस्य पर्यायः कः?", "expected": ["उदक", "वारि", "जल"]}
+{"category": "glossary", "prompt": "सूर्यः इत्यस्य पर्यायः कः?", "expected": ["रवि", "भानु", "दिनकर", "सूर्य"]}
+{"category": "glossary", "prompt": "वृक्षः इत्यस्य पर्यायः कः?", "expected": ["तरु", "पादप", "वृक्ष"]}
+{"category": "glossary", "prompt": "पुस्तकम् किम्?", "expected": ["लिख", "पुस्तक", "अक्षर"]}
+{"category": "reasoning", "prompt": "यदि वर्षति तर्हि किम् भवति?", "expected": ["आर्द्र", "भूमि", "वर्ष"]}
+{"category": "reasoning", "prompt": "यदि सूर्यः उदेति तर्हि किम् भवति?", "expected": ["दिन", "प्रकाश", "सूर्य"]}
+{"category": "reasoning", "prompt": "कुतः रात्रौ अन्धकारः भवति?", "expected": ["सूर्य", "रात्रि", "यतः"]}
+{"category": "reasoning", "prompt": "भवान् श्रान्तः चेत् किं करोति?", "expected": ["विश्राम", "श्रान्त"]}
+{"category": "numbers", "prompt": "एकं द्वे च मिलित्वा कति भवन्ति?", "expected": ["त्रीणि", "त्रि"]}
+{"category": "numbers", "prompt": "सङ्ख्या ५ संस्कृतेन का?", "expected": ["पञ्च"]}
+{"category": "world", "prompt": "सूर्यः कुतः उदेति?", "expected": ["पूर्व"]}
+{"category": "world", "prompt": "कमलं कुत्र भवति?", "expected": ["जल"]}
+{"category": "world", "prompt": "गौः किम् ददाति?", "expected": ["दुग्ध", "गौ"]}
+{"category": "world", "prompt": "पक्षिणः कुत्र वसन्ति?", "expected": ["वृक्ष", "पक्षी"]}
