@@ -1,0 +1,33 @@
+{
+  "label": "p2_final",
+  "checkpoint": "artifacts/instruct_p2/model.pt",
+  "verse_val_loss": 4.0599,
+  "verse_perplexity": 57.97,
+  "mean_continuation_chars": 21.0,
+  "samples": [
+    {
+      "prompt": "धर्मक्षेत्रे कुरुक्षेत्रे",
+      "continuation": "ऽनन्तभुव ।"
+    },
+    {
+      "prompt": "अथ राजा",
+      "continuation": "विहगः सुप्तम् इत्यस्य सत्वतः ।"
+    },
+    {
+      "prompt": "यदा सूर्यः उदेति",
+      "continuation": "— यदि सूर्यः उदेति तर्हि किम् भवति? <assistant> यदि सूर्यः उदेति तर्हि"
+    },
+    {
+      "prompt": "ततः कृत्स्नम्",
+      "continuation": "उत्तिष्ठति इति"
+    },
+    {
+      "prompt": "सत्यमेव जयते",
+      "continuation": "।"
+    },
+    {
+      "prompt": "कर्मण्येवाधिकारः",
+      "continuation": "।"
+    }
+  ]
+}

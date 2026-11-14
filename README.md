@@ -243,6 +243,72 @@ harness did not measure.
 
 ---
 
+## Phase 2 — semantic accuracy and grammar
+
+Phase 1 taught the model the *shape* of an answer. Phase 2 attacks the content:
+a larger curated dataset, grammar pairs computed from a real declension engine,
+multi-turn dialogues, and a benchmark that scores meaning, grammar and
+instruction-following instead of keyword hits.
+
+```bash
+python3 scripts/build_instruct_v2.py      # -> data/instruct_v2 (13,104 pairs + 1,012 eval questions)
+python3 scripts/mix_instruct_v2.py        # balance categories + 22% verse replay
+python3 scripts/prepare_data.py --data data/instruct_mix2 --out data/bin_instruct_v2
+python3 scripts/train_model.py --bin-dir data/bin_instruct_v2 --resume artifacts/model.pt \
+        --steps 700 --batch 16 --ctx 256 --lr 6e-4 --warmup 60 --reset-steps \
+        --eval-every 50 --ckpt-every 100 --out artifacts/instruct_p2b
+python3 scripts/eval_semantic.py     --checkpoint artifacts/model.pt --label p2b_final
+python3 scripts/eval_continuation.py --checkpoint artifacts/model.pt --label p2b_final
+python3 scripts/report_phase2.py     # -> reports/phase2_evaluation.md
+```
+
+### What is in the dataset
+
+| source | pairs | how it is made |
+|---|---|---|
+| curated facts | 6,000+ | 1,292 facts (greetings, conversation, dharma, world knowledge, Sanskrit glosses, reasoning) grown from phase 1, each asked in five phrasings |
+| grammar | 7,084 | **computed** from `scripts/sanskrit_kb/morph.py`: 8 cases × 3 numbers for 61 nouns, both directions, plus sentence cloze |
+| dialogues | 213 multi-turn | 156 scripted conversations, each prefix of a dialogue is its own example |
+| numbers | 952 | numerals 1–100 and arithmetic, in Devanagari throughout |
+
+Nothing is machine-translated: facts are authored in Sanskrit and grammar
+answers are generated from the paradigm, so a wrong answer in the data is a bug
+in the engine, and the engine is checked against 24 hand-verified forms.
+
+### Measured on 1,012 held-out questions
+
+| metric | production (v3) | shipped (v2-b) |
+|---|---|---|
+| strict content match | 37.0% | **62.8%** |
+| content F1 | 53.5% | **79.0%** |
+| answer type correct | 98.3% | 98.6% |
+| passes grammar rules | 98.7% | 99.2% |
+| format compliance | 100% | 99.9% |
+| **composite** | **67.3%** | **81.6%** |
+| verse val loss (continuation) | 4.961 | **4.044** |
+
+Held out means held out: the question frames, the facts and the seven noun
+paradigms scored here appear in no training row, enforced by
+`tests/test_phase2.py`.
+
+### Where it still fails
+
+* **Unseen facts**: on facts that appear in no training row, both models score
+  ~0–6%. The model composes fluent Sanskrit about the wrong thing rather than
+  saying it does not know.
+* **Paradigm production**: asked to *generate* a form ("गज इति पदस्य तृतीययां
+  विभक्तौ किम् रूपम्?"), accuracy is 14%. Recognition of the same forms reaches
+  33%; producing them is much harder at this size.
+* **Multi-turn context**: 12% on questions answerable only from the preceding
+  turns. The API and UI now send history, but the model rarely uses it.
+* **Numerals**: digit→word is not reliably learned from ~950 examples.
+
+A composite of 81.6% is a surface score: it rewards the right words in the right
+shape, and no model judges meaning here. It is a large, reproducible improvement
+over 67.3%, not a claim of fluency.
+
+---
+
 ## Deploying to Vercel
 
 `.vercelignore` keeps the function bundle small — Vercel rejected deploys at

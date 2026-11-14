@@ -1,0 +1,10 @@
+{
+  "steps": 600,
+  "batch_size": 16,
+  "block_size": 256,
+  "tokens_seen": 2457600,
+  "params": 5773056,
+  "minutes": 11.82,
+  "best_val_loss": 0.7174,
+  "final_loss": 0.5403
+}

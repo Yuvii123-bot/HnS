@@ -1,0 +1,19 @@
+{
+  "config": {
+    "vocab_size": 4000,
+    "d_model": 256,
+    "n_layers": 6,
+    "n_heads": 8,
+    "d_ff": 688,
+    "max_seq_len": 512,
+    "dropout": 0.0,
+    "n_features": 10,
+    "tie_embeddings": true
+  },
+  "params": 5773056,
+  "vocab_size": 4000,
+  "extra": {
+    "step": 450,
+    "val_loss": 0.7692740969359875
+  }
+}

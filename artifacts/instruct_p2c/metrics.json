@@ -1,0 +1,268 @@
+[
+  {
+    "step": 0,
+    "loss": 3.8927,
+    "lr": 1e-05,
+    "tok_per_s": 2971.9,
+    "elapsed_s": 1.4
+  },
+  {
+    "step": 25,
+    "loss": 2.4504,
+    "lr": 0.00026,
+    "tok_per_s": 3536.3,
+    "elapsed_s": 30.1
+  },
+  {
+    "step": 50,
+    "val_loss": 0.9968,
+    "val_ppl": 2.7
+  },
+  {
+    "step": 50,
+    "loss": 1.6593,
+    "lr": 0.00051,
+    "tok_per_s": 3475.8,
+    "elapsed_s": 60.1
+  },
+  {
+    "step": 75,
+    "loss": 1.5301,
+    "lr": 0.000599,
+    "tok_per_s": 3483.0,
+    "elapsed_s": 89.4
+  },
+  {
+    "step": 100,
+    "val_loss": 0.8236,
+    "val_ppl": 2.3
+  },
+  {
+    "step": 100,
+    "loss": 1.1909,
+    "lr": 0.000595,
+    "tok_per_s": 3376.9,
+    "elapsed_s": 122.5
+  },
+  {
+    "step": 125,
+    "loss": 1.3053,
+    "lr": 0.000586,
+    "tok_per_s": 3346.9,
+    "elapsed_s": 154.2
+  },
+  {
+    "step": 150,
+    "val_loss": 0.8141,
+    "val_ppl": 2.3
+  },
+  {
+    "step": 150,
+    "loss": 1.3715,
+    "lr": 0.000574,
+    "tok_per_s": 3309.2,
+    "elapsed_s": 186.9
+  },
+  {
+    "step": 175,
+    "loss": 1.1979,
+    "lr": 0.000558,
+    "tok_per_s": 3299.4,
+    "elapsed_s": 218.5
+  },
+  {
+    "step": 200,
+    "val_loss": 0.7931,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 200,
+    "loss": 0.9364,
+    "lr": 0.000539,
+    "tok_per_s": 3269.8,
+    "elapsed_s": 251.8
+  },
+  {
+    "step": 225,
+    "loss": 1.0054,
+    "lr": 0.000516,
+    "tok_per_s": 3241.7,
+    "elapsed_s": 285.6
+  },
+  {
+    "step": 250,
+    "val_loss": 0.7822,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 250,
+    "loss": 0.8312,
+    "lr": 0.000491,
+    "tok_per_s": 3217.9,
+    "elapsed_s": 319.5
+  },
+  {
+    "step": 275,
+    "loss": 0.9673,
+    "lr": 0.000463,
+    "tok_per_s": 3217.2,
+    "elapsed_s": 351.4
+  },
+  {
+    "step": 300,
+    "val_loss": 0.7823,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 300,
+    "loss": 1.0647,
+    "lr": 0.000433,
+    "tok_per_s": 3206.2,
+    "elapsed_s": 384.5
+  },
+  {
+    "step": 325,
+    "loss": 1.2727,
+    "lr": 0.000402,
+    "tok_per_s": 3209.7,
+    "elapsed_s": 416.0
+  },
+  {
+    "step": 350,
+    "val_loss": 0.7857,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 350,
+    "loss": 0.9683,
+    "lr": 0.00037,
+    "tok_per_s": 3206.3,
+    "elapsed_s": 448.4
+  },
+  {
+    "step": 375,
+    "loss": 0.8294,
+    "lr": 0.000337,
+    "tok_per_s": 3219.4,
+    "elapsed_s": 478.4
+  },
+  {
+    "step": 400,
+    "val_loss": 0.7698,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 400,
+    "loss": 1.1398,
+    "lr": 0.000304,
+    "tok_per_s": 3209.2,
+    "elapsed_s": 511.8
+  },
+  {
+    "step": 425,
+    "loss": 0.738,
+    "lr": 0.000271,
+    "tok_per_s": 3211.0,
+    "elapsed_s": 543.4
+  },
+  {
+    "step": 450,
+    "val_loss": 0.7693,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 450,
+    "loss": 0.7411,
+    "lr": 0.000239,
+    "tok_per_s": 3190.6,
+    "elapsed_s": 579.0
+  },
+  {
+    "step": 475,
+    "loss": 0.6756,
+    "lr": 0.000209,
+    "tok_per_s": 3202.2,
+    "elapsed_s": 608.9
+  },
+  {
+    "step": 500,
+    "val_loss": 0.7882,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 500,
+    "loss": 0.856,
+    "lr": 0.00018,
+    "tok_per_s": 3197.0,
+    "elapsed_s": 641.9
+  },
+  {
+    "step": 525,
+    "loss": 0.5039,
+    "lr": 0.000154,
+    "tok_per_s": 3201.3,
+    "elapsed_s": 673.0
+  },
+  {
+    "step": 550,
+    "val_loss": 0.7908,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 550,
+    "loss": 0.9522,
+    "lr": 0.00013,
+    "tok_per_s": 3197.2,
+    "elapsed_s": 705.9
+  },
+  {
+    "step": 575,
+    "loss": 0.6784,
+    "lr": 0.000109,
+    "tok_per_s": 3206.6,
+    "elapsed_s": 735.8
+  },
+  {
+    "step": 600,
+    "val_loss": 0.7892,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 600,
+    "loss": 0.5613,
+    "lr": 9.2e-05,
+    "tok_per_s": 3195.9,
+    "elapsed_s": 770.3
+  },
+  {
+    "step": 625,
+    "loss": 0.5906,
+    "lr": 7.8e-05,
+    "tok_per_s": 3193.2,
+    "elapsed_s": 803.0
+  },
+  {
+    "step": 650,
+    "val_loss": 0.7957,
+    "val_ppl": 2.2
+  },
+  {
+    "step": 650,
+    "loss": 0.7925,
+    "lr": 6.8e-05,
+    "tok_per_s": 3185.3,
+    "elapsed_s": 837.1
+  },
+  {
+    "step": 675,
+    "loss": 0.5864,
+    "lr": 6.2e-05,
+    "tok_per_s": 3188.5,
+    "elapsed_s": 868.4
+  },
+  {
+    "step": 700,
+    "val_loss": 0.7945,
+    "val_ppl": 2.2
+  }
+]

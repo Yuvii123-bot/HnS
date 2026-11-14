@@ -185,15 +185,29 @@ class SanskritEngine:
         }
 
     # ------------------------------------------------------------------
-    def build_prompt(self, message: str, mode: str = "chat") -> tuple[str, str]:
-        """Returns (devanagari_prompt_text, template_string)."""
+    def build_prompt(self, message: str, mode: str = "chat",
+                     history: list[dict] | None = None) -> tuple[str, str]:
+        """Returns (devanagari_prompt_text, template_string).
+
+        `history` is the preceding conversation as [{"user":…, "assistant":…}].
+        Multi-turn training data teaches the model to read it, so the template
+        includes it whenever the caller supplies some.
+        """
         dev = normalize_devanagari(message)
         if mode == "continuation":
             # प्रवाहः: the model simply continues the verse, no template at all
             return dev, dev
-        return dev, f"<user> {dev} <assistant>"
+        turns = []
+        for turn in (history or [])[-4:]:
+            u = normalize_devanagari(str(turn.get("user", "")))
+            a = normalize_devanagari(str(turn.get("assistant", "")))
+            if u and a:
+                turns.append(f"<user> {u} <assistant> {a}")
+        turns.append(f"<user> {dev} <assistant>")
+        return dev, " ".join(turns)
 
-    def generate_stream(self, message: str, params: GenParams) -> Iterator[dict]:
+    def generate_stream(self, message: str, params: GenParams,
+                        history: list[dict] | None = None) -> Iterator[dict]:
         """Yield events: start, token, done."""
         if not self.ready:
             yield {"event": "error",
@@ -205,7 +219,7 @@ class SanskritEngine:
             return
         assert self.model is not None and self.tokenizer is not None
 
-        dev, templated = self.build_prompt(message, params.mode)
+        dev, templated = self.build_prompt(message, params.mode, history)
         prompt_ids = torch.tensor([self.tokenizer.encode(templated)], dtype=torch.long)
         ctx = self.model.cfg.max_seq_len
         if prompt_ids.size(1) >= ctx - 4:

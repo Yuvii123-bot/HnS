@@ -64,6 +64,7 @@ class ChatRequest(BaseModel):
     repetition_penalty: float = 1.15
     max_new_tokens: int = 90
     stop_at_verse_end: bool = True
+    history: list[dict] = Field(default_factory=list)
 
 
 class TextRequest(BaseModel):
@@ -108,6 +109,7 @@ def chat(req: ChatRequest) -> StreamingResponse:
         max_chars=90 if (req.mode or "chat") == "chat" else 0,
     )
 
+    history = [h for h in (req.history or []) if isinstance(h, dict)][-4:]
     dev = normalize_devanagari(req.message)
     if not dev:
         def empty():
@@ -116,7 +118,7 @@ def chat(req: ChatRequest) -> StreamingResponse:
 
     def event_stream():
         try:
-            for event in engine.generate_stream(dev, params):
+            for event in engine.generate_stream(dev, params, history):
                 yield json.dumps(event, ensure_ascii=False) + "\n"
         except Exception as exc:  # surface errors to the UI instead of a dead stream
             yield json.dumps({"event": "error", "message": str(exc)}, ensure_ascii=False) + "\n"

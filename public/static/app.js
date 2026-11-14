@@ -44,6 +44,7 @@ const state = {
     show_tokens: true,
   },
   ready: false,
+  turns: [],            // [{user, assistant}] — context sent with the next message
 };
 
 /* ───────────────────────── विन्यासः ───────────────────────── */
@@ -255,7 +256,11 @@ async function sendMessage(text) {
     const res = await fetch("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: text, ...state.settings }),
+      body: JSON.stringify({
+        message: text,
+        history: state.settings.mode === "chat" ? state.turns.slice(-4) : [],
+        ...state.settings,
+      }),
       signal: controller.signal,
     });
     if (!res.ok || !res.body) throw new Error(dev(res.status));
@@ -307,6 +312,10 @@ async function sendMessage(text) {
 
   function finalize(evt) {
     if (inline.childNodes.length) bubble.appendChild(inline);
+    if (evt.text && evt.text.trim()) {
+      state.turns.push({ user: text, assistant: evt.text.trim() });
+      if (state.turns.length > 8) state.turns = state.turns.slice(-8);
+    }
     const tools = el("div", "tools");
 
     const copy = el("button", "", "प्रतिलिपिः");

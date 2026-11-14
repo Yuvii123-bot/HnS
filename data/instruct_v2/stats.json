@@ -1,0 +1,37 @@
+{
+  "pairs": 13104,
+  "train": 12747,
+  "val": 357,
+  "dropped_eval_overlap": 31,
+  "facts": {
+    "trained": 1149,
+    "held_out": 143,
+    "total": 1292
+  },
+  "nouns": {
+    "trained": 54,
+    "held_out": 7
+  },
+  "dialogues": 156,
+  "per_category": {
+    "grammar": 7084,
+    "glossary": 1310,
+    "conversation": 1296,
+    "dharma": 992,
+    "numbers": 952,
+    "world": 830,
+    "reasoning": 409,
+    "greeting": 262
+  },
+  "eval_items": 1012,
+  "eval_by_kind": {
+    "unseen-fact": 83,
+    "paraphrase": 520,
+    "paraphrase-2": 160,
+    "grammar-unseen-noun": 168,
+    "grammar-production": 42,
+    "number-word": 10,
+    "arithmetic": 5,
+    "multi-turn": 24
+  }
+}

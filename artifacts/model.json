@@ -13,7 +13,7 @@
   "params": 5773056,
   "vocab_size": 4000,
   "extra": {
-    "step": 700,
+    "step": 600,
     "final": true
   }
 }

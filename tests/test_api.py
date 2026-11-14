@@ -107,6 +107,22 @@ def test_chat_stream_shape(client, native):
         print("  (model not trained yet — chat returns an error event, as designed)")
 
 
+def test_chat_accepts_history(client, native):
+    """Multi-turn: the API must accept prior turns and not reject them."""
+    payload = {
+        "message": "किं भवतः नाम रामः?",
+        "history": [{"user": "भवतः नाम किम्?", "assistant": "मम नाम रामः।"}],
+        "max_new_tokens": 6,
+    }
+    resp = client.post("/api/chat", json=payload)
+    events = _resp_json(resp) if native else resp[1]
+    if isinstance(events, dict):
+        events = [events]
+    start = next((e for e in events if e.get("event") == "start"), None)
+    assert start is not None, events[:2]
+    assert "<user> भवतः नाम किम्?" in start.get("prompt", ""), start.get("prompt")
+
+
 def main() -> int:
     native_client, native = _client()
     client = native_client if native else UrllibClient()

@@ -1,0 +1,33 @@
+{
+  "label": "p2c_final",
+  "checkpoint": "artifacts/instruct_p2c/model.pt",
+  "verse_val_loss": 3.9312,
+  "verse_perplexity": 50.97,
+  "mean_continuation_chars": 24.5,
+  "samples": [
+    {
+      "prompt": "धर्मक्षेत्रे कुरुक्षेत्रे",
+      "continuation": "स्यादेवायत।"
+    },
+    {
+      "prompt": "अथ राजा",
+      "continuation": "युद्धाय तम् आहारोपघातः ॥"
+    },
+    {
+      "prompt": "यदा सूर्यः उदेति",
+      "continuation": "तर्हि किम् भवति? <assistant> यदि सूर्यः उदेति तर्हि दिनं भवति।"
+    },
+    {
+      "prompt": "ततः कृत्स्नम्",
+      "continuation": "आहिते ।"
+    },
+    {
+      "prompt": "सत्यमेव जयते",
+      "continuation": "? <assistant> मोक्षः ईश्वरेषु धामतः अज्जः।"
+    },
+    {
+      "prompt": "कर्मण्येवाधिकारः",
+      "continuation": "।"
+    }
+  ]
+}

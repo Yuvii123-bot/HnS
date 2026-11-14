@@ -1,0 +1,33 @@
+{
+  "label": "p2b_final",
+  "checkpoint": "artifacts/instruct_p2b/model.pt",
+  "verse_val_loss": 4.0436,
+  "verse_perplexity": 57.03,
+  "mean_continuation_chars": 23.7,
+  "samples": [
+    {
+      "prompt": "धर्मक्षेत्रे कुरुक्षेत्रे",
+      "continuation": "जलम् ।"
+    },
+    {
+      "prompt": "अथ राजा",
+      "continuation": "अयं प्रज्ञाय समादिशत् ।"
+    },
+    {
+      "prompt": "यदा सूर्यः उदेति",
+      "continuation": "तर्हि किम् भवति? <assistant> यदि सूर्यः उदेति तर्हि दिनं भवति।"
+    },
+    {
+      "prompt": "ततः कृत्स्नम्",
+      "continuation": "अपरा द्भ्याम् अनुव्रत्य सो ऽथवाद्विस् स वाग्यम् ।"
+    },
+    {
+      "prompt": "सत्यमेव जयते",
+      "continuation": "।"
+    },
+    {
+      "prompt": "कर्मण्येवाधिकारः",
+      "continuation": "।"
+    }
+  ]
+}

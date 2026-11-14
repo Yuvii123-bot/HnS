@@ -1,0 +1,55 @@
+{
+  "instruction_rows": 8994,
+  "verse_replay_lines": 4867,
+  "estimated_tokens": {
+    "instruction": 408908,
+    "verse": 115376,
+    "total": 524284
+  },
+  "verse_share_of_training_tokens": 0.2201,
+  "per_category": {
+    "conversation": {
+      "source": 1243,
+      "used": 1265,
+      "note": "repeated 1243 -> 1265"
+    },
+    "dharma": {
+      "source": 943,
+      "used": 989,
+      "note": "repeated 943 -> 989"
+    },
+    "glossary": {
+      "source": 1270,
+      "used": 1310,
+      "note": "repeated 1270 -> 1310"
+    },
+    "grammar": {
+      "source": 6917,
+      "used": 2931,
+      "production_kept": 2923,
+      "multi_turn_kept": 8,
+      "note": "subsampled 6917 -> 2931"
+    },
+    "greeting": {
+      "source": 246,
+      "used": 480,
+      "note": "repeated 246 -> 480"
+    },
+    "numbers": {
+      "source": 914,
+      "used": 552,
+      "multi_turn_kept": 0,
+      "note": "subsampled 914 -> 552"
+    },
+    "reasoning": {
+      "source": 404,
+      "used": 640,
+      "note": "repeated 404 -> 640"
+    },
+    "world": {
+      "source": 810,
+      "used": 827,
+      "note": "repeated 810 -> 827"
+    }
+  }
+}
