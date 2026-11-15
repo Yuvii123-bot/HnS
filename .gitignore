@@ -58,3 +58,8 @@ artifacts/ph1*/
 data/bin_greet/
 data/bin_fix*/
 data/greet_mix/
+
+# Hitopadeśa (public-domain Sanskrit text) is kept in the repo so the book
+# pipeline is reproducible without re-downloading; it is 434 KB of plain text.
+!data/raw/hitopadesha/
+!data/raw/hitopadesha/hitokale_deva_F.txt
