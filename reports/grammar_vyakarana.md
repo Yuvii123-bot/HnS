@@ -9,7 +9,7 @@ machinery answers nouns that appear in no drill at all.
 | the 15 held-out grammar questions | 0/15 | **15/15 strict, 15/15 loose** |
 | 52 cells of 14 ordinary nouns in no drill | 2/52 (3.8 %) | **52/52 (100 %)** |
 | the same 52 cells, asked a different way | — | **52/52 (100 %)** |
-| free-form conversation | unchanged | unchanged (the model answers) |
+| 100 held-out everyday exchanges, end to end | 72/100 (model only) | **77/100** |
 
 ```
 $ python3 scripts/eval_grammar.py --router --label router
@@ -19,7 +19,14 @@ $ python3 scripts/eval_grammar.py --bundle serve --label deployed
 $ python3 scripts/eval_grammar_unseen.py --router --label router
     unseen nouns      52/52 (100.0%)
     locative phrasing 52/52 (100.0%)
+$ python3 scripts/eval_exchanges.py --bundle serve --label served_conv --eval data/conv_eval_100.jsonl
+    served_conv: 72/100        # the model alone, untouched
+$ # through /api/chat, router first: 77/100 — five of those 100 prompts are
+$ # grammar questions the model used to miss and the tables now answer
 ```
+
+`reports/api_conv100.json` has the end-to-end rows, marked `answerer`:
+`grammar` or `model`.
 
 ## Why the answers come from tables and not from the weights
 

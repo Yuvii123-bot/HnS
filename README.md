@@ -332,6 +332,7 @@ the published tables instead:
 |---|---|---|
 | 15 held-out grammar questions | 0/15 | **15/15** |
 | 52 cells of 14 nouns in no drill | 2/52 | **52/52** |
+| 100 held-out everyday exchanges | 72/100 | **77/100** (end to end) |
 
 `scripts/fetch_vyakarana.py` pulls the śabdapatha (9,007 stems × 24 cells), the
 dhātupāṭha (2,259 roots), the vidyut tiṅanta tables and the Laghusiddhāntakaumudī
