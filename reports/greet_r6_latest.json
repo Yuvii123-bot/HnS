@@ -1,0 +1,131 @@
+{
+  "label": "r6_latest",
+  "checkpoint": "artifacts/greet6/latest.pt",
+  "accuracy": 0.8182,
+  "passed": 36,
+  "total": 44,
+  "per_intent": {
+    "hello": [
+      4,
+      4
+    ],
+    "how_are_you": [
+      4,
+      5
+    ],
+    "name": [
+      2,
+      4
+    ],
+    "what_are_you": [
+      1,
+      2
+    ],
+    "speak_sanskrit": [
+      4,
+      4
+    ],
+    "thanks": [
+      2,
+      2
+    ],
+    "good_night": [
+      2,
+      2
+    ],
+    "goodbye": [
+      2,
+      4
+    ],
+    "apology": [
+      2,
+      2
+    ],
+    "what_do_you_do": [
+      1,
+      2
+    ],
+    "offer_help": [
+      3,
+      4
+    ],
+    "dont_understand": [
+      1,
+      1
+    ],
+    "praise": [
+      2,
+      2
+    ],
+    "ask_question_ready": [
+      1,
+      1
+    ],
+    "greeting": [
+      1,
+      1
+    ],
+    "study_together": [
+      1,
+      1
+    ],
+    "introduction": [
+      1,
+      1
+    ],
+    "language_policy": [
+      2,
+      2
+    ]
+  },
+  "failures": [
+    {
+      "id": "g09",
+      "intent": "name",
+      "prompt": "तव नाम कथम्?",
+      "answer": "अहं कुशलिनी अस्मि। धन्यवादः।"
+    },
+    {
+      "id": "g11",
+      "intent": "name",
+      "prompt": "कः भवान् इति वदतु",
+      "answer": "आम्, करोमि। किं साहाय्यं करवाणि?"
+    },
+    {
+      "id": "g13",
+      "intent": "what_are_you",
+      "prompt": "किं भवान् मानुषः?",
+      "answer": "आम्, अहं संस्कृतं जानामि, संस्कृतं च वदामि।"
+    },
+    {
+      "id": "g21",
+      "intent": "goodbye",
+      "prompt": "चलति तर्हि",
+      "answer": "मिलित्वा अष्ट भवन्ति।"
+    },
+    {
+      "id": "g23",
+      "intent": "goodbye",
+      "prompt": "पुनः आगच्छामि",
+      "answer": "आम्, पुनः स्पष्टं वदामि।"
+    },
+    {
+      "id": "g26",
+      "intent": "what_do_you_do",
+      "prompt": "किं करोषि साम्प्रतम्?",
+      "answer": "आम्, अहं प्रतिसप्ताहं मन्दिरं गच्छामि।"
+    },
+    {
+      "id": "g28",
+      "intent": "offer_help",
+      "prompt": "साहाय्यस्य आवश्यकता",
+      "answer": "सा प्राग्लं न जानामि।"
+    },
+    {
+      "id": "g39",
+      "intent": "how_are_you",
+      "prompt": "अद्य भवतः आनन्दः किम्?",
+      "answer": "अहं प्रश्नानाम् उत्तराणि ददामि।"
+    }
+  ]
+}
