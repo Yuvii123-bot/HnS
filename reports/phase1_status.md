@@ -105,3 +105,21 @@ being destroyed.
   a 10 M model does not change that, and I will not declare fluency without the
   Step 5 measurement to back it.
 * Sanskrit↔English translation (impossible with a Devanagari-only tokenizer).
+
+## Deployment status (2026-11-14)
+
+On instruction, production was moved from the 5.77M checkpoint to the undamaged
+10M checkpoint `artifacts/x1_final/best.pt` — not to either phase-1 run
+(`artifacts/ph1`, `artifacts/ph1b`), both of which are damaged by the mechanisms
+above and must not be served.
+
+Production now reports, from `/api/info`:
+
+* 9,896,544 parameters, `d_model` 288, `n_layers` 8, `d_ff` 880
+* 12,697,600 training tokens seen over 3,100 steps
+* its own `known_regressions` list, including the 13.2-point composite drop
+
+This does not complete Phase 1: the 35.8M-token corpus has still never been
+trained on successfully, and no capability in the Step 1 benchmark has been
+improved except verse modelling and grammar well-formedness. Detail:
+`reports/deploy_10m.md`.

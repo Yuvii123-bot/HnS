@@ -30,7 +30,7 @@ e-texts, and the UI renders everything back as Sanskrit.
 | `sanskrit_llm/transliterate.py` | bidirectional **Devanagari ⇄ IAST** transliteration (virama/matra aware, GRETIL & DCS conventions, avagraha, daṇḍas, `oṃ`→ॐ, SLP1 helpers) |
 | `sanskrit_llm/akshara.py` | **akṣara segmentation** + 10-dimensional phonological feature vectors |
 | `sanskrit_llm/tokenizer.py` | **akṣara-BPE**: merges whole syllables only, never splits a conjunct, never crosses a daṇḍa, exact round-trip |
-| `sanskrit_llm/model.py` | 5.8M-parameter decoder-only transformer: RoPE, RMSNorm, SwiGLU, tied embeddings, KV-cache streaming |
+| `sanskrit_llm/model.py` | decoder-only transformer (5.8M or 9.9M config): RoPE, RMSNorm, SwiGLU, tied embeddings, KV-cache streaming |
 | `sanskrit_llm/trainer.py` | CPU-friendly training loop (AdamW, cosine schedule, eval, checkpoints) |
 | `api/main.py` | FastAPI backend: streaming chat, tokenizer inspector, transliteration |
 | `public/` | chat interface, entirely in Devanagari, with a live akṣara-token visualiser (no build step) |
@@ -74,12 +74,23 @@ from scratch.
 | corpus | 6.0M Devanagari characters · 122,642 verses/lines · 974 source e-texts |
 | sources | GRETIL (Veda, epic, purāṇa, poetry, śāstra, later) + Digital Corpus of Sanskrit |
 | tokenizer | 4,000 tokens · 1,801 merges · 2.07 chars/token |
-| model | 5,773,056 parameters · 6 layers · d=256 · 8 heads · ctx 256 |
-| pretraining | 1,900 steps × 16 × 256 ≈ 7.8M tokens, 2 CPU cores, ~42 min |
-| chat adaptation | 300 steps on 60,079 `<user>/<assistant>` pairs, ~6 min |
-| quality | val loss **3.077** · perplexity **21.7** (per akṣara-token; ≈1.49 bits/character) |
+| model (production) | **9,896,544 parameters** · 8 layers · d=288 · d_ff 880 · 8 heads · ctx 256 |
+| also in the repo | 5,773,056 parameters · 6 layers · d=256 · d_ff 688 — `artifacts/model.pt` |
+| pretraining | 1,900 steps × 16 × 256 ≈ 7.8M tokens, 2 CPU cores, ~65 min |
+| chat adaptation | 300 steps on the chat pairs, ~11 min |
+| instruction tuning | 900 steps on `data/instruct_mix2`, ~33 min |
+| quality | val loss **3.0632** · perplexity **21.4** (per akṣara-token) |
 
 Everything above is reproducible from this repo on a laptop CPU.
+
+**What is deployed is the 10M model, and it is not the better one.** Measured on
+the same held-out sets, the 5.77M checkpoint scores composite **0.8161** against
+the 10M model's **0.6842**; the 10M model wins only on verse modelling (val
+loss 3.5469 vs 4.0436) and grammar well-formedness (0.9941 vs 0.9921). The swap
+was made on explicit instruction, so the trade-off is recorded in the deployment
+bundle (`serve/meta.json` → `known_regressions`) and in
+[`reports/deploy_10m.md`](reports/deploy_10m.md), which also documents the
+rollback. Do not read the numbers above as a quality claim for the live site.
 
 ---
 
@@ -332,3 +343,21 @@ blocked from importing**, and checks that logits match the PyTorch model to
 
 Live: **https://sanskrit-llm.vercel.app** — the UI at `/`, the model at
 `/api/selftest` (one deterministic generation) and `/api/chat`.
+
+The live function serves the **10M** bundle (`serve/model.npz`, 44.2 MB, 60
+tensors). `/api/info` reports 9,896,544 parameters, `d_model` 288, `n_layers` 8
+and the full `known_regressions` list, so the deployed model states its own
+weaknesses. Verified after promotion: `/api/info` params and config match the
+exported checkpoint, and `/api/selftest` returns
+`" धर्मः सत्याचरणं लोकरक्षणं"` (12 tokens) — byte-identical to running
+`do_selftest()` against `serve/` locally, so what is live is what is in git.
+
+Rollback to the 5.77M model is one export and one promote:
+
+```bash
+python3 scripts/export_numpy.py --checkpoint artifacts/model.pt   # rebuilds the 25 MB bundle
+git commit -am "rollback: serve the 5.77M model" && git push
+```
+
+See [`reports/deploy_10m.md`](reports/deploy_10m.md) for the full record,
+including the NumPy↔torch parity check and the measured cost of the swap.
