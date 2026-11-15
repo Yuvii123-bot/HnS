@@ -18,69 +18,100 @@
       "params": 9896544,
       "architecture": "8 layers, d_model 288, 8 heads (head_dim 36), d_ff 880, RMSNorm + RoPE + SwiGLU, tied embeddings",
       "tokenizer": "aksara BPE, vocab 4000, Devanagari only",
-      "vs_previous": "5,773,056 -> 9,896,544 parameters (+71%); same tokenizer and vocabulary"
+      "vs_previous": "5,773,056 -> 9,896,544 parameters (+71%); tokenizer and vocabulary unchanged"
     },
-    "weight_provenance": {
-      "transfer_from_5.77M": false,
-      "why": "d_model 256->288, 6->8 layers and d_ff 688->880 change the shape of every tensor that touches the residual stream, so no state_dict can be loaded. Training was from scratch on the same data and token budget. Function-preserving widening (net2net) was not performed.",
-      "checkpoints": "artifacts/x1_pretrain -> artifacts/x1_chat -> artifacts/x1_final"
+    "pretrain": {
+      "steps": 1900,
+      "batch_size": 16,
+      "block_size": 256,
+      "tokens_seen": 7782400,
+      "best_val_loss": 3.0632,
+      "val_perplexity": 21.4,
+      "final_loss": 2.9454,
+      "minutes": 64.83,
+      "params": 9896544,
+      "corpus": "data/clean (122,642 lines, 6.0M Devanagari chars)",
+      "params_note": "unique parameters (59 tensors); the tied token-embedding matrix is counted once. The exported bundle stores 60 tensors / 10,960,480 float32 values because the tied lm_head duplicate is kept for a simpler NumPy forward pass.",
+      "weight_provenance": "Trained from scratch. No weight transfer from the 5.77M model was possible: d_model 256->288, 6->8 layers and d_ff 688->880 change the shape of every tensor on the residual path, so no state_dict can be loaded. Function-preserving widening (net2net) was identified but not implemented."
     },
-    "training": {
-      "pretrain": {
-        "data": "data/clean (2,930,084 tokens)",
-        "steps": 1900,
-        "tokens_seen": 7782400,
-        "best_val_loss": 3.0632
+    "chat_adaptation": {
+      "steps": 300,
+      "tokens_seen": 1228800,
+      "best_val_loss": 2.7707,
+      "final_loss": 2.6291,
+      "minutes": 10.79,
+      "data": "data/chat pairs"
+    },
+    "instruction_tuning": {
+      "steps": 900,
+      "batch_size": 16,
+      "block_size": 256,
+      "tokens_seen": 3686400,
+      "best_val_loss": 0.8659,
+      "final_loss": 0.4588,
+      "minutes": 33.37,
+      "lr": 0.0006,
+      "data": "data/instruct_mix2 (13,861 rows)"
+    },
+    "semantic_tuning": {
+      "held_out_evaluation": {
+        "questions": 1012,
+        "composite": 0.6842,
+        "strict": 0.4368,
+        "content_f1": 0.5667,
+        "grammar_ok": 0.9941,
+        "verse_val_loss": 3.5469,
+        "production_p2b_composite": 0.8161,
+        "production_p2b_strict": 0.6285,
+        "note": "composite = 0.40 strict + 0.15 content F1 + 0.15 answer type + 0.20 grammar rules + 0.10 format; see scripts/eval_semantic.py"
       },
-      "chat_adaptation": {
-        "data": "data/chat",
-        "steps": 300,
-        "best_val_loss": 2.7707
+      "capability_benchmark": {
+        "items": 100,
+        "strict": 0.04,
+        "content_f1": 0.071,
+        "grammar_ok": 1.0,
+        "zero_areas": [
+          "dhaturupa",
+          "lakara",
+          "linga",
+          "purusha",
+          "samasa",
+          "correction",
+          "relevance",
+          "abstention"
+        ]
       },
-      "instruction_tuning": {
-        "data": "data/instruct_mix2 (13,861 rows)",
-        "steps": 900,
-        "best_val_loss": 0.8659
+      "conversational": {
+        "items": 40,
+        "strict": 0.0,
+        "content_f1": 0.024,
+        "boundary_accuracy": 0.825,
+        "production_p2b_content_f1": 0.0476,
+        "production_p2b_boundary_accuracy": 0.975
       }
     },
-    "measured_vs_production_p2b": {
-      "semantic_benchmark_1012_items": {
-        "p2b_composite": 0.8161,
-        "this_model_composite": 0.6842,
-        "delta": -0.1319
-      },
-      "conversational_40_items": {
-        "p2b_content_f1": 0.0476,
-        "this_model_content_f1": 0.0243,
-        "note": "strict 0% in both"
-      },
-      "capability_benchmark_100_items": {
-        "p2b_strict": 0.1,
-        "this_model_strict": 0.04
-      },
-      "verse_val_loss": {
-        "p2b": 4.0436,
-        "this_model": 3.5469
-      },
-      "grammar_ok": {
-        "p2b": 0.9921,
-        "this_model": 0.9941
-      }
-    },
+    "total_tokens_seen": 12697600,
+    "total_steps": 3100,
     "known_regressions": [
       "Composite semantic score is 13.2 points below the 5.77M production model (0.6842 vs 0.8161)",
       "Conversational turn-boundary accuracy falls from 97.5% to 82.5%",
-      "Does not improve on any conversational or vocabulary measure tested"
+      "Content F1 on the 40-item conversational set falls from 4.8% to 2.4%",
+      "Zero correctness on the capability items for dhaturupa, lakara, linga, purusha, samasa, correction, relevance and abstention"
     ],
-    "deployment_note": "Deployed on explicit user instruction ('just deploy this 10M model'), not because the measurements show an improvement. The 5.77M production checkpoint remains intact at artifacts/model.pt; restore it with scripts/export_numpy.py --checkpoint artifacts/model.pt",
+    "known_gains": [
+      "Verse validation loss 4.0436 -> 3.5469 (perplexity 57.0 -> 34.7)",
+      "Grammatical well-formedness 0.9921 -> 0.9941"
+    ],
+    "deployment_note": "Deployed on explicit user instruction ('just deploy this 10M model'), not because the measurements show an improvement. The 5.77M checkpoint remains intact at artifacts/model.pt and is restored with scripts/export_numpy.py --checkpoint artifacts/model.pt.",
     "reports": {
       "scaling": "reports/scaling_10m.md",
       "step1_evaluation": "reports/phase1_step1_eval.md",
-      "phase1_status": "reports/phase1_status.md"
+      "phase1_status": "reports/phase1_status.md",
+      "deployment": "reports/deploy_10m.md"
     },
     "latency": {
-      "numpy_runtime_seconds_per_token": 0.024,
-      "bundle_mb": 43
+      "numpy_seconds_per_token": 0.024,
+      "bundle_mb": 44.2
     }
   },
   "corpus": {
