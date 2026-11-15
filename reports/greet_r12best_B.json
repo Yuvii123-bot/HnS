@@ -1,0 +1,119 @@
+{
+  "label": "r12best_B",
+  "checkpoint": "artifacts/greet12/best.pt",
+  "accuracy": 0.8824,
+  "passed": 30,
+  "total": 34,
+  "per_intent": {
+    "hello": [
+      2,
+      2
+    ],
+    "how_are_you": [
+      2,
+      2
+    ],
+    "name": [
+      3,
+      3
+    ],
+    "introduction": [
+      1,
+      1
+    ],
+    "what_are_you": [
+      1,
+      2
+    ],
+    "speak_sanskrit": [
+      2,
+      2
+    ],
+    "language_policy": [
+      2,
+      2
+    ],
+    "study_together": [
+      1,
+      1
+    ],
+    "what_do_you_do": [
+      1,
+      2
+    ],
+    "thanks": [
+      1,
+      2
+    ],
+    "welcome": [
+      0,
+      1
+    ],
+    "goodbye": [
+      2,
+      2
+    ],
+    "good_night": [
+      1,
+      1
+    ],
+    "good_morning": [
+      1,
+      1
+    ],
+    "apology": [
+      2,
+      2
+    ],
+    "praise": [
+      2,
+      2
+    ],
+    "offer_help": [
+      1,
+      1
+    ],
+    "dont_understand": [
+      1,
+      1
+    ],
+    "repeat_please": [
+      1,
+      1
+    ],
+    "ask_question_ready": [
+      1,
+      1
+    ],
+    "i_am_well": [
+      2,
+      2
+    ]
+  },
+  "failures": [
+    {
+      "id": "b09",
+      "intent": "what_are_you",
+      "prompt": "किं त्वं मानवी असि?",
+      "answer": "अहं कुशलिनी अस्मि। धन्यवादः।"
+    },
+    {
+      "id": "b17",
+      "intent": "what_do_you_do",
+      "prompt": "किं कुरुषे त्वम्?",
+      "answer": "अहं कुशलिनी अस्मि। धन्यवादः।"
+    },
+    {
+      "id": "b18",
+      "intent": "thanks",
+      "prompt": "अनुगृहीतोऽस्मि",
+      "answer": "सुप्रभातम्। शुभम् अस्तु।"
+    },
+    {
+      "id": "b20",
+      "intent": "welcome",
+      "prompt": "स्वागतम् भवते",
+      "answer": "शुभरात्रिः।"
+    }
+  ]
+}

@@ -204,6 +204,23 @@ INTENTS += [
      "answers": ["बोधः न जातः। पुनः वदतु, अहं विवृणोमि।"]},
 ]
 
+# Residual confusions after round 10, fixed by adding the *family* rather than the
+# probe sentence: wellbeing questions shaped "किं भवान् <adj>", and first-person
+# wellbeing statements. The exact probe strings are deliberately absent.
+INTENTS += [
+    {"id": "how_are_you",
+     "prompts": ["भवान् सुखी असि किम्?", "किं सुखी भवान्?", "किं भवत्याः प्रकृतिः सुस्था?",
+                 "भवती प्रसन्ना किम्?", "किं सर्वं भवत्याः कुशलम्?"],
+     "answers": ["अहं कुशलिनी अस्मि। धन्यवादः।", "सर्वं कुशलम्। भवान् कथम् अस्ति?"]},
+    {"id": "i_am_well",
+     "prompts": ["अहं कुशलिनी अस्मि", "मम कुशलम्", "सर्वं मम कुशलम्",
+                 "अहं स्वस्था अस्मि", "मम प्रकृतिः सम्यक् अस्ति"],
+     "answers": ["साधु! शुभम् अस्तु।"]},
+    {"id": "hello",
+     "prompts": ["शुभदिनम्", "दिनं शुभम्", "भद्रं दिनम्", "सुखदं दिनम्"],
+     "answers": ["नमस्ते! भवान् कथम् अस्ति?", "नमस्कारः! किं पृच्छति भवान्?"]},
+]
+
 # Replay rows that assert a human life-story. The mix is a costume box — राम,
 # सीता, अर्जुन, गौरी, हनुमान्, सरस्वती, शकुन्तला all say "मम नाम …". One of
 # them surfaced as the model's own name when asked its name.

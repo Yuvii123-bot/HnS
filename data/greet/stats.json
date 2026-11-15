@@ -1,13 +1,13 @@
 {
-  "greet_rows": 400,
+  "greet_rows": 437,
   "greet_val_rows": 21,
-  "greet_rows_after_repeat": 12000,
+  "greet_rows_after_repeat": 13110,
   "repeat": 30,
   "replay_rows": 5000,
-  "mix_rows": 17000,
+  "mix_rows": 18110,
   "per_intent_rows": {
-    "hello": 14,
-    "how_are_you": 32,
+    "hello": 8,
+    "how_are_you": 24,
     "name": 20,
     "introduction": 3,
     "what_are_you": 5,
@@ -26,11 +26,11 @@
     "dont_understand": 7,
     "repeat_please": 6,
     "ask_question_ready": 8,
-    "i_am_well": 3
+    "i_am_well": 5
   },
-  "est_greet_tokens": 375623,
-  "est_replay_tokens": 185022,
-  "greet_share_of_tokens": 0.67,
+  "est_greet_tokens": 410565,
+  "est_replay_tokens": 185056,
+  "greet_share_of_tokens": 0.6893,
   "answers_per_intent": {
     "hello": 2,
     "how_are_you": 2,
@@ -55,8 +55,8 @@
     "i_am_well": 1
   },
   "prompts_per_intent": {
-    "hello": 7,
-    "how_are_you": 16,
+    "hello": 4,
+    "how_are_you": 12,
     "name": 10,
     "introduction": 3,
     "what_are_you": 5,
@@ -75,13 +75,13 @@
     "dont_understand": 7,
     "repeat_please": 6,
     "ask_question_ready": 8,
-    "i_am_well": 3
+    "i_am_well": 5
   },
   "forbidden_carriers_absent": true,
-  "replay_dropped_persona_rows": 134,
+  "replay_dropped_persona_rows": 133,
   "replay_dropped_prompt_collisions": 3,
   "replay_dropped_eval_leaks": 4,
-  "replay_dropped_corpus_fragments": 200,
+  "replay_dropped_corpus_fragments": 193,
   "answers_exclusive_to_one_intent": true,
   "eval_prompts_held_out": true
 }
