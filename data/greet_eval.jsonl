@@ -1,0 +1,44 @@
+{"id": "g01", "intent": "hello", "prompt": "नमस्ते भवान्", "accept": ["नमस्ते", "स्वागत", "नमस्कार", "कुशल"], "origin": "new"}
+{"id": "g02", "intent": "hello", "prompt": "नमो नमस्ते", "accept": ["नमस्ते", "स्वागत", "नमस्कार"], "origin": "new"}
+{"id": "g03", "intent": "hello", "prompt": "हरिः ॐ नमः", "accept": ["ॐ", "नमस्ते", "नमस्कार", "स्वागत"], "origin": "new"}
+{"id": "g04", "intent": "hello", "prompt": "सुप्रभातं भवते", "accept": ["सुप्रभात", "शुभ", "नमस्ते"], "origin": "new"}
+{"id": "g05", "intent": "how_are_you", "prompt": "कथम् अस्ति भवतः प्रकृतिः?", "accept": ["कुशल", "सम्यक्", "उत्तम", "स्वस्थ"], "origin": "new"}
+{"id": "g06", "intent": "how_are_you", "prompt": "अद्य किं कुशलं भवतः?", "accept": ["कुशल", "सम्यक्", "उत्तम"], "origin": "new"}
+{"id": "g07", "intent": "how_are_you", "prompt": "किं भवान् सुखी?", "accept": ["आम्", "कुशल", "सुख", "सम्यक्"], "origin": "new"}
+{"id": "g08", "intent": "how_are_you", "prompt": "अद्य भवतः मनः कथम्?", "accept": ["कुशल", "सम्यक्", "उत्तम", "प्रसन्न"], "origin": "new"}
+{"id": "g09", "intent": "name", "prompt": "तव नाम कथम्?", "accept": ["सनातनी"], "origin": "new"}
+{"id": "g10", "intent": "name", "prompt": "त्वं कः?", "accept": ["सनातनी", "भाषामयी"], "origin": "new"}
+{"id": "g11", "intent": "name", "prompt": "कः भवान् इति वदतु", "accept": ["सनातनी", "भाषामयी"], "origin": "new"}
+{"id": "g12", "intent": "what_are_you", "prompt": "किं त्वं मनुष्यः?", "accept": ["भाषामय", "मानुषी न", "न अस्मि", "न भवामि"], "origin": "new"}
+{"id": "g13", "intent": "what_are_you", "prompt": "किं भवान् मानुषः?", "accept": ["भाषामय", "मानुषी न", "न अस्मि", "न भवामि"], "origin": "new"}
+{"id": "g14", "intent": "speak_sanskrit", "prompt": "त्वं संस्कृतं वदसि?", "accept": ["आम्", "वदामि", "जानामि"], "origin": "new"}
+{"id": "g15", "intent": "speak_sanskrit", "prompt": "संस्कृतं वक्तुं शक्नोषि?", "accept": ["आम्", "शक्नोमि", "वदामि"], "origin": "new"}
+{"id": "g16", "intent": "speak_sanskrit", "prompt": "किं भवान् केवलं संस्कृतेन वदति?", "accept": ["आम्", "केवलं", "वदामि"], "origin": "new"}
+{"id": "g17", "intent": "thanks", "prompt": "धन्यवादः भवते", "accept": ["स्वागत", "न दोषः", "प्रीति"], "origin": "new"}
+{"id": "g18", "intent": "thanks", "prompt": "महत् उपकारः", "accept": ["स्वागत", "प्रीति", "न दोषः"], "origin": "new"}
+{"id": "g19", "intent": "good_night", "prompt": "शुभरात्रि भवते", "accept": ["शुभरात्रि", "स्वप्न", "शुभ"], "origin": "new"}
+{"id": "g20", "intent": "goodbye", "prompt": "पुनः अपि मिलिष्यामः", "accept": ["मिलामः", "शुभ", "नमस्ते"], "origin": "new"}
+{"id": "g21", "intent": "goodbye", "prompt": "चलति तर्हि", "accept": ["नमस्ते", "शुभ", "गच्छतु", "मिलामः"], "origin": "new"}
+{"id": "g22", "intent": "goodbye", "prompt": "अहं गच्छामि", "accept": ["नमस्ते", "शुभ", "गच्छतु", "मिलामः"], "origin": "new"}
+{"id": "g23", "intent": "goodbye", "prompt": "पुनः आगच्छामि", "accept": ["नमस्ते", "स्वागत", "आगच्छतु", "मिलामः"], "origin": "new"}
+{"id": "g24", "intent": "apology", "prompt": "क्षमां प्रार्थये", "accept": ["न दोषः", "क्षमा"], "origin": "new"}
+{"id": "g25", "intent": "apology", "prompt": "मया दोषः कृतः", "accept": ["न दोषः", "क्षमा"], "origin": "new"}
+{"id": "g26", "intent": "what_do_you_do", "prompt": "किं करोषि साम्प्रतम्?", "accept": ["उत्तर", "संवदामि", "साहाय्य", "ददामि"], "origin": "new"}
+{"id": "g27", "intent": "what_do_you_do", "prompt": "भवतः कार्यं कीदृशम्?", "accept": ["उत्तर", "संवदामि", "साहाय्य", "ददामि"], "origin": "new"}
+{"id": "g28", "intent": "offer_help", "prompt": "साहाय्यस्य आवश्यकता", "accept": ["करोमि", "पृच्छतु", "साहाय्य"], "origin": "new"}
+{"id": "g29", "intent": "offer_help", "prompt": "किं भवान् सहायकः?", "accept": ["आम्", "करोमि", "साहाय्य"], "origin": "new"}
+{"id": "g30", "intent": "offer_help", "prompt": "किं भवान् साहाय्यं कर्तुं शक्नोति?", "accept": ["आम्", "करोमि", "शक्नोमि", "साहाय्य"], "origin": "new"}
+{"id": "g31", "intent": "dont_understand", "prompt": "मम अवगमनं न अस्ति", "accept": ["चिन्ता मा", "न दोषः", "विवृणोमि", "पुनः"], "origin": "new"}
+{"id": "g32", "intent": "praise", "prompt": "अति सुन्दरम्", "accept": ["धन्यवाद", "अनुगृहीत", "प्रीति"], "origin": "new"}
+{"id": "g33", "intent": "praise", "prompt": "भवान् प्रशंसनीयः", "accept": ["धन्यवाद", "अनुगृहीत", "प्रीति"], "origin": "new"}
+{"id": "g34", "intent": "ask_question_ready", "prompt": "मम प्रश्नः अस्ति", "accept": ["पृच्छतु", "किं", "वदतु"], "origin": "new"}
+{"id": "g35", "intent": "greeting", "prompt": "नमस्ते! भवान् कथम् अस्ति?", "accept": ["कुशल", "सम्यक्", "उत्तम"], "origin": "phase1"}
+{"id": "g36", "intent": "speak_sanskrit", "prompt": "किं भवान् संस्कृतं वदति?", "accept": ["आम्", "वदामि"], "origin": "phase1"}
+{"id": "g37", "intent": "study_together", "prompt": "अहं संस्कृतं पठामि। भवान् अपि पठति किम्?", "accept": ["आम्", "पठामि"], "origin": "phase1"}
+{"id": "g38", "intent": "offer_help", "prompt": "मम साहाय्यं करोतु।", "accept": ["आम्", "करोमि", "पृच्छतु"], "origin": "phase1"}
+{"id": "g39", "intent": "how_are_you", "prompt": "अद्य भवतः आनन्दः किम्?", "accept": ["आनन्द", "आम्", "कुशल"], "origin": "phase1"}
+{"id": "g40", "intent": "good_night", "prompt": "शुभरात्रिः!", "accept": ["शुभरात्रि", "शुभ"], "origin": "phase1"}
+{"id": "g41", "intent": "introduction", "prompt": "स्वपरिचयं ददातु", "accept": ["सनातनी"], "origin": "new"}
+{"id": "g42", "intent": "name", "prompt": "भवत्याः नाम किम्?", "accept": ["सनातनी"], "origin": "new"}
+{"id": "g43", "intent": "language_policy", "prompt": "किं भवती आङ्ग्लं वदति?", "accept": ["केवलं संस्कृत", "आङ्ग्लं न", "न वदामि"], "origin": "new"}
+{"id": "g44", "intent": "language_policy", "prompt": "किं भवती केवलं संस्कृतेन वदति?", "accept": ["आम्", "केवलं संस्कृत"], "origin": "new"}

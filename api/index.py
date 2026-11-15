@@ -118,7 +118,7 @@ def do_chat(payload: dict) -> list[dict]:
     rt = runtime()
     if rt is None:
         return [{"event": "error",
-                 "message": "भाषामयः न लब्धः। " + (_LOAD_ERROR or "")}]
+                 "message": "भाषामयी न लब्धा। " + (_LOAD_ERROR or "")}]
 
     message = str(payload.get("message", ""))[:MAX_MESSAGE]
     if not message.strip():

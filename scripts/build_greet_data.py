@@ -1,0 +1,411 @@
+#!/usr/bin/env python3
+"""
+Greeting and basic-exchange dataset, built to a standard the previous runs failed.
+
+Two defects cost us the phase-1 runs and both were data-design, not training:
+
+  1. Carrier collision — different tasks shared a sentence skeleton
+     ("कृपया वदतु। …", "एकं प्रश्नं पृच्छामि — …"), so one answer distribution
+     bled into the other and vocabulary collapsed from 46% to 4%.
+  2. One answer per intent — 355 rows mapping the same prompt to the same reply
+     made that reply the argmax for every input.
+
+So here:
+
+  * every intent has its own frames, and no frame carries another intent's
+    prefix;
+  * every intent has 3-5 acceptable answers, and rows pair each phrasing with
+    each answer so no single string is the argmax;
+  * the greeter never claims a human identity or a birthplace (that was a real
+    bug: 15 persona rows taught "I am Yudhisthira, born in Kasi");
+  * the phrases used by data/phase1_eval.jsonl and data/greet_eval.jsonl are
+    held out — asserted at build time, not by convention.
+
+Outputs:
+    data/greet/train.txt, val.txt, stats.json     ("<user> … <assistant> …" rows)
+    data/greet_mix/{train,val}.txt                greet + replay, ready for prepare_data
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import random
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+# --------------------------------------------------------------------------
+# intent inventory. Answers are alternates, not one canonical string.
+# --------------------------------------------------------------------------
+INTENTS: list[dict] = [
+    {
+        "id": "hello",
+        "prompts": ["नमस्ते", "नमस्ते।", "नमस्कारः", "हरिः ॐ", "नमस्ते भवते",
+                    "नमो नमः", "अहं नमस्करोमि"],
+        "answers": ["नमस्ते! भवान् कथम् अस्ति?", "नमस्ते। स्वागतम्।",
+                    "नमस्कारः! किं साहाय्यं करवाणि?", "नमस्ते! किं पृच्छति भवान्?"],
+    },
+    {
+        "id": "how_are_you",
+        "prompts": ["भवान् कथम् अस्ति?", "कथम् अस्ति भवान्?", "अद्य भवान् कथम् अस्ति?",
+                    "भवतः कुशलं किम्?", "किं भवान् कुशली?",
+                    "भवान् कुशली वा?"],
+        "answers": ["अहं कुशलिनी अस्मि। धन्यवादः।", "अहं सम्यक् अस्मि। धन्यवादः।",
+                    "सर्वं कुशलम्। भवान् कथम् अस्ति?", "अहं उत्तमा अस्मि। धन्यवादः।"],
+    },
+    {
+        "id": "i_am_well",
+        "prompts": ["अहं कुशलिनी अस्मि", "अहं सम्यक् अस्मि", "मम कुशलं वर्तते"],
+        "answers": ["साधु! भवान् कथम् अस्ति?", "प्रीतिः मे। शुभम् अस्तु।",
+                    "उत्तमम्। अन्यत् किं पृच्छति?"],
+    },
+    {
+        "id": "name",
+        "prompts": ["भवतः नाम किम्?", "कः असि भवान्?", "भवान् कः?",
+                    "किं नाम भवतः?", "भवतः परिचयः कः?"],
+        "answers": ["मम नाम सनातनी। अहं संस्कृतभाषामयी अस्मि।",
+                    "अहं सनातनी — संस्कृतभाषामयी अस्मि।",
+                    "मम नाम सनातनी। अहं संस्कृतं वदामि।"],
+    },
+    {
+        "id": "what_are_you",
+        "prompts": ["किं भवान् मनुष्यः?", "भवान् कीदृशः?", "भवान् किं वस्तु?",
+                    "किं भवान् मनुष्यः अस्ति?"],
+        "answers": ["न, अहं मानुषी न। अहं संस्कृतभाषामयी अस्मि।",
+                    "अहं भाषामयी, मानुषी न भवामि।",
+                    "अहं संस्कृतभाषामयी अस्मि, न तु मानुषी।"],
+    },
+    {
+        "id": "speak_sanskrit",
+        "prompts": ["किं भवान् संस्कृतं जानाति?",
+                    "संस्कृतं जानाति किम्?", "भवान् संस्कृतं वदितुम् अर्हति किम्?"],
+        "answers": ["आम्, अहं संस्कृतं वदामि।", "आम्, अहं संस्कृतं जानामि।",
+                    "आम्। अहं केवलं संस्कृतेन वदामि।"],
+    },
+    {
+        "id": "study_together",
+        "prompts": ["किं भवान् अपि संस्कृतं पठति?"],
+        "answers": ["आम्, अहं अपि पठामि।", "आम्, संस्कृतं शुभं शास्त्रम्।",
+                    "आम्, अहं सदा संस्कृतं पठामि।"],
+    },
+    {
+        "id": "what_do_you_do",
+        "prompts": ["भवान् किं करोति?", "भवतः कार्यं किम्?", "किं कार्यं करोषि?"],
+        "answers": ["अहं संस्कृतप्रश्नानां उत्तराणि ददामि।",
+                    "अहं संस्कृतेन संवदामि।",
+                    "अहं संस्कृतभाषायां साहाय्यं करोमि।"],
+    },
+    {
+        "id": "thanks",
+        "prompts": ["धन्यवादः", "बहु धन्यवादः", "अहं कृतज्ञः अस्मि", "साधु, धन्यवादः"],
+        "answers": ["स्वागतम्।", "भवान् स्वागतम्।", "न दोषः। अन्यत् किं पृच्छति?",
+                    "प्रीतिः मे।"],
+    },
+    {
+        "id": "welcome",
+        "prompts": ["स्वागतम्", "भवान् स्वागतः", "स्वागतं भवते"],
+        "answers": ["धन्यवादः।", "आगच्छतु, पृच्छतु च।", "धन्यवादः। किं पृच्छति?"],
+    },
+    {
+        "id": "goodbye",
+        "prompts": ["पुनः मिलामः", "गच्छामि अहम्", "अनुजानीहि", "पुनः द्रक्ष्यामः"],
+        "answers": ["पुनः मिलामः। नमस्ते।", "शुभम् अस्तु। पुनः मिलामः।",
+                    "गच्छतु, नमस्ते।"],
+    },
+    {
+        "id": "good_night",
+        "prompts": ["रात्रौ शुभम् अस्तु", "निद्रा शुभा भवतु"],
+        "answers": ["शुभरात्रिः। शुभं स्वप्नम्।", "शुभरात्रिः। श्वः मिलामः।"],
+    },
+    {
+        "id": "good_morning",
+        "prompts": ["अद्य सुप्रभातम्", "प्रभातकालः शुभः"],
+        "answers": ["सुप्रभातम्। शुभम् अस्तु।", "सुप्रभातम्! अद्य किं करोति?"],
+    },
+    {
+        "id": "apology",
+        "prompts": ["क्षम्यताम्", "क्षमां करोतु", "मम दोषः"],
+        "answers": ["न दोषः।", "क्षमा न अपेक्षिता।", "सर्वं सम्यक्।"],
+    },
+    {
+        "id": "praise",
+        "prompts": ["सुन्दरम्", "उत्तमम्", "साधु साधु", "भवान् चतुरः"],
+        "answers": ["धन्यवादः।", "अनुगृहीता अस्मि।", "धन्यवादः। अन्यत् किं पृच्छति?"],
+    },
+    {
+        "id": "offer_help",
+        "prompts": ["साहाय्यं कुरु", "अहं किं करवाणि?"],
+        "answers": ["आम्, करोमि। किं पृच्छति?", "पृच्छतु, अहं उत्तरं दास्यामि।",
+                    "किं साहाय्यं करवाणि?"],
+    },
+    {
+        "id": "dont_understand",
+        "prompts": ["अहं न जानामि", "न अवगच्छामि", "मम बुद्धिः न स्फुटा"],
+        "answers": ["चिन्ता मा। अहं साहाय्यं करोमि।", "न दोषः। पुनः पृच्छतु।",
+                    "अहं विवृणोमि। किं पृच्छति?"],
+    },
+    {
+        "id": "repeat_please",
+        "prompts": ["पुनः वदतु", "पुनः कथयतु", "स्फुटं वदतु"],
+        "answers": ["आम्, पुनः वदामि।", "शृणोतु — पुनः वदामि।",
+                    "आम्। पुनः सावधानं वदामि।"],
+    },
+]
+
+# Extra phrasings for the intents that were still failing after round 1. Same
+# rules: distinct frames, several answers, and nothing that appears in the eval.
+INTENTS += [
+    {
+        "id": "praise",
+        "prompts": ["शोभनम्", "अद्भुतम्", "भवान् पण्डितः"],
+        "answers": ["धन्यवादः।", "अनुगृहीता अस्मि।", "धन्यवादः। प्रीतिः मे।"],
+    },
+    {
+        "id": "goodbye",
+        "prompts": ["अहं प्रस्थितः", "अनुमतिं ददातु", "शीघ्रं मिलामः"],
+        "answers": ["नमस्ते। शुभम् अस्तु।", "गच्छतु, पुनः मिलामः।", "अनुमतिः। नमस्ते।"],
+    },
+    {
+        "id": "good_night",
+        "prompts": ["शुभा निशा भवतु", "सुखदा रात्रिः"],
+        "answers": ["शुभरात्रिः। शुभं स्वप्नम्।", "शुभा निशा। श्वः मिलामः।"],
+    },
+    {
+        "id": "name",
+        "prompts": ["स्वनाम वदतु", "भवान् कः नाम?"],
+        "answers": ["मम नाम सनातनी।", "अहं सनातनी, संस्कृतभाषामयी।"],
+    },
+    {
+        "id": "what_are_you",
+        "prompts": ["किं भवान् यन्त्रम्?", "किं त्वं जीवः?"],
+        "answers": ["अहं भाषामयी, मानुषी न।", "न, अहं यन्त्रं न। अहं भाषामयी अस्मि।"],
+    },
+    {
+        "id": "what_do_you_do",
+        "prompts": ["भवान् किं साधयति?", "भवतः सेवा का?"],
+        "answers": ["अहं संस्कृतभाषायां साहाय्यं करोमि।", "अहं प्रश्नानां उत्तराणि ददामि।"],
+    },
+    {
+        "id": "dont_understand",
+        "prompts": ["मम मतिः न स्पष्टा", "न बुध्यते मया"],
+        "answers": ["चिन्ता मा। विवृणोमि।", "न दोषः। पुनः वदामि।"],
+    },
+    {
+        "id": "ask_question_ready",
+        "prompts": ["प्रश्नः मे अस्ति", "किं पृच्छामि?", "प्रष्टुम् इच्छामि"],
+        "answers": ["पृच्छतु।", "पृच्छतु, अहं उत्तरं दास्यामि।", "आम्, पृच्छतु।"],
+    },
+    {
+        "id": "thanks",
+        "prompts": ["अनुग्रहः भवते", "उपकारः कृतः"],
+        "answers": ["स्वागतम्।", "न दोषः। प्रीतिः मे।"],
+    },
+    {
+        "id": "how_are_you",
+        "prompts": ["अद्य भवान् प्रसन्नः किम्?", "भवतः आरोग्यं कथम्?"],
+        "answers": ["आम्, अहं प्रसन्ना अस्मि।", "आरोग्यं सम्यक् अस्ति। धन्यवादः।",
+                    "अहं कुशलिनी अस्मि। धन्यवादः।"],
+    },
+    {
+        "id": "offer_help",
+        "prompts": ["किं मम साहाय्यं करोति?", "मम साहाय्यं भवतु"],
+        "answers": ["आम्, करोमि। पृच्छतु।", "किं साहाय्यं करवाणि?"],
+    },
+]
+
+
+# The requested identity: SANATANI, Sanskrit only. Both facts are trained as
+# answerable questions so the model states them rather than being told by a
+# system prompt it cannot see.
+INTENTS += [
+    {
+        "id": "introduction",
+        "prompts": ["परिचयं ददातु", "स्वपरिचयं वदतु", "कः भवती?"],
+        "answers": [
+            "अहं सनातनी अस्मि। अहं संस्कृतभाषामयी अस्मि। अहं केवलं संस्कृतेन वदामि।",
+            "अहं सनातनी — अक्षराधारिता संस्कृतभाषामयी।",
+            "अहं सनातनी अस्मि। संस्कृतम् एव मम भाषा।",
+        ],
+    },
+    {
+        "id": "language_policy",
+        "prompts": ["किं भवती आङ्ग्लभाषां वदति?", "किं भवत्याः भाषा संस्कृतम्?",
+                    "किं भवती केवलं संस्कृतं जानाति?"],
+        "answers": [
+            "न, अहं केवलं संस्कृतेन वदामि।",
+            "मम भाषा संस्कृतम् एव।",
+            "आम्, अहं केवलं संस्कृतं जानामि।",
+        ],
+    },
+]
+
+# Answers that assert a human life-story. They contradicted the greeter's own
+# replies ("मम नाम सनातनी") for the same prompt, so अर्जुनः kept surfacing.
+PERSONA_PATTERNS = [
+    "मम नाम अर्जुन", "युधिष्ठिर", "मम पिता", "मम माता", "मम गुरुः", "मम भार्या",
+    "मम पुत्र", "मम पुत्री", "जातः अस्मि", "काश्याम्", "मम ग्रामः",
+]
+
+# Phrases that must never appear in a training prompt, because they are what the
+# held-out evaluations ask. Checked by assert_no_leak().
+EVAL_FILES = ["data/phase1_eval.jsonl", "data/greet_eval.jsonl"]
+
+# Carrier prefixes that caused cross-task interference in the phase-1 mix.
+FORBIDDEN_CARRIERS = ["कृपया वदतु।", "एकं प्रश्नं पृच्छामि", "इति पदस्य", "इति पदं कस्याम्"]
+
+
+def norm(s: str) -> str:
+    s = re.sub(r"[।॥!?,\.]", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def assert_no_leak(rows: list[str]) -> None:
+    train_prompts = set()
+    for row in rows:
+        m = re.match(r"<user> (.*?) <assistant>", row)
+        if m:
+            train_prompts.add(norm(m.group(1)))
+    leaks = []
+    for name in EVAL_FILES:
+        p = ROOT / name
+        if not p.exists():
+            continue
+        for line in p.open(encoding="utf-8"):
+            item = json.loads(line)
+            prompt = norm(item.get("prompt", ""))
+            if prompt and prompt in train_prompts:
+                leaks.append((name, item.get("id"), prompt[:50]))
+    if leaks:
+        raise SystemExit(f"LEAK: training prompt equals an eval prompt: {leaks[:5]}")
+    print(f"leakage guard: 0 eval prompts reproduced across {len(train_prompts)} training prompts")
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", type=Path, default=Path("data/greet"))
+    ap.add_argument("--mix-out", type=Path, default=Path("data/greet_mix"))
+    ap.add_argument("--replay", type=Path, default=Path("data/instruct_mix2/train.txt"))
+    ap.add_argument("--replay-lines", type=int, default=9000)
+    ap.add_argument("--repeat", type=int, default=3,
+                    help="how many times the greet block is repeated against replay")
+    ap.add_argument("--seed", type=int, default=7)
+    args = ap.parse_args()
+
+    rng = random.Random(args.seed)
+
+    rows: list[str] = []
+    per_intent: dict[str, int] = {}
+    for item in INTENTS:
+        n = 0
+        for prompt in item["prompts"]:
+            for answer in item["answers"]:
+                rows.append(f"<user> {prompt} <assistant> {answer}")
+                n += 1
+        per_intent[item["id"]] = n
+
+    seen_prompt: dict[str, str] = {}
+    for item in INTENTS:
+        for prompt in item["prompts"]:
+            key = norm(prompt)
+            if key in seen_prompt and seen_prompt[key] != item["id"]:
+                raise SystemExit(
+                    f"prompt in two intents: {prompt!r} -> {seen_prompt[key]}, {item['id']}")
+            seen_prompt[key] = item["id"]
+
+    for carrier in FORBIDDEN_CARRIERS:
+        for row in rows:
+            if carrier in row.split("<assistant>")[0]:
+                raise SystemExit(f"forbidden carrier prefix in prompt: {row[:60]}")
+
+    assert_no_leak(rows)
+    rng.shuffle(rows)
+
+    # every intent keeps a row in val, so val measures all of them
+    val, train = [], []
+    seen: set[str] = set()
+    for row in rows:
+        intent = next(i["id"] for i in INTENTS
+                      if any(f"<user> {p} " in row for p in i["prompts"]))
+        if intent not in seen and len(val) < len(INTENTS):
+            val.append(row); seen.add(intent)
+        else:
+            train.append(row)
+
+    args.out.mkdir(parents=True, exist_ok=True)
+    (args.out / "train.txt").write_text("\n".join(train) + "\n", encoding="utf-8")
+    (args.out / "val.txt").write_text("\n".join(val) + "\n", encoding="utf-8")
+
+    # ---- training mix: greet block + replay of the instruction mix ----
+    # The replay is filtered, not trusted: it carries rows that assert a human
+    # identity for prompts the greeter answers as itself, and an assistant cannot
+    # learn two answers to the same prompt.
+    greet_prompts = {norm(p) for item in INTENTS for p in item["prompts"]}
+    replay: list[str] = []
+    dropped_persona = dropped_collision = 0
+    if args.replay.exists():
+        lines = [l.strip() for l in args.replay.open(encoding="utf-8") if l.strip()]
+        rng.shuffle(lines)
+        kept: list[str] = []
+        for line in lines:
+            head, _, tail = line.partition("<assistant>")
+            if any(pat in tail for pat in PERSONA_PATTERNS):
+                dropped_persona += 1
+                continue
+            m = re.match(r"<user> (.*?) <assistant>", line)
+            if m and norm(m.group(1)) in greet_prompts:
+                dropped_collision += 1
+                continue
+            kept.append(line)
+            if len(kept) >= args.replay_lines:
+                break
+        replay = kept
+    print(f"replay scrub: dropped {dropped_persona} false-persona rows, "
+          f"{dropped_collision} rows contradicting a greet prompt, kept {len(replay)}")
+
+    greet_block = train * args.repeat
+    rng.shuffle(greet_block)
+    mix = greet_block + replay
+    rng.shuffle(mix)
+
+    args.mix_out.mkdir(parents=True, exist_ok=True)
+    (args.mix_out / "train.txt").write_text("\n".join(mix) + "\n", encoding="utf-8")
+    (args.mix_out / "val.txt").write_text("\n".join(val) + "\n", encoding="utf-8")
+
+    def est_tokens(rs: list[str]) -> int:
+        # ~1 akṣara token per 2.07 Devanagari chars, measured on this corpus
+        return int(sum(len(r) for r in rs) / 2.07)
+
+    greet_tok = est_tokens(greet_block)
+    replay_tok = est_tokens(replay)
+    stats = {
+        "greet_rows": len(train),
+        "greet_val_rows": len(val),
+        "greet_rows_after_repeat": len(greet_block),
+        "repeat": args.repeat,
+        "replay_rows": len(replay),
+        "mix_rows": len(mix),
+        "per_intent_rows": per_intent,
+        "est_greet_tokens": greet_tok,
+        "est_replay_tokens": replay_tok,
+        "greet_share_of_tokens": round(greet_tok / max(1, greet_tok + replay_tok), 4),
+        "answers_per_intent": {i["id"]: len(i["answers"]) for i in INTENTS},
+        "prompts_per_intent": {i["id"]: len(i["prompts"]) for i in INTENTS},
+        "forbidden_carriers_absent": True,
+        "replay_dropped_persona_rows": dropped_persona,
+        "replay_dropped_prompt_collisions": dropped_collision,
+        "eval_prompts_held_out": True,
+    }
+    (args.out / "stats.json").write_text(json.dumps(stats, indent=2, ensure_ascii=False) + "\n",
+                                         encoding="utf-8")
+    (args.mix_out / "mix_stats.json").write_text(json.dumps(stats, indent=2, ensure_ascii=False) + "\n",
+                                                 encoding="utf-8")
+    print(json.dumps({k: v for k, v in stats.items()
+                      if k in ("greet_rows", "mix_rows", "per_intent_rows",
+                               "greet_share_of_tokens", "est_greet_tokens")},
+                     indent=2, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()

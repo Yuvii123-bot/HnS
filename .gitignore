@@ -46,3 +46,15 @@ data/phase1/
 data/bin_full/
 data/bin_phase1/
 data/bin_phase1b/
+
+# greeting-run scratch (checkpoints are 39 MB each; regenerable from data/greet)
+artifacts/greet*/
+artifacts/fix*/
+artifacts/x1_chat/
+artifacts/x1_drop/
+artifacts/x1_instruct*/
+artifacts/x1_pretrain/
+artifacts/ph1*/
+data/bin_greet/
+data/bin_fix*/
+data/greet_mix/
