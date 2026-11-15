@@ -320,6 +320,33 @@ over 67.3%, not a claim of fluency.
 
 ---
 
+## Phase 3 — vyākaraṇa, answered from the tables
+
+The 15 grammar questions of the 100-question set were at **0/15**. Fine-tuning the
+model on drilled paradigms got them to 14/15 — and left it at **1/56** on cells of
+ordinary nouns held out of the drill, i.e. it memorised five paradigms and learned
+no declension. At 5.8 M parameters that is the ceiling, so grammar now comes from
+the published tables instead:
+
+| | deployed model | this build |
+|---|---|---|
+| 15 held-out grammar questions | 0/15 | **15/15** |
+| 52 cells of 14 nouns in no drill | 2/52 | **52/52** |
+
+`scripts/fetch_vyakarana.py` pulls the śabdapatha (9,007 stems × 24 cells), the
+dhātupāṭha (2,259 roots), the vidyut tiṅanta tables and the Laghusiddhāntakaumudī
+from [ashtadhyayi-com/data](https://github.com/ashtadhyayi-com/data) — credit:
+**Vyākaraṇa data © ashtadhyayi.com**. `scripts/sanskrit_kb/router.py` matches
+question shapes and looks the answer up; `api/index.py` tries it before the model
+and falls through for everything else, so conversation is untouched. The router is
+stdlib-only and ships as `serve/runtime/sanskrit_kb/` + `serve/grammar_table.json.gz`
+(1.7 MB).
+
+`reports/grammar_vyakarana.md` has the measured numbers, the three matching traps
+(anusvāra, root homographs, inflected stems), the fixed q049 rubric and the limits.
+
+---
+
 ## Deploying to Vercel
 
 `.vercelignore` keeps the function bundle small — Vercel rejected deploys at

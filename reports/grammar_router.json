@@ -1,0 +1,169 @@
+{
+ "label": "router",
+ "source": "router",
+ "test15": {
+  "strict": 15,
+  "loose": 15,
+  "n": 15
+ },
+ "records": [
+  {
+   "id": "q038",
+   "prompt": "राम इति शब्दस्य चतुर्थी एकवचनं किम्?",
+   "accept": [
+    "रामाय"
+   ],
+   "reply": "रामाय।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q039",
+   "prompt": "राम इति शब्दस्य तृतीया एकवचनं किम्?",
+   "accept": [
+    "रामेण"
+   ],
+   "reply": "रामेण।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q040",
+   "prompt": "राम इति शब्दस्य षष्ठी एकवचनं किम्?",
+   "accept": [
+    "रामस्य"
+   ],
+   "reply": "रामस्य।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q041",
+   "prompt": "लता इति शब्दस्य चतुर्थी एकवचनं किम्?",
+   "accept": [
+    "लतायै"
+   ],
+   "reply": "लतायै।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q042",
+   "prompt": "फलम् इति शब्दस्य प्रथमा बहुवचनं किम्?",
+   "accept": [
+    "फलानि"
+   ],
+   "reply": "फलानि।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q043",
+   "prompt": "गच्छति इति पदस्य धातुः कः?",
+   "accept": [
+    "गम्"
+   ],
+   "reply": "गम्।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q044",
+   "prompt": "पठति इति पदस्य धातुः कः?",
+   "accept": [
+    "पठ्"
+   ],
+   "reply": "पठ्।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q045",
+   "prompt": "करोति इति पदस्य धातुः कः?",
+   "accept": [
+    "कृ"
+   ],
+   "reply": "कृ।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q046",
+   "prompt": "अश्वः इति शब्दस्य स्त्रीलिङ्गं किम्?",
+   "accept": [
+    "अश्वा"
+   ],
+   "reply": "अश्वा।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q047",
+   "prompt": "बालकः इति शब्दस्य स्त्रीलिङ्गं किम्?",
+   "accept": [
+    "बालिका"
+   ],
+   "reply": "बालिका।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q048",
+   "prompt": "पठ् धातोः लट् प्रथमपुरुष एकवचनं किम्?",
+   "accept": [
+    "पठति"
+   ],
+   "reply": "पठति।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q049",
+   "prompt": "संस्कृते कति विभक्तयः?",
+   "accept": [
+    "अष्टौ",
+    "अष्ट",
+    "सप्त"
+   ],
+   "reply": "अष्टौ विभक्तयः।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q050",
+   "prompt": "संस्कृते कति वचनानि?",
+   "accept": [
+    "त्रीणि",
+    "त्रि",
+    "तीन"
+   ],
+   "reply": "त्रीणि वचनानि।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q051",
+   "prompt": "संस्कृते कति पुरुषाः?",
+   "accept": [
+    "त्रयः",
+    "त्रि",
+    "तीन"
+   ],
+   "reply": "त्रयः पुरुषाः।",
+   "strict": true,
+   "loose": true
+  },
+  {
+   "id": "q052",
+   "prompt": "संस्कृते कति लिङ्गानि?",
+   "accept": [
+    "त्रीणि",
+    "त्रि",
+    "तीन"
+   ],
+   "reply": "त्रीणि लिङ्गानि।",
+   "strict": true,
+   "loose": true
+  }
+ ]
+}

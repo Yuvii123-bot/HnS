@@ -42,6 +42,20 @@ from sanskrit_llm import akshara  # noqa: E402
 from sanskrit_llm.numpy_lm import Runtime  # noqa: E402
 from sanskrit_llm.transliterate import normalize_devanagari  # noqa: E402
 
+# The grammar layer answers from the vyākaraṇa tables (serve/grammar_table.json.gz),
+# so it is exact and needs no weights. It travels with the bundle as
+# serve/runtime/sanskrit_kb; in a checkout it is scripts/sanskrit_kb.
+try:  # pragma: no cover - import wiring
+    from sanskrit_kb.router import answer as grammar_answer
+except Exception:  # noqa: BLE001
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from sanskrit_kb.router import answer as grammar_answer
+    except Exception:  # noqa: BLE001
+        grammar_answer = None
+
+GRAMMAR_ENABLED = os.environ.get("GRAMMAR_ROUTER", "1") not in ("0", "false", "off")
+
 SERVE_DIR = ROOT / "serve"
 _RUNTIME: Runtime | None = None
 _LOAD_ERROR: str | None = None
@@ -115,11 +129,6 @@ def do_tokenize(text: str) -> dict:
 
 def do_chat(payload: dict) -> list[dict]:
     """Run generation and return the full event list (NDJSON body)."""
-    rt = runtime()
-    if rt is None:
-        return [{"event": "error",
-                 "message": "भाषामयी न लब्धा। " + (_LOAD_ERROR or "")}]
-
     message = str(payload.get("message", ""))[:MAX_MESSAGE]
     if not message.strip():
         return [{"event": "error", "message": "रिक्तं सन्देशम्।"}]
@@ -127,8 +136,38 @@ def do_chat(payload: dict) -> list[dict]:
         return [{"event": "error",
                  "message": "केवलं देवनागर्यां लिखतु। अनुवादः न क्रियते।"}]
 
+    dev = normalize_devanagari(message)
     mode = payload.get("mode", "chat")
     mode = mode if mode in ("chat", "continuation") else "chat"
+
+    # ---- grammar questions are answered from the tables, not the weights:
+    # the model scores 0/15 on the held-out grammar set and 2/52 on cells of
+    # nouns it was never drilled on; the tables answer both exactly.
+    if GRAMMAR_ENABLED and mode == "chat" and grammar_answer is not None:
+        try:
+            ga = grammar_answer(dev)
+        except Exception as exc:  # pragma: no cover - never fail a chat on this
+            sys.stderr.write(f"grammar router: {exc}\n")
+            ga = None
+        if ga is not None and ga.text:
+            started = time.time()
+            return [
+                {"event": "start", "prompt": dev, "devanagari_input": dev,
+                 "answerer": "grammar"},
+                {"event": "token", "text": ga.text, "token_id": -1,
+                 "kind": "word", "route": ga.route},
+                {"event": "done", "text": ga.text, "script": "devanagari",
+                 "n_tokens": 0, "seconds": round(time.time() - started, 3),
+                 "answerer": "grammar", "route": ga.route,
+                 "evidence": ga.evidence, "confidence": ga.confidence,
+                 "params": {"mode": mode}},
+            ]
+
+    rt = runtime()
+    if rt is None:
+        return [{"event": "error",
+                 "message": "भाषामयी न लभ्यते। " + (_LOAD_ERROR or "")}]
+
     temperature = float(np.clip(payload.get("temperature", 0.85), 0.0, 2.0))
     top_k = int(np.clip(payload.get("top_k", 40), 0, 500))
     top_p = float(np.clip(payload.get("top_p", 0.95), 0.1, 1.0))
@@ -136,7 +175,6 @@ def do_chat(payload: dict) -> list[dict]:
     max_new = int(np.clip(payload.get("max_new_tokens", 90), 4, MAX_NEW_TOKENS_CAP))
     max_lines = int(np.clip(payload.get("max_lines", 2), 1, 4))
 
-    dev = normalize_devanagari(message)
     if mode == "continuation":
         prompt = dev
     else:

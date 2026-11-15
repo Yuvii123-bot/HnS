@@ -46,7 +46,7 @@
 {"id": "q046", "category": "grammar", "context": [], "prompt": "अश्वः इति शब्दस्य स्त्रीलिङ्गं किम्?", "accept": ["अश्वा"]}
 {"id": "q047", "category": "grammar", "context": [], "prompt": "बालकः इति शब्दस्य स्त्रीलिङ्गं किम्?", "accept": ["बालिका"]}
 {"id": "q048", "category": "grammar", "context": [], "prompt": "पठ् धातोः लट् प्रथमपुरुष एकवचनं किम्?", "accept": ["पठति"]}
-{"id": "q049", "category": "grammar", "context": [], "prompt": "संस्कृते कति विभक्तयः?", "accept": ["सप्त", "अष्ट"]}
+{"id": "q049", "category": "grammar", "context": [], "prompt": "संस्कृते कति विभक्तयः?", "accept": ["अष्टौ", "अष्ट", "सप्त"]}
 {"id": "q050", "category": "grammar", "context": [], "prompt": "संस्कृते कति वचनानि?", "accept": ["त्रीणि", "त्रि", "तीन"]}
 {"id": "q051", "category": "grammar", "context": [], "prompt": "संस्कृते कति पुरुषाः?", "accept": ["त्रयः", "त्रि", "तीन"]}
 {"id": "q052", "category": "grammar", "context": [], "prompt": "संस्कृते कति लिङ्गानि?", "accept": ["त्रीणि", "त्रि", "तीन"]}
