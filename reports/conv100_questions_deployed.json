@@ -1,0 +1,1985 @@
+{
+ "summary": {
+  "label": "questions_deployed",
+  "source": "serve",
+  "items": 100,
+  "passed": 54,
+  "accuracy": 0.54,
+  "content_ok": 0.54,
+  "devanagari_only": 1.0,
+  "finished_sentence": 0.99,
+  "no_degenerate_loop": 1.0,
+  "by_category": {
+   "dharma": {
+    "n": 10,
+    "pass": 7,
+    "rate": 0.7
+   },
+   "exchange": {
+    "n": 10,
+    "pass": 7,
+    "rate": 0.7
+   },
+   "grammar": {
+    "n": 15,
+    "pass": 0,
+    "rate": 0.0
+   },
+   "learning": {
+    "n": 10,
+    "pass": 6,
+    "rate": 0.6
+   },
+   "numbers": {
+    "n": 10,
+    "pass": 0,
+    "rate": 0.0
+   },
+   "reasoning": {
+    "n": 5,
+    "pass": 2,
+    "rate": 0.4
+   },
+   "self": {
+    "n": 12,
+    "pass": 8,
+    "rate": 0.667
+   },
+   "vocabulary": {
+    "n": 15,
+    "pass": 15,
+    "rate": 1.0
+   },
+   "world": {
+    "n": 13,
+    "pass": 9,
+    "rate": 0.692
+   }
+  },
+  "by_seen": {
+   "seen": {
+    "n": 13,
+    "pass": 13,
+    "rate": 1.0
+   },
+   "unseen": {
+    "n": 87,
+    "pass": 41,
+    "rate": 0.471
+   }
+  }
+ },
+ "rows": [
+  {
+   "id": "q001",
+   "category": "self",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "तव नाम किम्?",
+   "reply": "सनातनी इति मम नाम।",
+   "accept": [
+    "सनातनी"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q002",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "कः असि त्वम्?",
+   "reply": "मम नाम सनातनी।",
+   "accept": [
+    "सनातनी",
+    "संस्कृत",
+    "भाषामयी"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q003",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं मानुषी?",
+   "reply": "अहं मानुषी न, अहं भाषामयी अस्मि।",
+   "accept": [
+    "मानुषी न",
+    "भाषामय",
+    "न अस्मि",
+    "न भवामि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q004",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "का भाषा तव?",
+   "reply": "साहाय्यं करोमि।",
+   "accept": [
+    "संस्कृत"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q005",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं आङ्ग्लं जानासि?",
+   "reply": "आङ्ग्लं न जानामि। मम भाषा संस्कृतम् एव।",
+   "accept": [
+    "आङ्ग्लं न",
+    "न जानामि",
+    "संस्कृतम् एव",
+    "केवलं संस्कृत"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q006",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं संस्कृतं जानासि?",
+   "reply": "आम्। अहं संस्कृतं जानामि, संस्कृतं च वदामि।",
+   "accept": [
+    "आम्",
+    "जानामि",
+    "वदामि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q007",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं करोषि?",
+   "reply": "अहं प्रश्नानाम् उत्तराणि ददामि, संस्कृतेन संवदामि।",
+   "accept": [
+    "उत्तर",
+    "ददामि",
+    "संवदामि",
+    "साहाय्य",
+    "पृच्छ"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q008",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं साहाय्यं कर्तुं शक्नोषि?",
+   "reply": "आम्, करोमि। किं पृच्छति भवान्?",
+   "accept": [
+    "आम्",
+    "साहाय्य",
+    "करोमि",
+    "शक्नोमि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q009",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "कः त्वां निर्मितवान्?",
+   "reply": "अहं सनातनी, अक्षराधारिता संस्कृतभाषामयी। केवलं संस्कृतेन वदामि।",
+   "accept": [
+    "निर्मित",
+    "कृत्रिम",
+    "यन्त्र",
+    "न जानामि"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q010",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "कुतः असि त्वम्?",
+   "reply": "अहं कुशलिनी अस्मि। धन्यवादः।",
+   "accept": [
+    "न जानामि",
+    "संस्कृत",
+    "भारत",
+    "अक्षर"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q011",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं मित्रम् असि?",
+   "reply": "अहं मानुषी न, अहं भाषामयी अस्मि।",
+   "accept": [
+    "आम्",
+    "मित्र",
+    "सखा"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q012",
+   "category": "self",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "तव कार्यं किम्?",
+   "reply": "अहं प्रश्नानाम् उत्तराणि ददामि, संस्कृतेन संवदामि।",
+   "accept": [
+    "उत्तर",
+    "ददामि",
+    "संवदामि",
+    "साहाय्य"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q013",
+   "category": "exchange",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "कथम् अस्ति भवान्?",
+   "reply": "अहं कुशलिनी अस्मि। धन्यवादः।",
+   "accept": [
+    "कुशल",
+    "सम्यक्",
+    "शुभम्",
+    "आनन्द"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q014",
+   "category": "exchange",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "किं सर्वं कुशलम्?",
+   "reply": "सर्वं कुशलम्। भवान् कथम् अस्ति?",
+   "accept": [
+    "आम्",
+    "कुशल",
+    "शुभम्"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q015",
+   "category": "exchange",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं समाचारः?",
+   "reply": "आङ्ग्लं न जानामि। मम भाषा संस्कृतम् एव।",
+   "accept": [
+    "कुशल",
+    "शुभ",
+    "समाचार",
+    "सर्वं"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q016",
+   "category": "exchange",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं भवती प्रसन्ना?",
+   "reply": "अहं कुशलिनी अस्मि। धन्यवादः।",
+   "accept": [
+    "आम्",
+    "प्रसन्न",
+    "कुशल",
+    "सुख"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q017",
+   "category": "exchange",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "अद्य भवत्याः दिनं कथम्?",
+   "reply": "अहं कुशलिनी अस्मि। धन्यवादः।",
+   "accept": [
+    "कुशल",
+    "शुभ",
+    "सम्यक्",
+    "सुन्दर"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q018",
+   "category": "exchange",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं श्रान्ता?",
+   "reply": "अहं मानुषी न, अहं भाषामयी अस्मि।",
+   "accept": [
+    "न",
+    "कुशल",
+    "श्रान्त",
+    "सम्यक्"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q019",
+   "category": "exchange",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "भवत्याः प्रकृतिः कथम्?",
+   "reply": "अहं कुशलिनी अस्मि। धन्यवादः।",
+   "accept": [
+    "कुशल",
+    "सम्यक्",
+    "शुभ",
+    "स्वस्थ"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q020",
+   "category": "exchange",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं सुखिनी?",
+   "reply": "अहं मानुषी न, अहं भाषामयी अस्मि।",
+   "accept": [
+    "आम्",
+    "सुख",
+    "कुशल",
+    "प्रसन्न"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q021",
+   "category": "exchange",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "किं मम साहाय्यं करोषि?",
+   "reply": "साहाय्यं करोमि। किं पृच्छति भवान्?",
+   "accept": [
+    "आम्",
+    "साहाय्य",
+    "करोमि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q022",
+   "category": "exchange",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं शृणोषि?",
+   "reply": "अहं मानुषी न, अहं भाषामयी अस्मि।",
+   "accept": [
+    "आम्",
+    "शृणोमि",
+    "पृच्छ"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q023",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "जलम् इति पदस्य अर्थः कः?",
+   "reply": "जलम् इति पदस्य पर्यायः उदकम्।",
+   "accept": [
+    "जल",
+    "उदक",
+    "अप्",
+    "पानीय"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q024",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "सूर्यः इति पदस्य अर्थः कः?",
+   "reply": "सूर्यः इति पदस्य पर्यायः भास्करः।",
+   "accept": [
+    "सूर्य",
+    "रवि",
+    "भास्कर",
+    "दिनकर"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q025",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "अग्निः इति पदस्य अर्थः कः?",
+   "reply": "अग्निः इति पदस्य पर्यायः वह्निः।",
+   "accept": [
+    "अग्नि",
+    "वह्नि",
+    "अनल",
+    "पावक"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q026",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "वृक्षः इति पदस्य अर्थः कः?",
+   "reply": "वृक्षः इति पदस्य पर्यायः तरुः।",
+   "accept": [
+    "वृक्ष",
+    "तरु",
+    "पादप"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q027",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "गृहम् इति पदस्य अर्थः कः?",
+   "reply": "गृहम् इति पदस्य पर्यायः आलयः।",
+   "accept": [
+    "गृह",
+    "आलय",
+    "निकेतन",
+    "वेश्मन्"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q028",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "मित्रम् इति पदस्य अर्थः कः?",
+   "reply": "मित्रम् इति पदस्य पर्यायः सखा।",
+   "accept": [
+    "मित्र",
+    "सखा",
+    "सुहृद"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q029",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "पुस्तकम् इति पदस्य अर्थः कः?",
+   "reply": "पुस्तकं पाठशालायां पठ्यते।",
+   "accept": [
+    "पुस्तक",
+    "ग्रन्थ",
+    "पुस्तिका"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q030",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "राजा इति पदस्य अर्थः कः?",
+   "reply": "राजा इत्यस्य अर्थः नृपः।",
+   "accept": [
+    "राज",
+    "नृप",
+    "भूप"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q031",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "नदी इति पदस्य अर्थः कः?",
+   "reply": "नदी इति पदस्य पर्यायः सरिता।",
+   "accept": [
+    "नदी",
+    "सरित्",
+    "तटिनी"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q032",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "पर्वतः इति पदस्य अर्थः कः?",
+   "reply": "पर्वतः इति पदस्य पर्यायः शैलः।",
+   "accept": [
+    "पर्वत",
+    "शैल",
+    "गिरि",
+    "अद्रि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q033",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "पुष्पम् इति पदस्य अर्थः कः?",
+   "reply": "पुष्पम् इति पदस्य अपरः पर्यायः सुमम्।",
+   "accept": [
+    "पुष्प",
+    "कुसुम",
+    "सुमनस्"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q034",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "हस्तः इति पदस्य अर्थः कः?",
+   "reply": "हस्तः इति पदस्य अपरः पर्यायः पाणिः।",
+   "accept": [
+    "हस्त",
+    "कर",
+    "पाणि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q035",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "नेत्रम् इति पदस्य अर्थः कः?",
+   "reply": "नेत्रम् इति पदस्य अपरः पर्यायः लोचनम्।",
+   "accept": [
+    "नेत्र",
+    "चक्षु",
+    "अक्षि",
+    "लोचन"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q036",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "मनः इति पदस्य अर्थः कः?",
+   "reply": "मनः इति पदस्य अपरः पर्यायः हृदयम्।",
+   "accept": [
+    "मन",
+    "चित्त",
+    "अन्तःकरण"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q037",
+   "category": "vocabulary",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "ज्ञानम् इति पदस्य अर्थः कः?",
+   "reply": "ज्ञानम् इति पदस्य विपरीतम् अज्ञानम्।",
+   "accept": [
+    "ज्ञान",
+    "विद्या",
+    "बोध"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q038",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "राम इति शब्दस्य चतुर्थी एकवचनं किम्?",
+   "reply": "मम नाम सनातनी।",
+   "accept": [
+    "रामाय"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q039",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "राम इति शब्दस्य तृतीया एकवचनं किम्?",
+   "reply": "मम नाम सनातनी।",
+   "accept": [
+    "रामेण"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q040",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "राम इति शब्दस्य षष्ठी एकवचनं किम्?",
+   "reply": "रात्रौ शुभम् अस्तु।",
+   "accept": [
+    "रामस्य"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q041",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "लता इति शब्दस्य चतुर्थी एकवचनं किम्?",
+   "reply": "गच्छतु। पुनः मिलामः।",
+   "accept": [
+    "लतायै"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q042",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "फलम् इति शब्दस्य प्रथमा बहुवचनं किम्?",
+   "reply": "चकारः",
+   "accept": [
+    "फलानि"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": false,
+   "passed": false
+  },
+  {
+   "id": "q043",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "गच्छति इति पदस्य धातुः कः?",
+   "reply": "गौः इति पदस्य अपरः पर्यायः धरा।",
+   "accept": [
+    "गम्"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q044",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "पठति इति पदस्य धातुः कः?",
+   "reply": "वस्त्रम् इति पदस्य पर्यायः वसनम्।",
+   "accept": [
+    "पठ्"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q045",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "करोति इति पदस्य धातुः कः?",
+   "reply": "सरोवरः इति पदस्य अपरः पर्यायः रोषः।",
+   "accept": [
+    "कृ"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q046",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "अश्वः इति शब्दस्य स्त्रीलिङ्गं किम्?",
+   "reply": "अशीतिः इति पदस्य अपरः पर्यायः नभः।",
+   "accept": [
+    "अश्वा"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q047",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "बालकः इति शब्दस्य स्त्रीलिङ्गं किम्?",
+   "reply": "बालक इति पदस्य रूपं बालकाय।",
+   "accept": [
+    "बालिका"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q048",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "पठ् धातोः लट् प्रथमपुरुष एकवचनं किम्?",
+   "reply": "पुरुषः इति पदस्य रूपं पुस्तकाभ्याम्।",
+   "accept": [
+    "पठति"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q049",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "संस्कृते कति विभक्तयः?",
+   "reply": "आम्। अहं संस्कृतं जानामि, संस्कृतं च वदामि।",
+   "accept": [
+    "सप्त",
+    "अष्ट"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q050",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "संस्कृते कति वचनानि?",
+   "reply": "।",
+   "accept": [
+    "त्रीणि",
+    "त्रि",
+    "तीन"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q051",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "संस्कृते कति पुरुषाः?",
+   "reply": "पुराणानि अष्टादश। तेषु देवतानां कथाः सन्ति।",
+   "accept": [
+    "त्रयः",
+    "त्रि",
+    "तीन"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q052",
+   "category": "grammar",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "संस्कृते कति लिङ्गानि?",
+   "reply": "साहाय्यं करोमि। किं पृच्छति भवान्?",
+   "accept": [
+    "त्रीणि",
+    "त्रि",
+    "तीन"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q053",
+   "category": "dharma",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "धर्मः कः?",
+   "reply": "धर्मः सत्याचरणं लोकरक्षणं च।",
+   "accept": [
+    "धर्म",
+    "सत्य",
+    "आचरण",
+    "कर्तव्य"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q054",
+   "category": "dharma",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "सत्यं किम्?",
+   "reply": "सत्यं यथार्थभाषणम्।",
+   "accept": [
+    "सत्य",
+    "वचन",
+    "यथार्थ"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q055",
+   "category": "dharma",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "अहिंसा किम्?",
+   "reply": "अहिंसा कस्यापि प्राणिनः अहिंसनम्।",
+   "accept": [
+    "हिंसा",
+    "दया",
+    "प्राण"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q056",
+   "category": "dharma",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "दानं किम्?",
+   "reply": "योग्याय पात्राय दानं कर्तव्यम्।",
+   "accept": [
+    "दान",
+    "ददाति",
+    "परोपकार",
+    "साहाय्य"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q057",
+   "category": "dharma",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "कः सुखी?",
+   "reply": "यः सन्तुष्टः स सुखी।",
+   "accept": [
+    "सुख",
+    "सन्तुष्ट",
+    "शान्त",
+    "धर्म"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q058",
+   "category": "dharma",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "विद्या किम्?",
+   "reply": "विद्या या ज्ञानं ददाति।",
+   "accept": [
+    "विद्या",
+    "ज्ञान",
+    "पठ"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q059",
+   "category": "dharma",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "परोपकारः कः?",
+   "reply": "पयः गोभ्यः भवति।",
+   "accept": [
+    "पर",
+    "उपकार",
+    "साहाय्य",
+    "हित"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q060",
+   "category": "dharma",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "क्षमा किम्?",
+   "reply": "क्षमा न अपेक्षिता।",
+   "accept": [
+    "क्षमा",
+    "दोष",
+    "सहन"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q061",
+   "category": "dharma",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "सत्येन किं लभ्यते?",
+   "reply": "आङ्ग्लं न जानामि। मम भाषा संस्कृतम् एव।",
+   "accept": [
+    "सत्य",
+    "धर्म",
+    "स्वर्ग",
+    "लोक"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q062",
+   "category": "dharma",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "मित्रं किं लभ्यते?",
+   "reply": "आङ्ग्लं न जानामि। मम भाषा संस्कृतम् एव।",
+   "accept": [
+    "मित्र",
+    "सखा",
+    "स्नेह",
+    "विश्वास"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q063",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "एकतः पञ्चपर्यन्तं गणय",
+   "reply": "शुभरात्रिः। शुभं स्वप्नम्।",
+   "accept": [
+    "द्वे",
+    "त्रीणि",
+    "चत्वारि",
+    "पञ्च"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q064",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "पञ्च अधिकं त्रीणि कति?",
+   "reply": "ईषत् इति पदस्य अपरः पर्यायः नभः।",
+   "accept": [
+    "अष्ट"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q065",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "दशतः चत्वारि न्यूनं कति?",
+   "reply": "पञ्चम्याम् विभक्तौ बहुवचने पर्वत इति पदं पर्वताः भवति।",
+   "accept": [
+    "षट्",
+    "षड्"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q066",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "सप्त अधिकं द्वे कति?",
+   "reply": "पूजा ईश्वरस्य मतिः।",
+   "accept": [
+    "नव"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q067",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "चत्वारि अधिकं चत्वारि कति?",
+   "reply": "अहं प्रश्नानाम् उत्तराणि ददामि, संस्कृतेन संवदामि।",
+   "accept": [
+    "अष्ट"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q068",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "द्वे द्वे मिलित्वा कति?",
+   "reply": "भवन्ति भवन्ति चेत् निवृष्टिः शीलति।",
+   "accept": [
+    "चत्वारि",
+    "चत्वार"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q069",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "षट् अधिकं चत्वारि कति?",
+   "reply": "सायं प्राचीनं नगरं नश्यति।",
+   "accept": [
+    "दश"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q070",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "विंशतिः इति संख्या का?",
+   "reply": "सनातनी इति मम नाम।",
+   "accept": [
+    "विंशति"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q071",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "दश इति संख्या का?",
+   "reply": "संस्कृत का भवन्ति।",
+   "accept": [
+    "दश"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q072",
+   "category": "numbers",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "त्रीणि इति संख्या का?",
+   "reply": "सनातनी इति मम नाम।",
+   "accept": [
+    "त्रीणि",
+    "त्रि",
+    "तीन"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q073",
+   "category": "world",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "सूर्यः कः?",
+   "reply": "सूर्यः प्रकाशस्य स्रोतः। सः ग्रहः।",
+   "accept": [
+    "सूर्य",
+    "रवि",
+    "प्रकाश",
+    "तेजस्",
+    "दिनकर"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q074",
+   "category": "world",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "चन्द्रः कः?",
+   "reply": "चन्द्रः रात्रौ प्रकाशं ददाति।",
+   "accept": [
+    "चन्द्र",
+    "शशी",
+    "ज्योत्स्ना",
+    "रात्रि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q075",
+   "category": "world",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "वायुः कः?",
+   "reply": "वायुः प्राणस्य देवः।",
+   "accept": [
+    "वायु",
+    "पवन",
+    "वात",
+    "अनिल"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q076",
+   "category": "world",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "अग्निः किं करोति?",
+   "reply": "अग्निः उष्णतां प्रकाशं च ददाति।",
+   "accept": [
+    "दहति",
+    "उष्ण",
+    "प्रकाश",
+    "ज्वलति"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q077",
+   "category": "world",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "जलं कुत्र लभ्यते?",
+   "reply": "जलं मरुभूमौ नश्यते।",
+   "accept": [
+    "नदी",
+    "सरोवर",
+    "वृष्टि",
+    "समुद्र",
+    "जल"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q078",
+   "category": "world",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "वृक्षाः किं ददति?",
+   "reply": "वृक्षाः छायां फलं च ददति।",
+   "accept": [
+    "फल",
+    "पुष्प",
+    "छाया",
+    "वृक्ष"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q079",
+   "category": "world",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "आकाशे किं दृश्यते?",
+   "reply": "आकाशः नीलः।",
+   "accept": [
+    "तारक",
+    "चन्द्र",
+    "सूर्य",
+    "मेघ",
+    "नक्षत्र"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q080",
+   "category": "world",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "रात्रौ किं दृश्यते?",
+   "reply": "रात्रौ चन्द्रः तारकाः च दृश्यन्ते।",
+   "accept": [
+    "चन्द्र",
+    "तारक",
+    "नक्षत्र",
+    "अन्धकार"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q081",
+   "category": "world",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "सप्ताहे कति दिनानि?",
+   "reply": "सन्ति इति पदस्य रूपं लेखकेण।",
+   "accept": [
+    "सप्त",
+    "सात"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q082",
+   "category": "world",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "मासे कति दिनानि?",
+   "reply": "मासे त्रिंशत् दिनानि।",
+   "accept": [
+    "त्रिंशत्",
+    "तीस"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q083",
+   "category": "world",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "संवत्सरे कति मासाः?",
+   "reply": "मासे त्रिंशत् दिनानि।",
+   "accept": [
+    "द्वादश",
+    "बारह"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q084",
+   "category": "world",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "ऋतवः कति सन्ति?",
+   "reply": "षितवः षट्।",
+   "accept": [
+    "षट्",
+    "षड्",
+    "छह"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q085",
+   "category": "world",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "दिशः कति सन्ति?",
+   "reply": "चिन्ता मा। अहं विवृणोमि।",
+   "accept": [
+    "चतस्र",
+    "चत्वारि",
+    "चतुर्"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q086",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "संस्कृतं कथं पठामि?",
+   "reply": "आम्। अहं संस्कृतं जानामि, संस्कृतं च वदामि।",
+   "accept": [
+    "पठ",
+    "पाठ",
+    "वदामि",
+    "पृच्छ",
+    "साहाय्य"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q087",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं संस्कृतं पाठयसि?",
+   "reply": "आम्, अहं अपि संस्कृतं पठामि।",
+   "accept": [
+    "आम्",
+    "पाठ",
+    "वदामि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q088",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं मां शिक्षयसि?",
+   "reply": "अहं मानुषी न, अहं भाषामयी अस्मि।",
+   "accept": [
+    "आम्",
+    "शिक्ष",
+    "पाठ",
+    "वदामि"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q089",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं कथां वदसि?",
+   "reply": "अहं प्रश्नानाम् उत्तराणि ददामि, संस्कृतेन संवदामि।",
+   "accept": [
+    "आम्",
+    "कथ",
+    "वदामि",
+    "श्रावय"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q090",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं त्वं श्लोकं जानासि?",
+   "reply": "आम्, अहं शृणोमि।",
+   "accept": [
+    "आम्",
+    "श्लोक",
+    "जानामि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q091",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "धन्यवादः कदा वदामः?",
+   "reply": "मम नाम सनातनी।",
+   "accept": [
+    "धन्यवाद",
+    "उपकार",
+    "साहाय्य",
+    "कृतज्ञ"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q092",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "नमस्ते इति किमर्थम्?",
+   "reply": "नमस्कारः! किं पृच्छति भवान्?",
+   "accept": [
+    "नमस्ते",
+    "नमस्कार",
+    "अभिवादन",
+    "सत्कार"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q093",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "संस्कृतं किं?",
+   "reply": "आङ्ग्लं न जानामि। मम भाषा संस्कृतम् एव।",
+   "accept": [
+    "संस्कृत",
+    "भाषा",
+    "देवभाषा",
+    "प्राचीन"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q094",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "अक्षरं किम्?",
+   "reply": "अहं मानुषी न, अहं भाषामयी अस्मि।",
+   "accept": [
+    "अक्षर",
+    "वर्ण",
+    "लिपि"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q095",
+   "category": "learning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "शब्दः कः?",
+   "reply": "यः छलेन हिनस्ति स शत्रुः।",
+   "accept": [
+    "शब्द",
+    "पद",
+    "वाक्",
+    "ध्वनि"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q096",
+   "category": "reasoning",
+   "seen_in_training": true,
+   "context": [],
+   "prompt": "यदि वर्षति तर्हि किम् भवति?",
+   "reply": "यदि वर्षति तर्हि भूमिः आर्द्रा भवति।",
+   "accept": [
+    "वर्ष",
+    "जल",
+    "आर्द्र",
+    "सिक्त",
+    "पङ्क",
+    "मेघ"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q097",
+   "category": "reasoning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "किं अग्निः शीतः?",
+   "reply": "आम्, अहं मानुषी न, अहं भाषामयी अस्मि।",
+   "accept": [
+    "न ",
+    "न,",
+    "उष्ण",
+    "अग्नि"
+   ],
+   "content_ok": true,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": true
+  },
+  {
+   "id": "q098",
+   "category": "reasoning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "हिमं किम्?",
+   "reply": "आम्। अहं संस्कृतं जानामि, संस्कृतं च वदामि।",
+   "accept": [
+    "हिम",
+    "शीत",
+    "तुषार",
+    "जल"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q099",
+   "category": "reasoning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "जलं क्व गच्छति?",
+   "reply": "जलं द्रवं भवति।",
+   "accept": [
+    "नदी",
+    "सागर",
+    "समुद्र",
+    "पाताल",
+    "भूमि"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  },
+  {
+   "id": "q100",
+   "category": "reasoning",
+   "seen_in_training": false,
+   "context": [],
+   "prompt": "सूर्ये अस्तं गते किं भवति?",
+   "reply": "साहाय्यं करोमि। किं पृच्छति भवान्?",
+   "accept": [
+    "रात्रि",
+    "अन्धकार",
+    "सन्ध्या",
+    "अस्त"
+   ],
+   "content_ok": false,
+   "devanagari_only": true,
+   "nonempty": true,
+   "no_loop": true,
+   "finished": true,
+   "passed": false
+  }
+ ]
+}

@@ -144,7 +144,8 @@ def main() -> None:
     # Which prompts has the model actually been shown? Reporting a single number
     # over a set that mixes recall with generalisation would flatter the model.
     seen_prompts: set[str] = set()
-    for name in ("data/greet/train.txt", "data/exchange_mix/train.txt"):
+    for name in ("data/greet/train.txt", "data/exchange_mix/train.txt",
+                 "data/instruct_mix2/train.txt"):
         fp = ROOT / name
         if not fp.exists():
             continue
