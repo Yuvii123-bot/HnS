@@ -1,0 +1,167 @@
+{
+  "label": "r6B",
+  "checkpoint": "artifacts/greet6/latest.pt",
+  "accuracy": 0.6471,
+  "passed": 22,
+  "total": 34,
+  "per_intent": {
+    "hello": [
+      0,
+      2
+    ],
+    "how_are_you": [
+      1,
+      2
+    ],
+    "name": [
+      3,
+      3
+    ],
+    "introduction": [
+      1,
+      1
+    ],
+    "what_are_you": [
+      0,
+      2
+    ],
+    "speak_sanskrit": [
+      2,
+      2
+    ],
+    "language_policy": [
+      2,
+      2
+    ],
+    "study_together": [
+      1,
+      1
+    ],
+    "what_do_you_do": [
+      1,
+      2
+    ],
+    "thanks": [
+      1,
+      2
+    ],
+    "welcome": [
+      0,
+      1
+    ],
+    "goodbye": [
+      2,
+      2
+    ],
+    "good_night": [
+      1,
+      1
+    ],
+    "good_morning": [
+      1,
+      1
+    ],
+    "apology": [
+      2,
+      2
+    ],
+    "praise": [
+      2,
+      2
+    ],
+    "offer_help": [
+      1,
+      1
+    ],
+    "dont_understand": [
+      1,
+      1
+    ],
+    "repeat_please": [
+      0,
+      1
+    ],
+    "ask_question_ready": [
+      0,
+      1
+    ],
+    "i_am_well": [
+      0,
+      2
+    ]
+  },
+  "failures": [
+    {
+      "id": "b01",
+      "intent": "hello",
+      "prompt": "शुभं दिनम्",
+      "answer": "चिन्ता मा। अहं विवृणोमि।"
+    },
+    {
+      "id": "b02",
+      "intent": "hello",
+      "prompt": "अहं आगतः अस्मि",
+      "answer": "भवतः स्वागतम्।"
+    },
+    {
+      "id": "b03",
+      "intent": "how_are_you",
+      "prompt": "किं भवत्याः प्रकृतिः सम्यक्?",
+      "answer": "आम्, अहं प्रतिदिनं सन्ध्यां करोमि।"
+    },
+    {
+      "id": "b09",
+      "intent": "what_are_you",
+      "prompt": "किं त्वं मानवी असि?",
+      "answer": "आम्, अहं प्रतिसप्ताहं मन्दिरं गच्छामि।"
+    },
+    {
+      "id": "b10",
+      "intent": "what_are_you",
+      "prompt": "मानुषी किम् असि?",
+      "answer": "अहं प्रश्नानाम् उत्तराणि ददामि।"
+    },
+    {
+      "id": "b17",
+      "intent": "what_do_you_do",
+      "prompt": "किं कुरुषे त्वम्?",
+      "answer": "अहं पुस्तकं पठामि।"
+    },
+    {
+      "id": "b18",
+      "intent": "thanks",
+      "prompt": "अनुगृहीतोऽस्मि",
+      "answer": "सुप्रभातम्। शुभम् अस्तु।"
+    },
+    {
+      "id": "b20",
+      "intent": "welcome",
+      "prompt": "स्वागतम् भवते",
+      "answer": "शुभरात्रिः।"
+    },
+    {
+      "id": "b31",
+      "intent": "repeat_please",
+      "prompt": "पुनः वद, कृपया",
+      "answer": "आङ्ग्लं न जानामि। मम भाषा संस्कृतम् एव।"
+    },
+    {
+      "id": "b32",
+      "intent": "ask_question_ready",
+      "prompt": "प्रश्नः अस्ति मम",
+      "answer": "आङ्ग्लं न जानामि। मम भाषा संस्कृतम् एव।"
+    },
+    {
+      "id": "b33",
+      "intent": "i_am_well",
+      "prompt": "अहं सम्यक् अस्मि",
+      "answer": "स्वागतम्।"
+    },
+    {
+      "id": "b34",
+      "intent": "i_am_well",
+      "prompt": "कुशली अस्मि अहम्",
+      "answer": "अनुगृहीता अस्मि। धन्यवादः।"
+    }
+  ]
+}

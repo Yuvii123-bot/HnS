@@ -1,0 +1,287 @@
+{
+  "label": "baseB",
+  "checkpoint": "artifacts/x1_final/best.pt",
+  "accuracy": 0.0588,
+  "passed": 2,
+  "total": 34,
+  "per_intent": {
+    "hello": [
+      0,
+      2
+    ],
+    "how_are_you": [
+      0,
+      2
+    ],
+    "name": [
+      0,
+      3
+    ],
+    "introduction": [
+      0,
+      1
+    ],
+    "what_are_you": [
+      0,
+      2
+    ],
+    "speak_sanskrit": [
+      1,
+      2
+    ],
+    "language_policy": [
+      0,
+      2
+    ],
+    "study_together": [
+      1,
+      1
+    ],
+    "what_do_you_do": [
+      0,
+      2
+    ],
+    "thanks": [
+      0,
+      2
+    ],
+    "welcome": [
+      0,
+      1
+    ],
+    "goodbye": [
+      0,
+      2
+    ],
+    "good_night": [
+      0,
+      1
+    ],
+    "good_morning": [
+      0,
+      1
+    ],
+    "apology": [
+      0,
+      2
+    ],
+    "praise": [
+      0,
+      2
+    ],
+    "offer_help": [
+      0,
+      1
+    ],
+    "dont_understand": [
+      0,
+      1
+    ],
+    "repeat_please": [
+      0,
+      1
+    ],
+    "ask_question_ready": [
+      0,
+      1
+    ],
+    "i_am_well": [
+      0,
+      2
+    ]
+  },
+  "failures": [
+    {
+      "id": "b01",
+      "intent": "hello",
+      "prompt": "शुभं दिनम्",
+      "answer": "मिलित्वा रा अस्मि।"
+    },
+    {
+      "id": "b02",
+      "intent": "hello",
+      "prompt": "अहं आगतः अस्मि",
+      "answer": "चिन्ता नास्ति। स्वागतम्।"
+    },
+    {
+      "id": "b03",
+      "intent": "how_are_you",
+      "prompt": "किं भवत्याः प्रकृतिः सम्यक्?",
+      "answer": "आम्, मम समयः अस्ति।"
+    },
+    {
+      "id": "b04",
+      "intent": "how_are_you",
+      "prompt": "कथम् अस्ति भवती?",
+      "answer": "मम गृहं हस्तिनापुरे अस्ति।"
+    },
+    {
+      "id": "b05",
+      "intent": "name",
+      "prompt": "भवत्याः नाम किम् अस्ति?",
+      "answer": "मम नाम लक्ष्मीः अस्ति।"
+    },
+    {
+      "id": "b06",
+      "intent": "name",
+      "prompt": "किं नाम तव?",
+      "answer": "आम्, अहं कृपया वदेत् — भवत्याः नाम किम्?"
+    },
+    {
+      "id": "b07",
+      "intent": "name",
+      "prompt": "स्वनाम ब्रूहि",
+      "answer": "सुप्रभातम्।"
+    },
+    {
+      "id": "b08",
+      "intent": "introduction",
+      "prompt": "कः असि त्वम्? परिचयं वद",
+      "answer": "आम्, अहं नूतनः अस्मि।"
+    },
+    {
+      "id": "b09",
+      "intent": "what_are_you",
+      "prompt": "किं त्वं मानवी असि?",
+      "answer": "आम्, अहं अर्जुनः अस्मि।"
+    },
+    {
+      "id": "b10",
+      "intent": "what_are_you",
+      "prompt": "मानुषी किम् असि?",
+      "answer": "अहं व्याधिष्ठिरः अस्मि।"
+    },
+    {
+      "id": "b12",
+      "intent": "speak_sanskrit",
+      "prompt": "भवती संस्कृतं वदितुं शक्नोति?",
+      "answer": "मेघः वर्षति यतः नश्यति।"
+    },
+    {
+      "id": "b13",
+      "intent": "language_policy",
+      "prompt": "किं भवती आङ्ग्लभाषां जानाति?",
+      "answer": "आम्, अहं प्रतिदिनं सन्ध्यां करोमि।"
+    },
+    {
+      "id": "b14",
+      "intent": "language_policy",
+      "prompt": "केवलं संस्कृतेन वदति किम्?",
+      "answer": "आकाशवाणी दूरात् श्रूयमाणा।"
+    },
+    {
+      "id": "b16",
+      "intent": "what_do_you_do",
+      "prompt": "भवत्याः कार्यं किम्?",
+      "answer": "मम नाम द्रौपदी अस्ति।"
+    },
+    {
+      "id": "b17",
+      "intent": "what_do_you_do",
+      "prompt": "किं कुरुषे त्वम्?",
+      "answer": "आम्, अहं प्रतिदिनं सन्ध्यां करोमि।"
+    },
+    {
+      "id": "b18",
+      "intent": "thanks",
+      "prompt": "अनुगृहीतोऽस्मि",
+      "answer": "वचनम् अन्नम् इति पदं कथं भवति?"
+    },
+    {
+      "id": "b19",
+      "intent": "thanks",
+      "prompt": "महत् उपकारः",
+      "answer": "आम्, अहं सहायतां करोमि।"
+    },
+    {
+      "id": "b20",
+      "intent": "welcome",
+      "prompt": "स्वागतम् भवते",
+      "answer": "जलं मह्यं मम मित्रं करोति?"
+    },
+    {
+      "id": "b21",
+      "intent": "goodbye",
+      "prompt": "अहं प्रस्थामि",
+      "answer": "किं सत्यम्, शिष्यस्य फलं सुखम्।"
+    },
+    {
+      "id": "b22",
+      "intent": "goodbye",
+      "prompt": "पुनः मिलिष्यामः",
+      "answer": "न, जलं द्रवम्।"
+    },
+    {
+      "id": "b23",
+      "intent": "good_night",
+      "prompt": "शुभा रात्रिः",
+      "answer": "स्वामी इत्यस्य अर्थः कः?"
+    },
+    {
+      "id": "b24",
+      "intent": "good_morning",
+      "prompt": "शुभं प्रभातम्",
+      "answer": "दिनम् इति पदस्य रूपं शिष्ययोः।"
+    },
+    {
+      "id": "b25",
+      "intent": "apology",
+      "prompt": "क्षमां याचे",
+      "answer": "कुत्र वसति?"
+    },
+    {
+      "id": "b26",
+      "intent": "apology",
+      "prompt": "मया अपराधः कृतः",
+      "answer": "आम्, पुनः मिलामः।"
+    },
+    {
+      "id": "b27",
+      "intent": "praise",
+      "prompt": "भवत्याः उत्तरं सुन्दरम्",
+      "answer": "मम खरवान् उष्णतां करोति।"
+    },
+    {
+      "id": "b28",
+      "intent": "praise",
+      "prompt": "साधु साधु",
+      "answer": "आम्, अहं सीता अस्मि।"
+    },
+    {
+      "id": "b29",
+      "intent": "offer_help",
+      "prompt": "मम साहाय्यं कुरु",
+      "answer": "चन्द्रः रात्रौ प्रकाशते यतः किम्?"
+    },
+    {
+      "id": "b30",
+      "intent": "dont_understand",
+      "prompt": "अहं न अवगच्छामि",
+      "answer": "आम्, अहं सहायतां करोमि।"
+    },
+    {
+      "id": "b31",
+      "intent": "repeat_please",
+      "prompt": "पुनः वद, कृपया",
+      "answer": "नमस्ते। किं भवान् नूतनः अत्र?"
+    },
+    {
+      "id": "b32",
+      "intent": "ask_question_ready",
+      "prompt": "प्रश्नः अस्ति मम",
+      "answer": "मिलित्वा अर्जुनः।"
+    },
+    {
+      "id": "b33",
+      "intent": "i_am_well",
+      "prompt": "अहं सम्यक् अस्मि",
+      "answer": "अहं पठितुं गच्छति?"
+    },
+    {
+      "id": "b34",
+      "intent": "i_am_well",
+      "prompt": "कुशली अस्मि अहम्",
+      "answer": "न भवति चेत् ज्ञानं वर्धते।"
+    }
+  ]
+}

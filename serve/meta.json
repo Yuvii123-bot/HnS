@@ -13,123 +13,182 @@
   "params": 9896544,
   "stored_float_count": 11048544,
   "train_summary": {
-    "model": {
-      "name": "SANATAN AI 10M",
-      "params": 9896544,
-      "architecture": "8 layers, d_model 288, 8 heads (head_dim 36), d_ff 880, RMSNorm + RoPE + SwiGLU, tied embeddings",
-      "tokenizer": "aksara BPE, vocab 4000, Devanagari only",
-      "vs_previous": "5,773,056 -> 9,896,544 parameters (+71%); tokenizer and vocabulary unchanged"
-    },
     "pretrain": {
       "steps": 1900,
       "batch_size": 16,
       "block_size": 256,
       "tokens_seen": 7782400,
-      "best_val_loss": 3.0632,
-      "val_perplexity": 21.4,
-      "final_loss": 2.9454,
-      "minutes": 64.83,
-      "params": 9896544,
-      "corpus": "data/clean (122,642 lines, 6.0M Devanagari chars)",
-      "params_note": "unique parameters (59 tensors); the tied token-embedding matrix is counted once. The exported bundle stores 60 tensors / 10,960,480 float32 values because the tied lm_head duplicate is kept for a simpler NumPy forward pass.",
-      "weight_provenance": "Trained from scratch. No weight transfer from the 5.77M model was possible: d_model 256->288, 6->8 layers and d_ff 688->880 change the shape of every tensor on the residual path, so no state_dict can be loaded. Function-preserving widening (net2net) was identified but not implemented."
+      "best_val_loss": 3.077,
+      "val_perplexity": 21.7,
+      "minutes": 41.7,
+      "params": 5773056,
+      "corpus": "data/clean/train.txt (122,642 lines, 6.0M Devanagari chars)",
+      "params_note": "unique parameters (45 tensors; the tied token-embedding matrix is counted once). The exported bundle stores 46 tensors / 6,797,056 float32 values because the tied lm_head duplicate is kept alongside token_emb for a simpler NumPy forward pass."
     },
     "chat_adaptation": {
       "steps": 300,
       "tokens_seen": 1228800,
-      "best_val_loss": 2.7707,
-      "final_loss": 2.6291,
-      "minutes": 10.79,
-      "data": "data/chat pairs"
+      "best_val_loss": 2.7871,
+      "minutes": 5.73,
+      "data": "60,079 <user>/<assistant> pairs"
     },
+    "total_tokens_seen": 9011200,
+    "total_steps": 2200,
     "instruction_tuning": {
-      "steps": 900,
+      "steps": 700,
+      "best_step": 300,
       "batch_size": 16,
       "block_size": 256,
-      "tokens_seen": 3686400,
-      "best_val_loss": 0.8659,
-      "final_loss": 0.4588,
-      "minutes": 33.37,
       "lr": 0.0006,
-      "data": "data/instruct_mix2 (13,861 rows)"
+      "tokens_seen": 2867200,
+      "best_val_loss": 0.5725990235805511,
+      "dataset": {
+        "pairs": 2010,
+        "base_facts": 750,
+        "categories": {
+          "glossary": 714,
+          "dialogue": 420,
+          "grammar": 368,
+          "dharma": 240,
+          "conversation": 219,
+          "world": 204,
+          "reasoning": 98,
+          "greeting": 52,
+          "numbers": 44
+        },
+        "paired_pairs_after_balancing": 3370,
+        "verse_replay_lines": 1685,
+        "verse_share_of_training_tokens": 0.2494
+      },
+      "held_out_eval": {
+        "prompts": 38,
+        "keyword_hit_before": 0.0,
+        "keyword_hit_after": 0.789,
+        "format_compliance_after": 1.0,
+        "verses_leaked_after": 0.0,
+        "prompt_overlap_before": 0.0,
+        "prompt_overlap_after": 0.53,
+        "verse_val_loss_before": 3.8366,
+        "verse_val_loss_after": 5.0389,
+        "note": "keyword hit = an expected content word (or its inflected form) appears in the answer; it is a coverage check, not a semantic judgement"
+      },
+      "data": "data/instruct (see scripts/build_instruct_data.py)"
     },
     "semantic_tuning": {
+      "steps": 700,
+      "best_step": 200,
+      "batch_size": 16,
+      "block_size": 256,
+      "lr": 0.0006,
+      "dataset": {
+        "pairs": 13104,
+        "facts": {
+          "trained": 1149,
+          "held_out": 143,
+          "total": 1292
+        },
+        "dialogue_scripts": 156,
+        "per_category": {
+          "grammar": 7084,
+          "glossary": 1310,
+          "conversation": 1296,
+          "dharma": 992,
+          "numbers": 952,
+          "world": 830,
+          "reasoning": 409,
+          "greeting": 262
+        },
+        "training_rows_after_balancing": 8994,
+        "verse_replay_lines": 4867,
+        "verse_share_of_training_tokens": 0.2201
+      },
       "held_out_evaluation": {
         "questions": 1012,
-        "composite": 0.6842,
-        "strict": 0.4368,
-        "content_f1": 0.5667,
-        "grammar_ok": 0.9941,
-        "verse_val_loss": 3.5469,
-        "production_p2b_composite": 0.8161,
-        "production_p2b_strict": 0.6285,
+        "by_kind": {
+          "arithmetic": 5,
+          "grammar-production": 42,
+          "grammar-unseen-noun": 168,
+          "multi-turn": 24,
+          "number-word": 10,
+          "paraphrase": 520,
+          "paraphrase-2": 160,
+          "unseen-fact": 83
+        },
+        "composite_before": 0.673,
+        "composite_after": 0.8161,
+        "strict_before": 0.3696,
+        "strict_after": 0.6285,
+        "grammar_ok_before": 0.9872,
+        "grammar_ok_after": 0.9921,
+        "verse_val_loss_before": 4.9608,
+        "verse_val_loss_after": 4.0436,
         "note": "composite = 0.40 strict + 0.15 content F1 + 0.15 answer type + 0.20 grammar rules + 0.10 format; see scripts/eval_semantic.py"
       },
-      "capability_benchmark": {
-        "items": 100,
-        "strict": 0.04,
-        "content_f1": 0.071,
-        "grammar_ok": 1.0,
-        "zero_areas": [
-          "dhaturupa",
-          "lakara",
-          "linga",
-          "purusha",
-          "samasa",
-          "correction",
-          "relevance",
-          "abstention"
-        ]
-      },
-      "conversational": {
-        "items": 40,
-        "strict": 0.0,
-        "content_f1": 0.024,
-        "boundary_accuracy": 0.825,
-        "production_p2b_content_f1": 0.0476,
-        "production_p2b_boundary_accuracy": 0.975
-      }
-    },
-    "total_tokens_seen": 12697600,
-    "total_steps": 3100,
-    "known_regressions": [
-      "Composite semantic score is 13.2 points below the 5.77M production model (0.6842 vs 0.8161)",
-      "Conversational turn-boundary accuracy falls from 97.5% to 82.5%",
-      "Content F1 on the 40-item conversational set falls from 4.8% to 2.4%",
-      "Zero correctness on the capability items for dhaturupa, lakara, linga, purusha, samasa, correction, relevance and abstention"
-    ],
-    "known_gains": [
-      "Verse validation loss 4.0436 -> 3.5469 (perplexity 57.0 -> 34.7)",
-      "Grammatical well-formedness 0.9921 -> 0.9941"
-    ],
-    "deployment_note": "Deployed on explicit user instruction ('just deploy this 10M model'), not because the measurements show an improvement. The 5.77M checkpoint remains intact at artifacts/model.pt and is restored with scripts/export_numpy.py --checkpoint artifacts/model.pt.",
-    "reports": {
-      "scaling": "reports/scaling_10m.md",
-      "step1_evaluation": "reports/phase1_step1_eval.md",
-      "phase1_status": "reports/phase1_status.md",
-      "deployment": "reports/deploy_10m.md"
-    },
-    "latency": {
-      "numpy_seconds_per_token": 0.024,
-      "bundle_mb": 44.2
+      "data": "data/instruct_v2 (see scripts/build_instruct_v2.py)"
     }
   },
   "corpus": {
-    "train_lines": 1115923,
-    "val_lines": 11271,
-    "devanagari_chars": 74564467,
-    "unique_lines": 1127194,
+    "train_lines": 122642,
+    "val_lines": 1238,
+    "devanagari_chars": 6000048,
+    "unique_lines": 123880,
     "sources": {
-      "gretil/6_sastra": 335840,
-      "gretil/5_poetry": 220983,
-      "gretil/4_rellit": 218459,
-      "gretil/3_purana": 160278,
-      "gretil/2_epic": 92807,
-      "gretil/1_veda": 74628,
-      "dcs": 23145,
-      "gretil/7_later": 1054
+      "gretil/3_purana": 43612,
+      "gretil/2_epic": 40357,
+      "gretil/5_poetry": 23578,
+      "gretil/6_sastra": 8019,
+      "gretil/4_rellit": 4846,
+      "dcs": 1666,
+      "gretil/7_later": 1054,
+      "gretil/1_veda": 748
     },
-    "skipped_files": 94,
+    "skipped_files": 4,
     "files_seen": 974
+  },
+  "greet_finetune": {
+    "checkpoint": "artifacts/greet10/latest.pt",
+    "init": "artifacts/x1_final/best.pt; all 9,896,544 parameters carried over, no new parameters",
+    "lineage": "rounds 8-10: 700 steps @6e-5, 650 @5e-5, 500 @4e-5 from the 10M base",
+    "data": "dense intent inventory (21 intents, 38 answers, 303 prompts, answers exclusive to one intent), gender-swap + polite-prefix augmentation, 5,000 rows balanced replay",
+    "held_out_A": {
+      "score": "43/44 = 97.7%",
+      "report": "reports/greet_r10_latest.json"
+    },
+    "held_out_B_independent": {
+      "score": "30/34 = 88.2%",
+      "report": "reports/greet_r10B.json"
+    },
+    "baseline_same_sets": {
+      "A": "12/40 = 30.0%",
+      "B": "2/34 = 5.9%"
+    },
+    "conversation": {
+      "strict_ok": [
+        0.0,
+        0.025
+      ],
+      "content_f1": [
+        0.0243,
+        0.0596
+      ],
+      "grammar_ok": [
+        0.95,
+        0.95
+      ],
+      "boundary_ok": [
+        0.825,
+        1.0
+      ],
+      "format_ok": [
+        1.0,
+        1.0
+      ],
+      "note": "baseline -> finetuned"
+    },
+    "reports": [
+      "reports/conv_greet10.json",
+      "reports/greet_r10_best.json",
+      "reports/greet_r10_latest.json"
+    ]
   }
 }

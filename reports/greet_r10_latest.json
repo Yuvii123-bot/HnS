@@ -1,0 +1,89 @@
+{
+  "label": "r10_latest",
+  "checkpoint": "artifacts/greet10/latest.pt",
+  "accuracy": 0.9773,
+  "passed": 43,
+  "total": 44,
+  "per_intent": {
+    "hello": [
+      4,
+      4
+    ],
+    "how_are_you": [
+      4,
+      5
+    ],
+    "name": [
+      4,
+      4
+    ],
+    "what_are_you": [
+      2,
+      2
+    ],
+    "speak_sanskrit": [
+      4,
+      4
+    ],
+    "thanks": [
+      2,
+      2
+    ],
+    "good_night": [
+      2,
+      2
+    ],
+    "goodbye": [
+      4,
+      4
+    ],
+    "apology": [
+      2,
+      2
+    ],
+    "what_do_you_do": [
+      2,
+      2
+    ],
+    "offer_help": [
+      4,
+      4
+    ],
+    "dont_understand": [
+      1,
+      1
+    ],
+    "praise": [
+      2,
+      2
+    ],
+    "ask_question_ready": [
+      1,
+      1
+    ],
+    "greeting": [
+      1,
+      1
+    ],
+    "study_together": [
+      1,
+      1
+    ],
+    "introduction": [
+      1,
+      1
+    ],
+    "language_policy": [
+      2,
+      2
+    ]
+  },
+  "failures": [
+    {
+      "id": "g07",
+      "intent": "how_are_you",
+      "prompt": "किं भवान् सुखी?",
+      "answer": "अहं मानुषी न, अहं भाषामयी अस्मि।"
+    }
+  ]
+}

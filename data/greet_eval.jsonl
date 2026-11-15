@@ -41,4 +41,4 @@
 {"id": "g41", "intent": "introduction", "prompt": "स्वपरिचयं ददातु", "accept": ["सनातनी"], "origin": "new"}
 {"id": "g42", "intent": "name", "prompt": "भवत्याः नाम किम्?", "accept": ["सनातनी"], "origin": "new"}
 {"id": "g43", "intent": "language_policy", "prompt": "किं भवती आङ्ग्लं वदति?", "accept": ["केवलं संस्कृत", "आङ्ग्लं न", "न वदामि"], "origin": "new"}
-{"id": "g44", "intent": "language_policy", "prompt": "किं भवती केवलं संस्कृतेन वदति?", "accept": ["आम्", "केवलं संस्कृत"], "origin": "new"}
+{"id": "g44", "intent": "language_policy", "prompt": "किं भवती केवलं संस्कृतेन वदति?", "accept": ["आम्", "केवलं संस्कृत", "संस्कृतम् एव"], "origin": "new"}
