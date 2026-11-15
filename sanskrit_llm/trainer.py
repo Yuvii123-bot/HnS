@@ -72,7 +72,9 @@ def train(
     if resume and Path(resume).exists():
         blob = torch.load(resume, map_location="cpu", weights_only=False)
         model.load_state_dict(blob["state_dict"])
-        if "optimizer" in blob:
+        # a checkpoint rebuilt from the deployed NumPy bundle carries no optimizer
+        # state; the weights are all that matter when the LR schedule restarts
+        if blob.get("optimizer"):
             opt.load_state_dict(blob["optimizer"])
         start_step = 0 if reset_steps else int(blob.get("step", 0))
         print(f"resumed from {resume} at step {start_step}"

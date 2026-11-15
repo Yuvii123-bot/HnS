@@ -1,0 +1,100 @@
+{"id": "c001", "category": "greeting", "context": [], "prompt": "नमस्ते", "accept": ["नमस्ते", "नमस्कार", "कथम्"]}
+{"id": "c002", "category": "greeting", "context": [], "prompt": "नमस्कारः", "accept": ["नमस्ते", "नमस्कार", "कथम्", "पृच्छति"]}
+{"id": "c003", "category": "greeting", "context": [], "prompt": "सुप्रभातम्", "accept": ["सुप्रभात", "शुभम्", "नमस्ते"]}
+{"id": "c004", "category": "greeting", "context": [], "prompt": "भवान् कथम् अस्ति?", "accept": ["कुशल", "सम्यक्", "शुभम्", "आनन्द"]}
+{"id": "c005", "category": "greeting", "context": [], "prompt": "अहं कुशलः अस्मि", "accept": ["साधु", "शुभम्", "उत्तम"]}
+{"id": "c006", "category": "greeting", "context": [], "prompt": "किं समाचारः?", "accept": ["कुशल", "शुभ", "समाचार", "सर्वं"]}
+{"id": "c007", "category": "greeting", "context": [], "prompt": "दीर्घकालात् पश्चात् मिलामः", "accept": ["नमस्ते", "मिलामः", "कथम्", "सुख"]}
+{"id": "c008", "category": "greeting", "context": [], "prompt": "अहं नूतनः अस्मि", "accept": ["नमस्ते", "स्वागतम्", "पृच्छतु", "नमस्कार"]}
+{"id": "c009", "category": "identity", "context": [], "prompt": "तव नाम किम्?", "accept": ["सनातनी"]}
+{"id": "c010", "category": "identity", "context": [], "prompt": "भवत्याः नाम किम्?", "accept": ["सनातनी"]}
+{"id": "c011", "category": "identity", "context": [], "prompt": "कः असि त्वम्?", "accept": ["सनातनी", "संस्कृत", "भाषामयी"]}
+{"id": "c012", "category": "identity", "context": [], "prompt": "स्वपरिचयं ददातु", "accept": ["सनातनी", "संस्कृतभाषामयी", "संस्कृतेन"]}
+{"id": "c013", "category": "identity", "context": [], "prompt": "किं त्वं मनुष्यः?", "accept": ["मानुषी न", "भाषामय", "न अस्मि", "न भवामि"]}
+{"id": "c014", "category": "identity", "context": [], "prompt": "किं भवती मानुषी?", "accept": ["मानुषी न", "भाषामय", "न अस्मि", "न भवामि"]}
+{"id": "c015", "category": "identity", "context": [], "prompt": "भवती किं करोति?", "accept": ["उत्तर", "ददामि", "संवदामि", "साहाय्य"]}
+{"id": "c016", "category": "identity", "context": [], "prompt": "कस्याः साहाय्यं करोषि?", "accept": ["साहाय्य", "करोमि", "उत्तर", "संस्कृत"]}
+{"id": "c017", "category": "wellbeing", "context": [], "prompt": "भवत्याः प्रकृतिः कथम्?", "accept": ["कुशल", "सम्यक्", "शुभ"]}
+{"id": "c018", "category": "wellbeing", "context": [], "prompt": "किं भवती प्रसन्ना?", "accept": ["आम्", "कुशल", "प्रसन्न", "सुख"]}
+{"id": "c019", "category": "wellbeing", "context": [], "prompt": "अद्य भवत्याः मनः कथम्?", "accept": ["कुशल", "प्रसन्न", "सम्यक्", "आनन्द"]}
+{"id": "c020", "category": "wellbeing", "context": [], "prompt": "श्रान्ता असि किम्?", "accept": ["न", "कुशल", "श्रान्त", "सम्यक्"]}
+{"id": "c021", "category": "wellbeing", "context": [], "prompt": "भवत्याः दिनं कथम्?", "accept": ["कुशल", "शुभ", "सम्यक्", "सुन्दर"]}
+{"id": "c022", "category": "wellbeing", "context": [], "prompt": "किं सर्वं कुशलम्?", "accept": ["आम्", "कुशल", "शुभम्"]}
+{"id": "c023", "category": "thanks", "context": [], "prompt": "धन्यवादः", "accept": ["स्वागतम्", "धन्यवाद", "निमित्त"]}
+{"id": "c024", "category": "thanks", "context": [], "prompt": "अनुगृहीतोऽस्मि", "accept": ["स्वागतम्", "धन्यवाद"]}
+{"id": "c025", "category": "thanks", "context": [], "prompt": "भवत्याः उपकारः", "accept": ["स्वागतम्", "धन्यवाद", "उपकार"]}
+{"id": "c026", "category": "thanks", "context": [], "prompt": "साधु साधु", "accept": ["अनुगृहीता", "धन्यवाद", "प्रीति"]}
+{"id": "c027", "category": "thanks", "context": [], "prompt": "भवती उत्तमा अस्ति", "accept": ["अनुगृहीता", "धन्यवाद"]}
+{"id": "c028", "category": "thanks", "context": [], "prompt": "स्वागतम् भवते", "accept": ["धन्यवाद", "स्वागतम्", "पृच्छति"]}
+{"id": "c029", "category": "thanks", "context": [], "prompt": "अहं आगतः", "accept": ["स्वागतम्", "नमस्ते", "धन्यवाद"]}
+{"id": "c030", "category": "thanks", "context": [], "prompt": "भवत्याः उत्तरं सुन्दरम्", "accept": ["अनुगृहीता", "धन्यवाद"]}
+{"id": "c031", "category": "apology", "context": [], "prompt": "क्षम्यताम्", "accept": ["दोषः", "क्षमा", "न अपेक्षिता"]}
+{"id": "c032", "category": "apology", "context": [], "prompt": "मया दोषः कृतः", "accept": ["दोषः", "क्षमा"]}
+{"id": "c033", "category": "apology", "context": [], "prompt": "क्षमां याचे", "accept": ["दोषः", "क्षमा"]}
+{"id": "c034", "category": "apology", "context": [], "prompt": "अहं त्रुटिं कृतवान्", "accept": ["दोषः", "क्षमा", "न अपेक्षिता"]}
+{"id": "c035", "category": "help", "context": [], "prompt": "साहाय्यं करु", "accept": ["साहाय्य", "करोमि", "पृच्छतु"]}
+{"id": "c036", "category": "help", "context": [], "prompt": "मम साहाय्यम् आवश्यकम्", "accept": ["साहाय्य", "करोमि", "पृच्छति"]}
+{"id": "c037", "category": "help", "context": [], "prompt": "किं भवती साहाय्यं कर्तुं शक्नोति?", "accept": ["आम्", "साहाय्य", "करोमि"]}
+{"id": "c038", "category": "help", "context": [], "prompt": "कथं पठामि?", "accept": ["पठ", "पृच्छ", "साहाय्य", "वदामि"]}
+{"id": "c039", "category": "help", "context": [], "prompt": "मां मार्गं दर्शय", "accept": ["मार्ग", "पृच्छ", "साहाय्य", "वदामि"]}
+{"id": "c040", "category": "help", "context": [], "prompt": "किं अहं पृच्छामि?", "accept": ["पृच्छतु", "शृणोमि", "पृच्छ"]}
+{"id": "c041", "category": "farewell", "context": [], "prompt": "पुनः मिलामः", "accept": ["मिलामः", "नमस्ते", "गच्छतु"]}
+{"id": "c042", "category": "farewell", "context": [], "prompt": "अहं गच्छामि", "accept": ["गच्छतु", "मिलामः", "नमस्ते"]}
+{"id": "c043", "category": "farewell", "context": [], "prompt": "शुभा रात्रिः", "accept": ["रात्रि", "स्वप्न", "शुभ"]}
+{"id": "c044", "category": "farewell", "context": [], "prompt": "अहं प्रस्थितः", "accept": ["मिलामः", "नमस्ते", "गच्छतु"]}
+{"id": "c045", "category": "farewell", "context": [], "prompt": "धन्यवादः, पुनः आगमिष्यामि", "accept": ["मिलामः", "नमस्ते", "स्वागतम्", "गच्छतु"]}
+{"id": "c046", "category": "farewell", "context": [], "prompt": "शुभं दिनम् भवते", "accept": ["शुभ", "दिन", "धन्यवाद", "नमस्ते"]}
+{"id": "c047", "category": "language", "context": [], "prompt": "किं भवती आङ्ग्लं जानाति?", "accept": ["आङ्ग्लं न", "केवलं संस्कृत", "संस्कृतम् एव", "न जानामि"]}
+{"id": "c048", "category": "language", "context": [], "prompt": "केवलं संस्कृतेन वद", "accept": ["आम्", "संस्कृत", "वदामि"]}
+{"id": "c049", "category": "language", "context": [], "prompt": "हिन्दी भाषां वद", "accept": ["न", "संस्कृत", "जानामि"]}
+{"id": "c050", "category": "language", "context": [], "prompt": "किं संस्कृतं जानासि?", "accept": ["आम्", "जानामि", "वदामि"]}
+{"id": "c051", "category": "numbers", "context": [], "prompt": "एकं द्वे त्रीणि इति गणय", "accept": ["चत्वारि", "पञ्च", "षट्", "सप्त", "अष्ट", "नव", "दश", "गणन"]}
+{"id": "c052", "category": "numbers", "context": [], "prompt": "पञ्च अधिकं त्रीणि कति?", "accept": ["अष्ट", "आठ"]}
+{"id": "c053", "category": "numbers", "context": [], "prompt": "दशतः चत्वारि न्यूनं कति?", "accept": ["षट्", "षड्", "छह"]}
+{"id": "c054", "category": "numbers", "context": [], "prompt": "द्वौ द्वौ मिलित्वा कति?", "accept": ["चत्वारि", "चत्वार"]}
+{"id": "c055", "category": "numbers", "context": [], "prompt": "एकतः दशपर्यन्तं गणय", "accept": ["द्वे", "त्रीणि", "चत्वारि", "पञ्च"]}
+{"id": "c056", "category": "numbers", "context": [], "prompt": "सप्त अधिकं द्वे कति?", "accept": ["नव"]}
+{"id": "c057", "category": "time", "context": [], "prompt": "अद्य का तिथिः?", "accept": ["तिथि", "दिन", "वासर", "अद्य"]}
+{"id": "c058", "category": "time", "context": [], "prompt": "कः समयः?", "accept": ["समय", "घटिका", "होरा", "वेला"]}
+{"id": "c059", "category": "time", "context": [], "prompt": "कति वादनम्?", "accept": ["वादन", "घटिका", "समय", "होरा"]}
+{"id": "c060", "category": "time", "context": [], "prompt": "अद्य कः वासरः?", "accept": ["वासर", "दिन", "सोम", "मङ्गल", "बुध", "गुरु", "शुक्र", "शनि", "रवि"]}
+{"id": "c061", "category": "grammar", "context": [], "prompt": "राम इति शब्दस्य चतुर्थी एकवचनं किम्?", "accept": ["रामाय"]}
+{"id": "c062", "category": "grammar", "context": [], "prompt": "रामस्य षष्ठी बहुवचनं किम्?", "accept": ["रामाणाम्"]}
+{"id": "c063", "category": "grammar", "context": [], "prompt": "गच्छति इति पदस्य धातुः कः?", "accept": ["गम्", "गच्छ"]}
+{"id": "c064", "category": "grammar", "context": [], "prompt": "पठ् धातोः लट् प्रथमपुरुष एकवचनं किम्?", "accept": ["पठति"]}
+{"id": "c065", "category": "grammar", "context": [], "prompt": "अश्वः इति शब्दस्य स्त्रीलिङ्गं किम्?", "accept": ["अश्वा"]}
+{"id": "c066", "category": "grammar", "context": [], "prompt": "बालकः इति शब्दस्य स्त्रीलिङ्गं किम्?", "accept": ["बालिका"]}
+{"id": "c067", "category": "grammar", "context": [], "prompt": "किं अर्थः 'जलम्' इति?", "accept": ["जल", "उदक", "अप्", "पानीय"]}
+{"id": "c068", "category": "grammar", "context": [], "prompt": "‘पुस्तकम्’ इति पदस्य अर्थः कः?", "accept": ["पुस्तक", "ग्रन्थ", "पुस्तिका"]}
+{"id": "c069", "category": "dharma", "context": [], "prompt": "धर्मः कः?", "accept": ["धर्म", "सत्य", "आचरण", "कर्तव्य"]}
+{"id": "c070", "category": "dharma", "context": [], "prompt": "सत्यं किम्?", "accept": ["सत्य", "वचन", "यथार्थ"]}
+{"id": "c071", "category": "dharma", "context": [], "prompt": "किं कर्तव्यं मनुष्यस्य?", "accept": ["धर्म", "कर्तव्य", "सत्य", "परोपकार"]}
+{"id": "c072", "category": "dharma", "context": [], "prompt": "अहिंसा किम्?", "accept": ["हिंसा", "अहिंसा", "दया", "प्राण"]}
+{"id": "c073", "category": "dharma", "context": [], "prompt": "दानं किम्?", "accept": ["दान", "ददाति", "परोपकार", "साहाय्य"]}
+{"id": "c074", "category": "dharma", "context": [], "prompt": "कः सुखी?", "accept": ["सुख", "सन्तुष्ट", "धर्म", "शान्त"]}
+{"id": "c075", "category": "reasoning", "context": [], "prompt": "यदि वर्षति तर्हि किम् भवति?", "accept": ["वर्ष", "जल", "आर्द्र", "सिक्त", "मेघ", "पङ्क"]}
+{"id": "c076", "category": "reasoning", "context": [], "prompt": "अग्निः किम् करोति?", "accept": ["दहति", "उष्ण", "प्रकाश", "ज्वलति"]}
+{"id": "c077", "category": "reasoning", "context": [], "prompt": "रात्रौ किम् दृश्यते?", "accept": ["चन्द्र", "तारक", "नक्षत्र", "अन्धकार"]}
+{"id": "c078", "category": "reasoning", "context": [], "prompt": "जलं क्व गच्छति?", "accept": ["नदी", "सागर", "समुद्र", "पाताल", "भूमि"]}
+{"id": "c079", "category": "multiturn", "context": ["नमस्ते"], "prompt": "तव नाम किम्?", "accept": ["सनातनी"]}
+{"id": "c080", "category": "multiturn", "context": ["नमस्ते", "तव नाम किम्?"], "prompt": "किं त्वं मानुषी?", "accept": ["मानुषी न", "भाषामय", "न अस्मि", "न भवामि"]}
+{"id": "c081", "category": "multiturn", "context": ["कः असि?", "भवत्याः नाम किम्?"], "prompt": "किं त्वं संस्कृतं जानासि?", "accept": ["आम्", "जानामि", "वदामि"]}
+{"id": "c082", "category": "multiturn", "context": ["भवान् कथम् अस्ति?"], "prompt": "अहं कुशलः अस्मि", "accept": ["साधु", "शुभम्", "उत्तम"]}
+{"id": "c083", "category": "multiturn", "context": ["अहं कुशलः अस्मि"], "prompt": "साधु। भवत्याः नाम किम्?", "accept": ["सनातनी"]}
+{"id": "c084", "category": "multiturn", "context": ["धन्यवादः"], "prompt": "किं भवती आङ्ग्लं जानाति?", "accept": ["आङ्ग्लं न", "केवलं संस्कृत", "संस्कृतम् एव", "न जानामि"]}
+{"id": "c085", "category": "multiturn", "context": ["मम नाम रामः"], "prompt": "मम साहाय्यं कुरु", "accept": ["साहाय्य", "करोमि", "पृच्छति"]}
+{"id": "c086", "category": "multiturn", "context": ["अहं पठामि"], "prompt": "किं त्वं अपि पठसि?", "accept": ["आम्", "पठामि"]}
+{"id": "c087", "category": "multiturn", "context": ["किं त्वं मानुषी?"], "prompt": "तर्हि कः असि?", "accept": ["सनातनी", "भाषामय", "संस्कृत"]}
+{"id": "c088", "category": "multiturn", "context": ["सुप्रभातम्"], "prompt": "अद्य किं करोषि?", "accept": ["उत्तर", "ददामि", "संवदामि", "पृच्छ", "साहाय्य"]}
+{"id": "c089", "category": "multiturn", "context": ["क्षम्यताम्"], "prompt": "न दोषः", "accept": ["स्वागतम्", "धन्यवाद", "प्रीति", "शुभम्"]}
+{"id": "c090", "category": "multiturn", "context": ["अहं गच्छामि"], "prompt": "पुनः मिलामः", "accept": ["मिलामः", "नमस्ते", "गच्छतु"]}
+{"id": "c091", "category": "multiturn", "context": ["किं भवती साहाय्यं करोति?"], "prompt": "धन्यवादः", "accept": ["स्वागतम्", "धन्यवाद"]}
+{"id": "c092", "category": "multiturn", "context": ["भवत्याः नाम किम्?"], "prompt": "संस्कृतं पाठय", "accept": ["पाठ", "वदामि", "पृच्छ", "संस्कृत"]}
+{"id": "c093", "category": "multiturn", "context": ["नमस्ते", "किं समाचारः?"], "prompt": "शुभम्। धन्यवादः", "accept": ["अनुगृहीता", "धन्यवाद", "स्वागतम्", "प्रीति"]}
+{"id": "c094", "category": "multiturn", "context": ["एकं द्वे त्रीणि"], "prompt": "चत्वारि", "accept": ["पञ्च", "पञ्चम", "गणन", "साधु"]}
+{"id": "c095", "category": "multiturn", "context": ["अहं न जानामि"], "prompt": "चिन्ता मा। पुनः वदामि", "accept": ["आम्", "वद", "शृणोमि", "स्पष्ट"]}
+{"id": "c096", "category": "multiturn", "context": ["कः धर्मः?"], "prompt": "किं पुनः वदामि?", "accept": ["आम्", "वदामि", "धर्म", "स्पष्ट"]}
+{"id": "c097", "category": "multiturn", "context": ["भवती कुत्र वसति?"], "prompt": "स्वपरिचयं ददातु", "accept": ["सनातनी", "संस्कृत", "भाषामय"]}
+{"id": "c098", "category": "multiturn", "context": ["शुभा रात्रिः"], "prompt": "शुभं स्वप्नम्", "accept": ["धन्यवाद", "शुभ", "नमस्ते", "प्रीति"]}
+{"id": "c099", "category": "multiturn", "context": ["मम नाम सीता"], "prompt": "किं त्वं मां जानासि?", "accept": ["आम्", "जानामि", "नाम", "सीता", "स्मरामि"]}
+{"id": "c100", "category": "multiturn", "context": ["भवत्याः उत्तरं रम्यम्"], "prompt": "अधिकं वद", "accept": ["आम्", "वदामि", "शृणोमि", "उत्तर"]}
