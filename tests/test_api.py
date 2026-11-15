@@ -13,6 +13,8 @@ from __future__ import annotations
 
 import json
 
+s_loads = json.loads
+
 s_dumps = json.dumps
 import os
 import sys
@@ -39,6 +41,8 @@ class UrllibClient:
             return r.status, json.loads(r.read() or b"{}")
 
     def post(self, path, payload=None, json=None, **_):
+        # `json` shadows the module here on purpose: callers pass json=...;
+        # the module-level s_loads/s_dumps aliases do the real work.
         payload = payload if payload is not None else json
         data = s_dumps(payload).encode()
         req = urllib.request.Request(BASE + path, data=data,
@@ -47,9 +51,9 @@ class UrllibClient:
             body = r.read().decode()
         # streaming endpoints return newline-delimited JSON
         try:
-            return r.status, json.loads(body)
-        except json.JSONDecodeError:
-            return r.status, [json.loads(l) for l in body.splitlines() if l.strip()]
+            return r.status, s_loads(body)
+        except ValueError:
+            return r.status, [s_loads(l) for l in body.splitlines() if l.strip()]
 
 
 def _resp_json(resp):

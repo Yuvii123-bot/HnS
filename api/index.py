@@ -178,7 +178,18 @@ def do_chat(payload: dict) -> list[dict]:
     if mode == "continuation":
         prompt = dev
     else:
-        prompt = f"<user> {dev} <assistant>"
+        # multi-turn: replay the prior turns in the same template they were
+        # trained on, so the model can see what it already said
+        turns = payload.get("history") or []
+        context = ""
+        for turn in (turns[-6:] if isinstance(turns, list) else []):
+            if not isinstance(turn, dict):
+                continue
+            user = str(turn.get("user", "")).strip()[:MAX_MESSAGE]
+            reply = str(turn.get("assistant", "")).strip()[:MAX_MESSAGE]
+            if user and reply and not LATIN.search(user):
+                context += f"<user> {user} <assistant> {reply} "
+        prompt = f"{context}<user> {dev} <assistant>"
 
     tok = rt.tokenizer
     ids = tok.encode(prompt)
@@ -300,7 +311,9 @@ class handler(BaseHTTPRequestHandler):
         try:
             n = int(self.headers.get("content-length") or 0)
             raw = self.rfile.read(n) if n else b"{}"
-            return json.loads(raw or b"{}")
+            data = json.loads(raw or b"{}")
+            # a body of `null` (or a bare list) must not take the handler down
+            return data if isinstance(data, dict) else {}
         except Exception:
             return {}
 
