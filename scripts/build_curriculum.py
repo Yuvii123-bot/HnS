@@ -229,7 +229,7 @@ def main() -> None:
                   f"(~{written / 2.6:,.0f} tokens)", flush=True)
 
     (args.out / "val.txt").write_text("\n".join(val) + "\n", encoding="utf-8")
-    rel = args.out.relative_to(ROOT) if ROOT in args.out.resolve().parents else args.out
+    rel = args.out.resolve().relative_to(ROOT) if ROOT in args.out.resolve().parents else args.out.resolve()
     print(f"{rel}: {written:,} chars ≈ {written / 2.6:,.0f} tokens in {chunks} parts")
 
 
