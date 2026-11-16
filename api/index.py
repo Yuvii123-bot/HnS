@@ -11,6 +11,7 @@ weights from `serve/model.npz`.
 Routes
 ------
 GET  /api/health
+GET  /api/grammar?q=…  (one grammar question, answered from the tables)
 GET  /api/info
 POST /api/tokenize
 POST /api/chat        (newline-delimited JSON events)
@@ -28,7 +29,7 @@ import sys
 import time
 from http.server import BaseHTTPRequestHandler
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import parse_qs, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 # On Vercel the torch-free runtime ships inside serve/runtime; locally we fall
@@ -251,6 +252,25 @@ def do_chat(payload: dict) -> list[dict]:
     return events
 
 
+def do_grammar(question: str) -> dict:
+    """Answer one grammar question from the tables (used by GET /api/grammar)."""
+    if not question:
+        return {"matched": False, "error": "q= is empty"}
+    if LATIN.search(question):
+        return {"matched": False, "error": "केवलं देवनागर्यां लिखतु।"}
+    if grammar_answer is None:
+        return {"matched": False, "error": "grammar layer not available"}
+    try:
+        got = grammar_answer(normalize_devanagari(question))
+    except Exception as exc:  # pragma: no cover - deployment diagnostics
+        return {"matched": False, "error": f"{type(exc).__name__}: {exc}"}
+    if got is None or not got.text:
+        return {"matched": False, "question": question}
+    return {"matched": True, "question": question, "answer": got.text,
+            "route": got.route, "evidence": got.evidence,
+            "confidence": got.confidence}
+
+
 def do_info() -> dict:
     rt = runtime()
     if rt is None:
@@ -348,6 +368,11 @@ class handler(BaseHTTPRequestHandler):
             self._json(do_info())
         elif path == "/api/selftest":
             self._json(do_selftest())
+        elif path == "/api/grammar":
+            # direct lookup: GET /api/grammar?q=राम इति शब्दस्य षष्ठी एकवचनं किम्?
+            query = self.path.split("?", 1)[1] if "?" in self.path else ""
+            question = parse_qs(query).get("q", [""])[0].strip()[:MAX_MESSAGE]
+            self._json(do_grammar(question))
         elif path in ("", "/"):
             self._json({"service": "संस्कृतम्", "see": "/"}, 200)
         else:
