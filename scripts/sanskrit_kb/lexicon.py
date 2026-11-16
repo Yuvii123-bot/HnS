@@ -66,10 +66,26 @@ def _load_json(name: str) -> dict:
 
 
 def table_paths() -> list[Path]:
-    """Where a packed table may live: next to this module (the deployed runtime,
-    inside serve/runtime/sanskrit_kb/) and in serve/ (a local checkout)."""
-    return [Path(__file__).with_name("grammar_table.json.gz"),
-            ROOT / "serve" / "grammar_table.json.gz"]
+    """Every place a packed table may live.
+
+    Locally the module is `<repo>/scripts/sanskrit_kb/`, so the table is in
+    `<repo>/serve/`. In the serverless bundle the module is
+    `/var/task/serve/runtime/sanskrit_kb/` and the table is `/var/task/serve/`,
+    i.e. two levels *down* from the module — so walk the ancestors rather than
+    assuming one fixed root.
+    """
+    here = Path(__file__).resolve()
+    out = [here.with_name("grammar_table.json.gz")]
+    for base in here.parents:
+        out.append(base / "grammar_table.json.gz")
+        out.append(base / "serve" / "grammar_table.json.gz")
+    out.append(Path.cwd() / "serve" / "grammar_table.json.gz")
+    seen, uniq = set(), []
+    for path in out:
+        if path not in seen:
+            seen.add(path)
+            uniq.append(path)
+    return uniq
 
 
 A_STEM_ENDINGS = {
