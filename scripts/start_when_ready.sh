@@ -11,8 +11,9 @@ say() { echo "[$(date -u +%FT%TZ)] $*" | tee -a "$LOG"; }
 
 say "waiting for $BIN/train.bin + val.bin + corpus_stats.json"
 for i in $(seq 1 720); do   # up to 4 hours
-  if [ -f "$BIN/train.bin" ] && [ -f "$BIN/val.bin" ] && [ -f "$BIN/corpus_stats.json" ] \
-     && ! pgrep -f "encode_stream.py" >/dev/null; then
+  # corpus_stats.json is written last by the encoder, so its presence *is* completion.
+  # (Do not pgrep for the encoder: a leftover shell wrapper can keep matching forever.)
+  if [ -f "$BIN/train.bin" ] && [ -f "$BIN/val.bin" ] && [ -f "$BIN/corpus_stats.json" ]; then
     say "encoding complete: $(cat "$BIN/corpus_stats.json" | tr -d '\n ')"
     break
   fi

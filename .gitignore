@@ -63,3 +63,10 @@ data/greet_mix/
 # pipeline is reproducible without re-downloading; it is 434 KB of plain text.
 !data/raw/hitopadesha/
 !data/raw/hitopadesha/hitokale_deva_F.txt
+
+# run250: large, regenerable, or re-derivable from the scripts
+data/bin_250m/
+data/curriculum/
+artifacts/run250/*.pt
+artifacts/run250/*.corrupt
+artifacts/*/*.pt

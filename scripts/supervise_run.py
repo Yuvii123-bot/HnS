@@ -46,6 +46,23 @@ def read_step(ckpt: Path) -> int:
         return -1
 
 
+def existing_trainers(out: Path) -> list[int]:
+    """pids of train_model.py processes bound to this output directory."""
+    try:
+        listing = subprocess.run(["ps", "-eo", "pid,args"], capture_output=True,
+                                 text=True).stdout
+    except OSError:
+        return []
+    found = []
+    for line in listing.splitlines():
+        if "train_model.py" in line and f"--out {out}" in line:
+            try:
+                found.append(int(line.split()[0]))
+            except ValueError:
+                pass
+    return found
+
+
 def torch_load(path: Path) -> dict:
     import torch
 
@@ -99,7 +116,19 @@ def main() -> int:
     restarts = 0
     log = open(log_path, "a", buffering=1)
 
+    def rel(path: Path) -> str:
+        try:
+            return str(Path(path).resolve().relative_to(ROOT))
+        except ValueError:
+            return str(Path(path).resolve())
+
     def status(step: int, state: str, note: str = "") -> None:
+        try:
+            _write_status(step, state, note)
+        except Exception as exc:          # a status write must never kill the run
+            print(f"[supervisor] status write failed: {exc}", flush=True)
+
+    def _write_status(step: int, state: str, note: str = "") -> None:
         payload = {
             "state": state,
             "step": step,
@@ -113,11 +142,10 @@ def main() -> int:
             "note": note,
             "updated": time.strftime("%Y-%m-%d %H:%M:%SZ", time.gmtime()),
             "elapsed_h": round((time.time() - started) / 3600, 2),
-            "log": str(log_path.relative_to(ROOT)),
-            "checkpoint": str((out / "latest.pt").relative_to(ROOT)),
+            "log": rel(log_path),
+            "checkpoint": rel(out / "latest.pt"),
         }
         status_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-        return
 
     print(f"[supervisor] pid {os.getpid()} target {args.steps} steps "
           f"({budget:,} tokens) -> {out}", flush=True)
@@ -139,6 +167,16 @@ def main() -> int:
             status(step_now, "gave_up", f"{restarts} restarts")
             print("[supervisor] too many restarts, giving up", flush=True)
             return 1
+
+        # an orphaned trainer from a dead supervisor must be adopted, not duplicated
+        first_wait = True
+        while existing_trainers(out):
+            if first_wait:
+                print("[supervisor] adopting an existing trainer for this run", flush=True)
+                status(read_step(out / "latest.pt") if (out / "latest.pt").exists() else 0,
+                       "adopting", "orphaned trainer running")
+                first_wait = False
+            time.sleep(30)
 
         cmd = [
             sys.executable, str(ROOT / "scripts" / "train_model.py"),
