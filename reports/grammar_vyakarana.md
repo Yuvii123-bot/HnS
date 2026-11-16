@@ -94,6 +94,22 @@ The router is stdlib-only (no numpy, no torch) and loads `grammar_table.json.gz`
 without the raw sources, which is why it can live in a serverless bundle:
 `serve/runtime/sanskrit_kb/` is staged by `scripts/export_numpy.py`.
 
+## Deployed
+
+`https://sanskrit-llm.vercel.app` now runs commit `6452b3e` (`READY`,
+`PROMOTED`; `/api/health` → `{"ok": true, "model_ready": true}`). The build that
+shipped before this round was `dpl_3PzakRrZ3EFtfieNTP2prKacxWMN` — promoting it
+back rolls the grammar layer off.
+
+One deployment bug is worth recording, because it would have made the whole layer
+invisible in production: in the bundle the module lives at
+`/var/task/serve/runtime/sanskrit_kb/lexicon.py` and the table at
+`/var/task/serve/grammar_table.json.gz`, i.e. two levels *down* from the module, so
+the two hard-coded paths missed it and every grammar question fell through to the
+model without an error. `table_paths()` now walks the module's ancestors, and the
+fix was verified by rebuilding that exact layout in `/tmp` with no repo root above
+it. `GET /api/grammar?q=…` exists so the deployed route can be checked directly.
+
 ## The rubric, fixed
 
 q049 accepted `["सप्त", "अष्ट"]` — written last round, before any answer existed.

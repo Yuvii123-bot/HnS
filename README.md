@@ -343,6 +343,10 @@ and falls through for everything else, so conversation is untouched. The router 
 stdlib-only and ships as `serve/runtime/sanskrit_kb/` + `serve/grammar_table.json.gz`
 (1.7 MB).
 
+`GET /api/grammar?q=राम इति शब्दस्य षष्ठी एकवचनं किम्?` answers one question and
+shows its provenance (`route`, `evidence`, `confidence`); `POST /api/chat` uses the
+same layer first and falls through to the model for everything else.
+
 `reports/grammar_vyakarana.md` has the measured numbers, the three matching traps
 (anusvāra, root homographs, inflected stems), the fixed q049 rubric and the limits.
 
