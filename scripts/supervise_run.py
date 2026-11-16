@@ -1,19 +1,12 @@
 #!/usr/bin/env python3
 """Unattended supervisor for the 250M-token run (and the 100M extension).
 
-Three promises, enforced here rather than by hope:
-
-1. **It never pauses.** The trainer is relaunched after any exit (OOM, SIGKILL,
-   a sandbox restart kills the child but the loop restarts it). A crash costs
-   at most the steps since the last checkpoint (``--ckpt-every``).
-2. **Nothing is lost.** Every restart resumes from ``<out>/latest.pt``, which
-   carries weights + Adam state + step. A weights-only ``model.pt`` is written
-   at the same cadence, so the run is still readable if the optimizer state is
-   ever damaged. A small ``status.json`` is rewritten every 30 s.
-3. **It stops only at the budget.** The loop exits when the checkpointed step
-   count reaches ``--steps``. If a post-stage hook exists
-   (``scripts/post_run_250.py``) it is executed exactly once, and its exit code
-   decides whether the run is finished or extended.
+The supervisor retries failed trainers while the sandbox is running. It cannot
+prevent sandbox suspension or guarantee survival of the sandbox itself.
+Restarts resume from the latest checkpoint containing weights, optimizer state
+and step; work since that checkpoint can be lost. A weights-only model is also
+saved periodically. The supervisor runs a post-stage hook after the target is
+reached, subject to process and storage availability.
 
     python3 scripts/supervise_run.py --steps 61036            # 250M tokens
     python3 scripts/supervise_run.py --steps 85449            # 350M tokens

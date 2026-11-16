@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import time
 from pathlib import Path
 
@@ -88,6 +89,21 @@ def train(
     best_val = float("inf")
     metrics_path = out_dir / "metrics.json"
 
+    def save_training_state(completed_steps: int) -> None:
+        # Write beside the destination and atomically replace it only once fully
+        # written, so an interrupted save cannot destroy the previous checkpoint.
+        tmp = out_dir / "latest.pt.tmp"
+        with tmp.open("wb") as checkpoint:
+            torch.save({
+                "config": model.cfg.to_dict(),
+                "state_dict": model.state_dict(),
+                "optimizer": opt.state_dict(),
+                "step": completed_steps,
+            }, checkpoint)
+            checkpoint.flush()
+            os.fsync(checkpoint.fileno())
+        os.replace(tmp, out_dir / "latest.pt")
+
     for step in range(start_step, steps):
         cur_lr = lr_at(step, lr=lr, warmup=warmup, total=steps)
         for g in opt.param_groups:
@@ -131,15 +147,12 @@ def train(
             metrics_path.write_text(json.dumps(history, indent=2), encoding="utf-8")
 
         if ckpt_every and (step + 1) % ckpt_every == 0:
-            torch.save({
-                "config": model.cfg.to_dict(),
-                "state_dict": model.state_dict(),
-                "optimizer": opt.state_dict(),
-                "step": step + 1,
-            }, out_dir / "latest.pt")
+            save_training_state(step + 1)
             save_checkpoint(out_dir / "model.pt", model, tokenizer,
                             {"step": step + 1, "loss": float(loss)})
 
+    if start_step < steps and (not ckpt_every or steps % ckpt_every):
+        save_training_state(steps)
     save_checkpoint(out_dir / "model.pt", model, tokenizer,
                     {"step": steps, "final": True})
     metrics_path.write_text(json.dumps(history, indent=2), encoding="utf-8")
