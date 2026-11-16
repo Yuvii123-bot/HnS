@@ -1,0 +1,9 @@
+{
+  "steps": 200,
+  "tokens_seen": 819200,
+  "total_tokens_seen": 819200,
+  "batch_size": 16,
+  "block_size": 256,
+  "note": "snapshot of the 250M-token run while it is still training",
+  "params": 11048544
+}
