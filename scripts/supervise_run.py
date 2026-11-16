@@ -149,10 +149,11 @@ def main() -> int:
         ckpt = out / "latest.pt"
         step_now = read_step(ckpt)
         if step_now == -1:
-            bad = out / "latest.pt.corrupt"
-            ckpt.replace(bad)
-            print(f"[supervisor] quarantined corrupt checkpoint -> {bad}", flush=True)
-            step_now = 0
+            # Never silently replace an unreadable checkpoint with a fresh run.
+            # It may still be in the middle of a write by an older trainer.
+            status(-1, "checkpoint_unreadable", "retrying without modifying checkpoint")
+            time.sleep(30)
+            continue
         if step_now >= args.steps:
             print(f"[supervisor] budget reached at step {step_now}", flush=True)
             break
