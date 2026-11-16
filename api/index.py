@@ -57,7 +57,7 @@ except Exception:  # noqa: BLE001
 
 GRAMMAR_ENABLED = os.environ.get("GRAMMAR_ROUTER", "1") not in ("0", "false", "off")
 
-SERVE_DIR = ROOT / "serve"
+SERVE_DIR = Path(os.environ.get("SERVE_DIR", str(ROOT / "serve"))).resolve()
 _RUNTIME: Runtime | None = None
 _LOAD_ERROR: str | None = None
 

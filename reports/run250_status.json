@@ -1,0 +1,16 @@
+{
+  "state": "training",
+  "step": 200,
+  "steps_target": 61036,
+  "tokens_per_step": 4096,
+  "tokens_seen": 819200,
+  "tokens_target": 250000000,
+  "fraction": 0.0033,
+  "restarts": 0,
+  "validator": "held-out val.bin, sha-stable split",
+  "note": "pid 5944",
+  "updated": "2026-11-16 02:21:47Z",
+  "elapsed_h": 0.08,
+  "log": "reports/run250.log",
+  "checkpoint": "artifacts/run250/latest.pt"
+}

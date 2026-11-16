@@ -152,7 +152,7 @@ def guard_nan(lines: list[str]) -> None:
 def write_report(step: int, info: dict, restarts: int, gb: float) -> None:
     tokens = step * TOKENS_PER_STEP
     pct = 100.0 * step / STEP_TARGET
-    tps = info.get("tok_per_s", 0.0)
+    tps = info.get("observed_tok_per_s") or info.get("tok_per_s", 0.0)
     remain_h = (TOKENS_TARGET - tokens) / tps / 3600 if tps else float("nan")
     vals = info.get("val", [])
     val_line = " · ".join(f"{v['step']}:{v['val_loss']:.4f}" for v in vals[-4:]) or "—"
@@ -166,7 +166,7 @@ _updated {now()} · written by `scripts/watchdog.py` every 15 min_
 | tokens | {tokens:,} / {TOKENS_TARGET:,} |
 | train loss | {info.get('loss', '—')} |
 | val loss (recent) | {val_line} |
-| speed | {tps:.0f} tok/s |
+| speed (observed) | {tps:.0f} tok/s |
 | ETA | {remain_h:.1f} h |
 | restarts | {restarts} |
 | free disk | {gb:.2f} GB |
@@ -186,6 +186,7 @@ def main() -> int:
     last_step_mtime = 0.0
     stalled_samples = 0
     while True:
+        record_ts = now()
         gb = free_gb()
         guard_disk(gb)
         lines = tail_lines()
@@ -212,10 +213,24 @@ def main() -> int:
             else:
                 stalled_samples += 1
 
+        # observed rate from the previous sample: the trainer's own tok/s figure is
+        # diluted whenever the sandbox is suspended, so never trust it for the ETA
+        rate = None
+        if HEALTH.exists():
+            try:
+                prev = json.loads(HEALTH.read_text().splitlines()[-1])
+                gap = (time.mktime(time.strptime(record_ts, "%Y-%m-%dT%H:%M:%SZ"))
+                       - time.mktime(time.strptime(prev["ts"], "%Y-%m-%dT%H:%M:%SZ")))
+                dstep = step - int(prev.get("step") or 0)
+                if 60 <= gap <= 1800 and dstep > 0:
+                    rate = dstep * TOKENS_PER_STEP / gap
+            except (json.JSONDecodeError, IndexError, KeyError, ValueError):
+                rate = None
+
         record = {
-            "ts": now(), "step": step, "tokens": step * TOKENS_PER_STEP,
+            "ts": record_ts, "step": step, "tokens": step * TOKENS_PER_STEP,
             "pct": round(100 * step / STEP_TARGET, 2),
-            "tok_per_s": info.get("tok_per_s"), "loss": info.get("loss"),
+            "tok_per_s": rate or info.get("tok_per_s"), "loss": info.get("loss"),
             "val": info.get("val", [])[-2:], "restarts": restarts,
             "supervisor_alive": bool(sup), "trainer_alive": bool(trn),
             "budget_done": budget_done, "free_gb": round(gb, 2),
@@ -223,6 +238,19 @@ def main() -> int:
             "stalled_samples": stalled_samples,
             "error": info.get("error_line"),
         }
+        # a sample gap much larger than the interval means the sandbox was frozen
+        if HEALTH.exists():
+            try:
+                prev_ts = json.loads(HEALTH.read_text().splitlines()[-1])["ts"]
+                gap = (time.mktime(time.strptime(record_ts, "%Y-%m-%dT%H:%M:%SZ"))
+                       - time.mktime(time.strptime(prev_ts, "%Y-%m-%dT%H:%M:%SZ")))
+                if gap > INTERVAL * 1.5:
+                    record["paused_s"] = int(gap - INTERVAL)
+                    alert(f"note: sandbox was suspended for {gap - INTERVAL:.0f}s "
+                          f"(step {step}); training resumes from where it stopped")
+            except (json.JSONDecodeError, IndexError, KeyError, ValueError):
+                pass
+
         with HEALTH.open("a") as fh:
             fh.write(json.dumps(record) + "\n")
 
@@ -234,6 +262,7 @@ def main() -> int:
             alert(f"note: no checkpoint advance for {stalled_samples * INTERVAL // 60} min "
                   f"(step {step}) — watching, not killing")
 
+        info["observed_tok_per_s"] = rate
         write_report(step, info, restarts, gb)
         time.sleep(INTERVAL)
 

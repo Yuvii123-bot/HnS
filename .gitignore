@@ -70,3 +70,6 @@ data/curriculum/
 artifacts/run250/*.pt
 artifacts/run250/*.corrupt
 artifacts/*/*.pt
+
+# live preview bundle (44MB npz, regenerated from the checkpoint)
+serve_live/
