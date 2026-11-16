@@ -11,7 +11,6 @@ weights from `serve/model.npz`.
 Routes
 ------
 GET  /api/health
-GET  /api/grammar?q=…  (one grammar question, answered from the tables)
 GET  /api/info
 POST /api/tokenize
 POST /api/chat        (newline-delimited JSON events)
@@ -29,7 +28,7 @@ import sys
 import time
 from http.server import BaseHTTPRequestHandler
 from pathlib import Path
-from urllib.parse import parse_qs, unquote
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 # On Vercel the torch-free runtime ships inside serve/runtime; locally we fall
@@ -42,20 +41,6 @@ import numpy as np  # noqa: E402
 from sanskrit_llm import akshara  # noqa: E402
 from sanskrit_llm.numpy_lm import Runtime  # noqa: E402
 from sanskrit_llm.transliterate import normalize_devanagari  # noqa: E402
-
-# The grammar layer answers from the vyākaraṇa tables (serve/grammar_table.json.gz),
-# so it is exact and needs no weights. It travels with the bundle as
-# serve/runtime/sanskrit_kb; in a checkout it is scripts/sanskrit_kb.
-try:  # pragma: no cover - import wiring
-    from sanskrit_kb.router import answer as grammar_answer
-except Exception:  # noqa: BLE001
-    try:
-        sys.path.insert(0, str(ROOT / "scripts"))
-        from sanskrit_kb.router import answer as grammar_answer
-    except Exception:  # noqa: BLE001
-        grammar_answer = None
-
-GRAMMAR_ENABLED = os.environ.get("GRAMMAR_ROUTER", "1") not in ("0", "false", "off")
 
 SERVE_DIR = Path(os.environ.get("SERVE_DIR", str(ROOT / "serve"))).resolve()
 _RUNTIME: Runtime | None = None
@@ -140,29 +125,6 @@ def do_chat(payload: dict) -> list[dict]:
     dev = normalize_devanagari(message)
     mode = payload.get("mode", "chat")
     mode = mode if mode in ("chat", "continuation") else "chat"
-
-    # ---- grammar questions are answered from the tables, not the weights:
-    # the model scores 0/15 on the held-out grammar set and 2/52 on cells of
-    # nouns it was never drilled on; the tables answer both exactly.
-    if GRAMMAR_ENABLED and mode == "chat" and grammar_answer is not None:
-        try:
-            ga = grammar_answer(dev)
-        except Exception as exc:  # pragma: no cover - never fail a chat on this
-            sys.stderr.write(f"grammar router: {exc}\n")
-            ga = None
-        if ga is not None and ga.text:
-            started = time.time()
-            return [
-                {"event": "start", "prompt": dev, "devanagari_input": dev,
-                 "answerer": "grammar"},
-                {"event": "token", "text": ga.text, "token_id": -1,
-                 "kind": "word", "route": ga.route},
-                {"event": "done", "text": ga.text, "script": "devanagari",
-                 "n_tokens": 0, "seconds": round(time.time() - started, 3),
-                 "answerer": "grammar", "route": ga.route,
-                 "evidence": ga.evidence, "confidence": ga.confidence,
-                 "params": {"mode": mode}},
-            ]
 
     rt = runtime()
     if rt is None:
@@ -250,25 +212,6 @@ def do_chat(payload: dict) -> list[dict]:
                    "max_new_tokens": max_new, "max_lines": max_lines},
     })
     return events
-
-
-def do_grammar(question: str) -> dict:
-    """Answer one grammar question from the tables (used by GET /api/grammar)."""
-    if not question:
-        return {"matched": False, "error": "q= is empty"}
-    if LATIN.search(question):
-        return {"matched": False, "error": "केवलं देवनागर्यां लिखतु।"}
-    if grammar_answer is None:
-        return {"matched": False, "error": "grammar layer not available"}
-    try:
-        got = grammar_answer(normalize_devanagari(question))
-    except Exception as exc:  # pragma: no cover - deployment diagnostics
-        return {"matched": False, "error": f"{type(exc).__name__}: {exc}"}
-    if got is None or not got.text:
-        return {"matched": False, "question": question}
-    return {"matched": True, "question": question, "answer": got.text,
-            "route": got.route, "evidence": got.evidence,
-            "confidence": got.confidence}
 
 
 def do_info() -> dict:
@@ -368,11 +311,6 @@ class handler(BaseHTTPRequestHandler):
             self._json(do_info())
         elif path == "/api/selftest":
             self._json(do_selftest())
-        elif path == "/api/grammar":
-            # direct lookup: GET /api/grammar?q=राम इति शब्दस्य षष्ठी एकवचनं किम्?
-            query = self.path.split("?", 1)[1] if "?" in self.path else ""
-            question = parse_qs(query).get("q", [""])[0].strip()[:MAX_MESSAGE]
-            self._json(do_grammar(question))
         elif path in ("", "/"):
             self._json({"service": "संस्कृतम्", "see": "/"}, 200)
         else:

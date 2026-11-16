@@ -40,21 +40,6 @@ def main() -> None:
     runtime_dir = args.out / "runtime" / "sanskrit_llm"
     runtime_dir.mkdir(parents=True, exist_ok=True)
     root = Path(__file__).resolve().parents[1]
-    # the grammar layer travels with the bundle: the router + its packed table
-    kb_dir = runtime_dir / "sanskrit_kb"
-    kb_dir.mkdir(parents=True, exist_ok=True)
-    for mod in ("lexicon.py", "router.py"):
-        shutil.copy(root / "scripts" / "sanskrit_kb" / mod, kb_dir / mod)
-    (kb_dir / "__init__.py").write_text(
-        '"""Grammar answered from the vyakarana tables, not from the weights."""\n'
-        "from .lexicon import lexicon, cell, decline\n"
-        "from .router import answer, Answer\n"
-        "__all__ = [\"lexicon\", \"cell\", \"decline\", \"answer\", \"Answer\"]\n",
-        encoding="utf-8")
-    table = args.out / "grammar_table.json.gz"
-    if not table.exists() and (root / "serve" / "grammar_table.json.gz").exists():
-        shutil.copy(root / "serve" / "grammar_table.json.gz", table)
-
     for mod in ("akshara.py", "tokenizer.py", "transliterate.py", "numpy_lm.py"):
         shutil.copy(root / "sanskrit_llm" / mod, runtime_dir / mod)
     (runtime_dir / "__init__.py").write_text(
