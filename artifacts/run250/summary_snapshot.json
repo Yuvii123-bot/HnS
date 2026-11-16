@@ -1,7 +1,7 @@
 {
-  "steps": 600,
-  "tokens_seen": 2457600,
-  "total_tokens_seen": 2457600,
+  "steps": 1400,
+  "tokens_seen": 5734400,
+  "total_tokens_seen": 5734400,
   "batch_size": 16,
   "block_size": 256,
   "params": 9896544,
