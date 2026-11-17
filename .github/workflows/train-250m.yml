@@ -1,0 +1,215 @@
+name: Sanskrit training 250M
+on:
+  push:
+    paths:
+      - .github/workflows/train-250m.yml
+permissions:
+  contents: write
+concurrency:
+  group: sanskrit-training-250m
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install preprocessing dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Create release and check write permissions
+        run: |
+          gh release create "$TRAIN_RELEASE" --target "$GITHUB_SHA" --title "Sanskrit training $GITHUB_RUN_ID" --notes 'Public training checkpoints and dataset. The first checkpoint starts from the deployed weights with a fresh optimizer.'
+          echo 'runner checkpoint write test' > checkpoint-write-test.txt
+          gh release upload "$TRAIN_RELEASE" checkpoint-write-test.txt
+      - name: Rebuild data
+        run: |
+          python scripts/fetch_vyakarana.py
+          python scripts/build_lexicon_prose.py
+          python scripts/build_vyakarana_data.py
+          python scripts/build_curriculum.py --target-tokens 250000000
+          python scripts/encode_stream.py --dir data/curriculum --out data/bin_250m
+          tar -czf corpus.tar.gz data/bin_250m
+          sha256sum corpus.tar.gz > corpus.tar.gz.sha256
+          gh release upload "$TRAIN_RELEASE" corpus.tar.gz corpus.tar.gz.sha256
+  stage01:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+      STAGE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify the corpus
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern 'corpus.tar.gz*'
+          sha256sum -c corpus.tar.gz.sha256
+          tar -xzf corpus.tar.gz
+      - name: Train and save every hour
+        run: python scripts/github_train_segment.py
+  stage02:
+    needs: [prepare, stage01]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+      STAGE: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify the corpus
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern 'corpus.tar.gz*'
+          sha256sum -c corpus.tar.gz.sha256
+          tar -xzf corpus.tar.gz
+      - name: Train and save every hour
+        run: python scripts/github_train_segment.py
+  stage03:
+    needs: [prepare, stage02]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+      STAGE: '3'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify the corpus
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern 'corpus.tar.gz*'
+          sha256sum -c corpus.tar.gz.sha256
+          tar -xzf corpus.tar.gz
+      - name: Train and save every hour
+        run: python scripts/github_train_segment.py
+  stage04:
+    needs: [prepare, stage03]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+      STAGE: '4'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify the corpus
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern 'corpus.tar.gz*'
+          sha256sum -c corpus.tar.gz.sha256
+          tar -xzf corpus.tar.gz
+      - name: Train and save every hour
+        run: python scripts/github_train_segment.py
+  stage05:
+    needs: [prepare, stage04]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+      STAGE: '5'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify the corpus
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern 'corpus.tar.gz*'
+          sha256sum -c corpus.tar.gz.sha256
+          tar -xzf corpus.tar.gz
+      - name: Train and save every hour
+        run: python scripts/github_train_segment.py
+  stage06:
+    needs: [prepare, stage05]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+      STAGE: '6'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify the corpus
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern 'corpus.tar.gz*'
+          sha256sum -c corpus.tar.gz.sha256
+          tar -xzf corpus.tar.gz
+      - name: Train and save every hour
+        run: python scripts/github_train_segment.py
+  stage07:
+    needs: [prepare, stage06]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+      STAGE: '7'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify the corpus
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern 'corpus.tar.gz*'
+          sha256sum -c corpus.tar.gz.sha256
+          tar -xzf corpus.tar.gz
+      - name: Train and save every hour
+        run: python scripts/github_train_segment.py
+  stage08:
+    needs: [prepare, stage07]
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-${{ github.run_id }}
+      STAGE: '8'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify the corpus
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern 'corpus.tar.gz*'
+          sha256sum -c corpus.tar.gz.sha256
+          tar -xzf corpus.tar.gz
+      - name: Train and save every hour
+        run: python scripts/github_train_segment.py
