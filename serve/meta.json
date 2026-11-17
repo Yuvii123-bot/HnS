@@ -13,30 +13,14 @@
   "params": 9896544,
   "stored_float_count": 11048544,
   "train_summary": {
-    "steps": 1400,
-    "tokens_seen": 5734400,
-    "total_tokens_seen": 5734400,
+    "steps": 1600,
+    "tokens_seen": 6553600,
+    "total_tokens_seen": 6553600,
     "batch_size": 16,
     "block_size": 256,
     "params": 9896544,
-    "note": "snapshot of the 250M-token run while it is still training"
+    "note": "snapshot of the 250M-token run while it is still training",
+    "resume_note": "Resumed from step 1400 deployed weights with fresh optimizer and rebuilt corpus."
   },
-  "corpus": {
-    "train_lines": 122642,
-    "val_lines": 1238,
-    "devanagari_chars": 6000048,
-    "unique_lines": 123880,
-    "sources": {
-      "gretil/3_purana": 43612,
-      "gretil/2_epic": 40357,
-      "gretil/5_poetry": 23578,
-      "gretil/6_sastra": 8019,
-      "gretil/4_rellit": 4846,
-      "dcs": 1666,
-      "gretil/7_later": 1054,
-      "gretil/1_veda": 748
-    },
-    "skipped_files": 4,
-    "files_seen": 974
-  }
+  "corpus": {}
 }
