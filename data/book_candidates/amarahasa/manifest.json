@@ -1,0 +1,57 @@
+[
+  {
+    "title": "01 - संजयो न सुखी.pdf",
+    "pdf_sha256": "ead725755f30b3253ad452fcbd4416c7953ac7063261adb5d26803ba20016d63",
+    "pages": 7,
+    "extraction_sha256": "c0046f20ebc440e0fc823be0d13ceff68be0fcb14b0666e365751a1f9656e5e3",
+    "characters": 3293,
+    "nulls": 0,
+    "replacement_chars": 0,
+    "suspicious_repeated_matras": 7,
+    "status": "unreviewed; do not train on this extraction"
+  },
+  {
+    "title": "02 - हरिणी शुकं पश्यति.pdf",
+    "pdf_sha256": "5cab9944738b8b99a5d090e7824993844e80ec8cef55a56b01650018b851bb1f",
+    "pages": 8,
+    "extraction_sha256": "fe72cf4289f85e2538da6b03cc6f8133ff385b26ed0956cfa99355a0f6867c96",
+    "characters": 4124,
+    "nulls": 0,
+    "replacement_chars": 0,
+    "suspicious_repeated_matras": 18,
+    "status": "unreviewed; do not train on this extraction"
+  },
+  {
+    "title": "03 - नलिनी निद्रालुः.pdf",
+    "pdf_sha256": "1aa61253e5aa99004e462a8e66f354afe937f73abf4f2d4269f1fe040e573c9d",
+    "pages": 13,
+    "extraction_sha256": "bb34cb713f0b40f04b4b41b54920545d7c8fd112b073a1afbf54ae9a2b3c5ae7",
+    "characters": 6803,
+    "nulls": 0,
+    "replacement_chars": 0,
+    "suspicious_repeated_matras": 50,
+    "status": "unreviewed; do not train on this extraction"
+  },
+  {
+    "title": "04 - आरोह, राहुल!.pdf",
+    "pdf_sha256": "1b1da3e1a1c7d9620f203f687c1ffa851faa1e020d9e818e21bcdc1680695845",
+    "pages": 18,
+    "extraction_sha256": "dce680a63a17d7d617f806db178c53eb4eb8b3ffac320e6762e2ea8b51247039",
+    "characters": 9512,
+    "nulls": 0,
+    "replacement_chars": 0,
+    "suspicious_repeated_matras": 31,
+    "status": "unreviewed; do not train on this extraction"
+  },
+  {
+    "title": "05 - संजयः क्रीडितुम् इच्छति.pdf",
+    "pdf_sha256": "3431f2d101da2fab2b6a8d8e92aebd5f90b6fc321b821e099db13c0d475cf6f1",
+    "pages": 22,
+    "extraction_sha256": "f838ec006b8f04fc957b2fbeab98aa816509800c5a5dd6efc2f4587132626c95",
+    "characters": 11657,
+    "nulls": 0,
+    "replacement_chars": 0,
+    "suspicious_repeated_matras": 35,
+    "status": "unreviewed; do not train on this extraction"
+  }
+]

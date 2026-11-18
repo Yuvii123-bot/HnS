@@ -1,0 +1,7 @@
+# Five beginner storybooks — quarantine, not training data
+
+These are alternate beginner books, not the five scanned textbooks originally proposed. They are Amarahasa's *saṃjayalokaḥ* storybooks, obtained from [recursivepaws/amarahasa](https://github.com/recursivepaws/amarahasa) commit `5ad695d01a2faf6c00da1aae2f71052aaf44b43f` (repository declares CC0-1.0; [Amarahasa](https://en.amarahasa.com/) states its content is CC0 unless otherwise noted). Confirm individual-source terms and attribution before use.
+
+The five books are *saṃjayo na sukhī*, *hariṇī śukaṃ paśyati*, *nalinī nidrāluḥ*, *āroha, rāhula!* and *saṃjayaḥ krīḍitum icchati*. The companion manifest records input PDF SHA-256 and extracted text SHA-256. Extracted with PyMuPDF 2.1 using `scripts/extract_beginner_books.py`. Raw text includes English descriptions, line numbers, page furniture and extraction errors; preserve it unchanged for review.
+
+PDF extraction is imperfect. For instance `कस्माात्` appears instead of `कस्मात्`. The manifest's doubled-mātrā count is a rough signal only, not a complete quality test. Review against the original, correct errors, check chapter/turn boundaries and deduplication, and split held-out tests independently before training. Do not treat the narrative lines as unrelated question-answer pairs. The five short books cannot alone guarantee conversational capability or preserve grammar; include separately verified grammar rehearsal and compare held-out performance. No fine-tuning or model deployment has been performed using these files.
