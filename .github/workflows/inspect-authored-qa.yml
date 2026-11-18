@@ -1,0 +1,29 @@
+name: Inspect authored QA candidate
+on:
+  push:
+    paths:
+      - .github/workflows/inspect-authored-qa.yml
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Retrieve saved run summary and verify candidate hash
+        run: |
+          gh release download sanskrit-250m-44002147943 --pattern 'authored-qa-seed-44247588156*'
+          sha256sum -c authored-qa-seed-44247588156.pt.sha256
+          mkdir -p reports
+          cp authored-qa-seed-44247588156.json reports/authored_qa_seed_44247588156.json
+      - name: Save summary on session branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/authored_qa_seed_44247588156.json
+          git commit -m 'Record authored QA seed training summary'
+          git push origin HEAD:${{ github.ref_name }}
