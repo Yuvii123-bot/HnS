@@ -1,0 +1,29 @@
+name: Inspect automated book QA checkpoint
+on:
+  push:
+    paths:
+      - .github/workflows/inspect-auto-book-qa.yml
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ASSET: book-qa-auto-44262147932-step-01000
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: Retrieve checksum and progress
+        run: |
+          gh release download sanskrit-250m-44002147943 --pattern "$ASSET.pt" --pattern "$ASSET.pt.sha256" --pattern "$ASSET.json"
+          sha256sum -c "$ASSET.pt.sha256"
+          cp "$ASSET.json" reports/book_qa_auto_44262147932_step_1000.json
+      - name: Record verified progress
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/book_qa_auto_44262147932_step_1000.json
+          git commit -m 'Record verified book QA checkpoint progress'
+          git push origin HEAD:${{ github.ref_name }}
