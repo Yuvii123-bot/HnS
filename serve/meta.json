@@ -13,14 +13,15 @@
   "params": 9896544,
   "stored_float_count": 11048544,
   "train_summary": {
-    "steps": 1600,
-    "tokens_seen": 6553600,
-    "total_tokens_seen": 6553600,
+    "steps": 50600,
+    "tokens_seen": 207257600,
+    "total_tokens_seen": 207257600,
     "batch_size": 16,
     "block_size": 256,
     "params": 9896544,
     "note": "snapshot of the 250M-token run while it is still training",
-    "resume_note": "Resumed from step 1400 deployed weights with fresh optimizer and rebuilt corpus."
+    "resume_note": "GitHub training continuation from step 1400 weights with a fresh optimizer.",
+    "checkpoint_asset": "checkpoint-06-1.pt"
   },
   "corpus": {}
 }
