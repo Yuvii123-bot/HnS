@@ -13,11 +13,11 @@
   "params": 9896544,
   "stored_float_count": 11048544,
   "train_summary": {
-    "total_tokens_seen": 263946506,
-    "tokens_seen": 263946506,
-    "additional_nonpadding_positions": 42807904,
-    "additional_loss_positions": 18303034,
-    "checkpoint_asset": "colab-tokens-000042807904.pt",
+    "total_tokens_seen": 305274802,
+    "tokens_seen": 305274802,
+    "additional_nonpadding_positions": 84136200,
+    "additional_loss_positions": 35973699,
+    "checkpoint_asset": "colab-tokens-000084136200.pt",
     "heldout_evaluation_complete": false,
     "warning": "Repeated unreviewed examples; prompts included in input count but not QA loss."
   },
