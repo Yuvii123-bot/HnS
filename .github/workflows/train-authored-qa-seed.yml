@@ -1,0 +1,48 @@
+name: Train authored Sanskrit QA seed
+on:
+  push:
+    paths:
+      - .github/workflows/train-authored-qa-seed.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: authored-qa-seed
+  cancel-in-progress: false
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-44002147943
+      BASE_ASSET: book-experiment-44228621663.pt
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Test training boundaries
+        run: python -m unittest tests.test_train_authored_qa -v
+      - name: Download and verify book-trained checkpoint
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern "$BASE_ASSET" --pattern "$BASE_ASSET.sha256"
+          sha256sum -c "$BASE_ASSET.sha256"
+      - name: Fine-tune separate experimental candidate
+        run: |
+          python scripts/train_authored_qa.py --pairs data/qa_10k_seed/authored_v1.tsv --checkpoint "$BASE_ASSET" --out artifacts/authored_qa_seed --steps 40 --batch 8
+      - name: Preserve latest completed checkpoint and summary
+        if: always()
+        run: |
+          if [ -f artifacts/authored_qa_seed/latest.pt ]; then
+            name="authored-qa-seed-${GITHUB_RUN_ID}.pt"
+            cp artifacts/authored_qa_seed/latest.pt "$name"
+            sha256sum "$name" > "$name.sha256"
+            gh release upload "$TRAIN_RELEASE" "$name" "$name.sha256"
+          fi
+          if [ -f artifacts/authored_qa_seed/authored_qa_summary.json ]; then
+            cp artifacts/authored_qa_seed/authored_qa_summary.json "authored-qa-seed-${GITHUB_RUN_ID}.json"
+            gh release upload "$TRAIN_RELEASE" "authored-qa-seed-${GITHUB_RUN_ID}.json"
+          fi
