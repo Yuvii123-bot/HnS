@@ -34,4 +34,4 @@ jobs:
           with open('progress-inspection.json', 'w') as f:
               json.dump(result, f)
           PY
-          gh release upload "$TRAIN_RELEASE" progress-inspection.json --clobber
+          gh release edit "$TRAIN_RELEASE" --notes "Public training checkpoints and dataset. The first checkpoint starts from deployed weights with a fresh optimizer. Latest verified inspection: $(cat progress-inspection.json)"
