@@ -4,12 +4,15 @@ on:
     paths:
       - .github/workflows/inspect-book-source.yml
 permissions:
-  contents: read
+  contents: write
 jobs:
   inspect:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
       - name: Test access to the original chapter
         run: |
           python - <<'PY'
@@ -24,8 +27,12 @@ jobs:
               print('::error::Original chapter fetch failed: ' + type(exc).__name__ + ': ' + str(exc))
               raise
           PY
-      - uses: actions/upload-artifact@v4
-        with:
-          name: original-chapter-html
-          path: chapter.html
-          retention-days: 3
+      - name: Preserve sample for extraction audit
+        run: |
+          mkdir -p data/book_candidates/original_sample
+          cp chapter.html data/book_candidates/original_sample/harini-chapter-1.html
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/book_candidates/original_sample/harini-chapter-1.html
+          git commit -m 'Preserve original chapter for text extraction audit'
+          git push origin HEAD:${{ github.ref_name }}
