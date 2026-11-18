@@ -15,7 +15,14 @@ jobs:
         with:
           python-version: '3.11'
       - name: Download source OCR and metadata without training
-        run: python scripts/collect_sanskrit_books.py
+        run: |
+          set +e
+          python scripts/collect_sanskrit_books.py 2>&1 | tee /tmp/book-collection.log
+          status=${PIPESTATUS[0]}
+          if [ "$status" -ne 0 ]; then
+            echo "::error::$(tail -n 1 /tmp/book-collection.log)"
+            exit "$status"
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: quarantined-sanskrit-book-sources
