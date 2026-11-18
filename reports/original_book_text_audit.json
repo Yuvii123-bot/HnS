@@ -1,0 +1,8 @@
+{
+  "sentences": 1115,
+  "unique_devanagari_strings": 774,
+  "duplicate_occurrences": 341,
+  "sentences_with_question_mark": 277,
+  "roundtrip_mismatches": [],
+  "limitations": "Round-trip equality is not independent linguistic verification or a held-out audit."
+}
