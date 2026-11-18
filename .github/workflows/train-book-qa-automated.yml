@@ -1,0 +1,52 @@
+name: Automated Sanskrit books and QA training
+on:
+  push:
+    paths:
+      - .github/workflows/train-book-qa-automated.yml
+  workflow_dispatch:
+    inputs:
+      resume_asset:
+        description: Previously published book-qa-auto checkpoint filename (blank starts from authored seed)
+        required: false
+        type: string
+      target_steps:
+        description: Total steps for this candidate, including resumed steps
+        required: false
+        default: '2000'
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: automated-book-qa-candidate
+  cancel-in-progress: false
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-44002147943
+      BASE_ASSET: authored-qa-seed-44247588156.pt
+      RESUME_ASSET: ${{ inputs.resume_asset || '' }}
+      TRAIN_STEPS: ${{ inputs.target_steps || '2000' }}
+      CHECKPOINT_EVERY: '250'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU training dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Verify isolated training implementation
+        run: python -m unittest tests.test_train_book_qa_automated tests.test_train_authored_qa -v
+      - name: Retrieve and checksum checkpoint
+        run: |
+          asset="${RESUME_ASSET:-$BASE_ASSET}"
+          case "$asset" in
+            authored-qa-seed-44247588156.pt|book-qa-auto-*-step-*.pt) ;;
+            *) echo 'Unexpected checkpoint name' >&2; exit 1 ;;
+          esac
+          gh release download "$TRAIN_RELEASE" --pattern "$asset" --pattern "$asset.sha256"
+          sha256sum -c "$asset.sha256"
+      - name: Train with regular durable checkpoints
+        run: python scripts/train_book_qa_automated.py
