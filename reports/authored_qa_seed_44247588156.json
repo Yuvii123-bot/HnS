@@ -1,0 +1,17 @@
+{
+  "steps": 40,
+  "batch_size": 8,
+  "block_size": 256,
+  "tokens_seen": 14120,
+  "params": 9896544,
+  "minutes": 0.16,
+  "best_val_loss": null,
+  "final_loss": 2.6282,
+  "authored_qa_rows": 51,
+  "grammar_rows": 1,
+  "actual_nonpadding_input_positions": 9986,
+  "assistant_and_eos_loss_positions": 4683,
+  "nominal_base_positions": 220569600,
+  "heldout_evaluation_complete": false,
+  "warning": "Small authored seed, not independently reviewed. No evaluation or deployment."
+}
