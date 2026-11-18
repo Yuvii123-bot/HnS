@@ -1,0 +1,19 @@
+name: Stop requested training run
+on:
+  push:
+    paths:
+      - .github/workflows/stop-training.yml
+permissions:
+  actions: write
+  contents: read
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Cancel training run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh run cancel 44002147943
