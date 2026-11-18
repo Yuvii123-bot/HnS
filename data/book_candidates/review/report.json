@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "book": "book-01",
+      "input_sha256": "c0046f20ebc440e0fc823be0d13ceff68be0fcb14b0666e365751a1f9656e5e3",
+      "passages": 108,
+      "automatically_flagged": 3,
+      "flags": {
+        "repeated_matra": 3
+      }
+    },
+    {
+      "book": "book-02",
+      "input_sha256": "fe72cf4289f85e2538da6b03cc6f8133ff385b26ed0956cfa99355a0f6867c96",
+      "passages": 133,
+      "automatically_flagged": 18,
+      "flags": {
+        "repeated_matra": 18
+      }
+    },
+    {
+      "book": "book-03",
+      "input_sha256": "bb34cb713f0b40f04b4b41b54920545d7c8fd112b073a1afbf54ae9a2b3c5ae7",
+      "passages": 203,
+      "automatically_flagged": 46,
+      "flags": {
+        "repeated_matra": 45,
+        "possibly_incomplete": 1
+      }
+    },
+    {
+      "book": "book-04",
+      "input_sha256": "dce680a63a17d7d617f806db178c53eb4eb8b3ffac320e6762e2ea8b51247039",
+      "passages": 297,
+      "automatically_flagged": 31,
+      "flags": {
+        "repeated_matra": 31
+      }
+    },
+    {
+      "book": "book-05",
+      "input_sha256": "f838ec006b8f04fc957b2fbeab98aa816509800c5a5dd6efc2f4587132626c95",
+      "passages": 373,
+      "automatically_flagged": 35,
+      "flags": {
+        "repeated_matra": 34,
+        "possibly_incomplete": 1
+      }
+    }
+  ],
+  "warning": "All passages are unreviewed, even those with no automatic flags. Not training data."
+}

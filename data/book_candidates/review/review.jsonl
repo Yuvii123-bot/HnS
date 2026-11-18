@@ -1,0 +1,1114 @@
+{"id": "book-01:8:1", "book": "book-01", "source_line": 8, "source_number": 1, "text": "संजयो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:10:1", "book": "book-01", "source_line": 10, "source_number": 2, "text": "किं संजयो बालः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:12:1", "book": "book-01", "source_line": 12, "source_number": 3, "text": "संजयो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:14:1", "book": "book-01", "source_line": 14, "source_number": 4, "text": "किं संजयः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:16:1", "book": "book-01", "source_line": 16, "source_number": 5, "text": "किं संजयः सुखी बालः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:18:1", "book": "book-01", "source_line": 18, "source_number": 6, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:20:1", "book": "book-01", "source_line": 20, "source_number": 7, "text": "संजयो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:22:1", "book": "book-01", "source_line": 22, "source_number": 8, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:29:1", "book": "book-01", "source_line": 29, "source_number": 1, "text": "संजयो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:31:1", "book": "book-01", "source_line": 31, "source_number": 2, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:33:1", "book": "book-01", "source_line": 33, "source_number": 3, "text": "\"क्वाा! क्वाा! क्वाा!\"", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-01:36:1", "book": "book-01", "source_line": 36, "source_number": 4, "text": "संजयः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:38:1", "book": "book-01", "source_line": 38, "source_number": 5, "text": "किं संजयो बालं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:40:1", "book": "book-01", "source_line": 40, "source_number": 6, "text": "संजयो बालं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:42:1", "book": "book-01", "source_line": 42, "source_number": 7, "text": "संजयः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:44:1", "book": "book-01", "source_line": 44, "source_number": 8, "text": "किं संजयो बालां पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:46:1", "book": "book-01", "source_line": 46, "source_number": 9, "text": "संजयो न बालां पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:48:1", "book": "book-01", "source_line": 48, "source_number": 10, "text": "संजयः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:50:1", "book": "book-01", "source_line": 50, "source_number": 11, "text": "\"क्वाा! क्वाा! क्वाा!\"", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-01:52:1", "book": "book-01", "source_line": 52, "source_number": 12, "text": "संजयः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:54:1", "book": "book-01", "source_line": 54, "source_number": 13, "text": "संजयो मयूरं पश्यति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:56:1", "book": "book-01", "source_line": 56, "source_number": 14, "text": "मयूरः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:58:1", "book": "book-01", "source_line": 58, "source_number": 15, "text": "मयूरः संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:60:1", "book": "book-01", "source_line": 60, "source_number": 16, "text": "किं मयूरः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:62:1", "book": "book-01", "source_line": 62, "source_number": 17, "text": "मयूरः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:64:1", "book": "book-01", "source_line": 64, "source_number": 18, "text": "सुखी मयूरः संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:66:1", "book": "book-01", "source_line": 66, "source_number": 19, "text": "संजयो मयूरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:68:1", "book": "book-01", "source_line": 68, "source_number": 20, "text": "किं संजयः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:70:1", "book": "book-01", "source_line": 70, "source_number": 21, "text": "किं संजयः सुखी बालः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:72:1", "book": "book-01", "source_line": 72, "source_number": 22, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:75:1", "book": "book-01", "source_line": 75, "source_number": 23, "text": "संजयो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:77:1", "book": "book-01", "source_line": 77, "source_number": 24, "text": "संजयो मयूरं न द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:79:1", "book": "book-01", "source_line": 79, "source_number": 25, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:81:1", "book": "book-01", "source_line": 81, "source_number": 26, "text": "संजयः किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:89:1", "book": "book-01", "source_line": 89, "source_number": 1, "text": "\"हा! हा! हा!\"", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:91:1", "book": "book-01", "source_line": 91, "source_number": 2, "text": "संजयः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:93:1", "book": "book-01", "source_line": 93, "source_number": 3, "text": "किं संजयो बालं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:95:1", "book": "book-01", "source_line": 95, "source_number": 4, "text": "संजयो बालं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:97:1", "book": "book-01", "source_line": 97, "source_number": 5, "text": "किं संजयो मयूरं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:99:1", "book": "book-01", "source_line": 99, "source_number": 6, "text": "संजयो न मयूरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:101:1", "book": "book-01", "source_line": 101, "source_number": 7, "text": "संजयः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:103:1", "book": "book-01", "source_line": 103, "source_number": 8, "text": "संजयो वानरं पश्यति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:105:1", "book": "book-01", "source_line": 105, "source_number": 9, "text": "किं वानरः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:107:1", "book": "book-01", "source_line": 107, "source_number": 10, "text": "वानरः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:109:1", "book": "book-01", "source_line": 109, "source_number": 11, "text": "वानरः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:111:1", "book": "book-01", "source_line": 111, "source_number": 12, "text": "वानरः संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:114:1", "book": "book-01", "source_line": 114, "source_number": 13, "text": "सुखी वानरः संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:116:1", "book": "book-01", "source_line": 116, "source_number": 14, "text": "संजयो वानरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:118:1", "book": "book-01", "source_line": 118, "source_number": 15, "text": "संजयः सुखिनं वानरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:120:1", "book": "book-01", "source_line": 120, "source_number": 16, "text": "किं संजयः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:122:1", "book": "book-01", "source_line": 122, "source_number": 17, "text": "किं संजयः सुखी बालः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:124:1", "book": "book-01", "source_line": 124, "source_number": 18, "text": "संजयो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:126:1", "book": "book-01", "source_line": 126, "source_number": 19, "text": "संजयो न वानरं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:128:1", "book": "book-01", "source_line": 128, "source_number": 20, "text": "संजयो मयूरं न द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:130:1", "book": "book-01", "source_line": 130, "source_number": 21, "text": "संजयो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:132:1", "book": "book-01", "source_line": 132, "source_number": 22, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:134:1", "book": "book-01", "source_line": 134, "source_number": 23, "text": "संजयः किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:142:1", "book": "book-01", "source_line": 142, "source_number": 1, "text": "नलिनी न बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:144:1", "book": "book-01", "source_line": 144, "source_number": 2, "text": "नलिनी न मयूरः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:146:1", "book": "book-01", "source_line": 146, "source_number": 3, "text": "किं नलिनी वानरः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:148:1", "book": "book-01", "source_line": 148, "source_number": 4, "text": "नलिनी न वानरः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:150:1", "book": "book-01", "source_line": 150, "source_number": 5, "text": "नलिनी का?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:153:1", "book": "book-01", "source_line": 153, "source_number": 6, "text": "नलिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:155:1", "book": "book-01", "source_line": 155, "source_number": 7, "text": "नलिनी माता संजयस्य!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:157:1", "book": "book-01", "source_line": 157, "source_number": 8, "text": "किं नलिनी सुखिनी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:159:1", "book": "book-01", "source_line": 159, "source_number": 9, "text": "किं नलिनी सुखिनी माता?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:161:1", "book": "book-01", "source_line": 161, "source_number": 10, "text": "नलिनी न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:163:1", "book": "book-01", "source_line": 163, "source_number": 11, "text": "नलिनी न सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:165:1", "book": "book-01", "source_line": 165, "source_number": 12, "text": "नलिनी किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:167:1", "book": "book-01", "source_line": 167, "source_number": 13, "text": "नलिनी किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:169:1", "book": "book-01", "source_line": 169, "source_number": 14, "text": "नलिनी संजयं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:171:1", "book": "book-01", "source_line": 171, "source_number": 15, "text": "किं संजयो माता?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:173:1", "book": "book-01", "source_line": 173, "source_number": 16, "text": "संजयो न माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:175:1", "book": "book-01", "source_line": 175, "source_number": 17, "text": "संजयो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:177:1", "book": "book-01", "source_line": 177, "source_number": 18, "text": "संजयो नलिन्याा बालः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-01:179:1", "book": "book-01", "source_line": 179, "source_number": 19, "text": "संजय! संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:181:1", "book": "book-01", "source_line": 181, "source_number": 20, "text": "किं नलिनी संजयं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:183:1", "book": "book-01", "source_line": 183, "source_number": 21, "text": "नलिनी संजयं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:185:1", "book": "book-01", "source_line": 185, "source_number": 22, "text": "नलिनी न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:187:1", "book": "book-01", "source_line": 187, "source_number": 23, "text": "नलिनी न सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:189:1", "book": "book-01", "source_line": 189, "source_number": 24, "text": "संजयः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:192:1", "book": "book-01", "source_line": 192, "source_number": 25, "text": "किं संजयो मयूरं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:194:1", "book": "book-01", "source_line": 194, "source_number": 26, "text": "संजयो मयूरं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:196:1", "book": "book-01", "source_line": 196, "source_number": 27, "text": "किं संजयः पश्यति वानरम्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:198:1", "book": "book-01", "source_line": 198, "source_number": 28, "text": "संजयो न वानरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:200:1", "book": "book-01", "source_line": 200, "source_number": 29, "text": "संजयो नलिनीं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:202:1", "book": "book-01", "source_line": 202, "source_number": 30, "text": "संजयो नलिनीं मातरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:204:1", "book": "book-01", "source_line": 204, "source_number": 31, "text": "संजयः किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:206:1", "book": "book-01", "source_line": 206, "source_number": 32, "text": "किं संजयो नलिनीं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:208:1", "book": "book-01", "source_line": 208, "source_number": 33, "text": "किं संजयो मातरं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:210:1", "book": "book-01", "source_line": 210, "source_number": 34, "text": "किं संजयः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:212:1", "book": "book-01", "source_line": 212, "source_number": 35, "text": "किं संजयः सुखी बालः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:219:1", "book": "book-01", "source_line": 219, "source_number": 1, "text": "संजयः सुखी!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:221:1", "book": "book-01", "source_line": 221, "source_number": 2, "text": "मातः! मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:223:1", "book": "book-01", "source_line": 223, "source_number": 3, "text": "संजयः सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:225:1", "book": "book-01", "source_line": 225, "source_number": 4, "text": "संजयो मातरं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:227:1", "book": "book-01", "source_line": 227, "source_number": 5, "text": "नलिनी संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:230:1", "book": "book-01", "source_line": 230, "source_number": 6, "text": "संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:232:1", "book": "book-01", "source_line": 232, "source_number": 7, "text": "किं नलिनी सुखिनी माता?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:234:1", "book": "book-01", "source_line": 234, "source_number": 8, "text": "नलिनी सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:236:1", "book": "book-01", "source_line": 236, "source_number": 9, "text": "संजयः किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:238:1", "book": "book-01", "source_line": 238, "source_number": 10, "text": "संजयो मयूरं न द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:240:1", "book": "book-01", "source_line": 240, "source_number": 11, "text": "संजयो न वानरं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:242:1", "book": "book-01", "source_line": 242, "source_number": 12, "text": "संजयः किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:244:1", "book": "book-01", "source_line": 244, "source_number": 13, "text": "संजयो मातरं द्रष्टुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:246:1", "book": "book-01", "source_line": 246, "source_number": 14, "text": "किं संजयः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:248:1", "book": "book-01", "source_line": 248, "source_number": 15, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-01:250:1", "book": "book-01", "source_line": 250, "source_number": 16, "text": "संजयः सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:8:1", "book": "book-02", "source_line": 8, "source_number": 1, "text": "हरिणी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:10:1", "book": "book-02", "source_line": 10, "source_number": 2, "text": "किं हरिणी बालः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:12:1", "book": "book-02", "source_line": 12, "source_number": 3, "text": "हरिणी न बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:14:1", "book": "book-02", "source_line": 14, "source_number": 4, "text": "हरिणी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:16:1", "book": "book-02", "source_line": 16, "source_number": 5, "text": "किं हरिणी सुखिनी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:18:1", "book": "book-02", "source_line": 18, "source_number": 6, "text": "किं हरिणी सुखिनी बाला?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:20:1", "book": "book-02", "source_line": 20, "source_number": 7, "text": "हरिणी सुखिनी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:22:1", "book": "book-02", "source_line": 22, "source_number": 8, "text": "कस्माात्?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:24:1", "book": "book-02", "source_line": 24, "source_number": 9, "text": "हरिणी कस्माात् सुखिनी?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:26:1", "book": "book-02", "source_line": 26, "source_number": 10, "text": "हरिणी कस्माात् सुखिनी बाला?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:28:1", "book": "book-02", "source_line": 28, "source_number": 11, "text": "हरिणी किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:30:1", "book": "book-02", "source_line": 30, "source_number": 12, "text": "हरिणी शुकं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:32:1", "book": "book-02", "source_line": 32, "source_number": 13, "text": "किं शुकः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:34:1", "book": "book-02", "source_line": 34, "source_number": 14, "text": "किं हरिणी सुखिनं शुकं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:37:1", "book": "book-02", "source_line": 37, "source_number": 15, "text": "शुको न सुखी!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:39:1", "book": "book-02", "source_line": 39, "source_number": 16, "text": "शुकः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:41:1", "book": "book-02", "source_line": 41, "source_number": 17, "text": "शुको गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:43:1", "book": "book-02", "source_line": 43, "source_number": 18, "text": "शुको गच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:45:1", "book": "book-02", "source_line": 45, "source_number": 19, "text": "आः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:47:1", "book": "book-02", "source_line": 47, "source_number": 20, "text": "शुको गच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:49:1", "book": "book-02", "source_line": 49, "source_number": 21, "text": "शुकः कुत्र गच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:51:1", "book": "book-02", "source_line": 51, "source_number": 22, "text": "कुत्र शुको गच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:53:1", "book": "book-02", "source_line": 53, "source_number": 23, "text": "शुकः कुत्र गन्तुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:55:1", "book": "book-02", "source_line": 55, "source_number": 24, "text": "शुकः किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:63:1", "book": "book-02", "source_line": 63, "source_number": 1, "text": "किं हरिणी सुखिनी बाला?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:65:1", "book": "book-02", "source_line": 65, "source_number": 2, "text": "हरिणी न सुखिनी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:67:1", "book": "book-02", "source_line": 67, "source_number": 3, "text": "कस्माात्?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:69:1", "book": "book-02", "source_line": 69, "source_number": 4, "text": "हरिणी कस्माान् न सुखिनी?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:71:1", "book": "book-02", "source_line": 71, "source_number": 5, "text": "हरिणी कस्माान् न सुखिनी बाला?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:73:1", "book": "book-02", "source_line": 73, "source_number": 6, "text": "हरिणी न शुकं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:76:1", "book": "book-02", "source_line": 76, "source_number": 7, "text": "हरिणी किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:78:1", "book": "book-02", "source_line": 78, "source_number": 8, "text": "हरिणी किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:80:1", "book": "book-02", "source_line": 80, "source_number": 9, "text": "हरिणी शुकं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:82:1", "book": "book-02", "source_line": 82, "source_number": 10, "text": "शुक! शुक!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:84:1", "book": "book-02", "source_line": 84, "source_number": 11, "text": "हरिणी शुकं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:86:1", "book": "book-02", "source_line": 86, "source_number": 12, "text": "हरिणी कस्माान् न शुकं पश्यति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:88:1", "book": "book-02", "source_line": 88, "source_number": 13, "text": "शुको गतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:90:1", "book": "book-02", "source_line": 90, "source_number": 14, "text": "शुकः कुत्र?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:92:1", "book": "book-02", "source_line": 92, "source_number": 15, "text": "शुकः कुत्र गतः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:94:1", "book": "book-02", "source_line": 94, "source_number": 16, "text": "शुकः कुत्र गन्तुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:96:1", "book": "book-02", "source_line": 96, "source_number": 17, "text": "हरिणी गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:98:1", "book": "book-02", "source_line": 98, "source_number": 18, "text": "हरिणी कस्मााद् गच्छति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:100:1", "book": "book-02", "source_line": 100, "source_number": 19, "text": "हरिणी शुकं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:102:1", "book": "book-02", "source_line": 102, "source_number": 20, "text": "हरिणी शुकं द्रष्टुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:104:1", "book": "book-02", "source_line": 104, "source_number": 21, "text": "हरिणी कुत्र गच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:106:1", "book": "book-02", "source_line": 106, "source_number": 22, "text": "हरिणी कुत्र शुकं पश्येत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:115:1", "book": "book-02", "source_line": 115, "source_number": 1, "text": "हरिणी किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:117:1", "book": "book-02", "source_line": 117, "source_number": 2, "text": "किं हरिणी शुकं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:119:1", "book": "book-02", "source_line": 119, "source_number": 3, "text": "हरिणी शुकं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:121:1", "book": "book-02", "source_line": 121, "source_number": 4, "text": "हरिणी वृक्षं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:123:1", "book": "book-02", "source_line": 123, "source_number": 5, "text": "हरिणी सुखिनी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:125:1", "book": "book-02", "source_line": 125, "source_number": 6, "text": "हरिणी कस्माात् सुखिनी?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:127:1", "book": "book-02", "source_line": 127, "source_number": 7, "text": "शुकः कुत्र गन्तुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:129:1", "book": "book-02", "source_line": 129, "source_number": 8, "text": "शुको वृक्षं गन्तुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:131:1", "book": "book-02", "source_line": 131, "source_number": 9, "text": "किं शुको वृक्षे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:133:1", "book": "book-02", "source_line": 133, "source_number": 10, "text": "किं शुको वृक्षं गतः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:135:1", "book": "book-02", "source_line": 135, "source_number": 11, "text": "हरिणी वृक्षं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:137:1", "book": "book-02", "source_line": 137, "source_number": 12, "text": "हरिणी कुत्र गता?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:139:1", "book": "book-02", "source_line": 139, "source_number": 13, "text": "हरिणी वृक्षं गता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:141:1", "book": "book-02", "source_line": 141, "source_number": 14, "text": "हरिणी वृक्षे पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:143:1", "book": "book-02", "source_line": 143, "source_number": 15, "text": "हरिणी वृक्षं गत्वाा वृक्षे पश्यति।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:145:1", "book": "book-02", "source_line": 145, "source_number": 16, "text": "कुत्र शुकः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:147:1", "book": "book-02", "source_line": 147, "source_number": 17, "text": "किं शुको वृक्षे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:149:1", "book": "book-02", "source_line": 149, "source_number": 18, "text": "किं हरिणी शुकं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:151:1", "book": "book-02", "source_line": 151, "source_number": 19, "text": "हरिणी शुकं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:154:1", "book": "book-02", "source_line": 154, "source_number": 20, "text": "हरिणी न सुखिनी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:156:1", "book": "book-02", "source_line": 156, "source_number": 21, "text": "हरिणी कस्माान् न सुखिनी बाला?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:158:1", "book": "book-02", "source_line": 158, "source_number": 22, "text": "हरिणी शुकं न पश्यति वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:160:1", "book": "book-02", "source_line": 160, "source_number": 23, "text": "हरिणी वृक्षं गत्वाा शुकं न पश्यति।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:162:1", "book": "book-02", "source_line": 162, "source_number": 24, "text": "शुको न वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:164:1", "book": "book-02", "source_line": 164, "source_number": 25, "text": "शुको न वृक्षं गतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:166:1", "book": "book-02", "source_line": 166, "source_number": 26, "text": "शुकः कुत्र गतः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:174:1", "book": "book-02", "source_line": 174, "source_number": 1, "text": "हरिणी शुकम् इच्छति द्रष्टुम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:176:1", "book": "book-02", "source_line": 176, "source_number": 2, "text": "हरिणी वृक्षं वृक्षं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:178:1", "book": "book-02", "source_line": 178, "source_number": 3, "text": "हरिणी वृक्षे वृक्षे पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:180:1", "book": "book-02", "source_line": 180, "source_number": 4, "text": "किं हरिणी शुकं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:182:1", "book": "book-02", "source_line": 182, "source_number": 5, "text": "किं हरिणी वृक्षं वृक्षं गत्वाा शुकं पश्यति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:184:1", "book": "book-02", "source_line": 184, "source_number": 6, "text": "किं हरिणी वृक्षे वृक्षे दृष्ट्वाा शुकं पश्यति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:186:1", "book": "book-02", "source_line": 186, "source_number": 7, "text": "हरिणी न शुकं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:188:1", "book": "book-02", "source_line": 188, "source_number": 8, "text": "हरिणी न सुखिनी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:190:1", "book": "book-02", "source_line": 190, "source_number": 9, "text": "कुत्र गतः शुकः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:193:1", "book": "book-02", "source_line": 193, "source_number": 10, "text": "\"कू! कू!\"", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:195:1", "book": "book-02", "source_line": 195, "source_number": 11, "text": "हरिणी सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:197:1", "book": "book-02", "source_line": 197, "source_number": 12, "text": "हरिणी किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:199:1", "book": "book-02", "source_line": 199, "source_number": 13, "text": "किं हरिणी शुकं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:201:1", "book": "book-02", "source_line": 201, "source_number": 14, "text": "हरिणी न शुकं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:203:1", "book": "book-02", "source_line": 203, "source_number": 15, "text": "हरिणी कोटरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:205:1", "book": "book-02", "source_line": 205, "source_number": 16, "text": "कुत्र कोटरः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:207:1", "book": "book-02", "source_line": 207, "source_number": 17, "text": "कोटरो वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:209:1", "book": "book-02", "source_line": 209, "source_number": 18, "text": "हरिणी किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:211:1", "book": "book-02", "source_line": 211, "source_number": 19, "text": "हरिणी कोटरं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:213:1", "book": "book-02", "source_line": 213, "source_number": 20, "text": "किं कोटरे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:215:1", "book": "book-02", "source_line": 215, "source_number": 21, "text": "किं शुकः कोटरे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:217:1", "book": "book-02", "source_line": 217, "source_number": 22, "text": "किं शुकः कोटरं गतः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:224:1", "book": "book-02", "source_line": 224, "source_number": 1, "text": "हरिणी कोटरं गता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:226:1", "book": "book-02", "source_line": 226, "source_number": 2, "text": "हरिणी कोटरे पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:228:1", "book": "book-02", "source_line": 228, "source_number": 3, "text": "हरिणी वृक्षस्य कोटरे पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:231:1", "book": "book-02", "source_line": 231, "source_number": 4, "text": "हरिणी किं पश्यति कोटरे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:233:1", "book": "book-02", "source_line": 233, "source_number": 5, "text": "किं शुकः कोटरे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:235:1", "book": "book-02", "source_line": 235, "source_number": 6, "text": "किं हरिणी शुकं पश्यति कोटरे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:237:1", "book": "book-02", "source_line": 237, "source_number": 7, "text": "शुकः कोटरे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:239:1", "book": "book-02", "source_line": 239, "source_number": 8, "text": "शुको वृक्षस्य कोटरे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:241:1", "book": "book-02", "source_line": 241, "source_number": 9, "text": "किं शुकः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:243:1", "book": "book-02", "source_line": 243, "source_number": 10, "text": "शुकः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:245:1", "book": "book-02", "source_line": 245, "source_number": 11, "text": "हरिणी सुखिनी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:247:1", "book": "book-02", "source_line": 247, "source_number": 12, "text": "शुकः कस्माात् कोटरं गतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:249:1", "book": "book-02", "source_line": 249, "source_number": 13, "text": "शुकः किं द्रष्टुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:251:1", "book": "book-02", "source_line": 251, "source_number": 14, "text": "शुकः किं द्रष्टुम् इच्छति कोटरे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:253:1", "book": "book-02", "source_line": 253, "source_number": 15, "text": "हरिणी कोटरे पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:255:1", "book": "book-02", "source_line": 255, "source_number": 16, "text": "हरिणी किं पश्यति कोटरे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:257:1", "book": "book-02", "source_line": 257, "source_number": 17, "text": "हरिणी किं पश्यति कोटरे वृक्षस्य?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:259:1", "book": "book-02", "source_line": 259, "source_number": 18, "text": "शुकस्य बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:261:1", "book": "book-02", "source_line": 261, "source_number": 19, "text": "शुकस्य शुक­बालः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:263:1", "book": "book-02", "source_line": 263, "source_number": 20, "text": "कुत्र शुक­बालः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:265:1", "book": "book-02", "source_line": 265, "source_number": 21, "text": "शुक­बालः कोटरे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:267:1", "book": "book-02", "source_line": 267, "source_number": 22, "text": "\"कू! कू!\"", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:270:1", "book": "book-02", "source_line": 270, "source_number": 23, "text": "किं शुक­बालः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:272:1", "book": "book-02", "source_line": 272, "source_number": 24, "text": "शुक­बालः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:274:1", "book": "book-02", "source_line": 274, "source_number": 25, "text": "शुकः कस्माात् कोटरं गतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:276:1", "book": "book-02", "source_line": 276, "source_number": 26, "text": "शुकः कस्मााद् वृक्षस्य कोटरं गतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:278:1", "book": "book-02", "source_line": 278, "source_number": 27, "text": "शुको बालं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:280:1", "book": "book-02", "source_line": 280, "source_number": 28, "text": "शुकः शुक­बालम् इच्छति द्रष्टुं कोटरे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:282:1", "book": "book-02", "source_line": 282, "source_number": 29, "text": "हरिणी शुकं कोटरे पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:284:1", "book": "book-02", "source_line": 284, "source_number": 30, "text": "हरिणी शुक­बालं पश्यति कोटरे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:286:1", "book": "book-02", "source_line": 286, "source_number": 31, "text": "शुकः कस्माात् कोटरं गतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-02:288:1", "book": "book-02", "source_line": 288, "source_number": 32, "text": "शुको बालं द्रष्टुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:290:1", "book": "book-02", "source_line": 290, "source_number": 33, "text": "कू! कू! कू!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:292:1", "book": "book-02", "source_line": 292, "source_number": 34, "text": "कू!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:294:1", "book": "book-02", "source_line": 294, "source_number": 35, "text": "शुकः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:296:1", "book": "book-02", "source_line": 296, "source_number": 36, "text": "शुक­बालः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:298:1", "book": "book-02", "source_line": 298, "source_number": 37, "text": "किं हरिणी सुखिनी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:300:1", "book": "book-02", "source_line": 300, "source_number": 38, "text": "हरिणी सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-02:302:1", "book": "book-02", "source_line": 302, "source_number": 39, "text": "हरिणी सुखिनी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:8:1", "book": "book-03", "source_line": 8, "source_number": 1, "text": "नलिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:10:1", "book": "book-03", "source_line": 10, "source_number": 2, "text": "नलिनी सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:12:1", "book": "book-03", "source_line": 12, "source_number": 3, "text": "नलिनी सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:14:1", "book": "book-03", "source_line": 14, "source_number": 4, "text": "नलिनी माता संजयस्य।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:16:1", "book": "book-03", "source_line": 16, "source_number": 5, "text": "संजयः कः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:18:1", "book": "book-03", "source_line": 18, "source_number": 6, "text": "संजयो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:20:1", "book": "book-03", "source_line": 20, "source_number": 7, "text": "नलिनी माता बालस्य।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:22:1", "book": "book-03", "source_line": 22, "source_number": 8, "text": "नलिनी किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:24:1", "book": "book-03", "source_line": 24, "source_number": 9, "text": "नलिनी निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:26:1", "book": "book-03", "source_line": 26, "source_number": 10, "text": "कस्माात्?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:28:1", "book": "book-03", "source_line": 28, "source_number": 11, "text": "कस्माान् नलिनी निद्रां गन्तुम् इच्छति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:30:1", "book": "book-03", "source_line": 30, "source_number": 12, "text": "नलिनी निद्राालुः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:32:1", "book": "book-03", "source_line": 32, "source_number": 13, "text": "नलिनी सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:34:1", "book": "book-03", "source_line": 34, "source_number": 14, "text": "किन्तु नलिनी निद्राालुर् माता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:37:1", "book": "book-03", "source_line": 37, "source_number": 15, "text": "नलिनी सुखिनी निद्राालुर् माता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:45:1", "book": "book-03", "source_line": 45, "source_number": 1, "text": "कस्माान् नलिनी निद्राालुः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:47:1", "book": "book-03", "source_line": 47, "source_number": 2, "text": "कस्माान् नलिनी न निद्रां गता?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:49:1", "book": "book-03", "source_line": 49, "source_number": 3, "text": "नलिनी माता पद्मायाः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:51:1", "book": "book-03", "source_line": 51, "source_number": 4, "text": "पद्मा का?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:53:1", "book": "book-03", "source_line": 53, "source_number": 5, "text": "पद्मा शिशुः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:55:1", "book": "book-03", "source_line": 55, "source_number": 6, "text": "पद्मा नलिन्याःाः शिशुः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:57:1", "book": "book-03", "source_line": 57, "source_number": 7, "text": "किं पद्मा सुखिनी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:59:1", "book": "book-03", "source_line": 59, "source_number": 8, "text": "पद्मा सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:61:1", "book": "book-03", "source_line": 61, "source_number": 9, "text": "पद्मा सुखी शिशुः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:63:1", "book": "book-03", "source_line": 63, "source_number": 10, "text": "आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:65:1", "book": "book-03", "source_line": 65, "source_number": 11, "text": "नलिनी माता शिशोः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:67:1", "book": "book-03", "source_line": 67, "source_number": 12, "text": "नलिनी माता सुखिनः शिशोः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:69:1", "book": "book-03", "source_line": 69, "source_number": 13, "text": "नलिनी सुखिनी माता सुखिनः शिशोः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:71:1", "book": "book-03", "source_line": 71, "source_number": 14, "text": "किन्तु नलिनी निद्राालुर् माता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:73:1", "book": "book-03", "source_line": 73, "source_number": 15, "text": "नलिनी निद्राालुर् माता सुखिनः शिशोः!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:76:1", "book": "book-03", "source_line": 76, "source_number": 16, "text": "संजयो निद्रां गतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:78:1", "book": "book-03", "source_line": 78, "source_number": 17, "text": "पद्मे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:80:1", "book": "book-03", "source_line": 80, "source_number": 18, "text": "पद्मे, निद्रां गच्छ।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:82:1", "book": "book-03", "source_line": 82, "source_number": 19, "text": "किं त्वं निद्रां गन्तुम् इच्छसि, पद्मे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:84:1", "book": "book-03", "source_line": 84, "source_number": 20, "text": "नलिनी सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:86:1", "book": "book-03", "source_line": 86, "source_number": 21, "text": "नलिनी निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:88:1", "book": "book-03", "source_line": 88, "source_number": 22, "text": "किन्तु पद्मा किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:90:1", "book": "book-03", "source_line": 90, "source_number": 23, "text": "किं पद्मा निद्राालुः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:92:1", "book": "book-03", "source_line": 92, "source_number": 24, "text": "किं पद्मा निद्रां गन्तुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:94:1", "book": "book-03", "source_line": 94, "source_number": 25, "text": "पद्मा न निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:96:1", "book": "book-03", "source_line": 96, "source_number": 26, "text": "पद्मा न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:98:1", "book": "book-03", "source_line": 98, "source_number": 27, "text": "पद्मा न सुखी शिशुः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:100:1", "book": "book-03", "source_line": 100, "source_number": 28, "text": "आ! आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:102:1", "book": "book-03", "source_line": 102, "source_number": 29, "text": "पद्मे! पद्मे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:104:1", "book": "book-03", "source_line": 104, "source_number": 30, "text": "नलिनी निद्राालुर् माता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:106:1", "book": "book-03", "source_line": 106, "source_number": 31, "text": "नलिनी निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:108:1", "book": "book-03", "source_line": 108, "source_number": 32, "text": "किन्तु पद्मा न निद्रााम् इच्छति गन्तुम्।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:110:1", "book": "book-03", "source_line": 110, "source_number": 33, "text": "नलिनी न सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:112:1", "book": "book-03", "source_line": 112, "source_number": 34, "text": "कस्माात् पद्मा न निद्रां गन्तुम् इच्छति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:115:1", "book": "book-03", "source_line": 115, "source_number": 35, "text": "पद्मा किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:122:1", "book": "book-03", "source_line": 122, "source_number": 1, "text": "नलिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:124:1", "book": "book-03", "source_line": 124, "source_number": 2, "text": "किन्तु नलिनी न सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:126:1", "book": "book-03", "source_line": 126, "source_number": 3, "text": "नलिनी निद्राालुर् माता शिशोः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:128:1", "book": "book-03", "source_line": 128, "source_number": 4, "text": "नलिनी निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:130:1", "book": "book-03", "source_line": 130, "source_number": 5, "text": "किन्तु पद्मा न निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:132:1", "book": "book-03", "source_line": 132, "source_number": 6, "text": "पद्मा न निद्राालुः शिशुः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:134:1", "book": "book-03", "source_line": 134, "source_number": 7, "text": "पद्मा न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:136:1", "book": "book-03", "source_line": 136, "source_number": 8, "text": "आ! आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:138:1", "book": "book-03", "source_line": 138, "source_number": 9, "text": "कस्माात् पद्मा न निद्राालुः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:140:1", "book": "book-03", "source_line": 140, "source_number": 10, "text": "कस्माात् पद्मा न निद्रां गन्तुम् इच्छति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:142:1", "book": "book-03", "source_line": 142, "source_number": 11, "text": "पद्मा किम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:144:1", "book": "book-03", "source_line": 144, "source_number": 12, "text": "नलिनी न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:146:1", "book": "book-03", "source_line": 146, "source_number": 13, "text": "पद्मया निद्राा गन्तव्या!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:148:1", "book": "book-03", "source_line": 148, "source_number": 14, "text": "किम् इच्छेत् पद्मा?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:150:1", "book": "book-03", "source_line": 150, "source_number": 15, "text": "पद्मा खादितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:153:1", "book": "book-03", "source_line": 153, "source_number": 16, "text": "पद्मा निद्रां गच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:155:1", "book": "book-03", "source_line": 155, "source_number": 17, "text": "पद्मा खादित्वा निद्रां गच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:157:1", "book": "book-03", "source_line": 157, "source_number": 18, "text": "पद्मा खादित्वा निद्रां गन्तुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:159:1", "book": "book-03", "source_line": 159, "source_number": 19, "text": "पद्मे, किं त्वं खादितुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:161:1", "book": "book-03", "source_line": 161, "source_number": 20, "text": "किं त्वं खादित्वा निद्रां गन्तुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:163:1", "book": "book-03", "source_line": 163, "source_number": 21, "text": "आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:165:1", "book": "book-03", "source_line": 165, "source_number": 22, "text": "पद्मा सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:167:1", "book": "book-03", "source_line": 167, "source_number": 23, "text": "पद्मा खादितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:169:1", "book": "book-03", "source_line": 169, "source_number": 24, "text": "शिशुर् नलिन्याःाः खादितुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:171:1", "book": "book-03", "source_line": 171, "source_number": 25, "text": "नलिनी सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:179:1", "book": "book-03", "source_line": 179, "source_number": 1, "text": "पद्मे, त्वं खादितुम् इच्छसि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:181:1", "book": "book-03", "source_line": 181, "source_number": 2, "text": "पद्मे, खाद!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:183:1", "book": "book-03", "source_line": 183, "source_number": 3, "text": "खाद, खाद!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:185:1", "book": "book-03", "source_line": 185, "source_number": 4, "text": "पद्मा खादति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:187:1", "book": "book-03", "source_line": 187, "source_number": 5, "text": "नलिनी सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:189:1", "book": "book-03", "source_line": 189, "source_number": 6, "text": "नलिनी कस्माात् सुखिनी?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:192:1", "book": "book-03", "source_line": 192, "source_number": 7, "text": "पद्मा निद्रां गच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:194:1", "book": "book-03", "source_line": 194, "source_number": 8, "text": "पद्मा खादित्वा निद्रां गच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:196:1", "book": "book-03", "source_line": 196, "source_number": 9, "text": "पद्मा खादितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:198:1", "book": "book-03", "source_line": 198, "source_number": 10, "text": "पद्मे, त्वं खादितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:200:1", "book": "book-03", "source_line": 200, "source_number": 11, "text": "किं त्वं निद्रां गन्तुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:202:1", "book": "book-03", "source_line": 202, "source_number": 12, "text": "किं त्वं खादित्वा निद्रां गन्तुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:204:1", "book": "book-03", "source_line": 204, "source_number": 13, "text": "किं पद्मा निद्रां गच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:206:1", "book": "book-03", "source_line": 206, "source_number": 14, "text": "किं पद्मा खादित्वा निद्रां गच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:208:1", "book": "book-03", "source_line": 208, "source_number": 15, "text": "आ! आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:210:1", "book": "book-03", "source_line": 210, "source_number": 16, "text": "पद्मा न निद्रां गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:212:1", "book": "book-03", "source_line": 212, "source_number": 17, "text": "पद्मा खादितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:214:1", "book": "book-03", "source_line": 214, "source_number": 18, "text": "किन्तु पद्मा न निद्राालुः!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:216:1", "book": "book-03", "source_line": 216, "source_number": 19, "text": "पद्मा न निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:218:1", "book": "book-03", "source_line": 218, "source_number": 20, "text": "नलिनी न सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:220:1", "book": "book-03", "source_line": 220, "source_number": 21, "text": "पद्मे, कस्माात् त्वं न निद्रां गन्तुम् इच्छसि?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:222:1", "book": "book-03", "source_line": 222, "source_number": 22, "text": "त्वं किम् इच्छसि, पद्मे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:224:1", "book": "book-03", "source_line": 224, "source_number": 23, "text": "त्वया निद्राा गन्तव्या, पद्मे!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:226:1", "book": "book-03", "source_line": 226, "source_number": 24, "text": "कस्माात् पद्मा निद्रां न गन्तुम् इच्छति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:228:1", "book": "book-03", "source_line": 228, "source_number": 25, "text": "पद्मा किम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:231:1", "book": "book-03", "source_line": 231, "source_number": 26, "text": "पद्मा खादित्वा किम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:239:1", "book": "book-03", "source_line": 239, "source_number": 1, "text": "आ! आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:241:1", "book": "book-03", "source_line": 241, "source_number": 2, "text": "पद्मा खादितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:243:1", "book": "book-03", "source_line": 243, "source_number": 3, "text": "किन्तु पद्मा न निद्रां गता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:245:1", "book": "book-03", "source_line": 245, "source_number": 4, "text": "पद्मा न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:247:1", "book": "book-03", "source_line": 247, "source_number": 5, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:249:1", "book": "book-03", "source_line": 249, "source_number": 6, "text": "किं संजयः शिशुः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:251:1", "book": "book-03", "source_line": 251, "source_number": 7, "text": "संजयो न शिशुः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:253:1", "book": "book-03", "source_line": 253, "source_number": 8, "text": "संजयो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:255:1", "book": "book-03", "source_line": 255, "source_number": 9, "text": "संजयो बालो नलिन्याःाः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:257:1", "book": "book-03", "source_line": 257, "source_number": 10, "text": "किन्तु संजयो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:259:1", "book": "book-03", "source_line": 259, "source_number": 11, "text": "संजयो निद्राालुर् बालः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:261:1", "book": "book-03", "source_line": 261, "source_number": 12, "text": "संजयो नलिनीं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:263:1", "book": "book-03", "source_line": 263, "source_number": 13, "text": "संजयो नलिनीं मातरं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:265:1", "book": "book-03", "source_line": 265, "source_number": 14, "text": "नलिनी न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:267:1", "book": "book-03", "source_line": 267, "source_number": 15, "text": "संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:270:1", "book": "book-03", "source_line": 270, "source_number": 16, "text": "निद्रां गच्छ, संजय।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:272:1", "book": "book-03", "source_line": 272, "source_number": 17, "text": "मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:274:1", "book": "book-03", "source_line": 274, "source_number": 18, "text": "पद्मा कस्माान् न निद्रां गता?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:276:1", "book": "book-03", "source_line": 276, "source_number": 19, "text": "कस्माात् पद्मा न निद्राालुः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:278:1", "book": "book-03", "source_line": 278, "source_number": 20, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:280:1", "book": "book-03", "source_line": 280, "source_number": 21, "text": "संजयो निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:282:1", "book": "book-03", "source_line": 282, "source_number": 22, "text": "पद्मा न निद्रां गन्तुम् इच्छति, संजय।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:284:1", "book": "book-03", "source_line": 284, "source_number": 23, "text": "किं पद्मा खादितुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:286:1", "book": "book-03", "source_line": 286, "source_number": 24, "text": "पद्मा खादित्वा निद्रां गन्तुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:288:1", "book": "book-03", "source_line": 288, "source_number": 25, "text": "पद्मा न खादितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:290:1", "book": "book-03", "source_line": 290, "source_number": 26, "text": "पद्मा खादितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:292:1", "book": "book-03", "source_line": 292, "source_number": 27, "text": "किन्तु पद्मा न निद्राालुः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:294:1", "book": "book-03", "source_line": 294, "source_number": 28, "text": "संजयः पद्मां गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:296:1", "book": "book-03", "source_line": 296, "source_number": 29, "text": "पद्मे, त्वं खादितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:298:1", "book": "book-03", "source_line": 298, "source_number": 30, "text": "किन्तु त्वं न गन्तुम् इच्छसि निद्रााम्।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:300:1", "book": "book-03", "source_line": 300, "source_number": 31, "text": "त्वं किम् इच्छसि, पद्मे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:302:1", "book": "book-03", "source_line": 302, "source_number": 32, "text": "त्वया निद्राा गन्तव्या!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:310:1", "book": "book-03", "source_line": 310, "source_number": 1, "text": "त्वं किम् इच्छसि, पद्मे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:312:1", "book": "book-03", "source_line": 312, "source_number": 2, "text": "पद्मे, किं त्वं क्रीडितुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:314:1", "book": "book-03", "source_line": 314, "source_number": 3, "text": "किं त्वं खादित्वा क्रीडितुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:316:1", "book": "book-03", "source_line": 316, "source_number": 4, "text": "आ! आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:318:1", "book": "book-03", "source_line": 318, "source_number": 5, "text": "पद्मा सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:320:1", "book": "book-03", "source_line": 320, "source_number": 6, "text": "पद्मा किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:322:1", "book": "book-03", "source_line": 322, "source_number": 7, "text": "पद्मा क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:324:1", "book": "book-03", "source_line": 324, "source_number": 8, "text": "पद्मा खादित्वा क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:326:1", "book": "book-03", "source_line": 326, "source_number": 9, "text": "मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:328:1", "book": "book-03", "source_line": 328, "source_number": 10, "text": "पद्मा क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:330:1", "book": "book-03", "source_line": 330, "source_number": 11, "text": "पद्मा न क्रीडितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:332:1", "book": "book-03", "source_line": 332, "source_number": 12, "text": "किन्तु पद्मा क्रीडित्वा निद्रां गच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:334:1", "book": "book-03", "source_line": 334, "source_number": 13, "text": "पद्मा खादित्वा क्रीडित्वा निद्रां गन्तुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:336:1", "book": "book-03", "source_line": 336, "source_number": 14, "text": "नलिनी न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:338:1", "book": "book-03", "source_line": 338, "source_number": 15, "text": "नलिनी न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:340:1", "book": "book-03", "source_line": 340, "source_number": 16, "text": "कस्माान् नलिनी न क्रीडितुम् इच्छति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:342:1", "book": "book-03", "source_line": 342, "source_number": 17, "text": "पद्मा क्रीडित्वा निद्रां न गन्तुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:345:1", "book": "book-03", "source_line": 345, "source_number": 18, "text": "किन्तु नलिनी निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:347:1", "book": "book-03", "source_line": 347, "source_number": 19, "text": "पद्मया निद्राा गन्तव्या।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:349:1", "book": "book-03", "source_line": 349, "source_number": 20, "text": "नलिन्याा क्रीडितव्यम्!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:351:1", "book": "book-03", "source_line": 351, "source_number": 21, "text": "क्रीडामः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:353:1", "book": "book-03", "source_line": 353, "source_number": 22, "text": "क्रीडामः, संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:355:1", "book": "book-03", "source_line": 355, "source_number": 23, "text": "क्रीडामः, पद्मे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:357:1", "book": "book-03", "source_line": 357, "source_number": 24, "text": "आ! आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:359:1", "book": "book-03", "source_line": 359, "source_number": 25, "text": "गच्छ संजयम्, पद्मे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:361:1", "book": "book-03", "source_line": 361, "source_number": 26, "text": "गच्छ, गच्छ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:363:1", "book": "book-03", "source_line": 363, "source_number": 27, "text": "पद्मा संजयं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:365:1", "book": "book-03", "source_line": 365, "source_number": 28, "text": "गच्छ मातरम्, पद्मे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:367:1", "book": "book-03", "source_line": 367, "source_number": 29, "text": "गच्छ, गच्छ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:369:1", "book": "book-03", "source_line": 369, "source_number": 30, "text": "पद्मा गच्छति नलिनीम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:371:1", "book": "book-03", "source_line": 371, "source_number": 31, "text": "गच्छ संजयम्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:373:1", "book": "book-03", "source_line": 373, "source_number": 32, "text": "पद्मा नलिनीं गत्वा संजयं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:375:1", "book": "book-03", "source_line": 375, "source_number": 33, "text": "गच्छ मातरम्, पद्मे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:377:1", "book": "book-03", "source_line": 377, "source_number": 34, "text": "पद्मा गत्वा संजयं गच्छति नलिनीम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:379:1", "book": "book-03", "source_line": 379, "source_number": 35, "text": "गच्छ, गच्छ, गच्छ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:381:1", "book": "book-03", "source_line": 381, "source_number": 36, "text": "पद्मा मातरं गत्वा गच्छति संजयम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:384:1", "book": "book-03", "source_line": 384, "source_number": 37, "text": "पद्मा सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:386:1", "book": "book-03", "source_line": 386, "source_number": 38, "text": "पद्मा खादित्वा क्रीडितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:388:1", "book": "book-03", "source_line": 388, "source_number": 39, "text": "किं पद्मा निद्राालुः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:390:1", "book": "book-03", "source_line": 390, "source_number": 40, "text": "किं पद्मा निद्राालुः शिशुः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:397:1", "book": "book-03", "source_line": 397, "source_number": 1, "text": "पद्मा निद्राालुः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:399:1", "book": "book-03", "source_line": 399, "source_number": 2, "text": "पद्मा निद्राालुः शिशुः!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:401:1", "book": "book-03", "source_line": 401, "source_number": 3, "text": "नलिनी सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:403:1", "book": "book-03", "source_line": 403, "source_number": 4, "text": "संजयः सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:405:1", "book": "book-03", "source_line": 405, "source_number": 5, "text": "पद्मा निद्रां गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:407:1", "book": "book-03", "source_line": 407, "source_number": 6, "text": "संजय, पद्मा निद्राालुः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:409:1", "book": "book-03", "source_line": 409, "source_number": 7, "text": "गच्छ निद्रााम्, संजय।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:411:1", "book": "book-03", "source_line": 411, "source_number": 8, "text": "गच्छ निद्रााम्, बाल।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:413:1", "book": "book-03", "source_line": 413, "source_number": 9, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:415:1", "book": "book-03", "source_line": 415, "source_number": 10, "text": "संजयः सुखी निद्राालुर् बालः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:417:1", "book": "book-03", "source_line": 417, "source_number": 11, "text": "संजयो निद्रां गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:419:1", "book": "book-03", "source_line": 419, "source_number": 12, "text": "पद्मे, किं त्वं निद्रां गन्तुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:422:1", "book": "book-03", "source_line": 422, "source_number": 13, "text": "किं त्वं निद्राालुः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:424:1", "book": "book-03", "source_line": 424, "source_number": 14, "text": "पद्मे, निद्रां गच्छ।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:426:1", "book": "book-03", "source_line": 426, "source_number": 15, "text": "माता निद्राालुः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:428:1", "book": "book-03", "source_line": 428, "source_number": 16, "text": "माता निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:432:1", "book": "book-03", "source_line": 432, "source_number": 18, "text": "पद्मा खादितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:434:1", "book": "book-03", "source_line": 434, "source_number": 19, "text": "पद्मा न खादितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:436:1", "book": "book-03", "source_line": 436, "source_number": 20, "text": "पद्मा क्रीडितवती।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:438:1", "book": "book-03", "source_line": 438, "source_number": 21, "text": "पद्मा न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:440:1", "book": "book-03", "source_line": 440, "source_number": 22, "text": "पद्मा निद्रां गता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:442:1", "book": "book-03", "source_line": 442, "source_number": 23, "text": "पद्मा खादित्वा क्रीडित्वा निद्रां गता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:444:1", "book": "book-03", "source_line": 444, "source_number": 24, "text": "नलिनी सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:446:1", "book": "book-03", "source_line": 446, "source_number": 25, "text": "कस्माान् नलिनी सुखिनी माता?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:448:1", "book": "book-03", "source_line": 448, "source_number": 26, "text": "शिशुर् नलिन्याा निद्रां गतः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:450:1", "book": "book-03", "source_line": 450, "source_number": 27, "text": "नलिनी निद्रां गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:452:1", "book": "book-03", "source_line": 452, "source_number": 28, "text": "किन्तु …", "flags": ["possibly_incomplete"], "review_status": "unreviewed"}
+{"id": "book-03:454:1", "book": "book-03", "source_line": 454, "source_number": 29, "text": "नलिनी न निद्राालुः!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-03:456:1", "book": "book-03", "source_line": 456, "source_number": 30, "text": "नलिनी न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-03:458:1", "book": "book-03", "source_line": 458, "source_number": 31, "text": "नलिनी न सुखिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:9:1", "book": "book-04", "source_line": 9, "source_number": 1, "text": "राहुलो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:11:1", "book": "book-04", "source_line": 11, "source_number": 2, "text": "किं राहुलः सुखी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:13:1", "book": "book-04", "source_line": 13, "source_number": 3, "text": "किं राहुलः सुखी बालः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:15:1", "book": "book-04", "source_line": 15, "source_number": 4, "text": "राहुलो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:17:1", "book": "book-04", "source_line": 17, "source_number": 5, "text": "राहुलो भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:19:1", "book": "book-04", "source_line": 19, "source_number": 6, "text": "राहुलो भीतो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:21:1", "book": "book-04", "source_line": 21, "source_number": 7, "text": "कस्मााद् राहुलो भीतो बालः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:23:1", "book": "book-04", "source_line": 23, "source_number": 8, "text": "किं राहुलो राक्षसं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:25:1", "book": "book-04", "source_line": 25, "source_number": 9, "text": "राहुलो राक्षसं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:27:1", "book": "book-04", "source_line": 27, "source_number": 10, "text": "किन्तु राहुलो भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:29:1", "book": "book-04", "source_line": 29, "source_number": 11, "text": "राहुलः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:31:1", "book": "book-04", "source_line": 31, "source_number": 12, "text": "राहुलो वृक्षं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:33:1", "book": "book-04", "source_line": 33, "source_number": 13, "text": "किन्तु राहुलो वृक्षं न द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:35:1", "book": "book-04", "source_line": 35, "source_number": 14, "text": "कस्मााद् राहुलो न वृक्षं द्रष्टुम् इच्छति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:38:1", "book": "book-04", "source_line": 38, "source_number": 15, "text": "किं राक्षसो वृक्षे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:40:1", "book": "book-04", "source_line": 40, "source_number": 16, "text": "किं राहुलो राक्षसं पश्यति वृक्षे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:42:1", "book": "book-04", "source_line": 42, "source_number": 17, "text": "राहुलो न पश्यति राक्षसम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:44:1", "book": "book-04", "source_line": 44, "source_number": 18, "text": "राहुलो न पश्यति राक्षसं वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:46:1", "book": "book-04", "source_line": 46, "source_number": 19, "text": "राहुलो न राक्षसाद् भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:48:1", "book": "book-04", "source_line": 48, "source_number": 20, "text": "राहुलः कस्मााद् भीतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:50:1", "book": "book-04", "source_line": 50, "source_number": 21, "text": "राहुलो वृक्षाद् भीतः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:52:1", "book": "book-04", "source_line": 52, "source_number": 22, "text": "राहुलो वृक्षाद् भीतो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:54:1", "book": "book-04", "source_line": 54, "source_number": 23, "text": "किन्तु वृक्षो न राक्षसः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:56:1", "book": "book-04", "source_line": 56, "source_number": 24, "text": "कस्मााद् राहुलो वृक्षाद् भीतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:58:1", "book": "book-04", "source_line": 58, "source_number": 25, "text": "राहुलो वृक्षम् आरोढुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:60:1", "book": "book-04", "source_line": 60, "source_number": 26, "text": "किन्तु राहुलो वृक्षम् आरोढुं न जानाति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:62:1", "book": "book-04", "source_line": 62, "source_number": 27, "text": "कस्मााद् राहुलो भीतो वृक्षात्?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:64:1", "book": "book-04", "source_line": 64, "source_number": 28, "text": "राहुलो भीत आरोहणात्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:66:1", "book": "book-04", "source_line": 66, "source_number": 29, "text": "राहुलो भीत आरोहणाद् वृक्षस्य।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:74:1", "book": "book-04", "source_line": 74, "source_number": 1, "text": "राहुल आरोहणाद् भीतो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:77:1", "book": "book-04", "source_line": 77, "source_number": 2, "text": "कस्मााद् राहुलो वृक्षम् आरोढुम् इच्छति?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:79:1", "book": "book-04", "source_line": 79, "source_number": 3, "text": "राहुलो बालाम् अपश्यत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:81:1", "book": "book-04", "source_line": 81, "source_number": 4, "text": "राहुलो बालाम् अपश्यद् वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:83:1", "book": "book-04", "source_line": 83, "source_number": 5, "text": "आः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:85:1", "book": "book-04", "source_line": 85, "source_number": 6, "text": "बाला वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:87:1", "book": "book-04", "source_line": 87, "source_number": 7, "text": "कस्मााद् बाला वृक्षे?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:89:1", "book": "book-04", "source_line": 89, "source_number": 8, "text": "किं बाला भीता?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:91:1", "book": "book-04", "source_line": 91, "source_number": 9, "text": "किं बाला राक्षसं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:93:1", "book": "book-04", "source_line": 93, "source_number": 10, "text": "अहं ज्ञाातुम् इच्छामि!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:95:1", "book": "book-04", "source_line": 95, "source_number": 11, "text": "राहुलो वृक्षम् अगच्छत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:97:1", "book": "book-04", "source_line": 97, "source_number": 12, "text": "राहुलो बालां दृष्ट्वाा वृक्षम् अगच्छत्।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:99:1", "book": "book-04", "source_line": 99, "source_number": 13, "text": "राहुलो वृक्षं गत्वा बालाम् अपश्यत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:101:1", "book": "book-04", "source_line": 101, "source_number": 14, "text": "बाले!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:103:1", "book": "book-04", "source_line": 103, "source_number": 15, "text": "कस्माात् त्वं वृक्षे?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:105:1", "book": "book-04", "source_line": 105, "source_number": 16, "text": "किं त्वं भीता?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:107:1", "book": "book-04", "source_line": 107, "source_number": 17, "text": "किं त्वं राक्षसं पश्यसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:109:1", "book": "book-04", "source_line": 109, "source_number": 18, "text": "किं त्वं गृहं गन्तुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:111:1", "book": "book-04", "source_line": 111, "source_number": 19, "text": "अहं न गृहं गन्तुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:113:1", "book": "book-04", "source_line": 113, "source_number": 20, "text": "अहं न राक्षसं पश्यामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:116:1", "book": "book-04", "source_line": 116, "source_number": 21, "text": "अहं न भीता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:118:1", "book": "book-04", "source_line": 118, "source_number": 22, "text": "अहं सुखिनी!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:120:1", "book": "book-04", "source_line": 120, "source_number": 23, "text": "किन्तु त्वं वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:122:1", "book": "book-04", "source_line": 122, "source_number": 24, "text": "कस्माात् त्वं सुखिनी?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:124:1", "book": "book-04", "source_line": 124, "source_number": 25, "text": "अहं ज्ञाातुम् इच्छामि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:126:1", "book": "book-04", "source_line": 126, "source_number": 26, "text": "आरोह वृक्षम्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:128:1", "book": "book-04", "source_line": 128, "source_number": 27, "text": "त्वं ज्ञाास्यसि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:130:1", "book": "book-04", "source_line": 130, "source_number": 28, "text": "त्वं वृक्षम् आरुह्य ज्ञाास्यसि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:132:1", "book": "book-04", "source_line": 132, "source_number": 29, "text": "बाला वृक्षाद् अवारोहत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:134:1", "book": "book-04", "source_line": 134, "source_number": 30, "text": "कस्माात् त्वं वृक्षाद् अवरोहसि?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:136:1", "book": "book-04", "source_line": 136, "source_number": 31, "text": "मया गृहं गन्तव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:138:1", "book": "book-04", "source_line": 138, "source_number": 32, "text": "अहं गृहं गच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:140:1", "book": "book-04", "source_line": 140, "source_number": 33, "text": "बाला गृहम् अगच्छत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:142:1", "book": "book-04", "source_line": 142, "source_number": 34, "text": "बाला वृक्षाद् अवरुह्य गृहम् अगच्छत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:144:1", "book": "book-04", "source_line": 144, "source_number": 35, "text": "किन्तु राहुलो न गृहम् अगच्छत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:146:1", "book": "book-04", "source_line": 146, "source_number": 36, "text": "राहुलो न गृहं गन्तुम् ऐच्छत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:148:1", "book": "book-04", "source_line": 148, "source_number": 37, "text": "राहुलो वृक्षम् अपश्यत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:150:1", "book": "book-04", "source_line": 150, "source_number": 38, "text": "अहं ज्ञाातुम् इच्छामि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:152:1", "book": "book-04", "source_line": 152, "source_number": 39, "text": "अहं वृक्षम् आरोढुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:155:1", "book": "book-04", "source_line": 155, "source_number": 40, "text": "किन्तु … अहं भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:157:1", "book": "book-04", "source_line": 157, "source_number": 41, "text": "अहं वृक्षम् आरोढुं न जानामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:159:1", "book": "book-04", "source_line": 159, "source_number": 42, "text": "राहुलो न वृक्षम् आरोहत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:161:1", "book": "book-04", "source_line": 161, "source_number": 43, "text": "राहुलो गृहम् अगच्छत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:168:1", "book": "book-04", "source_line": 168, "source_number": 1, "text": "राहुलो गृहे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:170:1", "book": "book-04", "source_line": 170, "source_number": 2, "text": "किन्तु राहुलो वृक्षम् आरोढुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:172:1", "book": "book-04", "source_line": 172, "source_number": 3, "text": "अहं न भीतः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:174:1", "book": "book-04", "source_line": 174, "source_number": 4, "text": "अहं वृक्षम् आरोक्ष्यामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:176:1", "book": "book-04", "source_line": 176, "source_number": 5, "text": "राहुलो वृक्षं द्रष्टुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:178:1", "book": "book-04", "source_line": 178, "source_number": 6, "text": "राहुलो वृक्षम् आरोढुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:180:1", "book": "book-04", "source_line": 180, "source_number": 7, "text": "राहुलो गृहाद् वृक्षं गतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:182:1", "book": "book-04", "source_line": 182, "source_number": 8, "text": "राहुलो वृक्षं गत्वा वृक्षं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:184:1", "book": "book-04", "source_line": 184, "source_number": 9, "text": "राहुलो वृक्षाद् भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:186:1", "book": "book-04", "source_line": 186, "source_number": 10, "text": "राहुलो गृहं गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:188:1", "book": "book-04", "source_line": 188, "source_number": 11, "text": "किन्तु राहुलो न गृहं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:190:1", "book": "book-04", "source_line": 190, "source_number": 12, "text": "मया वृक्ष आरोढव्यः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:193:1", "book": "book-04", "source_line": 193, "source_number": 13, "text": "मया गृहं न गन्तव्यम्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:195:1", "book": "book-04", "source_line": 195, "source_number": 14, "text": "अहं न भीतः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:197:1", "book": "book-04", "source_line": 197, "source_number": 15, "text": "राहुलो वृक्षं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:199:1", "book": "book-04", "source_line": 199, "source_number": 16, "text": "वृक्ष!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:201:1", "book": "book-04", "source_line": 201, "source_number": 17, "text": "अहं राहुलः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:203:1", "book": "book-04", "source_line": 203, "source_number": 18, "text": "अहं त्वां पश्यामि, वृक्ष!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:205:1", "book": "book-04", "source_line": 205, "source_number": 19, "text": "अहं त्वाम् आरोढुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:207:1", "book": "book-04", "source_line": 207, "source_number": 20, "text": "अहं न भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:209:1", "book": "book-04", "source_line": 209, "source_number": 21, "text": "अहं न त्वद् भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:211:1", "book": "book-04", "source_line": 211, "source_number": 22, "text": "अहं त्वाम् आरोढुं जानामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:213:1", "book": "book-04", "source_line": 213, "source_number": 23, "text": "अहं न गृहं गन्तुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:215:1", "book": "book-04", "source_line": 215, "source_number": 24, "text": "किन्तु राहुलो भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:217:1", "book": "book-04", "source_line": 217, "source_number": 25, "text": "राहुलो वृक्षाद् भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:219:1", "book": "book-04", "source_line": 219, "source_number": 26, "text": "राहुलो वृक्षम् आरोढुं न जानाति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:221:1", "book": "book-04", "source_line": 221, "source_number": 27, "text": "राहुलो गृहम् इच्छति गन्तुम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:223:1", "book": "book-04", "source_line": 223, "source_number": 28, "text": "त्वं न राक्षसः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:225:1", "book": "book-04", "source_line": 225, "source_number": 29, "text": "त्वं वृक्षः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:227:1", "book": "book-04", "source_line": 227, "source_number": 30, "text": "मां पश्य!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:229:1", "book": "book-04", "source_line": 229, "source_number": 31, "text": "अहं राहुलः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:232:1", "book": "book-04", "source_line": 232, "source_number": 32, "text": "अहं त्वाम् आरोहामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:234:1", "book": "book-04", "source_line": 234, "source_number": 33, "text": "राहुलो वृक्षम् आरोढुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:236:1", "book": "book-04", "source_line": 236, "source_number": 34, "text": "किन्तु राहुलो न जानाति वृक्षम् आरोढुम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:238:1", "book": "book-04", "source_line": 238, "source_number": 35, "text": "किं राहुलो वृक्षम् आरोक्ष्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:240:1", "book": "book-04", "source_line": 240, "source_number": 36, "text": "किं राहुलो वृक्षम् आरुह्य गृहं गमिष्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:242:1", "book": "book-04", "source_line": 242, "source_number": 37, "text": "किं त्वं जानासि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:249:1", "book": "book-04", "source_line": 249, "source_number": 1, "text": "राहुलो न वृक्षम् आरोहति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:251:1", "book": "book-04", "source_line": 251, "source_number": 2, "text": "राहुलो भीत आरोहणाद् वृक्षस्य।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:253:1", "book": "book-04", "source_line": 253, "source_number": 3, "text": "राहुलो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:255:1", "book": "book-04", "source_line": 255, "source_number": 4, "text": "राहुलो न वृक्षं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:257:1", "book": "book-04", "source_line": 257, "source_number": 5, "text": "राहुलो भयाद् वृक्षं न द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:259:1", "book": "book-04", "source_line": 259, "source_number": 6, "text": "राहुलो न गृहं गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:261:1", "book": "book-04", "source_line": 261, "source_number": 7, "text": "किन्तु राहुलो गृहं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:263:1", "book": "book-04", "source_line": 263, "source_number": 8, "text": "राहुलो भयाद् गृहं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:265:1", "book": "book-04", "source_line": 265, "source_number": 9, "text": "राहुलो वृक्षं गत्वा गृहं गच्छति भयात्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:267:1", "book": "book-04", "source_line": 267, "source_number": 10, "text": "राहुलो गृहं गतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:270:1", "book": "book-04", "source_line": 270, "source_number": 11, "text": "राहुलो गृहं गत्वा न वृक्षं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:272:1", "book": "book-04", "source_line": 272, "source_number": 12, "text": "राहुलो न भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:274:1", "book": "book-04", "source_line": 274, "source_number": 13, "text": "राहुलो गृहे न भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:276:1", "book": "book-04", "source_line": 276, "source_number": 14, "text": "किन्तु राहुलो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:278:1", "book": "book-04", "source_line": 278, "source_number": 15, "text": "कस्मााद् अहं भीतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:280:1", "book": "book-04", "source_line": 280, "source_number": 16, "text": "कस्मााद् अहं भीतो वृक्षात्?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:282:1", "book": "book-04", "source_line": 282, "source_number": 17, "text": "कस्मााद् अहम् आरोहणाद् भीतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:284:1", "book": "book-04", "source_line": 284, "source_number": 18, "text": "कस्मााद् अहं भीतो बालः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:286:1", "book": "book-04", "source_line": 286, "source_number": 19, "text": "अहं न जानामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:288:1", "book": "book-04", "source_line": 288, "source_number": 20, "text": "किन्त्व् अहं ज्ञाातुम् इच्छामि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:290:1", "book": "book-04", "source_line": 290, "source_number": 21, "text": "अहम् इच्छाम्य्् आरोढुं वृक्षम्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:297:1", "book": "book-04", "source_line": 297, "source_number": 1, "text": "राहुलो गृहे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:299:1", "book": "book-04", "source_line": 299, "source_number": 2, "text": "राहुलो न वृक्षं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:301:1", "book": "book-04", "source_line": 301, "source_number": 3, "text": "किन्तु राहुलो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:303:1", "book": "book-04", "source_line": 303, "source_number": 4, "text": "राहुलो वृक्षम् आरोढुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:305:1", "book": "book-04", "source_line": 305, "source_number": 5, "text": "अहं भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:308:1", "book": "book-04", "source_line": 308, "source_number": 6, "text": "अहं भीतो वृक्षात्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:310:1", "book": "book-04", "source_line": 310, "source_number": 7, "text": "अहं भीत आरोहणात्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:312:1", "book": "book-04", "source_line": 312, "source_number": 8, "text": "अहं भीत आरोहणाद् वृक्षस्य!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:314:1", "book": "book-04", "source_line": 314, "source_number": 9, "text": "अहं न वृक्षं द्रष्टुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:316:1", "book": "book-04", "source_line": 316, "source_number": 10, "text": "किन्तु मया वृक्षो गन्तव्यः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:318:1", "book": "book-04", "source_line": 318, "source_number": 11, "text": "मया वृक्षो द्रष्टव्यः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:320:1", "book": "book-04", "source_line": 320, "source_number": 12, "text": "मया वृक्ष आरोढव्यः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:322:1", "book": "book-04", "source_line": 322, "source_number": 13, "text": "भीतो राहुलो न वृक्षं गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:324:1", "book": "book-04", "source_line": 324, "source_number": 14, "text": "किन्तु राहुलो वृक्षं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:326:1", "book": "book-04", "source_line": 326, "source_number": 15, "text": "राहुलो गृहाद् वृक्षं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:328:1", "book": "book-04", "source_line": 328, "source_number": 16, "text": "राहुलो गृहाद् वृक्षं गतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:330:1", "book": "book-04", "source_line": 330, "source_number": 17, "text": "राहुलो गृहाद् वृक्षं गत्वा वृक्षं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:332:1", "book": "book-04", "source_line": 332, "source_number": 18, "text": "वृक्ष!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:334:1", "book": "book-04", "source_line": 334, "source_number": 19, "text": "अहं न गृहं गच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:336:1", "book": "book-04", "source_line": 336, "source_number": 20, "text": "अहं त्वाम् आरोढुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:338:1", "book": "book-04", "source_line": 338, "source_number": 21, "text": "अहं राहुलः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:340:1", "book": "book-04", "source_line": 340, "source_number": 22, "text": "अहं त्वां न जानाम्य्् आरोढुम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:342:1", "book": "book-04", "source_line": 342, "source_number": 23, "text": "अहं भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:344:1", "book": "book-04", "source_line": 344, "source_number": 24, "text": "अहं त्वाम् आरोढुं भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:347:1", "book": "book-04", "source_line": 347, "source_number": 25, "text": "किन्त्व् अहं त्वाम् आरोहामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:349:1", "book": "book-04", "source_line": 349, "source_number": 26, "text": "मया त्वम् आरोढव्यः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:351:1", "book": "book-04", "source_line": 351, "source_number": 27, "text": "किन्तु त्वं वृक्षम् आरोढुं न जानासि, राहुल।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:353:1", "book": "book-04", "source_line": 353, "source_number": 28, "text": "अहं त्वां ज्ञाापयितुम् इच्छामि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:355:1", "book": "book-04", "source_line": 355, "source_number": 29, "text": "किं त्वं ज्ञाातुम् इच्छसि?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:357:1", "book": "book-04", "source_line": 357, "source_number": 30, "text": "किं त्वं वृक्षम् आरोढुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:359:1", "book": "book-04", "source_line": 359, "source_number": 31, "text": "आः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:361:1", "book": "book-04", "source_line": 361, "source_number": 32, "text": "राहुलो गृहम् इच्छति गन्तुम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:363:1", "book": "book-04", "source_line": 363, "source_number": 33, "text": "राहुलो भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:365:1", "book": "book-04", "source_line": 365, "source_number": 34, "text": "किन्तु राहुलो न वृक्षाद् भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:367:1", "book": "book-04", "source_line": 367, "source_number": 35, "text": "राहुलः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:369:1", "book": "book-04", "source_line": 369, "source_number": 36, "text": "राहुलः किं पश्यति वृक्षे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:371:1", "book": "book-04", "source_line": 371, "source_number": 37, "text": "राहुलो राक्षसं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:373:1", "book": "book-04", "source_line": 373, "source_number": 38, "text": "राक्षसो वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:381:1", "book": "book-04", "source_line": 381, "source_number": 1, "text": "राहुलो राक्षसं पश्यति वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:383:1", "book": "book-04", "source_line": 383, "source_number": 2, "text": "राहुलो न वृक्षम् आरोढुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:386:1", "book": "book-04", "source_line": 386, "source_number": 3, "text": "राहुलो गृहं गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:388:1", "book": "book-04", "source_line": 388, "source_number": 4, "text": "किन्तु राहुलो गृहं न गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:390:1", "book": "book-04", "source_line": 390, "source_number": 5, "text": "राहुलो राक्षसाद् भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:392:1", "book": "book-04", "source_line": 392, "source_number": 6, "text": "राहुलो भयाद् गृहं न गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:394:1", "book": "book-04", "source_line": 394, "source_number": 7, "text": "पश्य, राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:396:1", "book": "book-04", "source_line": 396, "source_number": 8, "text": "अहम् अवरोहामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:398:1", "book": "book-04", "source_line": 398, "source_number": 9, "text": "अहं वृक्षाद् अवरोहामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:400:1", "book": "book-04", "source_line": 400, "source_number": 10, "text": "अहं त्वां द्रष्टुम् इच्छामि, राहुल।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:402:1", "book": "book-04", "source_line": 402, "source_number": 11, "text": "राक्षसो वृक्षाद् अवरोहति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:404:1", "book": "book-04", "source_line": 404, "source_number": 12, "text": "राक्षसो वृक्षाद् अवरूढवान्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:406:1", "book": "book-04", "source_line": 406, "source_number": 13, "text": "राक्षसो राहुलं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:408:1", "book": "book-04", "source_line": 408, "source_number": 14, "text": "राक्षसो वृक्षाद् अवरुह्य राहुलं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:410:1", "book": "book-04", "source_line": 410, "source_number": 15, "text": "भीतो राहुलो गन्तुम् इच्छति गृहम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:412:1", "book": "book-04", "source_line": 412, "source_number": 16, "text": "आः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:414:1", "book": "book-04", "source_line": 414, "source_number": 17, "text": "गच्छ, राक्षस!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:416:1", "book": "book-04", "source_line": 416, "source_number": 18, "text": "गच्छ तव वृक्षम्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:418:1", "book": "book-04", "source_line": 418, "source_number": 19, "text": "अहं त्वां न द्रष्टुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:420:1", "book": "book-04", "source_line": 420, "source_number": 20, "text": "कस्माात् त्वं मां द्रष्टुम् इच्छसि?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:422:1", "book": "book-04", "source_line": 422, "source_number": 21, "text": "अहं त्वां पश्यामि, राहुल।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:425:1", "book": "book-04", "source_line": 425, "source_number": 22, "text": "किन्त्व् अहं न राक्षसं पश्यामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:427:1", "book": "book-04", "source_line": 427, "source_number": 23, "text": "किं राक्षसो वृक्षे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:429:1", "book": "book-04", "source_line": 429, "source_number": 24, "text": "किं त्वं पश्यसि राक्षसं वृक्षे?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:431:1", "book": "book-04", "source_line": 431, "source_number": 25, "text": "राक्षसो न वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:433:1", "book": "book-04", "source_line": 433, "source_number": 26, "text": "त्वं राक्षसः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:435:1", "book": "book-04", "source_line": 435, "source_number": 27, "text": "गच्छ तव वृक्षम्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:437:1", "book": "book-04", "source_line": 437, "source_number": 28, "text": "गच्छ तव गृहम्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:439:1", "book": "book-04", "source_line": 439, "source_number": 29, "text": "किन्तु राक्षसो न वृक्षं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:441:1", "book": "book-04", "source_line": 441, "source_number": 30, "text": "मां पश्य!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:443:1", "book": "book-04", "source_line": 443, "source_number": 31, "text": "मां पश्य, राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:445:1", "book": "book-04", "source_line": 445, "source_number": 32, "text": "आः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:447:1", "book": "book-04", "source_line": 447, "source_number": 33, "text": "राहुलो भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:449:1", "book": "book-04", "source_line": 449, "source_number": 34, "text": "राहुलो भीतो वृक्षात्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:451:1", "book": "book-04", "source_line": 451, "source_number": 35, "text": "राहुलो भीत आरोहणात्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:453:1", "book": "book-04", "source_line": 453, "source_number": 36, "text": "राहुलो भीतो राक्षसात्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:455:1", "book": "book-04", "source_line": 455, "source_number": 37, "text": "राहुलो न राक्षसं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:457:1", "book": "book-04", "source_line": 457, "source_number": 38, "text": "राहुलो गृहं गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:459:1", "book": "book-04", "source_line": 459, "source_number": 39, "text": "किन्तु राहुलो न गृहं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:461:1", "book": "book-04", "source_line": 461, "source_number": 40, "text": "अहं न भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:464:1", "book": "book-04", "source_line": 464, "source_number": 41, "text": "अहं न भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:466:1", "book": "book-04", "source_line": 466, "source_number": 42, "text": "अहं न भीतः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:468:1", "book": "book-04", "source_line": 468, "source_number": 43, "text": "अहं न त्वद् भीतः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:470:1", "book": "book-04", "source_line": 470, "source_number": 44, "text": "राहुलो राक्षसं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:477:1", "book": "book-04", "source_line": 477, "source_number": 1, "text": "राहुलः किं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:479:1", "book": "book-04", "source_line": 479, "source_number": 2, "text": "किं राहुलः पश्यति राक्षसम्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:481:1", "book": "book-04", "source_line": 481, "source_number": 3, "text": "राहुलो न राक्षसं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:483:1", "book": "book-04", "source_line": 483, "source_number": 4, "text": "राहुलः कं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:485:1", "book": "book-04", "source_line": 485, "source_number": 5, "text": "को वृक्षाद् अवरूढवान्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:487:1", "book": "book-04", "source_line": 487, "source_number": 6, "text": "राहुलः संजयं पश्यति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:489:1", "book": "book-04", "source_line": 489, "source_number": 7, "text": "संजयो न राक्षसः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:491:1", "book": "book-04", "source_line": 491, "source_number": 8, "text": "संजयः सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:493:1", "book": "book-04", "source_line": 493, "source_number": 9, "text": "पश्य!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:495:1", "book": "book-04", "source_line": 495, "source_number": 10, "text": "अहं न राक्षसः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:497:1", "book": "book-04", "source_line": 497, "source_number": 11, "text": "अहं बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:499:1", "book": "book-04", "source_line": 499, "source_number": 12, "text": "राहुलः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:502:1", "book": "book-04", "source_line": 502, "source_number": 13, "text": "राहुलो न भीतः संजयात्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:504:1", "book": "book-04", "source_line": 504, "source_number": 14, "text": "त्वं न राक्षसः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:506:1", "book": "book-04", "source_line": 506, "source_number": 15, "text": "त्वं बालः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:508:1", "book": "book-04", "source_line": 508, "source_number": 16, "text": "अहं राहुलः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:510:1", "book": "book-04", "source_line": 510, "source_number": 17, "text": "त्वं कः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:512:1", "book": "book-04", "source_line": 512, "source_number": 18, "text": "अहम् इच्छामि ज्ञाातुम्।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:514:1", "book": "book-04", "source_line": 514, "source_number": 19, "text": "अहं संजयः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:516:1", "book": "book-04", "source_line": 516, "source_number": 20, "text": "राहुल, किं त्वं वृक्षम् आरोढुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:518:1", "book": "book-04", "source_line": 518, "source_number": 21, "text": "अहं वृक्षम् इच्छाम्य्् आरोढुम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:520:1", "book": "book-04", "source_line": 520, "source_number": 22, "text": "किन्त्व् अहं वृक्षं न जानाम्य्् आरोढुम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:522:1", "book": "book-04", "source_line": 522, "source_number": 23, "text": "अहम् आरोहणाद् भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:524:1", "book": "book-04", "source_line": 524, "source_number": 24, "text": "त्वं कस्मााद् भीतः?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:526:1", "book": "book-04", "source_line": 526, "source_number": 25, "text": "त्वं वृक्षम् आरोढुं न जानासि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:528:1", "book": "book-04", "source_line": 528, "source_number": 26, "text": "किन्त्व् अहं वृक्षम् आरोढुं जानामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:530:1", "book": "book-04", "source_line": 530, "source_number": 27, "text": "अहं त्वां ज्ञाापयितुम् इच्छामि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:532:1", "book": "book-04", "source_line": 532, "source_number": 28, "text": "त्वं वृक्षम् आरोक्ष्यसि, राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:534:1", "book": "book-04", "source_line": 534, "source_number": 29, "text": "मां ज्ञाापय!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:536:1", "book": "book-04", "source_line": 536, "source_number": 30, "text": "माम् आरोढुं ज्ञाापय, संजय।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:538:1", "book": "book-04", "source_line": 538, "source_number": 31, "text": "मां पश्य!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:541:1", "book": "book-04", "source_line": 541, "source_number": 32, "text": "अहं त्वां ज्ञाापयामि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:543:1", "book": "book-04", "source_line": 543, "source_number": 33, "text": "संजयो राहुलाय वृक्षम् आरोहति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:545:1", "book": "book-04", "source_line": 545, "source_number": 34, "text": "किं त्वं मां पश्यसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:547:1", "book": "book-04", "source_line": 547, "source_number": 35, "text": "अहं त्वां पश्यामि, संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:549:1", "book": "book-04", "source_line": 549, "source_number": 36, "text": "संजयो वृक्षम् आरूढवान्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:551:1", "book": "book-04", "source_line": 551, "source_number": 37, "text": "संजयो राहुलं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:553:1", "book": "book-04", "source_line": 553, "source_number": 38, "text": "किं त्वं भीतः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:555:1", "book": "book-04", "source_line": 555, "source_number": 39, "text": "किं त्वं वृक्षम् आरोढुं जानासि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:557:1", "book": "book-04", "source_line": 557, "source_number": 40, "text": "अहं न भीतः, संजय।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:559:1", "book": "book-04", "source_line": 559, "source_number": 41, "text": "अहं वृक्षम् आरोढुं जानामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:561:1", "book": "book-04", "source_line": 561, "source_number": 42, "text": "संजयो राहुलाय वृक्षं दर्शयति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:563:1", "book": "book-04", "source_line": 563, "source_number": 43, "text": "आरोह, राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:565:1", "book": "book-04", "source_line": 565, "source_number": 44, "text": "वृक्षम् आरोह!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:572:1", "book": "book-04", "source_line": 572, "source_number": 1, "text": "राहुलो वृक्षम् आरोहति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:574:1", "book": "book-04", "source_line": 574, "source_number": 2, "text": "मां पश्य, संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:576:1", "book": "book-04", "source_line": 576, "source_number": 3, "text": "अहं वृक्षम् आरोहामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:579:1", "book": "book-04", "source_line": 579, "source_number": 4, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:581:1", "book": "book-04", "source_line": 581, "source_number": 5, "text": "अहं त्वां पश्यामि, राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:583:1", "book": "book-04", "source_line": 583, "source_number": 6, "text": "आरोह!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:585:1", "book": "book-04", "source_line": 585, "source_number": 7, "text": "आरोह!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:587:1", "book": "book-04", "source_line": 587, "source_number": 8, "text": "राहुलो वृक्षे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:589:1", "book": "book-04", "source_line": 589, "source_number": 9, "text": "राहुलो वृक्षम् आरूढवान्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:591:1", "book": "book-04", "source_line": 591, "source_number": 10, "text": "राहुलः सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:593:1", "book": "book-04", "source_line": 593, "source_number": 11, "text": "राहुलो न भीतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:595:1", "book": "book-04", "source_line": 595, "source_number": 12, "text": "किं त्वं सुखी, राहुल?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:597:1", "book": "book-04", "source_line": 597, "source_number": 13, "text": "अहं सुखी!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:599:1", "book": "book-04", "source_line": 599, "source_number": 14, "text": "पश्य, संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:601:1", "book": "book-04", "source_line": 601, "source_number": 15, "text": "राहुलो गृहं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:603:1", "book": "book-04", "source_line": 603, "source_number": 16, "text": "राहुलो गृहं संजयाय दर्शयति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:605:1", "book": "book-04", "source_line": 605, "source_number": 17, "text": "अहं मम गृहं पश्यामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:607:1", "book": "book-04", "source_line": 607, "source_number": 18, "text": "किं त्वं तव गृहं पश्यसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:609:1", "book": "book-04", "source_line": 609, "source_number": 19, "text": "अहं पश्यामि मम गृहम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:611:1", "book": "book-04", "source_line": 611, "source_number": 20, "text": "पश्य!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:613:1", "book": "book-04", "source_line": 613, "source_number": 21, "text": "संजयो राहुलाय गृहं दर्शयति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:615:1", "book": "book-04", "source_line": 615, "source_number": 22, "text": "राहुलः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:618:1", "book": "book-04", "source_line": 618, "source_number": 23, "text": "अहं गृहं गन्तुम् इच्छामि, राहुल।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:620:1", "book": "book-04", "source_line": 620, "source_number": 24, "text": "किं त्वं मम गृहं गन्तुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:622:1", "book": "book-04", "source_line": 622, "source_number": 25, "text": "किं त्वं मम गृहं द्रष्टुम् इच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:624:1", "book": "book-04", "source_line": 624, "source_number": 26, "text": "अहं तव गृहं द्रष्टुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:626:1", "book": "book-04", "source_line": 626, "source_number": 27, "text": "गच्छावः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:628:1", "book": "book-04", "source_line": 628, "source_number": 28, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:630:1", "book": "book-04", "source_line": 630, "source_number": 29, "text": "संजयो वृक्षाद् अवरोहति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:632:1", "book": "book-04", "source_line": 632, "source_number": 30, "text": "किन्तु संजयो वृक्षाद् अवरुह्य न राहुलं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:634:1", "book": "book-04", "source_line": 634, "source_number": 31, "text": "राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:636:1", "book": "book-04", "source_line": 636, "source_number": 32, "text": "अहं त्वां न पश्यामि, राहुल।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:638:1", "book": "book-04", "source_line": 638, "source_number": 33, "text": "अहं वृक्षे, संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:640:1", "book": "book-04", "source_line": 640, "source_number": 34, "text": "संजयो राहुलं वृक्षे पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:642:1", "book": "book-04", "source_line": 642, "source_number": 35, "text": "किन्तु राहुलो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:644:1", "book": "book-04", "source_line": 644, "source_number": 36, "text": "कस्माात् त्वं न सुखी, राहुल?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-04:646:1", "book": "book-04", "source_line": 646, "source_number": 37, "text": "त्वं वृक्षम् आरोढुं जानासि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:648:1", "book": "book-04", "source_line": 648, "source_number": 38, "text": "त्वं वृक्षम् आरूढवान्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:650:1", "book": "book-04", "source_line": 650, "source_number": 39, "text": "अहं वृक्षम् आरूढवान्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:652:1", "book": "book-04", "source_line": 652, "source_number": 40, "text": "अहं वृक्षम् आरोढुं जानामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-04:654:1", "book": "book-04", "source_line": 654, "source_number": 41, "text": "किन्त्व् अहम् अवरोढुं न जानामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:9:1", "book": "book-05", "source_line": 9, "source_number": 1, "text": "संजयो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:11:1", "book": "book-05", "source_line": 11, "source_number": 2, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:13:1", "book": "book-05", "source_line": 13, "source_number": 3, "text": "संजयः सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:15:1", "book": "book-05", "source_line": 15, "source_number": 4, "text": "नलिनी न बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:17:1", "book": "book-05", "source_line": 17, "source_number": 5, "text": "नलिनी माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:19:1", "book": "book-05", "source_line": 19, "source_number": 6, "text": "नलिनी संजयस्य माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:21:1", "book": "book-05", "source_line": 21, "source_number": 7, "text": "संजयो नलिनीं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:23:1", "book": "book-05", "source_line": 23, "source_number": 8, "text": "संजयो नलिनीं मातरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:25:1", "book": "book-05", "source_line": 25, "source_number": 9, "text": "संजयो नलिनीं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:27:1", "book": "book-05", "source_line": 27, "source_number": 10, "text": "मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:29:1", "book": "book-05", "source_line": 29, "source_number": 11, "text": "संजयः पश्यति नलिनीम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:31:1", "book": "book-05", "source_line": 31, "source_number": 12, "text": "किन्तु नलिनी संजयं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:33:1", "book": "book-05", "source_line": 33, "source_number": 13, "text": "मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:35:1", "book": "book-05", "source_line": 35, "source_number": 14, "text": "मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:38:1", "book": "book-05", "source_line": 38, "source_number": 15, "text": "नलिनी कं पश्यति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:40:1", "book": "book-05", "source_line": 40, "source_number": 16, "text": "नलिनी संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:42:1", "book": "book-05", "source_line": 42, "source_number": 17, "text": "संजय?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:44:1", "book": "book-05", "source_line": 44, "source_number": 18, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:46:1", "book": "book-05", "source_line": 46, "source_number": 19, "text": "मातः, अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:48:1", "book": "book-05", "source_line": 48, "source_number": 20, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:50:1", "book": "book-05", "source_line": 50, "source_number": 21, "text": "संजयः क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:52:1", "book": "book-05", "source_line": 52, "source_number": 22, "text": "किन्तु नलिनी किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:54:1", "book": "book-05", "source_line": 54, "source_number": 23, "text": "किं नलिनी क्रीडितुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:56:1", "book": "book-05", "source_line": 56, "source_number": 24, "text": "नलिनी न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:58:1", "book": "book-05", "source_line": 58, "source_number": 25, "text": "अहं न क्रीडितुम् इच्छामि, संजय।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:60:1", "book": "book-05", "source_line": 60, "source_number": 26, "text": "अहं श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:62:1", "book": "book-05", "source_line": 62, "source_number": 27, "text": "नलिनी श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:64:1", "book": "book-05", "source_line": 64, "source_number": 28, "text": "नलिनी श्राान्ता माता!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:66:1", "book": "book-05", "source_line": 66, "source_number": 29, "text": "संजयो न श्राान्तः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:68:1", "book": "book-05", "source_line": 68, "source_number": 30, "text": "संजयः क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:70:1", "book": "book-05", "source_line": 70, "source_number": 31, "text": "संजयो नलिन्याा सह क्रीडितुम् इच्छति।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:72:1", "book": "book-05", "source_line": 72, "source_number": 32, "text": "किन्तु नलिनी श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:74:1", "book": "book-05", "source_line": 74, "source_number": 33, "text": "नलिनी न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:77:1", "book": "book-05", "source_line": 77, "source_number": 34, "text": "नलिनी संजयेन सह न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:79:1", "book": "book-05", "source_line": 79, "source_number": 35, "text": "माता न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:81:1", "book": "book-05", "source_line": 81, "source_number": 36, "text": "कः क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:83:1", "book": "book-05", "source_line": 83, "source_number": 37, "text": "को मया सह क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:85:1", "book": "book-05", "source_line": 85, "source_number": 38, "text": "कः क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:87:1", "book": "book-05", "source_line": 87, "source_number": 39, "text": "कः संजयेन सह क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:95:1", "book": "book-05", "source_line": 95, "source_number": 1, "text": "संजयो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:97:1", "book": "book-05", "source_line": 97, "source_number": 2, "text": "किन्तु संजयो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:99:1", "book": "book-05", "source_line": 99, "source_number": 3, "text": "संजयः क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:101:1", "book": "book-05", "source_line": 101, "source_number": 4, "text": "संजयो नलिन्याा सह क्रीडितुम् इच्छति।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:103:1", "book": "book-05", "source_line": 103, "source_number": 5, "text": "संजयो मात्रा सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:105:1", "book": "book-05", "source_line": 105, "source_number": 6, "text": "किन्तु माता संजयस्य श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:107:1", "book": "book-05", "source_line": 107, "source_number": 7, "text": "माता संजयस्य न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:109:1", "book": "book-05", "source_line": 109, "source_number": 8, "text": "माता न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:111:1", "book": "book-05", "source_line": 111, "source_number": 9, "text": "माता न मया सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:113:1", "book": "book-05", "source_line": 113, "source_number": 10, "text": "को मया सह क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:116:1", "book": "book-05", "source_line": 116, "source_number": 11, "text": "आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:118:1", "book": "book-05", "source_line": 118, "source_number": 12, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:120:1", "book": "book-05", "source_line": 120, "source_number": 13, "text": "किन्तु पद्मा सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:122:1", "book": "book-05", "source_line": 122, "source_number": 14, "text": "पद्मा न बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:124:1", "book": "book-05", "source_line": 124, "source_number": 15, "text": "पद्मा बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:126:1", "book": "book-05", "source_line": 126, "source_number": 16, "text": "पद्मा सुखिनी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:128:1", "book": "book-05", "source_line": 128, "source_number": 17, "text": "नलिनी पद्माया माता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:130:1", "book": "book-05", "source_line": 130, "source_number": 18, "text": "नलिनी पद्मां पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:132:1", "book": "book-05", "source_line": 132, "source_number": 19, "text": "अहं श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:134:1", "book": "book-05", "source_line": 134, "source_number": 20, "text": "किन्तु पद्मा न श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:136:1", "book": "book-05", "source_line": 136, "source_number": 21, "text": "पद्मा क्रीडितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:138:1", "book": "book-05", "source_line": 138, "source_number": 22, "text": "पद्मा संजयेन सह क्रीडितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:140:1", "book": "book-05", "source_line": 140, "source_number": 23, "text": "नलिनी सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:142:1", "book": "book-05", "source_line": 142, "source_number": 24, "text": "संजय! संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:144:1", "book": "book-05", "source_line": 144, "source_number": 25, "text": "संजयो नलिनीं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:146:1", "book": "book-05", "source_line": 146, "source_number": 26, "text": "संजयो मातरं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:148:1", "book": "book-05", "source_line": 148, "source_number": 27, "text": "संजयः पश्यति मातरम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:150:1", "book": "book-05", "source_line": 150, "source_number": 28, "text": "मातः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:152:1", "book": "book-05", "source_line": 152, "source_number": 29, "text": "नलिनी संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:155:1", "book": "book-05", "source_line": 155, "source_number": 30, "text": "संजय, अहं श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:157:1", "book": "book-05", "source_line": 157, "source_number": 31, "text": "अहं न क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:159:1", "book": "book-05", "source_line": 159, "source_number": 32, "text": "किन्तु पद्मा न श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:161:1", "book": "book-05", "source_line": 161, "source_number": 33, "text": "गच्छ पद्माम्, संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:163:1", "book": "book-05", "source_line": 163, "source_number": 34, "text": "क्रीड!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:165:1", "book": "book-05", "source_line": 165, "source_number": 35, "text": "पद्मया सह क्रीड।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:167:1", "book": "book-05", "source_line": 167, "source_number": 36, "text": "संजयः पद्मां पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:169:1", "book": "book-05", "source_line": 169, "source_number": 37, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:171:1", "book": "book-05", "source_line": 171, "source_number": 38, "text": "संजयः सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:173:1", "book": "book-05", "source_line": 173, "source_number": 39, "text": "माता श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:175:1", "book": "book-05", "source_line": 175, "source_number": 40, "text": "किन्तु पद्मा न श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:177:1", "book": "book-05", "source_line": 177, "source_number": 41, "text": "पद्मा क्रीडितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:179:1", "book": "book-05", "source_line": 179, "source_number": 42, "text": "पद्मा मया सह क्रीडितुम् इच्छेत्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:181:1", "book": "book-05", "source_line": 181, "source_number": 43, "text": "संजयः क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:183:1", "book": "book-05", "source_line": 183, "source_number": 44, "text": "संजयः पद्मया सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:185:1", "book": "book-05", "source_line": 185, "source_number": 45, "text": "संजयः पद्मां गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:187:1", "book": "book-05", "source_line": 187, "source_number": 46, "text": "संजयः क्रीडितुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:189:1", "book": "book-05", "source_line": 189, "source_number": 47, "text": "संजयः पद्मया सह क्रीडितुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:191:1", "book": "book-05", "source_line": 191, "source_number": 48, "text": "पद्मे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:194:1", "book": "book-05", "source_line": 194, "source_number": 49, "text": "अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:196:1", "book": "book-05", "source_line": 196, "source_number": 50, "text": "मया सह क्रीड!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:198:1", "book": "book-05", "source_line": 198, "source_number": 51, "text": "क्रीड मया सह, पद्मे!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:200:1", "book": "book-05", "source_line": 200, "source_number": 52, "text": "किन्तु पद्मा न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:202:1", "book": "book-05", "source_line": 202, "source_number": 53, "text": "पद्मा न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:204:1", "book": "book-05", "source_line": 204, "source_number": 54, "text": "पद्मा संजयेन सह न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:206:1", "book": "book-05", "source_line": 206, "source_number": 55, "text": "पद्मा किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:213:1", "book": "book-05", "source_line": 213, "source_number": 1, "text": "संजयः पद्मां गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:215:1", "book": "book-05", "source_line": 215, "source_number": 2, "text": "संजयः क्रीडितुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:217:1", "book": "book-05", "source_line": 217, "source_number": 3, "text": "संजयः पद्मया सह क्रीडितुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:219:1", "book": "book-05", "source_line": 219, "source_number": 4, "text": "किन्तु पद्मा संजयं न गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:221:1", "book": "book-05", "source_line": 221, "source_number": 5, "text": "पद्मा संजयं न गन्तुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:223:1", "book": "book-05", "source_line": 223, "source_number": 6, "text": "पद्मा गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:225:1", "book": "book-05", "source_line": 225, "source_number": 7, "text": "पद्मा कुत्र गच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:227:1", "book": "book-05", "source_line": 227, "source_number": 8, "text": "पद्मा कुत्र गन्तुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:229:1", "book": "book-05", "source_line": 229, "source_number": 9, "text": "पद्मे, त्वं कुत्र गच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:232:1", "book": "book-05", "source_line": 232, "source_number": 10, "text": "अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:234:1", "book": "book-05", "source_line": 234, "source_number": 11, "text": "अहं त्वया सह क्रीडितुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:236:1", "book": "book-05", "source_line": 236, "source_number": 12, "text": "संजयः क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:238:1", "book": "book-05", "source_line": 238, "source_number": 13, "text": "संजयः पद्मया सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:240:1", "book": "book-05", "source_line": 240, "source_number": 14, "text": "किन्तु पद्मा न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:242:1", "book": "book-05", "source_line": 242, "source_number": 15, "text": "पद्मा संजयेन सह न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:244:1", "book": "book-05", "source_line": 244, "source_number": 16, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:246:1", "book": "book-05", "source_line": 246, "source_number": 17, "text": "संजयो न सुखी बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:248:1", "book": "book-05", "source_line": 248, "source_number": 18, "text": "किन्तु पद्मा किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:250:1", "book": "book-05", "source_line": 250, "source_number": 19, "text": "पद्मा कुत्र गन्तुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:252:1", "book": "book-05", "source_line": 252, "source_number": 20, "text": "आ! आ!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:254:1", "book": "book-05", "source_line": 254, "source_number": 21, "text": "पद्मा मातरं गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:256:1", "book": "book-05", "source_line": 256, "source_number": 22, "text": "पद्मा मातरम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:258:1", "book": "book-05", "source_line": 258, "source_number": 23, "text": "पद्मा मातरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:260:1", "book": "book-05", "source_line": 260, "source_number": 24, "text": "पद्मा नलिनीं मातरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:262:1", "book": "book-05", "source_line": 262, "source_number": 25, "text": "पद्मा सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:264:1", "book": "book-05", "source_line": 264, "source_number": 26, "text": "किन्तु संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:266:1", "book": "book-05", "source_line": 266, "source_number": 27, "text": "पद्मा नलिनीम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:268:1", "book": "book-05", "source_line": 268, "source_number": 28, "text": "किन्तु पद्मा न संजयम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:271:1", "book": "book-05", "source_line": 271, "source_number": 29, "text": "पद्मा संजयं न गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:273:1", "book": "book-05", "source_line": 273, "source_number": 30, "text": "अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:275:1", "book": "book-05", "source_line": 275, "source_number": 31, "text": "अहं पद्मया सह क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:277:1", "book": "book-05", "source_line": 277, "source_number": 32, "text": "किन्तु पद्मा न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:279:1", "book": "book-05", "source_line": 279, "source_number": 33, "text": "पद्मा न मया सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:281:1", "book": "book-05", "source_line": 281, "source_number": 34, "text": "कः क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:283:1", "book": "book-05", "source_line": 283, "source_number": 35, "text": "को मया सह क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:290:1", "book": "book-05", "source_line": 290, "source_number": 1, "text": "नलिनी न संजयेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:292:1", "book": "book-05", "source_line": 292, "source_number": 2, "text": "नलिनी श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:294:1", "book": "book-05", "source_line": 294, "source_number": 3, "text": "पद्मा संजयेन सह न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:296:1", "book": "book-05", "source_line": 296, "source_number": 4, "text": "पद्मा मातरम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:298:1", "book": "book-05", "source_line": 298, "source_number": 5, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:300:1", "book": "book-05", "source_line": 300, "source_number": 6, "text": "मातः, अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:302:1", "book": "book-05", "source_line": 302, "source_number": 7, "text": "कः क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:304:1", "book": "book-05", "source_line": 304, "source_number": 8, "text": "को मया सह क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:306:1", "book": "book-05", "source_line": 306, "source_number": 9, "text": "संजय, कुत्र राहुलः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:309:1", "book": "book-05", "source_line": 309, "source_number": 10, "text": "राहुलः क्रीडितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:311:1", "book": "book-05", "source_line": 311, "source_number": 11, "text": "राहुलः कः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:313:1", "book": "book-05", "source_line": 313, "source_number": 12, "text": "राहुलो बालः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:315:1", "book": "book-05", "source_line": 315, "source_number": 13, "text": "राहुलो मित्रम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:317:1", "book": "book-05", "source_line": 317, "source_number": 14, "text": "राहुलः संजयस्य मित्रम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:319:1", "book": "book-05", "source_line": 319, "source_number": 15, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:321:1", "book": "book-05", "source_line": 321, "source_number": 16, "text": "संजयो राहुलेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:323:1", "book": "book-05", "source_line": 323, "source_number": 17, "text": "संजयो मित्रेण सह क्रीडितुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:325:1", "book": "book-05", "source_line": 325, "source_number": 18, "text": "राहुलः क्रीडितुम् इच्छेत्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:327:1", "book": "book-05", "source_line": 327, "source_number": 19, "text": "राहुलो मया सह क्रीडितुम् इच्छेत्!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:329:1", "book": "book-05", "source_line": 329, "source_number": 20, "text": "मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:331:1", "book": "book-05", "source_line": 331, "source_number": 21, "text": "अहं गच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:333:1", "book": "book-05", "source_line": 333, "source_number": 22, "text": "त्वं कुत्र गच्छसि, संजय?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:335:1", "book": "book-05", "source_line": 335, "source_number": 23, "text": "अहं राहुलं द्रष्टुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:337:1", "book": "book-05", "source_line": 337, "source_number": 24, "text": "राहुलो मम मित्रम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:339:1", "book": "book-05", "source_line": 339, "source_number": 25, "text": "मम मित्रं क्रीडितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:341:1", "book": "book-05", "source_line": 341, "source_number": 26, "text": "मम मित्रं मया सह क्रीडितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:343:1", "book": "book-05", "source_line": 343, "source_number": 27, "text": "संजयो राहुलं द्रष्टुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:345:1", "book": "book-05", "source_line": 345, "source_number": 28, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:348:1", "book": "book-05", "source_line": 348, "source_number": 29, "text": "संजयो राहुलं द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:350:1", "book": "book-05", "source_line": 350, "source_number": 30, "text": "संजयो राहुलेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:352:1", "book": "book-05", "source_line": 352, "source_number": 31, "text": "किन्तु संजयो राहुलं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:354:1", "book": "book-05", "source_line": 354, "source_number": 32, "text": "कुत्र राहुलः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:356:1", "book": "book-05", "source_line": 356, "source_number": 33, "text": "कुत्र संजयस्य मित्रम्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:358:1", "book": "book-05", "source_line": 358, "source_number": 34, "text": "राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:360:1", "book": "book-05", "source_line": 360, "source_number": 35, "text": "मम मित्र!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:362:1", "book": "book-05", "source_line": 362, "source_number": 36, "text": "अहं त्वां न पश्यामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:364:1", "book": "book-05", "source_line": 364, "source_number": 37, "text": "त्वं कुत्र?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:366:1", "book": "book-05", "source_line": 366, "source_number": 38, "text": "अहं त्वां द्रष्टुम् इच्छामि, राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:368:1", "book": "book-05", "source_line": 368, "source_number": 39, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:370:1", "book": "book-05", "source_line": 370, "source_number": 40, "text": "संजयो राहुलं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:372:1", "book": "book-05", "source_line": 372, "source_number": 41, "text": "संजयो मित्रं पश्यति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:374:1", "book": "book-05", "source_line": 374, "source_number": 42, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:376:1", "book": "book-05", "source_line": 376, "source_number": 43, "text": "संजयो राहुलेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:378:1", "book": "book-05", "source_line": 378, "source_number": 44, "text": "संजयो मित्रेण सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:380:1", "book": "book-05", "source_line": 380, "source_number": 45, "text": "किन्तु राहुलः संजयं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:382:1", "book": "book-05", "source_line": 382, "source_number": 46, "text": "राहुल! राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:384:1", "book": "book-05", "source_line": 384, "source_number": 47, "text": "अहं त्वां पश्यामि, राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:387:1", "book": "book-05", "source_line": 387, "source_number": 48, "text": "राहुलः संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:389:1", "book": "book-05", "source_line": 389, "source_number": 49, "text": "राहुलो मित्रं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:391:1", "book": "book-05", "source_line": 391, "source_number": 50, "text": "राहुलः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:393:1", "book": "book-05", "source_line": 393, "source_number": 51, "text": "संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:395:1", "book": "book-05", "source_line": 395, "source_number": 52, "text": "मम मित्र!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:397:1", "book": "book-05", "source_line": 397, "source_number": 53, "text": "अहं त्वां पश्यामि, संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:399:1", "book": "book-05", "source_line": 399, "source_number": 54, "text": "राहुलः संजयं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:401:1", "book": "book-05", "source_line": 401, "source_number": 55, "text": "राहुलो मित्रं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:403:1", "book": "book-05", "source_line": 403, "source_number": 56, "text": "त्वं किम् इच्छसि, संजय?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:405:1", "book": "book-05", "source_line": 405, "source_number": 57, "text": "त्वं कुत्र गच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:407:1", "book": "book-05", "source_line": 407, "source_number": 58, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:409:1", "book": "book-05", "source_line": 409, "source_number": 59, "text": "राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:411:1", "book": "book-05", "source_line": 411, "source_number": 60, "text": "अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:413:1", "book": "book-05", "source_line": 413, "source_number": 61, "text": "अहं मित्रेण सह क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:415:1", "book": "book-05", "source_line": 415, "source_number": 62, "text": "अहं त्वया सह क्रीडितुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:417:1", "book": "book-05", "source_line": 417, "source_number": 63, "text": "मया सह क्रीड, राहुल!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:419:1", "book": "book-05", "source_line": 419, "source_number": 64, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:421:1", "book": "book-05", "source_line": 421, "source_number": 65, "text": "किन्तु राहुलो न सुखी!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:423:1", "book": "book-05", "source_line": 423, "source_number": 66, "text": "कस्माात्?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:426:1", "book": "book-05", "source_line": 426, "source_number": 67, "text": "कस्मााद् राहुलो न सुखी?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:428:1", "book": "book-05", "source_line": 428, "source_number": 68, "text": "राहुलः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:435:1", "book": "book-05", "source_line": 435, "source_number": 1, "text": "संजयो राहुलेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:437:1", "book": "book-05", "source_line": 437, "source_number": 2, "text": "संजयो मित्रेण सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:439:1", "book": "book-05", "source_line": 439, "source_number": 3, "text": "किन्तु राहुलो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:441:1", "book": "book-05", "source_line": 441, "source_number": 4, "text": "राहुलः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:443:1", "book": "book-05", "source_line": 443, "source_number": 5, "text": "संजय, अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:445:1", "book": "book-05", "source_line": 445, "source_number": 6, "text": "अहं त्वया सह क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:447:1", "book": "book-05", "source_line": 447, "source_number": 7, "text": "किन्तु …", "flags": ["possibly_incomplete"], "review_status": "unreviewed"}
+{"id": "book-05:449:1", "book": "book-05", "source_line": 449, "source_number": 8, "text": "किन्तु … ?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:451:1", "book": "book-05", "source_line": 451, "source_number": 9, "text": "किन्तु माता मां द्रष्टुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:453:1", "book": "book-05", "source_line": 453, "source_number": 10, "text": "मया गन्तव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:455:1", "book": "book-05", "source_line": 455, "source_number": 11, "text": "मया माता गन्तव्या।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:457:1", "book": "book-05", "source_line": 457, "source_number": 12, "text": "तव माता कुत्र?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:459:1", "book": "book-05", "source_line": 459, "source_number": 13, "text": "त्वया कुत्र गन्तव्यम्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:461:1", "book": "book-05", "source_line": 461, "source_number": 14, "text": "माता गृहे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:464:1", "book": "book-05", "source_line": 464, "source_number": 15, "text": "मया गृहं गन्तव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:466:1", "book": "book-05", "source_line": 466, "source_number": 16, "text": "गृहम्?!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:468:1", "book": "book-05", "source_line": 468, "source_number": 17, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:470:1", "book": "book-05", "source_line": 470, "source_number": 18, "text": "राहुलो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:472:1", "book": "book-05", "source_line": 472, "source_number": 19, "text": "संजय, अहं क्रीडितुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:474:1", "book": "book-05", "source_line": 474, "source_number": 20, "text": "अहं तव मित्रम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:476:1", "book": "book-05", "source_line": 476, "source_number": 21, "text": "अहं त्वया सह क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:478:1", "book": "book-05", "source_line": 478, "source_number": 22, "text": "किन्तु मया गृहं गन्तव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:480:1", "book": "book-05", "source_line": 480, "source_number": 23, "text": "मया माता गन्तव्या।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:482:1", "book": "book-05", "source_line": 482, "source_number": 24, "text": "किन्त्व् अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:484:1", "book": "book-05", "source_line": 484, "source_number": 25, "text": "अहं त्वया सह क्रीडितुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:486:1", "book": "book-05", "source_line": 486, "source_number": 26, "text": "मया न क्रीडितव्यम्, संजय।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:488:1", "book": "book-05", "source_line": 488, "source_number": 27, "text": "मया माता द्रष्टव्या।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:490:1", "book": "book-05", "source_line": 490, "source_number": 28, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:492:1", "book": "book-05", "source_line": 492, "source_number": 29, "text": "गृहं गच्छ, संजय।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:494:1", "book": "book-05", "source_line": 494, "source_number": 30, "text": "पद्मया सह क्रीड।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:496:1", "book": "book-05", "source_line": 496, "source_number": 31, "text": "क्रीड तव मात्रा सह।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:498:1", "book": "book-05", "source_line": 498, "source_number": 32, "text": "पद्मा त्वया सह क्रीडितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:500:1", "book": "book-05", "source_line": 500, "source_number": 33, "text": "तव माता त्वया सह क्रीडितुम् इच्छेत्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:503:1", "book": "book-05", "source_line": 503, "source_number": 34, "text": "किन्तु पद्मा मया सह न क्रीडितुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:505:1", "book": "book-05", "source_line": 505, "source_number": 35, "text": "मम माता मया सह न क्रीडितुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:507:1", "book": "book-05", "source_line": 507, "source_number": 36, "text": "अहं न गृहं गन्तुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:509:1", "book": "book-05", "source_line": 509, "source_number": 37, "text": "संजयो राहुलेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:511:1", "book": "book-05", "source_line": 511, "source_number": 38, "text": "किन्तु राहुलेन गन्तव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:513:1", "book": "book-05", "source_line": 513, "source_number": 39, "text": "राहुलेन गृहं गन्तव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:515:1", "book": "book-05", "source_line": 515, "source_number": 40, "text": "राहुलेन माता द्रष्टव्या।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:517:1", "book": "book-05", "source_line": 517, "source_number": 41, "text": "राहुलेन न क्रीडितव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:519:1", "book": "book-05", "source_line": 519, "source_number": 42, "text": "राहुलो गृहं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:521:1", "book": "book-05", "source_line": 521, "source_number": 43, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:523:1", "book": "book-05", "source_line": 523, "source_number": 44, "text": "कः क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:525:1", "book": "book-05", "source_line": 525, "source_number": 45, "text": "को मया सह क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:527:1", "book": "book-05", "source_line": 527, "source_number": 46, "text": "संजयः केन सह क्रीडेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:534:1", "book": "book-05", "source_line": 534, "source_number": 1, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:536:1", "book": "book-05", "source_line": 536, "source_number": 2, "text": "संजयः क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:538:1", "book": "book-05", "source_line": 538, "source_number": 3, "text": "संजयो नलिन्याा सह क्रीडितुम् इच्छति।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:541:1", "book": "book-05", "source_line": 541, "source_number": 4, "text": "संजयो मात्रा सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:543:1", "book": "book-05", "source_line": 543, "source_number": 5, "text": "किन्तु नलिनी श्राान्ता!", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:545:1", "book": "book-05", "source_line": 545, "source_number": 6, "text": "नलिनी न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:547:1", "book": "book-05", "source_line": 547, "source_number": 7, "text": "नलिनी संजयेन सह न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:549:1", "book": "book-05", "source_line": 549, "source_number": 8, "text": "पद्मा न श्राान्ता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:551:1", "book": "book-05", "source_line": 551, "source_number": 9, "text": "संजयः पद्मया सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:553:1", "book": "book-05", "source_line": 553, "source_number": 10, "text": "किन्तु पद्मा न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:555:1", "book": "book-05", "source_line": 555, "source_number": 11, "text": "पद्मा संजयेन सह न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:557:1", "book": "book-05", "source_line": 557, "source_number": 12, "text": "पद्मा मातरम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:559:1", "book": "book-05", "source_line": 559, "source_number": 13, "text": "पद्मा नलिनीम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:561:1", "book": "book-05", "source_line": 561, "source_number": 14, "text": "पद्मा न संजयम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:563:1", "book": "book-05", "source_line": 563, "source_number": 15, "text": "संजयो राहुलेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:565:1", "book": "book-05", "source_line": 565, "source_number": 16, "text": "संजयो मित्रेण सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:567:1", "book": "book-05", "source_line": 567, "source_number": 17, "text": "राहुलः क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:569:1", "book": "book-05", "source_line": 569, "source_number": 18, "text": "राहुलः संजयेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:571:1", "book": "book-05", "source_line": 571, "source_number": 19, "text": "किन्तु राहुलेन गन्तव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:573:1", "book": "book-05", "source_line": 573, "source_number": 20, "text": "राहुलेन माता द्रष्टव्या।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:575:1", "book": "book-05", "source_line": 575, "source_number": 21, "text": "राहुलेन माता गन्तव्या।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:577:1", "book": "book-05", "source_line": 577, "source_number": 22, "text": "राहुलेन गृहं गन्तव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:580:1", "book": "book-05", "source_line": 580, "source_number": 23, "text": "राहुलेन न क्रीडितव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:582:1", "book": "book-05", "source_line": 582, "source_number": 24, "text": "राहुलेन संजयेन सह न क्रीडितव्यम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:584:1", "book": "book-05", "source_line": 584, "source_number": 25, "text": "अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:586:1", "book": "book-05", "source_line": 586, "source_number": 26, "text": "किन्तु कः क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:588:1", "book": "book-05", "source_line": 588, "source_number": 27, "text": "को मया सह क्रीडितुम् इच्छेत्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:590:1", "book": "book-05", "source_line": 590, "source_number": 28, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:592:1", "book": "book-05", "source_line": 592, "source_number": 29, "text": "संजयः श्राान्तः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:594:1", "book": "book-05", "source_line": 594, "source_number": 30, "text": "न कश्चित् क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:596:1", "book": "book-05", "source_line": 596, "source_number": 31, "text": "न कश्चिन् मया सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:598:1", "book": "book-05", "source_line": 598, "source_number": 32, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:600:1", "book": "book-05", "source_line": 600, "source_number": 33, "text": "संजयो गृहं गन्तुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:608:1", "book": "book-05", "source_line": 608, "source_number": 1, "text": "संजयो न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:610:1", "book": "book-05", "source_line": 610, "source_number": 2, "text": "संजयः क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:612:1", "book": "book-05", "source_line": 612, "source_number": 3, "text": "किन्तु कः संजयेन सह क्रीडितुम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:614:1", "book": "book-05", "source_line": 614, "source_number": 4, "text": "न कश्चित् संजयेन सह क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:616:1", "book": "book-05", "source_line": 616, "source_number": 5, "text": "संजयः श्राान्तः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:619:1", "book": "book-05", "source_line": 619, "source_number": 6, "text": "संजयो गृहं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:621:1", "book": "book-05", "source_line": 621, "source_number": 7, "text": "नलिनी कुत्र?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:623:1", "book": "book-05", "source_line": 623, "source_number": 8, "text": "नलिनी गृहे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:625:1", "book": "book-05", "source_line": 625, "source_number": 9, "text": "संजयो नलिनीं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:627:1", "book": "book-05", "source_line": 627, "source_number": 10, "text": "संजयो मातरं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:629:1", "book": "book-05", "source_line": 629, "source_number": 11, "text": "किन्तु नलिनी संजयं न पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:631:1", "book": "book-05", "source_line": 631, "source_number": 12, "text": "नलिनी शान्तां पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:633:1", "book": "book-05", "source_line": 633, "source_number": 13, "text": "शान्ता का?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:635:1", "book": "book-05", "source_line": 635, "source_number": 14, "text": "शान्ता कुत्र?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:637:1", "book": "book-05", "source_line": 637, "source_number": 15, "text": "शान्ता नलिन्याा मित्रम्।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:639:1", "book": "book-05", "source_line": 639, "source_number": 16, "text": "शान्ता संजयस्य गृहे।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:641:1", "book": "book-05", "source_line": 641, "source_number": 17, "text": "शान्ता संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:643:1", "book": "book-05", "source_line": 643, "source_number": 18, "text": "शान्ता सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:645:1", "book": "book-05", "source_line": 645, "source_number": 19, "text": "संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:647:1", "book": "book-05", "source_line": 647, "source_number": 20, "text": "त्वं का?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:649:1", "book": "book-05", "source_line": 649, "source_number": 21, "text": "अहं शान्ता।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:651:1", "book": "book-05", "source_line": 651, "source_number": 22, "text": "अहं नलिन्याा मित्रम्।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:653:1", "book": "book-05", "source_line": 653, "source_number": 23, "text": "अहं तव मातुर् मित्रम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:655:1", "book": "book-05", "source_line": 655, "source_number": 24, "text": "संजय, कुत्र राहुलः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:658:1", "book": "book-05", "source_line": 658, "source_number": 25, "text": "अहं राहुलं न पश्यामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:660:1", "book": "book-05", "source_line": 660, "source_number": 26, "text": "अहं तव मित्रं न पश्यामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:662:1", "book": "book-05", "source_line": 662, "source_number": 27, "text": "कुत्र तव मित्रम्?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:664:1", "book": "book-05", "source_line": 664, "source_number": 28, "text": "राहुलो गृहं गतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:666:1", "book": "book-05", "source_line": 666, "source_number": 29, "text": "मम मित्रं गृहं गतः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:668:1", "book": "book-05", "source_line": 668, "source_number": 30, "text": "नलिनी संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:670:1", "book": "book-05", "source_line": 670, "source_number": 31, "text": "संजय, त्वं न सुखी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:672:1", "book": "book-05", "source_line": 672, "source_number": 32, "text": "कस्माात्?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:674:1", "book": "book-05", "source_line": 674, "source_number": 33, "text": "कस्माात् त्वं न सुखी?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:676:1", "book": "book-05", "source_line": 676, "source_number": 34, "text": "अहं श्राान्तः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:678:1", "book": "book-05", "source_line": 678, "source_number": 35, "text": "अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:680:1", "book": "book-05", "source_line": 680, "source_number": 36, "text": "अहं केनचित् सह क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:682:1", "book": "book-05", "source_line": 682, "source_number": 37, "text": "किन्तु न कश्चित् क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:684:1", "book": "book-05", "source_line": 684, "source_number": 38, "text": "न कश्चिन् मया सह क्रीडितुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:686:1", "book": "book-05", "source_line": 686, "source_number": 39, "text": "शान्ता संजयं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:688:1", "book": "book-05", "source_line": 688, "source_number": 40, "text": "शान्ता सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:690:1", "book": "book-05", "source_line": 690, "source_number": 41, "text": "शान्ता कस्माात् सुखिनी?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:692:1", "book": "book-05", "source_line": 692, "source_number": 42, "text": "शान्ता किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:694:1", "book": "book-05", "source_line": 694, "source_number": 43, "text": "कुत्र हरिणी?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:697:1", "book": "book-05", "source_line": 697, "source_number": 44, "text": "हरिणि, त्वं कुत्र?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:699:1", "book": "book-05", "source_line": 699, "source_number": 45, "text": "अहं त्वां द्रष्टुम् इच्छामि, हरिणि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:701:1", "book": "book-05", "source_line": 701, "source_number": 46, "text": "हरिणी का?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:703:1", "book": "book-05", "source_line": 703, "source_number": 47, "text": "हरिणी बाला।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:705:1", "book": "book-05", "source_line": 705, "source_number": 48, "text": "शान्ता हरिण्याा माता।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:707:1", "book": "book-05", "source_line": 707, "source_number": 49, "text": "हरिणी शान्तां गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:709:1", "book": "book-05", "source_line": 709, "source_number": 50, "text": "हरिणी शान्तां मातरं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:711:1", "book": "book-05", "source_line": 711, "source_number": 51, "text": "हरिणी न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:713:1", "book": "book-05", "source_line": 713, "source_number": 52, "text": "हरिणी किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:720:1", "book": "book-05", "source_line": 720, "source_number": 1, "text": "संजयो हरिणीं पश्यति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:722:1", "book": "book-05", "source_line": 722, "source_number": 2, "text": "हरिणी किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:724:1", "book": "book-05", "source_line": 724, "source_number": 3, "text": "त्वं का?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:726:1", "book": "book-05", "source_line": 726, "source_number": 4, "text": "अहं हरिणी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:728:1", "book": "book-05", "source_line": 728, "source_number": 5, "text": "त्वं कः?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:730:1", "book": "book-05", "source_line": 730, "source_number": 6, "text": "अहं संजयः।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:732:1", "book": "book-05", "source_line": 732, "source_number": 7, "text": "संजय, हरिणी न सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:735:1", "book": "book-05", "source_line": 735, "source_number": 8, "text": "हरिणि, कस्माात्?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:737:1", "book": "book-05", "source_line": 737, "source_number": 9, "text": "कस्माात् त्वं न सुखिनी, हरिणि?", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:739:1", "book": "book-05", "source_line": 739, "source_number": 10, "text": "अहं क्रीडितुम् इच्छामि, मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:741:1", "book": "book-05", "source_line": 741, "source_number": 11, "text": "त्वम् … किम् इच्छसि?!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:743:1", "book": "book-05", "source_line": 743, "source_number": 12, "text": "अहं क्रीडितुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:745:1", "book": "book-05", "source_line": 745, "source_number": 13, "text": "अहं केनचित् सह क्रीडितुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:747:1", "book": "book-05", "source_line": 747, "source_number": 14, "text": "किन्तु माता न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:749:1", "book": "book-05", "source_line": 749, "source_number": 15, "text": "मम मित्रं न क्रीडितुम् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:751:1", "book": "book-05", "source_line": 751, "source_number": 16, "text": "न कश्चित् क्रीडितुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:753:1", "book": "book-05", "source_line": 753, "source_number": 17, "text": "न कश्चिन् मया सह क्रीडितुम् इच्छति!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:755:1", "book": "book-05", "source_line": 755, "source_number": 18, "text": "संजयो न श्राान्तः।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:757:1", "book": "book-05", "source_line": 757, "source_number": 19, "text": "संजयः सुखी!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:759:1", "book": "book-05", "source_line": 759, "source_number": 20, "text": "किन्त्व् अहं क्रीडितुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:761:1", "book": "book-05", "source_line": 761, "source_number": 21, "text": "अहं क्रीडितुम् इच्छामि, हरिणि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:763:1", "book": "book-05", "source_line": 763, "source_number": 22, "text": "अहं त्वया सह क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:765:1", "book": "book-05", "source_line": 765, "source_number": 23, "text": "मया सह क्रीड!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:767:1", "book": "book-05", "source_line": 767, "source_number": 24, "text": "हरिणी सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:769:1", "book": "book-05", "source_line": 769, "source_number": 25, "text": "त्वं क्रीडितुम् इच्छसि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:771:1", "book": "book-05", "source_line": 771, "source_number": 26, "text": "त्वं मया सह क्रीडितुम् इच्छसि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:774:1", "book": "book-05", "source_line": 774, "source_number": 27, "text": "अहं सुखिनी।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:776:1", "book": "book-05", "source_line": 776, "source_number": 28, "text": "मया सह क्रीड, संजय!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:778:1", "book": "book-05", "source_line": 778, "source_number": 29, "text": "मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:780:1", "book": "book-05", "source_line": 780, "source_number": 30, "text": "अहं गच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:782:1", "book": "book-05", "source_line": 782, "source_number": 31, "text": "अहं गच्छामि, मातः!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:784:1", "book": "book-05", "source_line": 784, "source_number": 32, "text": "अहं संजयेन सह गच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:786:1", "book": "book-05", "source_line": 786, "source_number": 33, "text": "त्वं कुत्र गच्छसि, संजय?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:788:1", "book": "book-05", "source_line": 788, "source_number": 34, "text": "हरिणि, त्वं कुत्र गच्छसि?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:790:1", "book": "book-05", "source_line": 790, "source_number": 35, "text": "अहं क्रीडितुम् इच्छामि।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:792:1", "book": "book-05", "source_line": 792, "source_number": 36, "text": "अहं हरिण्याा सह क्रीडितुम् इच्छामि।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:794:1", "book": "book-05", "source_line": 794, "source_number": 37, "text": "हरिणी मम मित्रम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:796:1", "book": "book-05", "source_line": 796, "source_number": 38, "text": "संजयो मम मित्रम्।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:798:1", "book": "book-05", "source_line": 798, "source_number": 39, "text": "अहं मम मित्रेण सह क्रीडितुम् इच्छामि!", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:800:1", "book": "book-05", "source_line": 800, "source_number": 40, "text": "संजयः क्रीडितुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:802:1", "book": "book-05", "source_line": 802, "source_number": 41, "text": "संजयो हरिण्याा सह क्रीडितुं गच्छति।", "flags": ["repeated_matra"], "review_status": "unreviewed"}
+{"id": "book-05:804:1", "book": "book-05", "source_line": 804, "source_number": 42, "text": "संजयो मित्रेण सह क्रीडितुं गच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:806:1", "book": "book-05", "source_line": 806, "source_number": 43, "text": "संजयः किम् इच्छति?", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:808:1", "book": "book-05", "source_line": 808, "source_number": 44, "text": "संजयो न किंचिद् इच्छति।", "flags": [], "review_status": "unreviewed"}
+{"id": "book-05:810:1", "book": "book-05", "source_line": 810, "source_number": 45, "text": "संजयः सुखी।", "flags": [], "review_status": "unreviewed"}
