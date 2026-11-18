@@ -1,3 +1,4 @@
+# Verify the last durable checkpoint after a training stop.
 name: Inspect training checkpoint
 on:
   push:
