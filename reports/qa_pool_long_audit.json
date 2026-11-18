@@ -1,0 +1,417 @@
+{
+  "counts": {
+    "lines": 9754119,
+    "paired": 7877709,
+    "grammar_keyword": 2139485,
+    "non_single_turn": 1876410
+  },
+  "unique_exact_qa_pairs": 1372696,
+  "counted_paired_lines": 7877709,
+  "distinct_pairs_with_grammar_keyword": 1193115,
+  "unique_normalised_questions": 1371977,
+  "questions_with_multiple_distinct_answers": 454,
+  "sources": [
+    {
+      "name": "part_000.txt",
+      "sha256": "25f22bd5b7672e9a6aa4990d5dfe22a7ff724fe85e16e55d3f4be019fefb7a5e",
+      "lines": 193827,
+      "paired": 156329,
+      "grammar_keyword": 42479,
+      "non_single_turn": 37498
+    },
+    {
+      "name": "part_001.txt",
+      "sha256": "6034413395cf2cdf36473ba92e9b264463184387e803b4243313c0adb36020fb",
+      "lines": 195123,
+      "paired": 157481,
+      "grammar_keyword": 42716,
+      "non_single_turn": 37642
+    },
+    {
+      "name": "part_002.txt",
+      "sha256": "9acfdedb928608023b75d7bdfb588fc06952306977f0ce3e22f0ee5e9f66d2ec",
+      "lines": 195353,
+      "paired": 157637,
+      "grammar_keyword": 42838,
+      "non_single_turn": 37716
+    },
+    {
+      "name": "part_003.txt",
+      "sha256": "43af5257f2aeda463936f3a24c80e8092d5f34de5e5ba082816d194681d57d2b",
+      "lines": 195228,
+      "paired": 157792,
+      "grammar_keyword": 42783,
+      "non_single_turn": 37436
+    },
+    {
+      "name": "part_004.txt",
+      "sha256": "8d1d6be566195508b9e7b9ca0d9e5cec3694ecdac6354d869bfc09ca35c5fe68",
+      "lines": 194986,
+      "paired": 157515,
+      "grammar_keyword": 42724,
+      "non_single_turn": 37471
+    },
+    {
+      "name": "part_005.txt",
+      "sha256": "d58bffc047c357eee6093ffcd3848c68ddcc6a8f06169988b259754ecb6cdeed",
+      "lines": 195263,
+      "paired": 157643,
+      "grammar_keyword": 42797,
+      "non_single_turn": 37620
+    },
+    {
+      "name": "part_006.txt",
+      "sha256": "cc46f486ad2d2924334573d8eefc29c11db9b327ea7ee09b53e2fd775fd15ae8",
+      "lines": 195090,
+      "non_single_turn": 37492,
+      "paired": 157598,
+      "grammar_keyword": 42815
+    },
+    {
+      "name": "part_007.txt",
+      "sha256": "7b67f3ac995401284eb6802a448f49d359a7d8e21cb5a54481c42a4479f9b899",
+      "lines": 195206,
+      "paired": 157708,
+      "grammar_keyword": 42788,
+      "non_single_turn": 37498
+    },
+    {
+      "name": "part_008.txt",
+      "sha256": "12061d2ed82c1d819870eca3f7aeb388808508633ac3667c97ff912782c0b355",
+      "lines": 195171,
+      "paired": 157695,
+      "grammar_keyword": 42780,
+      "non_single_turn": 37476
+    },
+    {
+      "name": "part_009.txt",
+      "sha256": "0e901dd47c8c539b4a667ca1bd6d70247319ca9652be86628eaa646713d5c715",
+      "lines": 194937,
+      "paired": 157472,
+      "grammar_keyword": 42930,
+      "non_single_turn": 37465
+    },
+    {
+      "name": "part_010.txt",
+      "sha256": "08cf01c8e00c26b04e094907fc3be7621af2f578bd696bfcdfebf97e7775191a",
+      "lines": 195073,
+      "non_single_turn": 37691,
+      "paired": 157382,
+      "grammar_keyword": 42734
+    },
+    {
+      "name": "part_011.txt",
+      "sha256": "ddb02720bb1acbfd48ab17ebb5b022093957c1539456408616288eb7436efb60",
+      "lines": 195386,
+      "paired": 157797,
+      "grammar_keyword": 42788,
+      "non_single_turn": 37589
+    },
+    {
+      "name": "part_012.txt",
+      "sha256": "ec800c34e530ea94fce8e2092422cd53a90d80a23ba13711b05602d08171c0da",
+      "lines": 195036,
+      "paired": 157550,
+      "grammar_keyword": 42923,
+      "non_single_turn": 37486
+    },
+    {
+      "name": "part_013.txt",
+      "sha256": "c70a27ac63dd5d1caff97bb30f7358c8bb7bab9b99058856137308915ac47377",
+      "lines": 195009,
+      "paired": 157661,
+      "grammar_keyword": 42760,
+      "non_single_turn": 37348
+    },
+    {
+      "name": "part_014.txt",
+      "sha256": "5c2e4c04b5161f07182478aedeef01c9c49a4d4eac2a5120d3cc0a2b00f13ade",
+      "lines": 195273,
+      "paired": 157692,
+      "grammar_keyword": 42738,
+      "non_single_turn": 37581
+    },
+    {
+      "name": "part_015.txt",
+      "sha256": "809cdbc06a092eb4612f135e8238b2acab2fdc98dda28389c10fa22c094a4155",
+      "lines": 194943,
+      "paired": 157438,
+      "grammar_keyword": 42735,
+      "non_single_turn": 37505
+    },
+    {
+      "name": "part_016.txt",
+      "sha256": "bc3d59c3d0316acf8a135d7e9762d98aa19b807ff7bc1e5893122bde460cb70b",
+      "lines": 195271,
+      "paired": 157724,
+      "grammar_keyword": 42751,
+      "non_single_turn": 37547
+    },
+    {
+      "name": "part_017.txt",
+      "sha256": "3629112d0494e68ae67ae9c57f6436f4a823426b9e9799f1ac5156f7ad8b3f5a",
+      "lines": 194840,
+      "paired": 157275,
+      "grammar_keyword": 42906,
+      "non_single_turn": 37565
+    },
+    {
+      "name": "part_018.txt",
+      "sha256": "7ff4a9646a36acd64f693c398a60cbbcfe2e76ad882fbb6145eae7ccf46c58ab",
+      "lines": 195047,
+      "paired": 157466,
+      "grammar_keyword": 42814,
+      "non_single_turn": 37581
+    },
+    {
+      "name": "part_019.txt",
+      "sha256": "a9014591e72d76d0a3fc5a602ce54a846bbdeb4d68b1484981d8b0bf6c0dfe0d",
+      "lines": 195131,
+      "paired": 157466,
+      "grammar_keyword": 42775,
+      "non_single_turn": 37665
+    },
+    {
+      "name": "part_020.txt",
+      "sha256": "defb507af74271ec9f537696e824aa5447d1da421ed4c713ae48fad7b06c975b",
+      "lines": 195066,
+      "paired": 157479,
+      "grammar_keyword": 42818,
+      "non_single_turn": 37587
+    },
+    {
+      "name": "part_021.txt",
+      "sha256": "dd97da30d74ecfa9da411c35fd2040bcdf5f0407bd50a8444446c48ce4229f73",
+      "lines": 195067,
+      "non_single_turn": 37520,
+      "paired": 157547,
+      "grammar_keyword": 42833
+    },
+    {
+      "name": "part_022.txt",
+      "sha256": "0a975ccbcecfe9fad4cf1e344a0d70a0f5df5905c0b1948e8051d659b2403004",
+      "lines": 195243,
+      "paired": 157886,
+      "grammar_keyword": 42808,
+      "non_single_turn": 37357
+    },
+    {
+      "name": "part_023.txt",
+      "sha256": "e431bf26bf6ba7dd0ce7741fcca75bfdefaff4a9babfc656a8c4bae9fb3ffa88",
+      "lines": 195043,
+      "paired": 157454,
+      "grammar_keyword": 42761,
+      "non_single_turn": 37589
+    },
+    {
+      "name": "part_024.txt",
+      "sha256": "587fc6027c0aa2fc4f29a69b9c3a69d4eb3ff8df13347e76c605385288b7dac7",
+      "lines": 194925,
+      "non_single_turn": 37525,
+      "paired": 157400,
+      "grammar_keyword": 42664
+    },
+    {
+      "name": "part_025.txt",
+      "sha256": "ccbfd7deac4eb62d549adacff4224b0c9fdffc50a0f1e898543c2802f99a3992",
+      "lines": 195180,
+      "paired": 157489,
+      "grammar_keyword": 42735,
+      "non_single_turn": 37691
+    },
+    {
+      "name": "part_026.txt",
+      "sha256": "cd13598dde6cc268e060a807b6718c87f8b604dfd30309fe568919dd9f4a3b2e",
+      "lines": 194961,
+      "non_single_turn": 37617,
+      "paired": 157344,
+      "grammar_keyword": 42710
+    },
+    {
+      "name": "part_027.txt",
+      "sha256": "01fdd743ad28252ad524c756c3d1de48c584d4bc680b8275b332a2660283ef08",
+      "lines": 194917,
+      "paired": 157385,
+      "grammar_keyword": 42759,
+      "non_single_turn": 37532
+    },
+    {
+      "name": "part_028.txt",
+      "sha256": "16730065e3dcb206f98c2cc2dd1b6d9a5a70d0efeda1fdb7d09d2ffca1136e05",
+      "lines": 195440,
+      "non_single_turn": 37713,
+      "paired": 157727,
+      "grammar_keyword": 42840
+    },
+    {
+      "name": "part_029.txt",
+      "sha256": "abbc1743483ee556ab167d321a9ec6cd38c5bc7a40f41441ca28ddedc6175e51",
+      "lines": 194984,
+      "non_single_turn": 37377,
+      "paired": 157607,
+      "grammar_keyword": 42736
+    },
+    {
+      "name": "part_030.txt",
+      "sha256": "e404b171d96d3b9adce49d4d091d290b5c04e98adccdd170e5f32e08d6bd8122",
+      "lines": 195234,
+      "paired": 157576,
+      "grammar_keyword": 42727,
+      "non_single_turn": 37658
+    },
+    {
+      "name": "part_031.txt",
+      "sha256": "c24e5f1b7796b7feeb1a98156fb2d9c968ba34c3e4bca14ca6fb614ab6d5d393",
+      "lines": 195062,
+      "paired": 157474,
+      "grammar_keyword": 42864,
+      "non_single_turn": 37588
+    },
+    {
+      "name": "part_032.txt",
+      "sha256": "4ffc37c858eab1b109f994751567f72d1fa2b575e761c3567fe119499eea9827",
+      "lines": 195118,
+      "non_single_turn": 37511,
+      "paired": 157607,
+      "grammar_keyword": 42504
+    },
+    {
+      "name": "part_033.txt",
+      "sha256": "884db30684be5cf26a8e6fcf0fe9aa2d571b272a9a8968ea6c8d9781b1f6e749",
+      "lines": 194881,
+      "paired": 157567,
+      "grammar_keyword": 42861,
+      "non_single_turn": 37314
+    },
+    {
+      "name": "part_034.txt",
+      "sha256": "7790df7bf7678d34dcef0669219086dcb970ec8bdbb7ec24f49993553e6de5c4",
+      "lines": 195465,
+      "non_single_turn": 37749,
+      "paired": 157716,
+      "grammar_keyword": 42722
+    },
+    {
+      "name": "part_035.txt",
+      "sha256": "2d8ef5455ee7b6c59561acb33b6c7730afbe89ed1bea5a133dbe118a87f7fa42",
+      "lines": 195050,
+      "paired": 157792,
+      "grammar_keyword": 42849,
+      "non_single_turn": 37258
+    },
+    {
+      "name": "part_036.txt",
+      "sha256": "ebbe308a2f26686d08b36bb744589c04a5b71af43253fd8a21c146bbee3b86cc",
+      "lines": 194977,
+      "paired": 157660,
+      "grammar_keyword": 43061,
+      "non_single_turn": 37317
+    },
+    {
+      "name": "part_037.txt",
+      "sha256": "2513ffe8d7d93f8c110c004c19c2ab4b91cf59b016942a013d1867f16b78e2c7",
+      "lines": 195259,
+      "non_single_turn": 37578,
+      "paired": 157681,
+      "grammar_keyword": 42832
+    },
+    {
+      "name": "part_038.txt",
+      "sha256": "d3923f9ced2c5217d7ab06f7bd96a1972ff4dac4257e9c0b7412d5b51b82ffb9",
+      "lines": 195370,
+      "non_single_turn": 37804,
+      "paired": 157566,
+      "grammar_keyword": 42725
+    },
+    {
+      "name": "part_039.txt",
+      "sha256": "cd99a0a95d0582b037538146dc355fba9c0fd48b5b1cb5711a154d4d7aba683c",
+      "lines": 194986,
+      "paired": 157492,
+      "grammar_keyword": 42910,
+      "non_single_turn": 37494
+    },
+    {
+      "name": "part_040.txt",
+      "sha256": "b12dabf13730fe46610fc49f6b78b0ced355c0b9d98486859ef30e02c48e129e",
+      "lines": 195032,
+      "paired": 157439,
+      "grammar_keyword": 42829,
+      "non_single_turn": 37593
+    },
+    {
+      "name": "part_041.txt",
+      "sha256": "5b8dbfaa392f0ec44a90491e14c843decbd7f89bed622104cc41892fbcae1a0f",
+      "lines": 194979,
+      "paired": 157882,
+      "grammar_keyword": 42743,
+      "non_single_turn": 37097
+    },
+    {
+      "name": "part_042.txt",
+      "sha256": "7ca589e13df01aba38cfc6a09b41d6b65e92bb6553353c2defe070b3fe872c85",
+      "lines": 195141,
+      "paired": 157543,
+      "grammar_keyword": 42761,
+      "non_single_turn": 37598
+    },
+    {
+      "name": "part_043.txt",
+      "sha256": "be602548ca2f06a821a8661b47f029f87fb4a6e551f1882eb2dd90d3846c9972",
+      "lines": 195052,
+      "non_single_turn": 37487,
+      "paired": 157565,
+      "grammar_keyword": 42811
+    },
+    {
+      "name": "part_044.txt",
+      "sha256": "677a1b483c8bbee6a58fa4decb22d500e75451a36e9782bb4aba1fb9b1b4c39b",
+      "lines": 194774,
+      "non_single_turn": 37466,
+      "paired": 157308,
+      "grammar_keyword": 42784
+    },
+    {
+      "name": "part_045.txt",
+      "sha256": "838510df6d6da42b1538fd0eb892993581c3bba0a19e4dfbf97c6be92312437f",
+      "lines": 195033,
+      "paired": 157590,
+      "grammar_keyword": 42873,
+      "non_single_turn": 37443
+    },
+    {
+      "name": "part_046.txt",
+      "sha256": "9902946bbe456cd7c83bb6551dfb9739587085586866e380b94ee7af44d2b841",
+      "lines": 195119,
+      "paired": 157522,
+      "grammar_keyword": 42836,
+      "non_single_turn": 37597
+    },
+    {
+      "name": "part_047.txt",
+      "sha256": "75f5cacf1607276fb70f0779348f2070c84e6a2f0a5a623f31eea201dfb18f0c",
+      "lines": 195426,
+      "paired": 157769,
+      "grammar_keyword": 42883,
+      "non_single_turn": 37657
+    },
+    {
+      "name": "part_048.txt",
+      "sha256": "7a12fad12c0bb7da45999c7d914f7384d00f34c084e31b7a6c44a671d789623e",
+      "lines": 195041,
+      "non_single_turn": 37499,
+      "paired": 157542,
+      "grammar_keyword": 42837
+    },
+    {
+      "name": "part_049.txt",
+      "sha256": "77e7783cccd7152fa34db145300907d10aa208b5d266c32211f0d0208a501e6f",
+      "lines": 195101,
+      "paired": 157779,
+      "grammar_keyword": 42835,
+      "non_single_turn": 37322
+    }
+  ],
+  "training_ready_pairs": 0,
+  "warning": "Exact-match audit only. Multiple answers can be valid; no linguistic, semantic, licensing or near-duplicate verification. Prior training data is not held-out evaluation."
+}
