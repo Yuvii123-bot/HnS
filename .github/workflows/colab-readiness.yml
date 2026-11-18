@@ -1,0 +1,58 @@
+name: Colab checkpoint readiness check
+on:
+  push:
+    paths:
+      - .github/workflows/colab-readiness.yml
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ASSET: book-qa-auto-44262147932-step-02000.pt
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: c7eaf212f1b69698e2e983f9aa608bf888a6e689
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify saved checkpoint
+        run: |
+          gh release download sanskrit-250m-44002147943 --pattern "$ASSET" --pattern "$ASSET.sha256"
+          sha256sum -c "$ASSET.sha256"
+      - name: Test tokenizer, dataset fingerprint, model and optimizer on CPU
+        run: |
+          python - <<'PY'
+          import hashlib, json, random, torch
+          from pathlib import Path
+          from sanskrit_llm.model import ModelConfig, SanskritLM
+          from sanskrit_llm.tokenizer import AksharaTokenizer
+          from sanskrit_llm.data import token_feature_table
+          from scripts.train_book_qa_automated import batch, collect_examples
+          torch.set_num_threads(2)
+          checkpoint = torch.load('book-qa-auto-44262147932-step-02000.pt', map_location='cpu', weights_only=False)
+          assert checkpoint['step'] == 2000 and checkpoint.get('optimizer')
+          tok = AksharaTokenizer.load(Path('artifacts/tokenizer.json'))
+          examples, counts = collect_examples(tok)
+          fingerprint = hashlib.sha256(json.dumps(examples, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+          assert fingerprint == checkpoint['metadata']['dataset_sha256'], 'dataset mismatch'
+          model = SanskritLM(ModelConfig(**checkpoint['config']))
+          model.load_state_dict(checkpoint['state_dict'], strict=True)
+          decay, no_decay = [], []
+          for _, p in model.named_parameters():
+              (decay if p.dim() >= 2 else no_decay).append(p)
+          opt = torch.optim.AdamW([{'params':decay,'weight_decay':0.1},{'params':no_decay,'weight_decay':0.0}], lr=1e-5, betas=(0.9,0.95), eps=1e-8)
+          opt.load_state_dict(checkpoint['optimizer'])
+          x, y, f, _, _, _ = batch(examples, token_feature_table(tok), tok.pad_id, random.Random(1), 2)
+          _, loss, _ = model(x, f, targets=y)
+          assert torch.isfinite(loss)
+          loss.backward()
+          opt.step()
+          print('Base nonpadding total:', checkpoint['metadata']['approx_total_positions'])
+          print('Mix:', counts, 'smoke loss:', float(loss))
+          print('CPU smoke only: Colab GPU, Drive authentication and long-run throughput remain untested.')
+          PY
