@@ -16,15 +16,16 @@
     "steps": 53900,
     "tokens_seen": 220569600,
     "total_tokens_seen": 220569600,
-    "batch_size": 16,
+    "batch_size": 8,
     "block_size": 256,
     "params": 9896544,
-    "note": "snapshot of the 250M-token run while it is still training",
+    "note": "Experimental book fine-tune completed; no training is currently running. Held-out evaluation is pending.",
     "resume_note": "Experimental book and grammar rehearsal fine-tuning. Held-out quality and grammar retention not verified.",
     "checkpoint_asset": "book-experiment-44228621663.pt",
     "base_checkpoint_step": 53800,
     "finetune_steps": 100,
-    "finetune_tokens": 204800
+    "finetune_tokens": 204800,
+    "base_batch_size": 16
   },
   "corpus": {}
 }
