@@ -1,0 +1,53 @@
+name: Export latest GitHub training checkpoint
+on:
+  push:
+    paths:
+      - .github/workflows/export-github-checkpoint.yml
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-44002147943
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Verify checkpoint and export model
+        run: |
+          asset=$(gh release view "$TRAIN_RELEASE" --json assets --jq '[.assets[] | select(.name | test("^checkpoint-[0-9]+-[0-9]+\\.pt$"))] | sort_by(.createdAt) | last | .name')
+          test -n "$asset"
+          gh release download "$TRAIN_RELEASE" --pattern "$asset" --pattern "$asset.sha256"
+          sha256sum -c "$asset.sha256"
+          ASSET="$asset" python - <<'PY'
+          import json, os, torch
+          from pathlib import Path
+          checkpoint = torch.load(os.environ['ASSET'], map_location='cpu', weights_only=False)
+          if not checkpoint.get('optimizer'):
+              raise RuntimeError('Checkpoint has no optimizer state')
+          step = int(checkpoint['step'])
+          meta = json.loads(Path('serve/meta.json').read_text())
+          summary = meta.get('train_summary', {})
+          summary.update(steps=step, tokens_seen=step*4096, total_tokens_seen=step*4096,
+                         resume_note='GitHub training continuation from step 1400 weights with a fresh optimizer.',
+                         checkpoint_asset=os.environ['ASSET'])
+          Path('export-summary.json').write_text(json.dumps(summary))
+          Path('export-corpus.json').write_text(json.dumps(meta.get('corpus', {})))
+          Path('export-step.txt').write_text(str(step))
+          PY
+          python scripts/export_numpy.py --checkpoint "$asset" --tokenizer artifacts/tokenizer.json --summary export-summary.json --corpus export-corpus.json --out export-bundle
+          cp export-bundle/model.npz export-bundle/meta.json serve/
+      - name: Commit exported model
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add serve/model.npz serve/meta.json
+          git commit -m "Export GitHub training checkpoint step $(cat export-step.txt)"
+          git push origin HEAD:${{ github.ref_name }}
