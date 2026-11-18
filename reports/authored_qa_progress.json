@@ -1,0 +1,28 @@
+{
+  "total_rows": 147,
+  "categories": {
+    "conversation": 60,
+    "knowledge": 55,
+    "reasoning": 30,
+    "grammar": 2
+  },
+  "unique_questions": 147,
+  "duplicate_question_groups": 0,
+  "conflicting_answer_groups": 0,
+  "exact_eval_prompt_matches": [],
+  "sources": [
+    {
+      "path": "data/qa_10k_seed/authored_v1.tsv",
+      "sha256": "d0822f5d40fe99c292a07e9457403822ff64e29cb5748d1bee1f35469c0dc6a3",
+      "rows": 51
+    },
+    {
+      "path": "data/qa_10k_seed/authored_v2.tsv",
+      "sha256": "c098d014878c9955f566a465eb9784a779de080c1959d2a9fdeb90567abf6876",
+      "rows": 96
+    }
+  ],
+  "target": 10000,
+  "target_grammar": 100,
+  "warning": "Exact matches only. Source quality, semantic duplicates, correctness and historical training overlap remain unverified; old evaluation sets may themselves be contaminated."
+}
