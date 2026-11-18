@@ -1,0 +1,18 @@
+{
+  "target_total": 25000,
+  "target_grammar": 250,
+  "target_other": 24750,
+  "sktqa_qa_drafts": 1491,
+  "sktqa_rows_excluded_due_to_duplicate_question": 10,
+  "book_question_occurrences_without_answers": 277,
+  "book_distinct_question_texts": 194,
+  "book_occurrences_by_title": {
+    "sanjayo-na-sukhi": 47,
+    "harini-sukam-pasyati": 65,
+    "nalini-nidraluh": 45,
+    "aroha-rahula": 50,
+    "sanjayah-kriditum-icchati": 70
+  },
+  "reviewed_training_ready_qa": 0,
+  "warning": "Unreviewed source material; no training, no held-out evaluation. Books were part of prior training; context is not an answer."
+}
