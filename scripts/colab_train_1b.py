@@ -125,7 +125,8 @@ def main():
     else:
         torch.cuda.manual_seed_all(20261118)
     dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
-    scaler = torch.amp.GradScaler('cuda', enabled=(dtype == torch.float16))
+    # The CUDA-specific API also works with older Colab PyTorch versions.
+    scaler = torch.cuda.amp.GradScaler(enabled=(dtype == torch.float16))
     if previous and saved.get('scaler'):
         scaler.load_state_dict(saved['scaler'])
     base_positions = int(old.get('base_total_positions', old.get('approx_total_positions', 0)))
