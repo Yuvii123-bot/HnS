@@ -1,12 +1,12 @@
 {
-  "total_rows": 147,
+  "total_rows": 228,
   "categories": {
-    "conversation": 60,
-    "knowledge": 55,
-    "reasoning": 30,
-    "grammar": 2
+    "conversation": 90,
+    "knowledge": 85,
+    "reasoning": 50,
+    "grammar": 3
   },
-  "unique_questions": 147,
+  "unique_questions": 228,
   "duplicate_question_groups": 0,
   "conflicting_answer_groups": 0,
   "exact_eval_prompt_matches": [],
@@ -20,6 +20,11 @@
       "path": "data/qa_10k_seed/authored_v2.tsv",
       "sha256": "c098d014878c9955f566a465eb9784a779de080c1959d2a9fdeb90567abf6876",
       "rows": 96
+    },
+    {
+      "path": "data/qa_10k_seed/authored_v3.tsv",
+      "sha256": "b52a6bde904b8da935572d161cb01aac65b2fd0e60c78e25b9d90d789d68f89e",
+      "rows": 81
     }
   ],
   "target": 10000,
