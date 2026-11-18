@@ -174,7 +174,10 @@ def do_chat(payload: dict) -> list[dict]:
             top_p=top_p,
             repetition_penalty=rep,
             max_new_tokens=max_new,
-            max_lines=max_lines,
+            # Corpus lines are complete training examples. Chat must not
+            # continue into the next example after its end-of-sequence marker.
+            # Continuation mode retains the existing multiline behaviour.
+            max_lines=1 if mode == "chat" else max_lines,
             eos_id=tok.eos_id,
             feat_table=rt.feat_table,
             stop_token_ids={tok.pad_id, tok.bos_id, tok.unk_id,
@@ -183,6 +186,8 @@ def do_chat(payload: dict) -> list[dict]:
         ):
             n += 1
             if is_line_end:
+                if mode == "chat":
+                    break
                 text += "\n"
                 events.append({"event": "token", "text": "\n",
                                "token_id": token_id, "kind": "space"})
