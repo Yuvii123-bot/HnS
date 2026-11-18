@@ -1,0 +1,24 @@
+{
+  "step": 1000,
+  "base_asset": "authored-qa-seed-44247588156.pt",
+  "base_approx_positions": 220579586,
+  "nonpadding_positions": 279035,
+  "assistant_and_book_loss_positions": 117687,
+  "approx_total_positions": 220858621,
+  "sampled_examples": {
+    "qa": 6062,
+    "book": 1938
+  },
+  "source_counts": {
+    "authored_qa": 228,
+    "published_qa": 620,
+    "book_chunks": 375,
+    "skipped": 9
+  },
+  "dataset_sha256": "cc7d77d3dbf9efe0b086f0608b53c1b3bbc450303910173f03024a8fdebd0231",
+  "qa_probability": 0.75,
+  "book_probability": 0.25,
+  "heldout_evaluation_complete": false,
+  "deployed": false,
+  "warning": "Unreviewed texts; sampled repeatedly. No independent quality or grammar retention evaluation."
+}
