@@ -1,0 +1,15 @@
+{
+  "total_rows": 1501,
+  "source_counts": {
+    "sktqa/sanskrit.tsv": 1000,
+    "sktqa/ayurveda.tsv": 501
+  },
+  "unique_normalised_questions": 1496,
+  "duplicate_question_groups": 5,
+  "conflicting_answer_groups": 4,
+  "reviewed_rows": 0,
+  "approved_for_training": 0,
+  "target_grammar": 1000,
+  "target_other": 99000,
+  "warning": "Benchmark data, not a training set. Rights, answers, categories, duplication, safety and held-out partition require review."
+}
