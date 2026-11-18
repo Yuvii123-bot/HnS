@@ -1,0 +1,61 @@
+name: Experimental book fine-tuning
+on:
+  push:
+    paths:
+      - .github/workflows/experimental-book-training.yml
+permissions:
+  contents: write
+concurrency:
+  group: experimental-book-training
+  cancel-in-progress: false
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-44002147943
+      BASE_ASSET: checkpoint-06-2.pt
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify original checkpoint
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern "$BASE_ASSET" --pattern "$BASE_ASSET.sha256"
+          sha256sum -c "$BASE_ASSET.sha256"
+          python - <<'PY'
+          import torch
+          blob = torch.load('checkpoint-06-2.pt', map_location='cpu', weights_only=False)
+          assert int(blob['step']) == 53800 and blob.get('optimizer'), 'Unexpected base checkpoint'
+          PY
+      - name: Prepare book and grammar rehearsal mix
+        run: |
+          python scripts/prepare_experimental_book_mix.py
+          python scripts/prepare_data.py --data data/book_experiment --out data/bin_book_experiment
+      - name: Fine-tune a separate candidate
+        run: |
+          python scripts/train_model.py --bin-dir data/bin_book_experiment --out artifacts/book_experiment --steps 100 --batch 8 --ctx 256 --d-model 288 --layers 8 --heads 8 --d-ff 880 --lr 0.00001 --warmup 10 --threads 2 --eval-every 0 --ckpt-every 25 --resume "$BASE_ASSET" --reset-steps
+      - name: Verify and publish candidate separately
+        run: |
+          python - <<'PY'
+          import json, os, torch
+          from pathlib import Path
+          path = Path('artifacts/book_experiment/latest.pt')
+          checkpoint = torch.load(path, map_location='cpu', weights_only=False)
+          assert int(checkpoint['step']) == 100 and checkpoint.get('optimizer'), 'Invalid candidate checkpoint'
+          summary = {'base_asset': os.environ['BASE_ASSET'], 'base_step': 53800,
+                     'base_nominal_tokens': 220364800, 'finetune_steps': 100,
+                     'finetune_processed_positions': 100 * 8 * 256,
+                     'heldout_baseline_complete': False, 'grammar_retention_verified': False,
+                     'deployed': False, 'mix': json.loads(Path('data/book_experiment/mix_manifest.json').read_text())}
+          Path('book-experiment-summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2))
+          print('::notice::Book candidate trained for 204800 additional token positions; evaluation is still required.')
+          PY
+          name="book-experiment-${GITHUB_RUN_ID}.pt"
+          cp artifacts/book_experiment/latest.pt "$name"
+          sha256sum "$name" > "$name.sha256"
+          gh release upload "$TRAIN_RELEASE" "$name" "$name.sha256" book-experiment-summary.json
