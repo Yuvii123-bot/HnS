@@ -1,0 +1,37 @@
+{
+  "source": "https://en.amarahasa.com",
+  "license_note": "Amarahasa states CC0 unless otherwise noted; verify per-source terms.",
+  "warning": "Transliterated candidate text; review before training.",
+  "books": [
+    {
+      "book": "sanjayo-na-sukhi",
+      "chapters": 5,
+      "sentences": 108,
+      "output_sha256": "47e710a2ca817beecfdeca2df848f844145198943af339e7541a9d858e5b9630"
+    },
+    {
+      "book": "harini-sukam-pasyati",
+      "chapters": 5,
+      "sentences": 133,
+      "output_sha256": "918850ab7d6efb9ae837652ade639d7900a06dfa7f54a8bf8c9c59cf7dd0908e"
+    },
+    {
+      "book": "nalini-nidraluh",
+      "chapters": 7,
+      "sentences": 204,
+      "output_sha256": "2b9ac750cc2ab5cef87c1de4dd8f29393d91e794f4f0576a3bb24ffec5ba82f9"
+    },
+    {
+      "book": "aroha-rahula",
+      "chapters": 8,
+      "sentences": 297,
+      "output_sha256": "a758c550ad0e9da256555fc8f50d6b73f809cc7d9115753034bc453b6fb9cdce"
+    },
+    {
+      "book": "sanjayah-kriditum-icchati",
+      "chapters": 8,
+      "sentences": 373,
+      "output_sha256": "c951697d2ce820da444c415b87e328aa5107dab2999e23b4662dcbd16309221a"
+    }
+  ]
+}
