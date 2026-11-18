@@ -1,0 +1,69 @@
+name: Export book-trained candidate for deployment
+on:
+  push:
+    paths:
+      - .github/workflows/export-book-candidate.yml
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TRAIN_RELEASE: sanskrit-250m-44002147943
+      CANDIDATE: book-experiment-44228621663.pt
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Verify and export candidate
+        run: |
+          gh release download "$TRAIN_RELEASE" --pattern "$CANDIDATE" --pattern "$CANDIDATE.sha256"
+          sha256sum -c "$CANDIDATE.sha256"
+          python - <<'PY'
+          import json, torch
+          from pathlib import Path
+          from sanskrit_llm.model import SanskritLM, ModelConfig
+          b = torch.load('book-experiment-44228621663.pt', map_location='cpu', weights_only=False)
+          assert int(b['step']) == 100 and b.get('optimizer'), 'Unexpected or incomplete candidate checkpoint'
+          model = SanskritLM(ModelConfig(**b['config']))
+          model.load_state_dict(b['state_dict'], strict=True)
+          meta = json.loads(Path('serve/meta.json').read_text())
+          summary = meta.get('train_summary', {})
+          summary.update(steps=53900, tokens_seen=220569600, total_tokens_seen=220569600,
+                         base_checkpoint_step=53800, finetune_steps=100,
+                         finetune_tokens=204800, checkpoint_asset='book-experiment-44228621663.pt',
+                         resume_note='Experimental book and grammar rehearsal fine-tuning. Held-out quality and grammar retention not verified.')
+          Path('book-export-summary.json').write_text(json.dumps(summary, ensure_ascii=False))
+          Path('book-export-corpus.json').write_text(json.dumps(meta.get('corpus', {}), ensure_ascii=False))
+          PY
+          python scripts/export_numpy.py --checkpoint "$CANDIDATE" --tokenizer artifacts/tokenizer.json --summary book-export-summary.json --corpus book-export-corpus.json --out book-export
+      - name: Check model inference
+        env:
+          SERVE_DIR: ${{ github.workspace }}/book-export
+        run: |
+          python - <<'PY'
+          from api.index import do_chat, do_info
+          info = do_info()
+          assert info.get('ready') and info['training']['summary']['total_tokens_seen'] == 220569600, info
+          events = do_chat({'message': 'सूर्यः कुत्र उदेति?', 'temperature': 0, 'max_new_tokens': 40})
+          errors = [e for e in events if e['event'] == 'error']
+          done = [e for e in events if e['event'] == 'done']
+          assert not errors and done and done[0]['text'].strip(), events
+          print('::notice::Candidate loads and produces a response; this is not a held-out accuracy test.')
+          PY
+      - name: Commit export without changing production routing
+        run: |
+          cp book-export/model.npz book-export/meta.json serve/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add serve/model.npz serve/meta.json
+          git commit -m 'Export book-trained candidate at nominal 220569600 tokens'
+          git push origin HEAD:${{ github.ref_name }}
