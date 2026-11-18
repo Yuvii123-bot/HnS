@@ -13,19 +13,13 @@
   "params": 9896544,
   "stored_float_count": 11048544,
   "train_summary": {
-    "steps": 53900,
-    "tokens_seen": 220569600,
-    "total_tokens_seen": 220569600,
-    "batch_size": 8,
-    "block_size": 256,
-    "params": 9896544,
-    "note": "Experimental book fine-tune completed; no training is currently running. Held-out evaluation is pending.",
-    "resume_note": "Experimental book and grammar rehearsal fine-tuning. Held-out quality and grammar retention not verified.",
-    "checkpoint_asset": "book-experiment-44228621663.pt",
-    "base_checkpoint_step": 53800,
-    "finetune_steps": 100,
-    "finetune_tokens": 204800,
-    "base_batch_size": 16
+    "total_tokens_seen": 263946506,
+    "tokens_seen": 263946506,
+    "additional_nonpadding_positions": 42807904,
+    "additional_loss_positions": 18303034,
+    "checkpoint_asset": "colab-tokens-000042807904.pt",
+    "heldout_evaluation_complete": false,
+    "warning": "Repeated unreviewed examples; prompts included in input count but not QA loss."
   },
   "corpus": {}
 }
