@@ -1,0 +1,34 @@
+name: Retrieve original beginner stories
+on:
+  push:
+    paths:
+      - .github/workflows/fetch-original-stories.yml
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve original text and record provenance
+        run: |
+          set +e
+          python scripts/fetch_amarahasa_books.py 2>&1 | tee /tmp/book-fetch.log
+          status=${PIPESTATUS[0]}
+          if [ "$status" -ne 0 ]; then
+            echo "::error::$(tail -n 1 /tmp/book-fetch.log)"
+            exit "$status"
+          fi
+      - name: Save candidate texts
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/book_candidates/amarahasa_original
+          git commit -m 'Save original beginner story sentences for review'
+          git push origin HEAD:${{ github.ref_name }}
