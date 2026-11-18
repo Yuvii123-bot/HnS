@@ -160,12 +160,14 @@ def time_rows(rng: random.Random, n: int) -> list[tuple[str, str]]:
             out.append((rng.choice([f"{s} कः ऋतुः?", f"कस्मिन् ऋतौ {s} भवति?"]),
                         f"{s} ऋतुः।" if "कस्मिन्" in s else f"{s}।"))
         else:
-            out.append((rng.choice(["सप्ताहे कति दिनानि सन्ति?",
-                                    "वर्षे कति मासाः सन्ति?",
-                                    "वर्षे कति ऋतवः सन्ति?",
-                                    "एकस्मिन् वासरे कति होराः भवन्ति?"]),
-                        rng.choice(["सप्त दिनानि।", "द्वादश मासाः।", "षट् ऋतवः।",
-                                    "चतुर्विंशतिः होराः।"])))
+            # Choose a complete pair: sampling question and answer separately
+            # silently creates contradictory supervision for three out of four rows.
+            out.append(rng.choice([
+                ("सप्ताहे कति दिनानि सन्ति?", "सप्त दिनानि।"),
+                ("वर्षे कति मासाः सन्ति?", "द्वादश मासाः।"),
+                ("वर्षे कति ऋतवः सन्ति?", "षट् ऋतवः।"),
+                ("एकस्मिन् वासरे कति होराः भवन्ति?", "चतुर्विंशतिः होराः।"),
+            ]))
     return out
 
 
