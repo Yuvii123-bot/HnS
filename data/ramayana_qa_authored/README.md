@@ -1,6 +1,6 @@
 # Rāmāyaṇa question–answer project
 
-**Current progress: 600 / approximately 100,000 requested pairs.** These are an initial, assistant-authored, Sanskrit-language draft, **not** the complete epic or a reviewed training dataset. They cover source file lines 1–334 only, the opening summary and the start of the next episode in the Bālakāṇḍa. There are five books in this source, not seven: Yuddha and Uttara are absent. The epic has multiple recensions; exhaustive coverage and 100,000 genuinely distinct, useful questions are not guaranteed.
+**Current progress: 700 / approximately 100,000 requested pairs.** These are an initial, assistant-authored, Sanskrit-language draft, **not** the complete epic or a reviewed training dataset. They cover source file lines 1–412 only, the opening summary and the start of the next episode in the Bālakāṇḍa. There are five books in this source, not seven: Yuddha and Uttara are absent. The epic has multiple recensions; exhaustive coverage and 100,000 genuinely distinct, useful questions are not guaranteed.
 
 Each record links to a pinned original file and line number and includes a context window ending at its focus line. Line numbers refer to lines in the digitized source file, **not** necessarily canonical verse numbers. Some questions require preceding lines for context. Questions and answers are newly authored; source passages have not been independently proofread and may contain transcription errors. A human Sanskrit and textual expert must check each question, answer, context, source, recensional claim, naturalness, duplicate/near-duplicate status and permission before any use in training. All rows are marked `authored_unreviewed` and `quarantine`; no row is approved for training.
 
@@ -14,4 +14,4 @@ Scale in traceable batches across all available chapters, using source-specific 
 
 ## Explicitly requested experiment
 
-At the user's request, the first 500 unreviewed rows are being used in a separate experimental GitHub fine-tuning run with replay from the prior authored QA and book data. This is not independent review or general approval of the remaining rows. Do not deploy the candidate without the applicable evaluation and approval.
+At the user's request, the first 600 unreviewed rows are being used in a separate experimental GitHub fine-tuning run with replay from the prior authored QA and book data. This is not independent review or general approval of the remaining rows. Do not deploy the candidate without the applicable evaluation and approval.
