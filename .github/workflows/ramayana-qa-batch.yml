@@ -1,0 +1,57 @@
+name: Ramayana QA batch training
+on:
+  workflow_dispatch:
+    inputs:
+      offset:
+        description: Zero-based starting index of 100 authored questions
+        default: '0'
+        required: true
+        type: string
+      resume_asset:
+        description: Prior QA checkpoint asset; blank uses deployed full Ramayana checkpoint
+        default: ''
+        required: false
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: ramayana-qa-training
+  cancel-in-progress: false
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE: sanskrit-250m-44002147943
+      OFFSET: ${{ inputs.offset }}
+      RESUME: ${{ inputs.resume_asset }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Test batch masking and input validation
+        run: python -m unittest tests.test_ramayana_qa_batch -v
+      - name: Retrieve and verify full checkpoint
+        run: |
+          set -euo pipefail
+          mkdir -p checkpoint
+          if [ -z "$RESUME" ]; then
+            for i in 00 01 02 03; do
+              git show "213f8b4bb0c360cfd99e518ae627de09ae767134:.training-transfer/base-part-$i" >> checkpoint/base.pt
+            done
+            echo '0f733e6c43a8d2e8dadb550b94bbbcaf92763880b62120378d25f939cbe3ae06  checkpoint/base.pt' | sha256sum -c -
+          else
+            if ! [[ "$RESUME" =~ ^ramayana-qa-[0-9]+-step-[0-9]+\.pt$ ]]; then echo 'Invalid resume asset' >&2; exit 1; fi
+            (cd checkpoint && gh release download "$RELEASE" --pattern "$RESUME" --pattern "$RESUME.sha256" && sha256sum -c "$RESUME.sha256" && mv "$RESUME" base.pt)
+          fi
+      - name: Train and publish checksummed resumable candidates
+        run: |
+          set -euo pipefail
+          if ! [[ "$OFFSET" =~ ^[0-9]+$ ]]; then echo 'Invalid offset' >&2; exit 1; fi
+          python scripts/train_ramayana_qa_batch.py --base checkpoint/base.pt --offset "$OFFSET" --count 100 --steps 100 --save-every 50 --batch-size 8 --out checkpoint/output --release "$RELEASE"

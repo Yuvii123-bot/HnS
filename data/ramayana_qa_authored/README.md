@@ -11,3 +11,7 @@ Source: [CLTK Sanskrit Gita Supersite](https://github.com/cltk/sanskrit_text_git
 Do not call these questions held out or calculate accuracy from them: the source text and potentially similar questions have been seen. Set aside independent, expert-reviewed QA **before** collecting or authoring further training data; audit exact and semantic overlap against all earlier corpora, questions, and evaluation suites. Reserve source passages or episodes by group where possible, rather than splitting near-paraphrases at random. Grammar/conversation retention requires a separate held-out suite. Do not claim an independent holdout without a complete audit. Never reuse the quarantined SktQA benchmark as an independent test.
 
 Scale in traceable batches across all available chapters, using source-specific citations and review, deduplication, topical coverage and licensing records. Acquire and verify suitable Yuddha and Uttara editions before claiming coverage. Avoid padding the target with formulaic paraphrases, fabricated facts or unsupported answers. A 100,000 target is a planning goal, not a reason to weaken quality.
+
+## Explicitly requested experiment
+
+At the user's request, the first 100 unreviewed rows are being used in a separate experimental GitHub fine-tuning run with replay from the prior authored QA and book data. This is not independent review or general approval of the remaining rows. Do not deploy the candidate without the applicable evaluation and approval.
