@@ -1,5 +1,8 @@
 name: Ramayana QA batch training
 on:
+  push:
+    paths:
+      - .github/workflows/ramayana-qa-batch.yml
   workflow_dispatch:
     inputs:
       offset:
@@ -24,12 +27,12 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       RELEASE: sanskrit-250m-44002147943
-      OFFSET: ${{ inputs.offset }}
-      RESUME: ${{ inputs.resume_asset }}
+      OFFSET: ${{ inputs.offset || '0' }}
+      RESUME: ${{ inputs.resume_asset || '' }}
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
