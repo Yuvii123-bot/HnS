@@ -1,0 +1,53 @@
+name: Export seventh Ramayana QA checkpoint for deployment
+on:
+  push:
+    paths:
+      - .github/workflows/export-latest-ramayana.yml
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install 'numpy<2' torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download, verify and export checkpoint
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/rqa
+          name=ramayana-qa-44495803454-step-00100.pt
+          (cd /tmp/rqa && gh release download sanskrit-250m-44002147943 --repo Yuvii123-bot/HnS --pattern "$name" --pattern "$name.sha256" --pattern "$name.json" && sha256sum -c "$name.sha256")
+          python - <<'PY'
+          import json, torch
+          from sanskrit_llm.model import SanskritLM, ModelConfig
+          p='/tmp/rqa/ramayana-qa-44495803454-step-00100.pt'
+          ck=torch.load(p,map_location='cpu',weights_only=False)
+          summary=json.load(open(p+'.json'))
+          assert ck['metadata']==summary and ck['optimizer']
+          assert summary['kind']=='ramayana_qa_v1' and summary['round_count']==100 and summary['round_offset']==600 and summary['round_steps']==100
+          model=SanskritLM(ModelConfig(**ck['config']))
+          model.load_state_dict(ck['state_dict'],strict=True)
+          summary['checkpoint_asset']='ramayana-qa-44495803454-step-00100.pt'
+          summary['heldout_evaluation_complete']=False
+          summary['warning']='Unreviewed authored QA; held-out accuracy and grammar retention untested.'
+          with open('/tmp/rqa/summary.json','w') as f: json.dump(summary,f,ensure_ascii=False,indent=2)
+          PY
+          python scripts/export_numpy.py --checkpoint /tmp/rqa/ramayana-qa-44495803454-step-00100.pt --summary /tmp/rqa/summary.json --corpus /tmp/rqa/nonexistent.json --out /tmp/rqa/serve
+          cp /tmp/rqa/serve/model.npz serve/model.npz
+          cp /tmp/rqa/serve/meta.json serve/meta.json
+          mkdir -p reports
+          cp /tmp/rqa/summary.json reports/ramayana_qa_44495803454_verified.json
+      - name: Commit deployment bundle
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add serve/model.npz serve/meta.json reports/ramayana_qa_44495803454_verified.json
+          git commit -m 'Export seventh Ramayana QA checkpoint for deployment'
+          git push origin HEAD:arena/31b2a7fb-hns
