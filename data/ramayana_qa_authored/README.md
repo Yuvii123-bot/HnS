@@ -14,4 +14,4 @@ Scale in traceable batches across all available chapters, using source-specific 
 
 ## Explicitly requested experiment
 
-At the user's request, the first 600 unreviewed rows are being used in a separate experimental GitHub fine-tuning run with replay from the prior authored QA and book data. This is not independent review or general approval of the remaining rows. Do not deploy the candidate without the applicable evaluation and approval.
+At the user's request, the first 700 unreviewed rows are being used in a separate experimental GitHub fine-tuning run with replay from the prior authored QA and book data. This is not independent review or general approval of the remaining rows. Do not deploy the candidate without the applicable evaluation and approval.
