@@ -390,6 +390,12 @@ function bindComposer() {
     sendMessage(text);
   }
 
+  document.querySelectorAll("#ramayana-suggestions button").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!state.streaming) sendMessage(button.dataset.text);
+    });
+  });
+
   document.querySelectorAll("#suggestions button").forEach((b) => {
     b.addEventListener("click", () => {
       ta.value = b.dataset.text || b.textContent;

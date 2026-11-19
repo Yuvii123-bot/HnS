@@ -237,6 +237,7 @@ input[type="range"]::-webkit-slider-thumb {
 /* ───────────────────────── composer ───────────────────────── */
 
 .composer-wrap { padding: 10px 26px 18px; border-top: 1px solid var(--line); background: rgba(13,12,17,0.75); backdrop-filter: blur(8px); }
+.prompt-label { display: block; font-size: 0.8rem; color: var(--muted, #aaa); margin-bottom: 6px; }
 .suggestions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
 .suggestions button {
   background: var(--panel); border: 1px solid var(--line); color: var(--muted);
