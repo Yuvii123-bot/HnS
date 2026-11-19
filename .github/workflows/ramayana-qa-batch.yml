@@ -27,8 +27,8 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       RELEASE: sanskrit-250m-44002147943
-      OFFSET: ${{ inputs.offset || '200' }}
-      RESUME: ${{ inputs.resume_asset || 'ramayana-qa-44489152542-step-00100.pt' }}
+      OFFSET: ${{ inputs.offset || '300' }}
+      RESUME: ${{ inputs.resume_asset || 'ramayana-qa-44489749846-step-00100.pt' }}
     steps:
       - uses: actions/checkout@v4
         with:
