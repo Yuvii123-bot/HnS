@@ -1,0 +1,47 @@
+name: Inspect Ramayana QA checkpoint
+on:
+  push:
+    paths:
+      - .github/workflows/inspect-ramayana-qa.yml
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PyTorch
+        run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Download and verify checkpoint and summary
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/rqa
+          cd /tmp/rqa
+          name=ramayana-qa-44489152542-step-00100.pt
+          gh release download sanskrit-250m-44002147943 --pattern "$name" --pattern "$name.sha256" --pattern "$name.json" --repo Yuvii123-bot/HnS
+          sha256sum -c "$name.sha256"
+          python - <<'PY'
+          import json, torch
+          name='ramayana-qa-44489152542-step-00100.pt'
+          ck=torch.load(name, map_location='cpu', weights_only=False)
+          summary=json.load(open(name+'.json'))
+          assert ck['metadata']==summary and ck['optimizer'] and summary['kind']=='ramayana_qa_v1'
+          assert summary['round_count']==100 and summary['round_offset']==100 and summary['round_steps']==100
+          with open('/tmp/rqa/verified.json','w') as f:
+              json.dump({'verified_checkpoint':name,'checkpoint_metadata':summary},f,ensure_ascii=False,indent=2)
+          PY
+      - name: Save verification report
+        run: |
+          set -euo pipefail
+          mkdir -p reports
+          cp /tmp/rqa/verified.json reports/ramayana_qa_44489152542_verified.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/ramayana_qa_44489152542_verified.json
+          git commit -m 'Record verified second Ramayana QA checkpoint'
+          git push origin HEAD:arena/31b2a7fb-hns
