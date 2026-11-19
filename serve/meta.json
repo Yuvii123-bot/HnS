@@ -13,13 +13,16 @@
   "params": 9896544,
   "stored_float_count": 11048544,
   "train_summary": {
-    "total_tokens_seen": 305274802,
-    "tokens_seen": 305274802,
-    "additional_nonpadding_positions": 84136200,
-    "additional_loss_positions": 35973699,
-    "checkpoint_asset": "colab-tokens-000084136200.pt",
+    "total_tokens_seen": 315275224,
+    "tokens_seen": 315275224,
+    "additional_nonpadding_positions": 10000422,
+    "additional_loss_positions": 10000422,
+    "checkpoint_asset": "ramayana-v1/tokens-000010000422.pt",
+    "base_checkpoint": "tokens-000084136200.pt",
+    "base_checkpoint_sha256": "72eef5da2378de5681cae6e1549c7120c4b6c3ab31372c6fe6c4f86cca0363a6",
+    "dataset_sha256": "a09ca52c099b3d1b355995d74a959b39580c3b6c1c235ee4405f131bcf894ada",
     "heldout_evaluation_complete": false,
-    "warning": "Repeated unreviewed examples; prompts included in input count but not QA loss."
+    "warning": "Repeated unreviewed verses; grammar retention and held-out accuracy untested."
   },
   "corpus": {}
 }
